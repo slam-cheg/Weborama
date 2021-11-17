@@ -1,0 +1,13 @@
+@mixin anim-texts {
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.96, 0.01, 0.08, 1.01);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@mixin anim-cup {
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.96, 0.01, 0.08, 1.01);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
