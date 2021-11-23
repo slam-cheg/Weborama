@@ -24,7 +24,7 @@ changeTexts();
 
 
 function changeTexts() {
-    if (hour >= 12 && hour < 12) {
+    if (hour >= 0 && hour < 12) {
         firstStroke.style.fontSize = "14px";
         secondStroke.style.fontSize = "14px";
         thirdStroke.style.fontSize = "14px";
