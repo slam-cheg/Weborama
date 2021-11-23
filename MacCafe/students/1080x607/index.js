@@ -11,7 +11,10 @@ const end = document.querySelector(".banner__end");
 
 const firstStroke = document.querySelector(".title__stroke_one");
 const secondStroke = document.querySelector(".title__stroke_two");
-const thirdStroke = document.querySelector(".title__stroke_three")
+const thirdStroke = document.querySelector(".title__stroke_three");
+
+let clickout;
+let clickEvent;
 
 const now = new Date();
 const hour = now.getHours();
@@ -22,29 +25,32 @@ changeTexts();
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
         firstStroke.textContent = "Перед учебой";
-        secondStroke.textContent = "зайди за МакКафе";
-        thirdStroke.textContent = "";
+        secondStroke.textContent = "зайди";
+        thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Зайди за МакКафе";
-        secondStroke.textContent = "во время обеда";
-        thirdStroke.textContent = "";
+        firstStroke.textContent = "Зайди";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "во время обеда";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.textContent = "В перерыве между парами";
-        secondStroke.textContent = "зайди за МакКафе";
-        thirdStroke.textContent = "";
+        firstStroke.style.fontSize = "72px";
+        secondStroke.style.fontSize = "72px";
+        thirdStroke.style.fontSize = "72px";
+        firstStroke.textContent = "В перерыве";
+        secondStroke.textContent = "между парами";
+        thirdStroke.textContent = "зайди за МакКафе";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
         firstStroke.textContent = "Перед учебой";
-        secondStroke.textContent = "зайди за МакКафе";
-        thirdStroke.textContent = "";
+        secondStroke.textContent = "зайди";
+        thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";

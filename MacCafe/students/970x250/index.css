@@ -21,8 +21,8 @@
 }
 
 .page {
-    width: 468px;
-    height: 60px;
+    width: 970px;
+    height: 250px;
     margin: 0 auto;
 }
 
@@ -39,29 +39,24 @@
 }
 
 .banner__logo {
-    width: 41px;
+    width: 67px;
     position: absolute;
-    left: 10px;
-    top: calc(50% - 20.5px);
+    left: 20px;
+    top: 20px;
     opacity: 1;
-    z-index: 8;
 }
 
-.title__first {
-    font-family: "speedee", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-}
+.title__first,
 .title__second {
     font-family: "speedee", sans-serif;
-    font-size: 16px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .title__stroke {
     paint-order: stroke;
     stroke: #febb0d;
-    stroke-width: 6px;
+    stroke-width: 12px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
 }
@@ -74,20 +69,20 @@
 }
 
 .banner__cup {
-    width: 32px;
+    width: 155px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 195px;
     transform: scale(0);
     z-index: 5;
 }
 
 .banner__phone {
-    width: 30px;
+    width: 105px;
     position: absolute;
     z-index: 4;
-    bottom: 6px;
-    right: 120px;
+    bottom: 15px;
+    right: 301px;
     transform: scale(0);
 }
 
@@ -95,15 +90,15 @@
     color: #fff;
     background-color: #db0007;
     font-family: "speedee";
-    line-height: 50%;
+    line-height: 100%;
     font-weight: 700;
-    width: 43px;
-    height: 43px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    right: 147px;
+    top: 20px;
     z-index: 6;
+    right: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,41 +108,41 @@
 }
 
 .price__text_one {
-    font-size: 5px;
-    padding-bottom: 7px;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 .price__text_two {
-    font-size: 17px;
+    font-size: 25px;
 }
 .price__text_two span {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .price__text_three {
-    font-size: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 6px;
 }
 
 .banner__button {
     background-color: #db0007;
     position: absolute;
-    top: calc(50% - 15px);
-    right: 25px;
-    width: 90px;
-    height: 30px;
+    bottom: 100px;
+    right: 50px;
+    width: 202px;
+    height: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     opacity: 0;
 }
 .banner__button p {
     text-align: center;
     font-family: "speedee", sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 23px;
     line-height: 100%;
     color: #fff;
 }
@@ -155,23 +150,23 @@
 @keyframes cup-first {
     0% {
         transform: scale(0);
-        top: 7px;
-        right: 90px;
+        top: 15px;
+        right: 195px;
     }
     10% {
         transform: scale(1);
-        top: 7px;
-        right: 90px;
+        top: 15px;
+        right: 195px;
     }
     90% {
         transform: scale(1);
-        top: 7px;
-        right: 90px;
+        top: 15px;
+        right: 195px;
     }
     100% {
-        transform: scale(0.8);
-        top: 9px;
-        right: 119px;
+        transform: scale(0.6);
+        top: 45px;
+        right: 275px;
     }
 }
 .cup__anim {
@@ -368,30 +363,28 @@
 }
 
 .banner__end-logo {
-    width: 41px;
-    margin-left: 10px;
+    width: 92px;
+    margin-left: 20px;
 }
 
 .banner__end-title {
     font-family: "speedee", sans-serif;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 61px;
     max-width: 100%;
     line-height: 100%;
-    margin-left: 7px;
-    margin-top: 13px;
+    margin-left: 20px;
     color: #461e00;
-    align-self: flex-start;
 }
 
 .banner__end-condition {
     position: absolute;
-    bottom: 10px;
-    left: 60px;
-    max-width: calc(100% - 70px);
+    bottom: 20px;
+    left: 135px;
+    max-width: calc(100% - 270px);
     font-family: "speedee", sans-serif;
     font-weight: 300;
-    font-size: 5px;
+    font-size: 10px;
     line-height: 130%;
     text-align: justify;
     color: #461e00;
@@ -435,10 +428,10 @@
 
 .advisory {
     color: #461e00;
-    font-size: 9px;
+    font-size: 25px;
     font-weight: 400;
     font-family: "speedee", sans-serif;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    bottom: 0px;
+    right: 15px;
 }

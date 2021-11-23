@@ -61,7 +61,7 @@
 .title__stroke {
     paint-order: stroke;
     stroke: #febb0d;
-    stroke-width: 12px;
+    stroke-width: 6px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
 }
@@ -126,8 +126,8 @@
 
 .price__text_three {
     font-size: 12px;
-    padding-top: 7;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 11px;
 }
 
 .banner__button {

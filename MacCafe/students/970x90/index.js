@@ -19,22 +19,23 @@ changeTexts();
 
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Перед офисом зайдите за МакКафе";
+        firstStroke.textContent = "Перед учебой зайди за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Во время обеда зайдите за МакКафе";
+        firstStroke.textContent = "Зайди за МакКафе во время обеда";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.textContent = "Сделайте перерыв c МакКафе";
+        firstStroke.style.fontSize = "31px";
+        firstStroke.textContent = "В перерыве между парами зайди за МакКафе";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Перед офисом зайдите за МакКафе";
+        firstStroke.textContent = "Перед учебой зайди за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";

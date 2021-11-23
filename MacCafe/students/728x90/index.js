@@ -11,6 +11,7 @@ const end = document.querySelector(".banner__end");
 
 const firstStroke = document.querySelector(".title__stroke_one");
 const secondStroke = document.querySelector(".title__stroke_two");
+const thirdStroke = document.querySelector(".title__stroke_three");
 
 const now = new Date();
 const hour = now.getHours();
@@ -20,26 +21,33 @@ changeTexts();
 
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Перед офисом";
-        secondStroke.textContent = "зайдите за МакКафе"
+        firstStroke.textContent = "Перед учебой зайди";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Во время обеда";
-        secondStroke.textContent = "зайдите за МакКафе"
+        firstStroke.textContent = "Зайди за МакКафе";
+        secondStroke.textContent = "во время обеда";
+        thirdStroke.textContent = "";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.textContent = "Сделайте перерыв";
-        secondStroke.textContent = "c МакКафе"
+        firstStroke.style.fontSize = "30px";
+        secondStroke.style.fontSize = "30px";
+        thirdStroke.style.fontSize = "30px";
+        firstStroke.textContent = "В перерыве между парами";
+        secondStroke.textContent = "зайди за МакКафе";
+        thirdStroke.textContent = "";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Перед офисом";
-        secondStroke.textContent = "зайдите за МакКафе"
+        firstStroke.textContent = "Перед учебой зайди";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";

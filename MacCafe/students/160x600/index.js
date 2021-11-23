@@ -23,7 +23,7 @@ animate();
 changeTexts();
 
 function changeTexts() {
-    if (hour >= 0 && hour < 9) {
+    if (hour >= 0 && hour < 12) {
         firstStroke.style.fontSize = "20px";
         secondStroke.style.fontSize = "20px";
         thirdStroke.style.fontSize = "20px";
