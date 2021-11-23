@@ -21,46 +21,49 @@ const hour = now.getHours();
 
 animate();
 changeTexts();
-checkSize();
+
 
 function changeTexts() {
-    if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Перед офисом";
-        secondStroke.textContent = "зайдите";
+    if (hour >= 12 && hour < 12) {
+        firstStroke.style.fontSize = "14px";
+        secondStroke.style.fontSize = "14px";
+        thirdStroke.style.fontSize = "14px";
+        firstStroke.textContent = "Перед учебой";
+        secondStroke.textContent = "зайди";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Во время обеда";
-        secondStroke.textContent = "зайдите";
-        thirdStroke.textContent = "за МакКафе";
+        firstStroke.style.fontSize = "14px";
+        secondStroke.style.fontSize = "14px";
+        thirdStroke.style.fontSize = "14px";
+        firstStroke.textContent = "Зайди";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "во время обеда";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.textContent = "Сделайте";
-        secondStroke.textContent = "перерыв";
-        thirdStroke.textContent = "c МакКафе";
+        firstStroke.style.fontSize = "11px";
+        secondStroke.style.fontSize = "11px";
+        thirdStroke.style.fontSize = "11px";
+        firstStroke.textContent = "В перерыве";
+        secondStroke.textContent = "между парами";
+        thirdStroke.textContent = "зайди за МакКафе";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Перед офисом";
-        secondStroke.textContent = "зайдите";
+        firstStroke.style.fontSize = "14px";
+        secondStroke.style.fontSize = "14px";
+        thirdStroke.style.fontSize = "14px";
+        firstStroke.textContent = "Перед учебой";
+        secondStroke.textContent = "зайди";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
-    }
-}
-
-function checkSize() {
-    if (document.querySelector(".title__first").width > 110) {
-        let fSize = 12;
-        document.querySelector(".title__stroke_one").style.fontSize = fSize + "px";
-        document.querySelector(".title__stroke_two").style.fontSize = fSize + "px";
-        document.querySelector(".title__stroke_three").style.fontSize = fSize + "px";
     }
 }
 
