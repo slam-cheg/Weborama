@@ -23,34 +23,34 @@ animate();
 changeTexts();
 
 function changeTexts() {
-    if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
-        thirdStroke.textContent = "за МакКафе";
+    if (hour >= 0 && hour < 15) {
+        firstStroke.textContent = "Начните день";
+        secondStroke.textContent = "с выгодного";
+        thirdStroke.textContent = "МаКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Самое время";
-        secondStroke.textContent = "для обеда";
-        thirdStroke.textContent = "с МакКафе";
+        firstStroke.style.fontSize = "21px";
+        secondStroke.style.fontSize = "21px";
+        thirdStroke.style.fontSize = "21px";
+        firstStroke.textContent = "МакКафе —";
+        secondStroke.textContent = "выгодная компания";
+        thirdStroke.textContent = "для обеда";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.style.fontSize = "27px";
-        secondStroke.style.fontSize = "27px";
-        thirdStroke.style.fontSize = "27px";
-        firstStroke.textContent = "Пока отдыхаете,";
-        secondStroke.textContent = "зайдите";
-        thirdStroke.textContent = "за МакКафе";
+        firstStroke.textContent = "Сделайте";
+        secondStroke.textContent = "перерыв";
+        thirdStroke.textContent = "с МакКафе";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
-        thirdStroke.textContent = "за МакКафе";
+        firstStroke.textContent = "Начните день";
+        secondStroke.textContent = "с выгодного";
+        thirdStroke.textContent = "МаКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
