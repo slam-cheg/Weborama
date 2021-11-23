@@ -1,18 +1,18 @@
 @font-face {
     font-family: "speedee";
-    src: url(Speedee_Lt_1.woff) format("woff");
+    src: url(../vendor/Speedee_Lt_1.woff) format("woff");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "speedee";
-    src: url(Speedee_Bd_1.woff) format("woff");
+    src: url(../vendor/Speedee_Bd_1.woff) format("woff");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "speedee";
-    src: url(Speedee_Rg.woff) format("woff");
+    src: url(../vendor/Speedee_Rg.woff) format("woff");
     font-weight: 400;
 }
 
@@ -30,7 +30,7 @@
 .banner__wrapper {
     width: 100%;
     height: 100%;
-    background-image: url(background-map.jpg);
+    background-image: url(../images/background-map.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-clip: border-box;
