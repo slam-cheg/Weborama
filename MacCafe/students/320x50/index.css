@@ -112,8 +112,8 @@
 }
 
 .price__text_one {
-    font-size: 5px;
-    padding-bottom: 5px;
+    font-size: 7px;
+    padding-bottom: 6px;
 }
 
 .price__text_two {
@@ -124,9 +124,9 @@
 }
 
 .price__text_three {
-    font-size: 5px;
+    font-size: 7px;
     padding-top: 2px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
 }
 
 .banner__button {
