@@ -1,0 +1,5 @@
+.header__name {
+    @include font;
+    font-size: $text;
+    font-weight: 500;
+}

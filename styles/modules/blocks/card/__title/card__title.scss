@@ -1,0 +1,5 @@
+.card__title {
+    @include font;
+    font-weight: 500;
+    font-size: $h2;
+}

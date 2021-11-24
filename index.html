@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weborama</title>
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body class="page">
+        <header class="header">
+            <div class="header__content">
+                <a class="header__link" href="/"><span class="header__name">Lev Shushkov</span></a>
+                <a class="header__link" href="tel:+79167736235"><span class="header__phone">+7 (916) 773-62-35</span></a>
+            </div>
+        </header>
+        <main class="content">
+            <section class="about">
+                <div class="about__text-wrapper">
+                    <h1 class="about__title">
+                        Привет!
+                        <div class="about__animation">&#9996;</div>
+                        Я&nbsp;Лев&nbsp;Шушков
+                    </h1>
+                    <p class="about__description"><span>Frontend developer.</span></p>
+                    <p class="about__description">А&nbsp;в&nbsp;настоящее время дизайнер-программист в&nbsp;компании <span>Weborama</span> где верстаю динамические баннеры для интернет рекламы.</p>
+                    <p class="about__description"><span>Мой стек:</span> html, css, scss, javascript, webpack, jquery, keyframes animation</p>
+                </div>
+                <img src="./images/photo.jpg" alt="Lev Shushkov" class="about__photo" />
+            </section>
+            <section class="portfolio">
+                <ul class="portfolio__cards">
+                    <li>
+                        <a class="card__link" href="/portfolio/MacCafe">
+                            <div class="card">
+                                <img class="card__image" src="./images/MacCafe.jpg" alt="MacCafe" />
+                                <div class="card__text-bg">
+                                    <h2 class="card__title">Баннеры для МакКафе</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="card__link" href="/portfolio/Maybach">
+                            <div class="card">
+                                <img class="card__image" src="./images/Maybach.jpg" alt="MacCafe" />
+                                <div class="card__text-bg">
+                                    <h2 class="card__title">Баннеры для Майбах</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>

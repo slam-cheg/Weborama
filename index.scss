@@ -1,0 +1,32 @@
+@import "./vendor/normalize.css";
+@import "./vendor/fonts/fonts.css";
+@import "./styles/modules/variables.scss";
+@import "./styles/modules/mixins.scss";
+@import "./styles/modules/blocks/page/page.scss";
+@import "./styles/modules/blocks/content/content.scss";
+
+// HEADER
+
+@import "./styles/modules/blocks/header/__content/header__content.scss";
+@import "./styles/modules/blocks/header/header.scss";
+@import "./styles/modules/blocks/header/__name/header__name.scss";
+@import "./styles/modules/blocks/header/__link/header__link.scss";
+@import "./styles/modules/blocks/header/__phone/header__phone.scss";
+
+// ABOUT
+
+@import "./styles/modules/blocks/about/about.scss";
+@import "./styles/modules/blocks/about/__photo/about__photo.scss";
+@import "./styles/modules/blocks/about/__title/about__title.scss";
+@import "./styles/modules/blocks/about/__description/about__descripton.scss";
+@import "./styles/modules/blocks/about/__animation/about__animation.scss";
+
+// CARDS
+
+@import "./styles/modules/blocks/portfolio/portfolio.scss";
+@import "./styles/modules/blocks/portfolio/__cards/portfolio__cards.scss";
+@import "./styles/modules/blocks/card/card.scss";
+@import "./styles/modules/blocks/card/__image/card__image.scss";
+@import "./styles/modules/blocks/card/__title/card__title.scss";
+@import "./styles/modules/blocks/card/__link/card__link.scss";
+@import "./styles/modules/blocks/card/__text-bg/card__text-bg.scss";

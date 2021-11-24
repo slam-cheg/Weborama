@@ -1,0 +1,5 @@
+.header__phone {
+    @include font;
+    font-size: $text;
+    font-weight: 500;
+}

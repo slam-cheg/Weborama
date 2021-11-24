@@ -1,0 +1,8 @@
+.about__title {
+    max-width: 500px;
+    @include font;
+    font-weight: 500;
+    font-size: $h1;
+    margin-bottom: 50px;
+    line-height: 1.3;
+}

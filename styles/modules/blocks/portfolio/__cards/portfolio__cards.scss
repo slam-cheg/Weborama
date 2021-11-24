@@ -1,0 +1,8 @@
+.portfolio__cards {
+    display: grid;
+    width: 100%;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+}
