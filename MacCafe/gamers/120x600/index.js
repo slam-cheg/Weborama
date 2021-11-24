@@ -52,7 +52,7 @@ function changeTexts() {
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
-    } else if (hour >= 18 && hour < 23) {
+    } else if (hour >= 18 && hour < 24) {
         firstStroke.style.fontSize = "15px"
         secondStroke.style.fontSize = "15px"
         thirdStroke.style.fontSize = "15px"

@@ -62,7 +62,7 @@
 .title__stroke {
     paint-order: stroke;
     stroke: #febb0d;
-    stroke-width: 12px;
+    stroke-width: 8px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
 }
