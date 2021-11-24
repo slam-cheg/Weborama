@@ -30,7 +30,7 @@ function changeTexts() {
         thirdStroke.style.fontSize = "20px";
         firstStroke.textContent = "Начните день";
         secondStroke.textContent = "с выгодного";
-        thirdStroke.textContent = "МаКафе";
+        thirdStroke.textContent = "МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
@@ -62,7 +62,7 @@ function changeTexts() {
         thirdStroke.style.fontSize = "20px";
         firstStroke.textContent = "Начните день";
         secondStroke.textContent = "с выгодного";
-        thirdStroke.textContent = "МаКафе";
+        thirdStroke.textContent = "МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";

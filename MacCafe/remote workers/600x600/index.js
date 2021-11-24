@@ -24,32 +24,32 @@ changeTexts();
 
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
+        firstStroke.textContent = "Перед работой";
+        secondStroke.textContent = "пройдитесь";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Самое время";
-        secondStroke.textContent = "для обеда";
-        thirdStroke.textContent = "с МакКафе";
+        firstStroke.textContent = "За МакКафе";
+        secondStroke.textContent = "стоит выйти";
+        thirdStroke.textContent = "на обед";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.style.fontSize = "40px";
-        secondStroke.style.fontSize = "40px";
-        thirdStroke.style.fontSize = "40px";
-        firstStroke.textContent = "Пока отдыхаете,";
-        secondStroke.textContent = "зайдите";
-        thirdStroke.textContent = "за МакКафе";
+        firstStroke.style.fontSize = "42px";
+        secondStroke.style.fontSize = "42px";
+        thirdStroke.style.fontSize = "42px";
+        firstStroke.textContent = "Прогуляйтесь";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
+        firstStroke.textContent = "Перед работой";
+        secondStroke.textContent = "пройдитесь";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");

@@ -19,7 +19,7 @@ changeTexts();
 
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
-        firstStroke.textContent = "Начните день с выгодного МаКафе";
+        firstStroke.textContent = "Начните день с выгодного МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
@@ -35,7 +35,7 @@ function changeTexts() {
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.textContent = "Начните день с выгодного МаКафе";
+        firstStroke.textContent = "Начните день с выгодного МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";

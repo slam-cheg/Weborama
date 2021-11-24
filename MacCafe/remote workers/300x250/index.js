@@ -24,38 +24,38 @@ changeTexts();
 
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
-        firstStroke.style.fontSize = "22px";
-        secondStroke.style.fontSize = "22px";
-        thirdStroke.style.fontSize = "22px";
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
+        firstStroke.style.fontSize = "21px";
+        secondStroke.style.fontSize = "21px";
+        thirdStroke.style.fontSize = "21px";
+        firstStroke.textContent = "Перед работой";
+        secondStroke.textContent = "пройдитесь";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.textContent = "Самое время";
-        secondStroke.textContent = "для обеда";
-        thirdStroke.textContent = "с МакКафе";
+        firstStroke.textContent = "За МакКафе";
+        secondStroke.textContent = "стоит выйти";
+        thirdStroke.textContent = "на обед";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
     } else if (hour >= 15 && hour < 18) {
-        firstStroke.style.fontSize = "20px";
-        secondStroke.style.fontSize = "20px";
-        thirdStroke.style.fontSize = "20px";
-        firstStroke.textContent = "Пока отдыхаете,";
-        secondStroke.textContent = "зайдите";
-        thirdStroke.textContent = "за МакКафе";
+        firstStroke.style.fontSize = "22px";
+        secondStroke.style.fontSize = "22px";
+        thirdStroke.style.fontSize = "22px";
+        firstStroke.textContent = "Прогуляйтесь";
+        secondStroke.textContent = "за МакКафе";
+        thirdStroke.textContent = "";
         clickout = "extra2";
         screenad.event("IMPRESSION_3");
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
-        firstStroke.style.fontSize = "22px";
-        secondStroke.style.fontSize = "22px";
-        thirdStroke.style.fontSize = "22px";
-        firstStroke.textContent = "Дети в школе?";
-        secondStroke.textContent = "Зайдите";
+        firstStroke.style.fontSize = "21px";
+        secondStroke.style.fontSize = "21px";
+        thirdStroke.style.fontSize = "21px";
+        firstStroke.textContent = "Перед работой";
+        secondStroke.textContent = "пройдитесь";
         thirdStroke.textContent = "за МакКафе";
         clickout = "default";
         screenad.event("IMPRESSION_1");
