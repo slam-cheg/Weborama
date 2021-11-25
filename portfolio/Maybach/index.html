@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- WEBORAMA SCREENAD META DATA (don't edit/remove) -->
+        <!-- SCRWIDTH: 1920 -->
+        <!-- SCRHEIGHT: 250 -->
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Maybach</title>
         <link type="text/css" rel="stylesheet" href="./index.css" />
+        <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
     </head>
     <body class="page">
-        <div class="banner__wrapper">
+        <div class="banner__wrapper" onclick="screenad.click()">
+            <div class="banner__filter"></div>
             <div class="banner__first-slide">
-                <div class="banner__filter"></div>
+                
                 <img src="./first-slide-bg.jpg" alt="first-slide-bg" class="banner__first-slide-bg" />
                 <div class="banner__title-wrapper">
                     <p class="banner__title banner__title-one">Легендарная</p>
@@ -18,9 +24,8 @@
                     <p class="banner__title banner__title-three">окраска</p>
                 </div>
             </div>
-            <div class="banner__second-slide" style="display: none;">
-                <div class="banner__filter"></div>
-                <img src="./second-slide.bg.jpg" alt="first-slide-bg" class="banner__first-slide-bg" />
+            <div class="banner__second-slide deactive">
+                <img src="./second-slide.bg.jpg" alt="second-slide-bg" class="banner__second-slide-bg" />
                 <div class="banner__title-wrapper">
                     <p class="banner__title banner__title-one">Мультиконтурные</p>
                     <p class="banner__title banner__title-two">сиденья</p>
@@ -28,11 +33,40 @@
                     <p class="banner__title banner__title-four">массажа</p>
                 </div>
             </div>
+            <div class="banner__third-slide deactive">
+                <div class="banner__title-wrapper">
+                    <p class="banner__title banner__title-one">Комфортное</p>
+                    <p class="banner__title banner__title-two">управление</p>
+                    <p class="banner__title banner__title-three">задними</p>
+                    <p class="banner__title banner__title-four">дверьми</p>
+                </div>
+            </div>
+            <div class="banner__fourth-slide deactive">
+                <div class="banner__title-wrapper">
+                    <p class="banner__title banner__title-one">Комфортное</p>
+                    <p class="banner__title banner__title-two">управление</p>
+                    <p class="banner__title banner__title-three">задними дверьми</p>
+                </div>
+            </div>
+            <div class="banner__last-slide deactive">
+                <img src="./third-slide-bg-test.jpg" alt="second-slide-bg" class="banner__last-slide-bg" />
+                <div class="banner__title-wrapper">
+                    <p class="banner__title banner__title-one">Эпоха легенды</p>
+                    <p class="banner__title banner__title-two">продолжается</p>
+                </div>
+                <button class="banner__button">Подробнее</button>
+            </div>
             <div class="transition"></div>
             <div class="side__block">
-
+                <!-- <img src="./maybach.svg" alt="" class="side__top-logo"> -->
+                <div class="side__text-wrapper">
+                    <p class="side__text">Новый Mercedes Maybach S-Класс</p>
+                </div>
+                <img src="./star.svg" alt="" class="side__bottom-logo">
             </div>
         </div>
+
+        
         <script type="text/javascript" src="./index.js"></script>
     </body>
 </html>

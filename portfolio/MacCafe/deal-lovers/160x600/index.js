@@ -29,8 +29,8 @@ function changeTexts() {
         secondStroke.style.fontSize = "20px";
         thirdStroke.style.fontSize = "20px";
         firstStroke.textContent = "Начните день";
-        secondStroke.textContent = "с выгодного";
-        thirdStroke.textContent = "МакКафе";
+        secondStroke.textContent = "с МакКафе";
+        thirdStroke.textContent = "";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
@@ -40,9 +40,9 @@ function changeTexts() {
         thirdStroke.style.fontSize = "23px";
         fourthStroke.style.fontSize = "23px"
         firstStroke.textContent = "МакКафе —";
-        secondStroke.textContent = "выгодная";
-        thirdStroke.textContent = "компания";
-        fourthStroke.textContent = "для обеда";
+        secondStroke.textContent = "компания";
+        thirdStroke.textContent = "для обеда";
+        fourthStroke.textContent = "";
         clickout = "extra1";
         screenad.event("IMPRESSION_2");
         clickEvent = "CLICK_2";
@@ -61,8 +61,8 @@ function changeTexts() {
         secondStroke.style.fontSize = "20px";
         thirdStroke.style.fontSize = "20px";
         firstStroke.textContent = "Начните день";
-        secondStroke.textContent = "с выгодного";
-        thirdStroke.textContent = "МакКафе";
+        secondStroke.textContent = "с МакКафе";
+        thirdStroke.textContent = "";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
