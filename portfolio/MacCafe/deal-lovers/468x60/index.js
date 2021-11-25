@@ -22,16 +22,14 @@ changeTexts();
 function changeTexts() {
     if (hour >= 0 && hour < 12) {
         firstStroke.textContent = "Начните день";
-        secondStroke.textContent = "с выгодного МакКафе";
+        secondStroke.textContent = "с МакКафе";
         thirdStroke.textContent = "";
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
     } else if (hour >= 12 && hour < 15) {
-        firstStroke.style.fontSize = "18px";
-        secondStroke.style.fontSize = "18px";
         firstStroke.textContent = "МакКафе — ";
-        secondStroke.textContent = "выгодная компания для обеда";
+        secondStroke.textContent = "компания для обеда";
         thirdStroke.textContent = "";
         foursStroke.textContent = "";
         clickout = "extra1";
@@ -46,8 +44,8 @@ function changeTexts() {
         clickEvent = "CLICK_3";
     } else if (hour >= 18 && hour < 24) {
         firstStroke.textContent = "Начните день";
-        secondStroke.textContent = "с выгодного МакКафе";
-        thirdStroke.textContent = "";
+        secondStroke.textContent = "с МакКафе";
+        thirdStroke.textContent = "";w
         clickout = "default";
         screenad.event("IMPRESSION_1");
         clickEvent = "CLICK_1";
