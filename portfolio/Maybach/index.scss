@@ -37,6 +37,7 @@
     min-width: 720px;
 }
 .banner__wrapper {
+    cursor: pointer;
     max-width: 100%;
     height: 250px;
     overflow: hidden;
@@ -100,6 +101,13 @@
         transform: scale(1.4);
     }
 }
+@keyframes first-bg-anim-950 {
+    0% {
+    }
+    100% {
+        transform: scale(1.8);
+    }
+}
 
 .first-bg-anim {
     animation: first-bg-anim;
@@ -108,6 +116,15 @@
     animation-iteration-count: 1;
     animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 950px) {
+        animation: first-bg-anim-950;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 @keyframes text-appear {
@@ -204,12 +221,16 @@
     z-index: -1;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 2500px;
+    left: 0;
+    width: 100vw;
     height: 250px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 1299px) {
+        right: 0;
+        left: unset;
+    }
 }
 
 .banner__second-slide-bg_modif {
@@ -223,7 +244,8 @@
     0% {
     }
     100% {
-        right: -500px;
+        left: unset;
+        object-position: bottom;
     }
 }
 
@@ -260,13 +282,15 @@
     color: #fff;
     border: 1px solid #fff;
     background-color: #000;
-    width: 130px;
-    height: 40px;
     position: absolute;
+    padding: 10px 30px;
     bottom: 20px;
     left: 20px;
     opacity: 0;
     animation-delay: 2s !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
     &:focus {
         border: 1px solid #fff;
@@ -283,6 +307,30 @@
     object-fit: cover;
     object-position: center;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 1459px) {
+        right: -200px;
+        left: unset;
+    }
+    @media screen and (max-width: 1299px) {
+        right: -300px;
+        left: unset;
+    }
+    @media screen and (max-width: 1149px) {
+        right: -400px;
+        left: unset;
+    }
+    @media screen and (max-width: 1049px) {
+        right: -500px;
+        left: unset;
+    }
+    @media screen and (max-width: 949px) {
+        right: -600px;
+        left: unset;
+    }
+    @media screen and (max-width: 849px) {
+        right: -700px;
+        left: unset;
+    }
 }
 
 .side__block {
@@ -310,7 +358,7 @@
 }
 
 .side__text-wrapper {
-    height: 90px;
+    height: 120px;
     display: flex;
     align-items: center;
 }
@@ -322,4 +370,5 @@
     writing-mode: vertical-rl;
     line-height: 18px;
     font-size: 15px;
+    width: 100%;
 }

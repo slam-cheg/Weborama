@@ -1,3 +1,6 @@
+screenad.position("width=100%&height=250&hor=left&ver=banner&hide=false&sticky=false&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
+screenad.setZIndex(29);
+
 const firstBg = document.querySelector(".banner__first-slide-bg");
 const filter = document.querySelector(".banner__filter");
 const transition = document.querySelector(".transition");
@@ -13,6 +16,17 @@ const fourthTitles = fourthSlide.querySelectorAll(".banner__title");
 const secondBg = document.querySelector(".banner__second-slide-bg");
 const lastTitles = lastSlide.querySelectorAll(".banner__title");
 const button = lastSlide.querySelector(".banner__button");
+const banner = document.querySelector(".banner__wrapper");
+let timer;
+
+banner.addEventListener("mouseenter", function () {
+    timer = setTimeout(function () {
+        screenad.shared.callMethod("showFullScreen");
+    }, 3000);
+});
+banner.addEventListener("mouseleave", function () {
+    clearTimeout(timer);
+});
 
 animate();
 
@@ -72,7 +86,7 @@ function animate() {
                                             transition.classList.remove("transition-anim");
                                             setTimeout(function () {
                                                 transition.classList.add("transition-anim");
-                                                
+
                                                 setTimeout(function () {
                                                     lastTitles.forEach((title) => {
                                                         title.classList.remove("text-anim-last");

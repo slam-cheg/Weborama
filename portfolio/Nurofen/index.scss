@@ -1,0 +1,79 @@
+@import './animation.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-Light.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-SemiBold.woff) format("woff");
+    font-weight: 600;
+}
+
+#colors {
+    $yellow: #ffed1a !global;
+    $orange: #ffa400 !global;
+    $red: #c52734 !global;
+    $white: #fff !global;
+}
+
+@mixin font {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.page {
+    max-width: 1080px;
+    display: flex;
+}
+
+.banner {
+    margin: 0 auto;
+    background: #ffa400;
+    width: 1080px;
+    height: 607px;
+    position: relative;
+}
+
+.banner__text-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.banner__title {
+    @include font;
+    color: $white;
+    font-size: 33px;
+    line-height: 1;
+    max-width: 520px;
+    text-transform: uppercase;
+}
+
+.banner__title_first-line {
+    animation-delay: .2s;
+}
+
+.banner__title_second-line {
+    animation-delay: .6s;
+    color: $yellow;
+}
+
+.banner__main-image {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
