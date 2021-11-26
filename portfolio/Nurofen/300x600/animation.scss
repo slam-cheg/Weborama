@@ -1,0 +1,94 @@
+// TITLES ANIMATION
+
+@keyframes title-animation {
+    0% {
+        transform: translateX(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.title-anim {
+    animation: title-animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+// PAINT
+
+.paint-anim {
+    animation: paint;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes paint {
+    0% {
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// GIRL
+
+@keyframes girl {
+    0% {
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.girl-anim {
+    animation: girl;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes disclamer {
+    0% {
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.disclamer-anim {
+    animation: disclamer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+// TRANSITION TO START
+
+@keyframes transition {
+    0% {}
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.transition-anim {
+    animation: transition;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}

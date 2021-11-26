@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- WEBORAMA SCREENAD META DATA (don't edit/remove) -->
+        <!-- SCRWIDTH: 100 -->
+        <!-- SCRHEIGHT: 100 -->
+        <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+        <script>
+            screenad.hide();
+            screenad.setZIndex(30);
+            screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=true&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
+
+            var fullscreen;
+            var player;
+
+            document.addEventListener("DOMContentLoaded", function () {
+                fullscreen = document.querySelector("#fullscreen");
+                player = document.querySelector("#player");
+                player.volume = 0;
+                player.muted = true;
+
+                document.querySelector(".close").addEventListener("click", function () {
+                    player.pause();
+                    closeFS();
+                });
+                player.addEventListener("ended", function () {
+                    closeFS();
+                });
+            });
+
+            screenad.shared.showFullScreen = function () {
+                screenad.setBlockPageTouches(true);
+                screenad.executeScript("document.body.style.overflow='hidden'");
+                screenad.show();
+
+                setTimeout(function () {
+                    fullscreen.classList.add("anim");
+                    setTimeout(function () {
+                        player.play();
+                    }, 2000);
+                }, 100);
+            };
+
+            function closeFS() {
+                screenad.setBlockPageTouches(false);
+                screenad.executeScript("document.body.style.overflow=''");
+                screenad.hide();
+            }
+        </script>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                overflow: hidden;
+                overflow-x: hidden;
+            }
+            HTML,
+            BODY {
+                height: 100%;
+            }
+            #fullscreen {
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+                position: relative;
+            }
+
+            .shader {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+                transform: translate(-50%, -50%) scale(5);
+                opacity: 0;
+            }
+            .anim .shader {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 1;
+                transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .shader:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: 0;
+            }
+            .anim .shader:before {
+                opacity: 1;
+                transition: opacity 1.5s 1.5s;
+            }
+
+            .video_wrapper {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                pointer-events: none;
+                background: #000;
+            }
+            .anim .video_wrapper {
+                opacity: 1;
+                transition: opacity 1.5s 2s;
+            }
+            #player {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+            }
+
+            .close {
+                position: absolute;
+                right: 2vw;
+                top: 2.5vh;
+                width: 30px;
+                height: 30px;
+                z-index: 10;
+                cursor: pointer;
+            }
+            .close:before,
+            .close:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+            }
+            .close:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .close:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fullscreen" class="">
+            <div class="shader"></div>
+            <div class="video_wrapper">
+                <video id="player" webkit-playsinline playsinline muted>
+                    <source src="video.mp4" />
+                </video>
+            </div>
+            <div class="close"></div>
+        </div>
+    </body>
+</html>
