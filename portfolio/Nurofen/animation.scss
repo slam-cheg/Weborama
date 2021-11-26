@@ -1,3 +1,5 @@
+// TITLES ANIMATION
+
 @keyframes title-animation {
     0% {
         transform: translateX(-600px);
@@ -12,10 +14,29 @@
 .title-anim {
     animation: title-animation;
     animation-duration: .5s;
-    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+// IMAGE ANIMATION
+
+@keyframes image-animation {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nurofen-anim {
+    animation: image-animation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
     animation-fill-mode: both;
 }

@@ -245,6 +245,7 @@
     }
     100% {
         left: unset;
+        -webkit-object-position: bottom;
         object-position: bottom;
     }
 }

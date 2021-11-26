@@ -339,6 +339,7 @@
 @-webkit-keyframes second-slide_anim {
   100% {
     left: unset;
+    -webkit-object-position: bottom;
     object-position: bottom;
   }
 }
@@ -346,6 +347,7 @@
 @keyframes second-slide_anim {
   100% {
     left: unset;
+    -webkit-object-position: bottom;
     -o-object-position: bottom;
        object-position: bottom;
   }
