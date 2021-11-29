@@ -9,7 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Maybach</title>
-        <link type="text/css" rel="stylesheet" href="./index.css" />
         <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
         <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
         <script src="index.js"></script>
@@ -121,6 +120,12 @@
             }
         </script>
         <style>
+            @font-face {
+                font-family: "DaimlerCACPro";
+                src: url(./DaimlerCACPro-Regular.woff) format("woff");
+                font-weight: 400;
+            }
+
             #clickAll {
                 position: absolute;
                 top: 0px;
@@ -129,6 +134,41 @@
                 height: 100%;
                 z-index: 99;
                 cursor: pointer;
+            }
+
+            .final {
+                font-family: "DaimlerCACPro";
+                color: #fff;
+                position: absolute;
+                transform: rotate(180deg);
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                text-transform: uppercase;
+                right: 8px;
+                top: 15px;
+                opacity: 0;
+            }
+
+            .final-animation {
+                animation: final-side ease;
+                animation-duration: 4s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes final-side {
+                0% {
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 1;
+                }
+                90% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
             }
         </style>
     </head>
@@ -139,12 +179,12 @@
             ></a>
             <div id="animation_container" style="background-color: rgba(255, 255, 255, 1); width: 960px; height: 250px">
                 <canvas id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
+                <p class="final">Maybach</p>
                 <div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 960px; height: 250px; position: absolute; left: 0px; top: 0px; display: block"></div>
             </div>
         </div>
         <script>
             var banner = document.querySelector(".banner");
-            console.log(banner);
             banner.addEventListener("mouseenter", function () {
                 timer = setTimeout(function () {
                     screenad.shared.callMethod("showFullScreen");
@@ -153,6 +193,16 @@
             banner.addEventListener("mouseleave", function () {
                 clearTimeout(timer);
             });
+
+            let animationSide = document.querySelector("final");
+            function anim() {
+                setTimeout(function () {
+                    animationSide.classList.add("final-animation");
+                    setTimeout(function () {
+                        animationSide.classList.remove("final-animation");
+                    }, 3900);
+                }, 12000);
+            }
         </script>
     </body>
 </html>
