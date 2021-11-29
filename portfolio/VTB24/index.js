@@ -32,7 +32,6 @@ function changeAnim() {
             firstScreen.style.display = "none";
             secondScreen.style.display = "block";
             moveToDefault();
-            card.removeEventListener("click", changeAnim);
         }, 1000);
         setTimeout(function () {
             transition.classList.remove("transition-anim");
@@ -58,7 +57,6 @@ function zoomChair() {
             secondScreen.style.display = "none";
             thirdScreen.style.display = "block";
             moveToDefault();
-            card.removeEventListener("click", changeAnim);
         }, 1000);
     }
 }
