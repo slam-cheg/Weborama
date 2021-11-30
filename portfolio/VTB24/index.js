@@ -1,4 +1,5 @@
 const banner = document.querySelector(".banner");
+const handContainer = document.querySelector(".hand-container");
 const firstScreen = document.querySelector(".first-screen");
 const secondScreen = document.querySelector(".second-screen");
 const thirdScreen = document.querySelector(".third-screen");
@@ -8,19 +9,40 @@ const card = document.querySelector(".card");
 const transition = document.querySelector(".transition");
 const chair = document.querySelector(".chair");
 const cart = document.querySelector(".cart");
+const vtbCard = document.querySelector(".vtb-card");
+const coctail = document.querySelector(".coctail");
 
 let clickCounter = 0;
 
 banner.addEventListener("mousemove", moveOnMouse);
+banner.addEventListener("mousemove", handMoveX);
+banner.addEventListener("mousemove", handMoveY);
+banner.addEventListener("mouseout", handDefault);
 banner.addEventListener("mouseout", moveToDefault);
 
-function moveOnMouse(event) {
+function handMoveX(event) {
+    if (event.pageX - 170 + "px" < -38 + "px") {
+        hand.style.left = -38 + "px !important";
+    } else {
+        hand.style.left = event.pageX - 170 + "px";
+    }
+}
+
+function handMoveY(event) {
     hand.style.top = event.pageY - 100 + "px";
-    hand.style.left = event.pageX - 170 + "px";
+}
+
+function handDefault() {
+    hand.classList.add("hand-default");
+}
+
+function moveOnMouse() {
+    hand.classList.remove("hand-default");
     card.classList.remove("card-anim-deactive");
-    card.addEventListener("click", changeAnim);
-    secondScreen.addEventListener("click", zoomChair);
+    firstScreen.addEventListener("click", changeAnim);
+    secondScreen.addEventListener("click", moveChair);
     thirdScreen.addEventListener("click", moveCart);
+    fourthScreen.addEventListener("click", moveCard);
 }
 
 function changeAnim() {
@@ -44,17 +66,23 @@ function changeAnim() {
 }
 
 function moveToDefault() {
-    hand.style.top = "100px";
-    hand.style.left = "-70px";
     card.classList.add("card-anim-deactive");
     card.removeEventListener("click", changeAnim);
 }
 
-function zoomChair() {
-    chair.style.transform = `scale(1.${clickCounter * 2})`;
+function moveChair() {
     clickCounter++;
 
+    chair.classList.add("chair-anim-one");
+    setTimeout(function () {
+        chair.classList.remove("chair-anim-one");
+    }, 1100);
+
     if (clickCounter === 2) {
+        chair.classList.add("chair-anim-two");
+        setTimeout(function () {
+            chair.classList.remove("chair-anim-two");
+        }, 2100);
         clickCounter = 0;
         transition.classList.add("transition-anim");
         setTimeout(function () {
@@ -70,7 +98,7 @@ function zoomChair() {
 
 function moveCart() {
     clickCounter++;
-    
+
     cart.classList.add("cart-anim-one");
     setTimeout(function () {
         cart.classList.remove("cart-anim-one");
@@ -95,10 +123,24 @@ function moveCart() {
 }
 
 function moveCard() {
-    clickCounter++
+    clickCounter++;
 
-    cart.classList.add("vtb-card-anim");
-    setTimeout(function () {
-        cart.classList.remove("vtb-card-anim");
-    }, 1000);
+    vtbCard.classList.add("anim-to-transparency");
+    coctail.classList.add("anim-to-visibility");
+
+    if (clickCounter === 2) {
+        clickCounter = 0;
+        transition.classList.add("transition-anim");
+        setTimeout(function () {
+            fourthScreen.style.display = "none";
+            fifthScreen.style.display = "block";
+            moveToDefault();
+
+            setTimeout(function () {
+                vtbCard.classList.remove("anim-to-transparency");
+                coctail.classList.remove("anim-to-visibility");
+                transition.classList.remove("transition-anim");
+            }, 2000);
+        }, 1000);
+    }
 }

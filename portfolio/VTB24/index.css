@@ -219,6 +219,55 @@
     left: 57px;
   }
 }
+@-webkit-keyframes chair-one {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes chair-one {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.chair-anim-one {
+  -webkit-animation: chair-one ease;
+          animation: chair-one ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes chair-two {
+  100% {
+    transform: scale(500);
+  }
+}
+
+@keyframes chair-two {
+  100% {
+    transform: scale(500);
+  }
+}
+.chair-anim-two {
+  -webkit-animation: chair-two ease;
+          animation: chair-two ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .cart-anim-one {
   -webkit-animation: cart-one ease;
           animation: cart-one ease;
@@ -264,38 +313,76 @@
           animation-duration: 0.7s;
 }
 
-@-webkit-keyframes vtb-card {
+@-webkit-keyframes vtb-card-one {
   30% {
     transform: scale(1.1);
-    transform: rotate(5deg);
   }
   70% {
     transform: scale(1.1);
-    transform: rotate(-5deg);
   }
   100% {
     transform: scale(1);
-    transform: rotate(0deg);
   }
 }
 
-@keyframes vtb-card {
+@keyframes vtb-card-one {
   30% {
     transform: scale(1.1);
-    transform: rotate(5deg);
   }
   70% {
     transform: scale(1.1);
-    transform: rotate(-5deg);
   }
   100% {
     transform: scale(1);
-    transform: rotate(0deg);
   }
 }
-.vtb-card-anim {
-  -webkit-animation: vtb-card ease;
-          animation: vtb-card ease;
+.vtb-anim-one {
+  -webkit-animation: vtb-card-one ease;
+          animation: vtb-card-one ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes to-transparency {
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes to-transparency {
+  100% {
+    transform: scale(0);
+  }
+}
+.anim-to-transparency {
+  -webkit-animation: to-transparency ease;
+          animation: to-transparency ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes to-visibility {
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes to-visibility {
+  100% {
+    transform: scale(0.8);
+  }
+}
+.anim-to-visibility {
+  -webkit-animation: to-visibility ease;
+          animation: to-visibility ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
@@ -318,6 +405,7 @@
   overflow: hidden;
   width: 240px;
   height: 400px;
+  cursor: none;
 }
 
 .first-screen {
@@ -344,13 +432,26 @@
   z-index: 2;
 }
 
+.hand-container {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: none;
+}
+
 .hand {
   pointer-events: none;
   position: absolute;
-  top: 100px;
-  left: -70px;
   z-index: 3;
   transform-origin: left;
+}
+
+.hand-default {
+  top: 100px;
+  left: -70px;
 }
 
 .card {
@@ -414,7 +515,6 @@
   top: 60px;
   left: 76px;
   position: absolute;
-  transform: scale(0.5);
 }
 
 .third-screen {
@@ -446,4 +546,12 @@
   left: calc(50% - (179px / 2));
   position: absolute;
   border-radius: 5px;
+}
+
+.coctail {
+  top: 29px;
+  left: calc(50% - (136px / 2));
+  position: absolute;
+  border-radius: 5px;
+  transform: scale(0);
 }/*# sourceMappingURL=index.css.map */

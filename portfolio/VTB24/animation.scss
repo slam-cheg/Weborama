@@ -101,13 +101,15 @@
 }
 
 @keyframes chair-anim {
-    0%{}
-    100%{transform: scale(1.2);}
+    0% {
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
-
 @keyframes cart-one {
-    0%{
+    0% {
         left: 57px;
     }
     50% {
@@ -118,6 +120,39 @@
     }
 }
 
+@keyframes chair-one {
+    0% {
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.chair-anim-one {
+    animation: chair-one ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes chair-two {
+    0% {
+    }
+    100% {
+        transform: scale(500);
+    }
+}
+
+.chair-anim-two {
+    animation: chair-two ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
 .cart-anim-one {
     animation: cart-one ease;
     animation-fill-mode: both;
@@ -126,7 +161,7 @@
 }
 
 @keyframes cart-two {
-    0%{
+    0% {
         left: 57px;
     }
     50% {
@@ -141,29 +176,55 @@
     animation: cart-two ease;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    animation-duration: .7s;
+    animation-duration: 0.7s;
 }
 
-@keyframes vtb-card {
-    0%{
-
+@keyframes vtb-card-one {
+    0% {
     }
     30% {
         transform: scale(1.1);
-        transform: rotate(5deg);
     }
     70% {
         transform: scale(1.1);
-        transform: rotate(-5deg);
     }
     100% {
         transform: scale(1);
-        transform: rotate(0deg);
     }
 }
 
-.vtb-card-anim {
-    animation: vtb-card ease;
+.vtb-anim-one {
+    animation: vtb-card-one ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes to-transparency {
+    0% {
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.anim-to-transparency {
+    animation: to-transparency ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes to-visibility {
+    0% {
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.anim-to-visibility {
+    animation: to-visibility ease;
     animation-fill-mode: both;
     animation-iteration-count: 1;
     animation-duration: 1s;
