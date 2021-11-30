@@ -104,3 +104,67 @@
     0%{}
     100%{transform: scale(1.2);}
 }
+
+
+@keyframes cart-one {
+    0%{
+        left: 57px;
+    }
+    50% {
+        left: 80px;
+    }
+    100% {
+        left: 57px;
+    }
+}
+
+.cart-anim-one {
+    animation: cart-one ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes cart-two {
+    0%{
+        left: 57px;
+    }
+    50% {
+        left: 70px;
+    }
+    100% {
+        left: -300px;
+    }
+}
+
+.cart-anim-two {
+    animation: cart-two ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: .7s;
+}
+
+@keyframes vtb-card {
+    0%{
+
+    }
+    30% {
+        transform: scale(1.1);
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: scale(1.1);
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+}
+
+.vtb-card-anim {
+    animation: vtb-card ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}

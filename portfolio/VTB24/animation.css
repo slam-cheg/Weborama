@@ -171,4 +171,110 @@
   100% {
     transform: scale(1.2);
   }
+}
+@-webkit-keyframes cart-one {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 57px;
+  }
+}
+@keyframes cart-one {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 57px;
+  }
+}
+.cart-anim-one {
+  -webkit-animation: cart-one ease;
+          animation: cart-one ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes cart-two {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 70px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes cart-two {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 70px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+.cart-anim-two {
+  -webkit-animation: cart-two ease;
+          animation: cart-two ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes vtb-card {
+  30% {
+    transform: scale(1.1);
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes vtb-card {
+  30% {
+    transform: scale(1.1);
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}
+.vtb-card-anim {
+  -webkit-animation: vtb-card ease;
+          animation: vtb-card ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }/*# sourceMappingURL=animation.css.map */

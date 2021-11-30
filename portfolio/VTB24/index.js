@@ -1,10 +1,13 @@
 const banner = document.querySelector(".banner");
 const firstScreen = document.querySelector(".first-screen");
 const secondScreen = document.querySelector(".second-screen");
+const thirdScreen = document.querySelector(".third-screen");
+const fourthScreen = document.querySelector(".fourth-screen");
 const hand = document.querySelector(".hand");
 const card = document.querySelector(".card");
 const transition = document.querySelector(".transition");
 const chair = document.querySelector(".chair");
+const cart = document.querySelector(".cart");
 
 let clickCounter = 0;
 
@@ -17,6 +20,7 @@ function moveOnMouse(event) {
     card.classList.remove("card-anim-deactive");
     card.addEventListener("click", changeAnim);
     secondScreen.addEventListener("click", zoomChair);
+    thirdScreen.addEventListener("click", moveCart);
 }
 
 function changeAnim() {
@@ -58,5 +62,43 @@ function zoomChair() {
             thirdScreen.style.display = "block";
             moveToDefault();
         }, 1000);
+        setTimeout(function () {
+            transition.classList.remove("transition-anim");
+        }, 2000);
     }
+}
+
+function moveCart() {
+    clickCounter++;
+    
+    cart.classList.add("cart-anim-one");
+    setTimeout(function () {
+        cart.classList.remove("cart-anim-one");
+    }, 1000);
+
+    if (clickCounter === 2) {
+        cart.classList.add("cart-anim-two");
+        setTimeout(function () {
+            cart.classList.remove("cart-anim-two");
+        }, 1500);
+        clickCounter = 0;
+        transition.classList.add("transition-anim");
+        setTimeout(function () {
+            thirdScreen.style.display = "none";
+            fourthScreen.style.display = "block";
+            moveToDefault();
+            setTimeout(function () {
+                transition.classList.remove("transition-anim");
+            }, 2000);
+        }, 1000);
+    }
+}
+
+function moveCard() {
+    clickCounter++
+
+    cart.classList.add("vtb-card-anim");
+    setTimeout(function () {
+        cart.classList.remove("vtb-card-anim");
+    }, 1000);
 }

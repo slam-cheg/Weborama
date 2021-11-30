@@ -186,6 +186,124 @@
           animation-duration: 2s;
 }
 
+@-webkit-keyframes chair-anim {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes chair-anim {
+  100% {
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes cart-one {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 57px;
+  }
+}
+@keyframes cart-one {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 57px;
+  }
+}
+.cart-anim-one {
+  -webkit-animation: cart-one ease;
+          animation: cart-one ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes cart-two {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 70px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes cart-two {
+  0% {
+    left: 57px;
+  }
+  50% {
+    left: 70px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+.cart-anim-two {
+  -webkit-animation: cart-two ease;
+          animation: cart-two ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes vtb-card {
+  30% {
+    transform: scale(1.1);
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes vtb-card {
+  30% {
+    transform: scale(1.1);
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}
+.vtb-card-anim {
+  -webkit-animation: vtb-card ease;
+          animation: vtb-card ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -297,4 +415,35 @@
   left: 76px;
   position: absolute;
   transform: scale(0.5);
+}
+
+.third-screen {
+  background-image: url(./Third.svg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.cart {
+  top: 74px;
+  left: 57px;
+  position: absolute;
+}
+
+.fourth-screen {
+  background-image: url(./Fourth.svg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.vtb-card {
+  top: 74px;
+  left: calc(50% - (179px / 2));
+  position: absolute;
+  border-radius: 5px;
 }/*# sourceMappingURL=index.css.map */

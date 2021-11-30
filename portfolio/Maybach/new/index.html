@@ -136,7 +136,7 @@
                 cursor: pointer;
             }
 
-            .final {
+            /* .final {
                 font-family: "DaimlerCACPro";
                 color: #fff;
                 position: absolute;
@@ -144,32 +144,36 @@
                 -ms-writing-mode: tb-rl;
                 writing-mode: vertical-rl;
                 text-transform: uppercase;
-                right: 8px;
+                right: 26px;
                 top: 15px;
                 opacity: 0;
+                font-size: 10px;
+                margin: 0;
             }
 
             .final-animation {
                 animation: final-side ease;
-                animation-duration: 4s;
+                animation-duration: 5s;
                 animation-fill-mode: both;
                 animation-iteration-count: infinite;
             }
 
             @keyframes final-side {
                 0% {
-                    opacity: 0;
                 }
                 10% {
+                    opacity: 0;
+                }
+                20% {
                     opacity: 1;
                 }
-                90% {
+                95% {
                     opacity: 1;
                 }
                 100% {
                     opacity: 0;
                 }
-            }
+            } */
         </style>
     </head>
     <body onload="init();" style="margin: 0px">
@@ -194,15 +198,28 @@
                 clearTimeout(timer);
             });
 
-            let animationSide = document.querySelector("final");
-            function anim() {
-                setTimeout(function () {
-                    animationSide.classList.add("final-animation");
-                    setTimeout(function () {
-                        animationSide.classList.remove("final-animation");
-                    }, 3900);
-                }, 12000);
-            }
+            // let animationSide = document.querySelector(".final");
+            // anim();
+            // function anim() {
+            //     setTimeout(function () {
+            //         animationSide.classList.add("final-animation");
+            //         setTimeout(function () {
+            //             animationSide.classList.remove("final-animation");
+
+            //             setTimeout(() => {
+            //                 anim();
+            //             }, 200);
+            //         }, 5300);
+            //     }, 13900);
+            // }
+            // let counter = 0;
+            // setInterval(() => {
+            //     counter = counter + 50;
+            //     console.log(counter)
+            //     if(counter === 19500){
+            //         debugger
+            //     }
+            // }, 50);
         </script>
     </body>
 </html>
