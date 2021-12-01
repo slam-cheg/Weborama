@@ -22,9 +22,11 @@
 
                 document.querySelector(".close").addEventListener("click", function () {
                     player.pause();
+                    screenad.event("FS_userclose");
                     closeFS();
                 });
                 player.addEventListener("ended", function () {
+                    screenad.event("VIDEO_ended");
                     closeFS();
                 });
             });
@@ -33,6 +35,7 @@
                 screenad.setBlockPageTouches(true);
                 screenad.executeScript("document.body.style.overflow='hidden'");
                 screenad.show();
+                screenad.event("FS_open");
 
                 setTimeout(function () {
                     fullscreen.classList.add("anim");

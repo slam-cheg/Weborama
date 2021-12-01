@@ -173,7 +173,7 @@
         <div class="banner">
             
             <div id="animation_container" style="background-color: rgba(255, 255, 255, 1); width: 960px; height: 250px">
-                <canvas onclick="screenad.click()" id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
+                <canvas id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
                 <div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 960px; height: 250px; position: absolute; left: 0px; top: 0px; display: block"></div>
                 <div class="click-cover"></div>
             </div>
@@ -181,6 +181,12 @@
         </div>
         <script>
             const loadBar = document.querySelector(".load-bar");
+            const canvasScreenad = document.querySelector("#canvas")
+            canvasScreenad.addEventListener("click", function(){
+                screenad.event("BANNER_click");
+                screenad.click();
+            })
+
 
             var banner = document.querySelector(".banner");
             banner.addEventListener("mouseenter", function () {

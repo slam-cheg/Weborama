@@ -60,7 +60,7 @@
     animation: snow linear;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
-    animation-duration: 25s;
+    animation-duration: 15s;
 }
 
 @keyframes hand {
@@ -97,7 +97,7 @@
     animation: transition ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes chair-anim {
@@ -225,6 +225,76 @@
 
 .anim-to-visibility {
     animation: to-visibility ease;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes clouds {
+    0% {
+    }
+    100% {
+        left: -340px;
+    }
+}
+
+.clouds-anim {
+    animation: clouds linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes aircraft {
+    0% {
+    }
+    50% {
+        top: 90px;
+        left: -16px;
+    }
+    100% {
+        top: 100px;
+        left: 10px;
+    }
+}
+
+.aircraft-anim {
+    animation: aircraft ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes aircraft-two {
+    0% {
+    }
+    100% {
+        left: 240px;
+    }
+}
+
+.aircraft-anim-two {
+    animation: aircraft-two ease-in;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes percent {
+    0% {
+    }
+    50% {
+        transform: scale(1.2);
+        top: 80px;
+    }
+    100% {
+        top: 100px;
+        transform: scale(1);
+    }
+}
+
+.percent-anim {
+    animation: percent ease;
     animation-fill-mode: both;
     animation-iteration-count: 1;
     animation-duration: 1s;

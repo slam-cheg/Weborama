@@ -95,8 +95,8 @@
           animation-iteration-count: infinite;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 }
 
 @-webkit-keyframes hand {
@@ -157,8 +157,8 @@
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes chair-anim {
@@ -358,6 +358,114 @@
 .anim-to-visibility {
   -webkit-animation: to-visibility ease;
           animation: to-visibility ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes clouds {
+  100% {
+    left: -340px;
+  }
+}
+
+@keyframes clouds {
+  100% {
+    left: -340px;
+  }
+}
+.clouds-anim {
+  -webkit-animation: clouds linear;
+          animation: clouds linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes aircraft {
+  50% {
+    top: 90px;
+    left: -16px;
+  }
+  100% {
+    top: 100px;
+    left: 10px;
+  }
+}
+
+@keyframes aircraft {
+  50% {
+    top: 90px;
+    left: -16px;
+  }
+  100% {
+    top: 100px;
+    left: 10px;
+  }
+}
+.aircraft-anim {
+  -webkit-animation: aircraft ease-in-out;
+          animation: aircraft ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes aircraft-two {
+  100% {
+    left: 240px;
+  }
+}
+
+@keyframes aircraft-two {
+  100% {
+    left: 240px;
+  }
+}
+.aircraft-anim-two {
+  -webkit-animation: aircraft-two ease-in;
+          animation: aircraft-two ease-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes percent {
+  50% {
+    transform: scale(1.2);
+    top: 80px;
+  }
+  100% {
+    top: 100px;
+    transform: scale(1);
+  }
+}
+
+@keyframes percent {
+  50% {
+    transform: scale(1.2);
+    top: 80px;
+  }
+  100% {
+    top: 100px;
+    transform: scale(1);
+  }
+}
+.percent-anim {
+  -webkit-animation: percent ease;
+          animation: percent ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
