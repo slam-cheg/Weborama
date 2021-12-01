@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-Light.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./Montserrat-SemiBold.woff) format("woff");
+    font-weight: 600;
+}
+
+#colors {
+    $yellow: #ffed1a !global;
+    $orange: #ffa400 !global;
+    $red: #c52734 !global;
+    $white: #fff !global;
+}
+
+@mixin font {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+}
+
+.banner {
+    cursor: pointer;
+    margin: 0 auto;
+    background: #ffa400;
+    width: 728px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner__text-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.banner__title {
+    @include font;
+    color: $white;
+    line-height: 1.4;
+    font-size: 12px;
+    max-width: 270px;
+    text-transform: uppercase;
+}
+
+.banner__title_second-line {
+    animation-delay: 0.5s;
+    color: $yellow;
+}
+
+.banner__main-image {
+    top: -27px;
+    max-width: 150px;
+    position: absolute;
+    left: 270px;
+    z-index: 99;
+}
+
+.banner__paint-one {
+    position: absolute;
+    max-width: 184px;
+    top: -18px;
+    right: 121px;
+    z-index: 2;
+    transform: rotate(359deg);
+}
+
+.banner__target {
+    width: 290px;
+    height: 350px;
+    top: -130px;
+    right: 61px;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner__girl {
+    max-width: 65%;
+    position: absolute;
+    top: -25px;
+    right: 113px;
+    z-index: 5;
+    filter: drop-shadow(17px 20px 0px rgba(0, 0, 0, 0.25));
+}
+
+.banner__star-text {
+    @include font;
+    color: $white;
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    line-height: 1.15;
+    right: 10px;
+    font-size: 6px;
+    text-align: justify;
+    max-width: 100px;
+}
+
+.banner__disclamer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+}
+
+.transition {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 10;
+    opacity: 0;
+}

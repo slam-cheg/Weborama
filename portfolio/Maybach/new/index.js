@@ -63,7 +63,7 @@ screenad.setZIndex(29);
         // Layer_2
         this.instance = new lib.star_64();
         this.instance.parent = this;
-        this.instance.setTransform(-32, -52);
+        this.instance.setTransform(-32, -33); // STAR POSITION
 
         this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
     }).prototype = p = new cjs.MovieClip();
@@ -1519,9 +1519,9 @@ screenad.setZIndex(29);
         this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
     }).prototype = p = new cjs.MovieClip();
     p.nominalBounds = new cjs.Rectangle(-204, 0, 408, 408);
-    
+
     // MAYBACH
-    
+
     (lib.ClipGroup = function (mode, startPosition, loop) {
         this.initialize(mode, startPosition, loop, {});
 
@@ -1529,7 +1529,7 @@ screenad.setZIndex(29);
         var mask = new cjs.Shape();
         mask._off = true;
         mask.graphics.p("ApeA5IAAhxIS9AAIAABxg");
-        mask.setTransform(80, 5.65, 0.7);
+        mask.setTransform(-62, 5.65, 0.7);
 
         // Layer_3
         this.shape = new cjs.Shape();
@@ -1539,7 +1539,7 @@ screenad.setZIndex(29);
             .p(
                 "AE5AoQgZgQAAgYQAAgWAZgRQAYgQAjgBQAbAAAWAIIAAALQgWgJgbAAQgaAAgSAOQgSANAAATQAAATASAPQASANAaAAQAbAAAWgJIAAAMQgWAGgbABQgjgBgYgQgAJLA2IAAgzIheAAIAAAzIgUAAIAAhrIAUAAIAAAuIBeAAIAAguIAUAAIAABrgADsA2IgNgWIhSAAIgMAWIgVAAIBBhrIATAAIBBBrgADaAWIgjg8IgjA8IBGAAgAg6A2IAAhrIBLAAQAQAAAKAIQALAIAAAMQAAAMgLAJQAMACAGAIQAIAHAAALQAAAMgLAJQgMAJgQAAgAgmAsIA+AAQALAAAHgFQAHgHAAgIQAAgJgHgHQgHgFgLAAIg+AAgAgmgHIAzAAQAIABAHgGQAGgFAAgIQAAgIgGgFQgHgGgIAAIgzAAgAi6A2IAAgsIg8g/IAWAAIAwA0IAvg0IAVAAIg6A/IAAAsgAkZA2IgMgWIhSAAIgNAWIgUAAIBAhrIATAAIBABrgAkrAWIgkg8IgjA8IBHAAgAndA2IAAhZIg3AzIg3gzIAABZIgTAAIAAhrIAUAAIA2A0IA3g0IATAAIAABrg"
             );
-        this.shape.setTransform(80, 5.65, 0.7);
+        this.shape.setTransform(-62, 5.65, 0.7);
 
         var maskedShapeInstanceList = [this.shape];
 
@@ -1853,10 +1853,10 @@ screenad.setZIndex(29);
         this.instance = new lib.Tween5("synched", 0);
         this.instance.parent = this;
         this.instance.setTransform(56.8, 15.5);
-        this.instance.alpha = 0;
-        this.instance._off = true;
+        this.instance.alpha = 0.01;
+        this.instance._off = false;
 
-        this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({ _off: false }, 0).to({ alpha: 0.3203 }, 10).to({ startPosition: 0 }, 5).to({ alpha: 0 }, 4).to({ _off: true }, 1).wait(37));
+        this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({alpha:0.3203},10).to({startPosition:0},5).to({alpha:0.01},4).to({_off:false},1).wait(37));
 
         // txt
         this.shape = new cjs.Shape();
@@ -1979,6 +1979,10 @@ screenad.setZIndex(29);
         this.instance_1.setTransform(78.1, 200);
         this.instance_1.alpha = 0;
         this.instance_1._off = true;
+        this.instance_1.addEventListener("click", () => {
+            console.log("OK");
+            screenad.event("BUTTON_click");
+        });
 
         this.timeline.addTween(
             cjs.Tween.get(this.instance_1).wait(356).to({ _off: false }, 0).to({ x: 20.75, alpha: 1 }, 15, cjs.Ease.backOut).wait(49).to({ y: 199.95, mode: "synched", loop: false }, 0).wait(53)

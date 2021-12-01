@@ -66,6 +66,7 @@
                 height: 100%;
                 overflow-x: hidden;
                 position: relative;
+                cursor: pointer;
             }
 
             .shader {
@@ -127,7 +128,7 @@
                 top: 2.5vh;
                 width: 30px;
                 height: 30px;
-                z-index: 10;
+                z-index: 999;
                 cursor: pointer;
             }
             .close:before,
@@ -146,16 +147,24 @@
             .close:after {
                 transform: translate(-50%, -50%) rotate(-45deg);
             }
+
+            .link {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+            }
         </style>
     </head>
     <body>
-        <div id="fullscreen" class="">
+        <div id="fullscreen" class="" onclick="screenad.click()">
             <div class="shader"></div>
             <div class="video_wrapper">
                 <video id="player" webkit-playsinline playsinline muted>
                     <source src="video.mp4" />
                 </video>
             </div>
+
             <div class="close"></div>
         </div>
     </body>

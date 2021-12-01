@@ -15,21 +15,13 @@ const coctail = document.querySelector(".coctail");
 let clickCounter = 0;
 
 banner.addEventListener("mousemove", moveOnMouse);
-banner.addEventListener("mousemove", handMoveX);
-banner.addEventListener("mousemove", handMoveY);
+banner.addEventListener("mousemove", handMove);
 banner.addEventListener("mouseout", handDefault);
 banner.addEventListener("mouseout", moveToDefault);
 
-function handMoveX(event) {
-    if (event.pageX - 170 + "px" < -38 + "px") {
-        hand.style.left = -38 + "px !important";
-    } else {
-        hand.style.left = event.pageX - 170 + "px";
-    }
-}
-
-function handMoveY(event) {
+function handMove(event) {
     hand.style.top = event.pageY - 100 + "px";
+    hand.style.left = event.pageX - 170 + "px";
 }
 
 function handDefault() {

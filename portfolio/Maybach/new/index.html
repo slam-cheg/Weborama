@@ -136,90 +136,63 @@
                 cursor: pointer;
             }
 
-            /* .final {
-                font-family: "DaimlerCACPro";
-                color: #fff;
+            .click-cover {
+                width: 100%;
+                height: 100%;
+            }
+            .banner {
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }
+            .load-bar {
                 position: absolute;
-                transform: rotate(180deg);
-                -ms-writing-mode: tb-rl;
-                writing-mode: vertical-rl;
-                text-transform: uppercase;
-                right: 26px;
-                top: 15px;
-                opacity: 0;
-                font-size: 10px;
-                margin: 0;
-            }
+                bottom: 0;
+                left: -100%;
+                width: 100%;
+                height: 4px;
+                background-color: #c1b244;
 
-            .final-animation {
-                animation: final-side ease;
-                animation-duration: 5s;
-                animation-fill-mode: both;
-                animation-iteration-count: infinite;
             }
-
-            @keyframes final-side {
-                0% {
-                }
-                10% {
-                    opacity: 0;
-                }
-                20% {
-                    opacity: 1;
-                }
-                95% {
-                    opacity: 1;
-                }
+            @keyframes load-bar-anim {
+                0% {}
                 100% {
-                    opacity: 0;
+                    left: 0;
                 }
-            } */
+            }
+
+            .load-bar-anim {
+                animation: load-bar-anim;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+            }
         </style>
     </head>
     <body onload="init();" style="margin: 0px">
         <div class="banner">
-            <a href="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/pad/offers.module.html" onclick="ahref(this)" target="_blank"
-                ><div id="clickAll"></div
-            ></a>
+            
             <div id="animation_container" style="background-color: rgba(255, 255, 255, 1); width: 960px; height: 250px">
-                <canvas id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
-                <p class="final">Maybach</p>
+                <canvas onclick="screenad.click()" id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
                 <div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 960px; height: 250px; position: absolute; left: 0px; top: 0px; display: block"></div>
+                <div class="click-cover"></div>
             </div>
+            <div class="load-bar"></div>
         </div>
         <script>
+            const loadBar = document.querySelector(".load-bar");
+
             var banner = document.querySelector(".banner");
             banner.addEventListener("mouseenter", function () {
+                loadBar.classList.add("load-bar-anim");
                 timer = setTimeout(function () {
                     screenad.shared.callMethod("showFullScreen");
-                }, 3000);
+                }, 2000);
             });
             banner.addEventListener("mouseleave", function () {
+                loadBar.classList.remove("load-bar-anim");
                 clearTimeout(timer);
             });
-
-            // let animationSide = document.querySelector(".final");
-            // anim();
-            // function anim() {
-            //     setTimeout(function () {
-            //         animationSide.classList.add("final-animation");
-            //         setTimeout(function () {
-            //             animationSide.classList.remove("final-animation");
-
-            //             setTimeout(() => {
-            //                 anim();
-            //             }, 200);
-            //         }, 5300);
-            //     }, 13900);
-            // }
-            // let counter = 0;
-            // setInterval(() => {
-            //     counter = counter + 50;
-            //     console.log(counter)
-            //     if(counter === 19500){
-            //         debugger
-            //     }
-            // }, 50);
         </script>
     </body>
 </html>

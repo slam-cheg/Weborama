@@ -1,5 +1,3 @@
-@import "./animation.scss";
-
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +38,7 @@
 }
 
 .banner {
+    cursor: pointer;
     margin: 0 auto;
     background: #ffa400;
     width: 240px;
@@ -73,41 +72,36 @@
 }
 
 .banner__main-image {
-    top: 33px;
+    top: 28px;
     max-width: 200px;
     position: absolute;
-    animation-delay: 0.8s;
     left: 17px;
 }
 
 .banner__paint-one {
     position: absolute;
     max-width: 180px;
-    top: 205px;
+    top: 196px;
     right: 33px;
-    transform: scale(0);
-    opacity: 0;
     z-index: 2;
 }
 
 .banner__target {
     width: 290px;
     height: 350px;
-    top: 91px;
+    top: 79px;
     right: calc(50% - 145px);
     position: absolute;
     z-index: 0;
 }
 
 .banner__girl {
-    max-width: 120%;
+    max-width: 140%;
     position: absolute;
-    top: 190px;
-    right: 40px;
+    top: 172px;
+    right: 30px;
     z-index: 5;
     filter: drop-shadow(17px 15px 2px rgba(0, 0, 0, 0.25));
-    transform: translateX(100%);
-    animation-delay: 0.5s;
 }
 
 .banner__star-text {
@@ -120,14 +114,14 @@
     left: 10px;
     font-size: 8px;
     max-width: calc(100% - 20px);
-    transform: translateY(500px);
+    // transform: translateY(500px);
     animation-delay: 1s;
     text-align: justify;
 }
 
 .banner__disclamer {
     animation-delay: 1.1s;
-    transform: translateY(150%);
+    // transform: translateY(150%);
     position: absolute;
     bottom: 10px;
     left: 10px;

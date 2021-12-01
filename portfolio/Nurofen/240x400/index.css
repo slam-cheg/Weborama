@@ -1,139 +1,3 @@
-@-webkit-keyframes title-animation {
-  0% {
-    transform: translateX(-600px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-@keyframes title-animation {
-  0% {
-    transform: translateX(-600px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.title-anim {
-  -webkit-animation: title-animation;
-          animation: title-animation;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.paint-anim {
-  -webkit-animation: paint;
-          animation: paint;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes paint {
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes paint {
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes girl {
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes girl {
-  100% {
-    transform: translateX(0);
-  }
-}
-.girl-anim {
-  -webkit-animation: girl;
-          animation: girl;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes disclamer {
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes disclamer {
-  100% {
-    transform: translateY(0);
-  }
-}
-.disclamer-anim {
-  -webkit-animation: disclamer;
-          animation: disclamer;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes transition {
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes transition {
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.transition-anim {
-  -webkit-animation: transition;
-          animation: transition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -159,6 +23,7 @@
 }
 
 .banner {
+  cursor: pointer;
   margin: 0 auto;
   background: #ffa400;
   width: 240px;
@@ -195,43 +60,36 @@
 }
 
 .banner__main-image {
-  top: 33px;
+  top: 28px;
   max-width: 200px;
   position: absolute;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
   left: 17px;
 }
 
 .banner__paint-one {
   position: absolute;
   max-width: 180px;
-  top: 205px;
+  top: 196px;
   right: 33px;
-  transform: scale(0);
-  opacity: 0;
   z-index: 2;
 }
 
 .banner__target {
   width: 290px;
   height: 350px;
-  top: 91px;
+  top: 79px;
   right: calc(50% - 145px);
   position: absolute;
   z-index: 0;
 }
 
 .banner__girl {
-  max-width: 120%;
+  max-width: 140%;
   position: absolute;
-  top: 190px;
-  right: 40px;
+  top: 172px;
+  right: 30px;
   z-index: 5;
   filter: drop-shadow(17px 15px 2px rgba(0, 0, 0, 0.25));
-  transform: translateX(100%);
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 
 .banner__star-text {
@@ -245,7 +103,6 @@
   left: 10px;
   font-size: 8px;
   max-width: calc(100% - 20px);
-  transform: translateY(500px);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   text-align: justify;
@@ -254,7 +111,6 @@
 .banner__disclamer {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
-  transform: translateY(150%);
   position: absolute;
   bottom: 10px;
   left: 10px;
