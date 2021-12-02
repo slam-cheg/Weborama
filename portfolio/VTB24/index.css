@@ -197,28 +197,6 @@
     transform: scale(1.2);
   }
 }
-@-webkit-keyframes cart-one {
-  0% {
-    left: 57px;
-  }
-  50% {
-    left: 80px;
-  }
-  100% {
-    left: 57px;
-  }
-}
-@keyframes cart-one {
-  0% {
-    left: 57px;
-  }
-  50% {
-    left: 80px;
-  }
-  100% {
-    left: 57px;
-  }
-}
 @-webkit-keyframes chair-one {
   50% {
     transform: scale(1.2);
@@ -246,45 +224,12 @@
           animation-duration: 1s;
 }
 
-@-webkit-keyframes chair-two {
-  100% {
-    transform: scale(500);
-  }
-}
-
-@keyframes chair-two {
-  100% {
-    transform: scale(500);
-  }
-}
-.chair-anim-two {
-  -webkit-animation: chair-two ease;
-          animation: chair-two ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.cart-anim-one {
-  -webkit-animation: cart-one ease;
-          animation: cart-one ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
 @-webkit-keyframes cart-two {
   0% {
     left: 57px;
   }
   50% {
-    left: 70px;
+    left: 80px;
   }
   100% {
     left: -300px;
@@ -296,7 +241,7 @@
     left: 57px;
   }
   50% {
-    left: 70px;
+    left: 80px;
   }
   100% {
     left: -300px;
@@ -311,40 +256,6 @@
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
-}
-
-@-webkit-keyframes vtb-card-one {
-  30% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes vtb-card-one {
-  30% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.vtb-anim-one {
-  -webkit-animation: vtb-card-one ease;
-          animation: vtb-card-one ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 @-webkit-keyframes to-transparency {
@@ -413,45 +324,19 @@
           animation-duration: 3s;
 }
 
-@-webkit-keyframes aircraft {
-  50% {
-    top: 90px;
-    left: -16px;
-  }
-  100% {
-    top: 100px;
-    left: 10px;
-  }
-}
-
-@keyframes aircraft {
-  50% {
-    top: 90px;
-    left: -16px;
-  }
-  100% {
-    top: 100px;
-    left: 10px;
-  }
-}
-.aircraft-anim {
-  -webkit-animation: aircraft ease-in-out;
-          animation: aircraft ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
 @-webkit-keyframes aircraft-two {
+  80% {
+    left: -30px;
+  }
   100% {
     left: 240px;
   }
 }
 
 @keyframes aircraft-two {
+  80% {
+    left: -30px;
+  }
   100% {
     left: 240px;
   }
@@ -463,8 +348,8 @@
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes percent {
@@ -499,6 +384,74 @@
           animation-duration: 1s;
 }
 
+@-webkit-keyframes click-anim {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes click-anim {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.click-anim {
+  -webkit-animation: click-anim ease;
+          animation: click-anim ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes click-anim-four {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes click-anim-four {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.click-anim-four {
+  -webkit-animation: click-anim-four ease;
+          animation: click-anim-four ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -525,6 +478,12 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+.first-screen .click {
+  position: absolute;
+  bottom: 80px;
+  right: 7px;
+  z-index: 2;
 }
 
 .header {
@@ -610,6 +569,12 @@
   width: 100%;
   height: 100%;
 }
+.second-screen .click {
+  position: absolute;
+  bottom: 280px;
+  right: 22px;
+  z-index: 2;
+}
 
 .chair {
   top: 74px;
@@ -625,6 +590,12 @@
   width: 100%;
   height: 100%;
 }
+.third-screen .click {
+  position: absolute;
+  bottom: 250px;
+  right: 13px;
+  z-index: 2;
+}
 
 .cart {
   top: 74px;
@@ -639,6 +610,14 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.fourth-screen .click {
+  position: absolute;
+  bottom: 187px;
+  right: 8px;
+  z-index: 2;
+  transform: rotate(34deg);
+  width: 35px;
 }
 
 .vtb-card {
@@ -668,6 +647,14 @@
   width: 100%;
   height: 100%;
 }
+.fifth-screen .click {
+  position: absolute;
+  bottom: 187px;
+  right: 8px;
+  z-index: 2;
+  transform: rotate(34deg);
+  width: 35px;
+}
 
 .aircraft {
   width: 220px;
@@ -691,6 +678,12 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.sixth-screen .click {
+  position: absolute;
+  bottom: 250px;
+  right: 13px;
+  z-index: 2;
 }
 
 .seventh-screen {

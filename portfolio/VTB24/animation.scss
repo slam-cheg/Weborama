@@ -108,18 +108,6 @@
     }
 }
 
-@keyframes cart-one {
-    0% {
-        left: 57px;
-    }
-    50% {
-        left: 80px;
-    }
-    100% {
-        left: 57px;
-    }
-}
-
 @keyframes chair-one {
     0% {
     }
@@ -138,34 +126,12 @@
     animation-duration: 1s;
 }
 
-@keyframes chair-two {
-    0% {
-    }
-    100% {
-        transform: scale(500);
-    }
-}
-
-.chair-anim-two {
-    animation: chair-two ease;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-
-.cart-anim-one {
-    animation: cart-one ease;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-}
-
 @keyframes cart-two {
     0% {
         left: 57px;
     }
     50% {
-        left: 70px;
+        left: 80px;
     }
     100% {
         left: -300px;
@@ -177,27 +143,6 @@
     animation-fill-mode: both;
     animation-iteration-count: 1;
     animation-duration: 0.7s;
-}
-
-@keyframes vtb-card-one {
-    0% {
-    }
-    30% {
-        transform: scale(1.1);
-    }
-    70% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.vtb-anim-one {
-    animation: vtb-card-one ease;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
 }
 
 @keyframes to-transparency {
@@ -245,28 +190,11 @@
     animation-duration: 3s;
 }
 
-@keyframes aircraft {
-    0% {
-    }
-    50% {
-        top: 90px;
-        left: -16px;
-    }
-    100% {
-        top: 100px;
-        left: 10px;
-    }
-}
-
-.aircraft-anim {
-    animation: aircraft ease-in-out;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
-}
-
 @keyframes aircraft-two {
     0% {
+    }
+    80% {
+        left: -30px;
     }
     100% {
         left: 240px;
@@ -277,7 +205,7 @@
     animation: aircraft-two ease-in;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 @keyframes percent {
@@ -298,4 +226,42 @@
     animation-fill-mode: both;
     animation-iteration-count: 1;
     animation-duration: 1s;
+}
+
+@keyframes click-anim {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.click-anim {
+    animation: click-anim ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes click-anim-four {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.click-anim-four {
+    animation: click-anim-four ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }

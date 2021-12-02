@@ -20,8 +20,6 @@ const vtbCard = document.querySelector(".vtb-card");
 const coctail = document.querySelector(".coctail");
 const aircraft = document.querySelector(".aircraft");
 
-let clickCounter = 0;
-
 banner.addEventListener("mousemove", moveOnMouse);
 banner.addEventListener("mousemove", handMoveX);
 banner.addEventListener("mousemove", handMoveY);
@@ -52,69 +50,45 @@ function moveOnMouse() {
 
 function changeAnim() {
     card.classList.add("card-anim-active");
-    setTimeout(function () {
-        card.classList.remove("card-anim-active");
-    }, 1000);
-    clickCounter++;
-    if (clickCounter === 2) {
-        clickCounter = 0;
+    setTimeout(() => {
         transition.classList.add("transition-anim");
-        setTimeout(function () {
+        setTimeout(() => {
             firstScreen.style.display = "none";
             secondScreen.style.display = "block";
+            hand.style.display = "none";
+            header.style.cursor = "auto";
+            banner.style.cursor = "auto";
             moveToDefault();
+            setTimeout(() => {
+                card.classList.remove("card-anim-active");
+            }, 500);
         }, 500);
-        setTimeout(function () {
-            transition.classList.remove("transition-anim");
-        }, 550);
-    }
+    }, 1000);
 }
 
 function moveToDefault() {
     card.classList.add("card-anim-deactive");
-    card.removeEventListener("click", changeAnim);
 }
 
 function moveChair() {
-    clickCounter++;
-
+    transition.classList.remove("transition-anim");
     chair.classList.add("chair-anim-one");
-    setTimeout(function () {
-        chair.classList.remove("chair-anim-one");
-    }, 1100);
-
-    if (clickCounter === 2) {
-        chair.classList.add("chair-anim-two");
-        setTimeout(function () {
-            chair.classList.remove("chair-anim-two");
-        }, 2100);
-        clickCounter = 0;
+    setTimeout(() => {
         transition.classList.add("transition-anim");
         setTimeout(function () {
             secondScreen.style.display = "none";
             thirdScreen.style.display = "block";
-            moveToDefault();
+            setTimeout(function () {
+                chair.classList.remove("chair-anim-one");
+            }, 500);
         }, 500);
-        setTimeout(function () {
-            transition.classList.remove("transition-anim");
-        }, 500);
-    }
+    }, 1500);
 }
 
 function moveCart() {
-    clickCounter++;
-
-    cart.classList.add("cart-anim-one");
-    setTimeout(function () {
-        cart.classList.remove("cart-anim-one");
-    }, 1000);
-
-    if (clickCounter === 2) {
-        cart.classList.add("cart-anim-two");
-        setTimeout(function () {
-            cart.classList.remove("cart-anim-two");
-        }, 1500);
-        clickCounter = 0;
+    transition.classList.remove("transition-anim");
+    cart.classList.add("cart-anim-two");
+    setTimeout(() => {
         setTimeout(function () {
             transition.classList.add("transition-anim");
             setTimeout(function () {
@@ -123,20 +97,18 @@ function moveCart() {
                 moveToDefault();
                 setTimeout(function () {
                     transition.classList.remove("transition-anim");
+                    cart.classList.remove("cart-anim-two");
                 }, 500);
             }, 500);
         }, 500);
-    }
+    }, 1000);
 }
 
 function moveCard() {
-    clickCounter++;
-
     vtbCard.classList.add("anim-to-transparency");
     coctail.classList.add("anim-to-visibility");
 
-    if (clickCounter === 2) {
-        clickCounter = 0;
+    setTimeout(() => {
         transition.classList.add("transition-anim");
         setTimeout(function () {
             fourthScreen.style.display = "none";
@@ -147,24 +119,12 @@ function moveCard() {
                 transition.classList.remove("transition-anim");
             }, 500);
         }, 500);
-    }
+    }, 1000);
 }
 
 function fiveScreen() {
-    clickCounter++;
-
-    aircraft.classList.add("aircraft-anim");
-
-    setTimeout(function () {
-        aircraft.classList.remove("aircraft-anim");
-    }, 3000);
-
-    if (clickCounter === 2) {
-        aircraft.classList.add("aircraft-anim-two");
-        setTimeout(function () {
-            aircraft.classList.remove("aircraft-anim-two");
-        }, 1000);
-        clickCounter = 0;
+    aircraft.classList.add("aircraft-anim-two");
+    setTimeout(() => {
         setTimeout(function () {
             transition.classList.add("transition-anim");
             setTimeout(function () {
@@ -172,22 +132,18 @@ function fiveScreen() {
                 sixthScreen.style.display = "block";
                 setTimeout(function () {
                     transition.classList.remove("transition-anim");
+                    aircraft.classList.remove("aircraft-anim-two");
                 }, 500);
             }, 500);
         }, 500);
-    }
+    }, 1000);
 }
 
 function movePercent() {
-    clickCounter++;
+    transition.classList.remove("transition-anim");
 
     percent.classList.add("percent-anim");
-    setTimeout(function () {
-        percent.classList.remove("percent-anim");
-    }, 2000);
-
-    if (clickCounter === 2) {
-        clickCounter = 0;
+    setTimeout(() => {
         transition.classList.add("transition-anim");
         setTimeout(function () {
             sixthScreen.style.display = "none";
@@ -196,15 +152,14 @@ function movePercent() {
             setTimeout(function () {
                 percent.classList.remove("percent-anim");
                 transition.classList.remove("transition-anim");
+                percent.classList.remove("percent-anim");
             }, 500);
         }, 500);
-    }
+    }, 1000);
 }
 
 function loop() {
     transition.style.backgroundColor = "#1657d0";
-    hand.style.display = "none";
-    header.style.cursor = "auto";
     setTimeout(() => {
         transition.style.backgroundColor = "#6F0A4E";
         transition.classList.add("transition-anim");
