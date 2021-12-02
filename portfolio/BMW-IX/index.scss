@@ -1,3 +1,14 @@
+@import "./fonts.scss";
+
+@mixin font {
+    font-family: "BMWTypeNextTT", sans-serif;
+    margin: 0;
+}
+
+#color {
+    $white: #fff !global;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,4 +32,21 @@
     background-clip: border-box;
     background-position: center center;
     background-size: cover;
+}
+
+.the {
+    @include font;
+    font-size: 18px;
+    font-weight: 100;
+    color: $white;
+    position: absolute;
+    top: calc(50% - (21px/2));
+    left: 70px;
+}
+
+.ix-logo {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
