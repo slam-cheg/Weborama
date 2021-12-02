@@ -9,6 +9,7 @@ const seventhScreen = document.querySelector(".seventh-screen");
 const disclamerScreenOne = document.querySelector(".disclamer-one");
 const disclamerScreenTwo = document.querySelector(".disclamer-two");
 const percent = document.querySelector(".percent");
+const header = document.querySelector(".header");
 
 const hand = document.querySelector(".hand");
 const card = document.querySelector(".card");
@@ -191,11 +192,50 @@ function movePercent() {
         setTimeout(function () {
             sixthScreen.style.display = "none";
             seventhScreen.style.display = "block";
+            loop();
             setTimeout(function () {
                 percent.classList.remove("percent-anim");
-
                 transition.classList.remove("transition-anim");
             }, 500);
         }, 500);
     }
+}
+
+function loop() {
+    transition.style.backgroundColor = "#1657d0";
+    hand.style.display = "none";
+    header.style.cursor = "auto";
+    setTimeout(() => {
+        transition.style.backgroundColor = "#6F0A4E";
+        transition.classList.add("transition-anim");
+        setTimeout(() => {
+            seventhScreen.style.display = "none";
+            disclamerScreenOne.style.display = "block";
+            setTimeout(() => {
+                transition.classList.remove("transition-anim");
+            }, 500);
+            setTimeout(() => {
+                transition.classList.add("transition-anim");
+                setTimeout(() => {
+                    disclamerScreenOne.style.display = "none";
+                    disclamerScreenTwo.style.display = "block";
+                    setTimeout(() => {
+                        transition.classList.remove("transition-anim");
+                    }, 500);
+                    setTimeout(() => {
+                        transition.style.backgroundColor = "#1657d0";
+                        transition.classList.add("transition-anim");
+                        setTimeout(() => {
+                            disclamerScreenTwo.style.display = "none";
+                            seventhScreen.style.display = "block";
+                            setTimeout(() => {
+                                transition.classList.remove("transition-anim");
+                            }, 500);
+                            loop();
+                        }, 500);
+                    }, 2000);
+                }, 500);
+            }, 2000);
+        }, 500);
+    }, 6000);
 }
