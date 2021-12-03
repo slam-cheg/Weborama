@@ -1,5 +1,5 @@
 screenad.position("width=100%&height=250&hor=left&ver=banner&hide=false&sticky=false&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
-screenad.setZIndex(120000);
+screenad.setZIndex(1200000);
 
 (function (cjs, an) {
     var p; // shortcut to reference prototypes
