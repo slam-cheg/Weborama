@@ -482,7 +482,7 @@
 .first-screen .click {
   position: absolute;
   bottom: 80px;
-  right: 7px;
+  right: -6px;
   z-index: 2;
 }
 
@@ -571,8 +571,8 @@
 }
 .second-screen .click {
   position: absolute;
-  bottom: 280px;
-  right: 22px;
+  bottom: 230px;
+  right: -2px;
   z-index: 2;
 }
 
@@ -592,8 +592,8 @@
 }
 .third-screen .click {
   position: absolute;
-  bottom: 250px;
-  right: 13px;
+  bottom: 227px;
+  right: -4px;
   z-index: 2;
 }
 
@@ -614,10 +614,9 @@
 .fourth-screen .click {
   position: absolute;
   bottom: 187px;
-  right: 8px;
-  z-index: 2;
+  bottom: 147px;
+  right: -2px;
   transform: rotate(34deg);
-  width: 35px;
 }
 
 .vtb-card {
@@ -649,11 +648,9 @@
 }
 .fifth-screen .click {
   position: absolute;
-  bottom: 187px;
-  right: 8px;
+  bottom: 157px;
+  right: -2px;
   z-index: 2;
-  transform: rotate(34deg);
-  width: 35px;
 }
 
 .aircraft {
@@ -681,8 +678,8 @@
 }
 .sixth-screen .click {
   position: absolute;
-  bottom: 250px;
-  right: 13px;
+  bottom: 212px;
+  right: -5px;
   z-index: 2;
 }
 
