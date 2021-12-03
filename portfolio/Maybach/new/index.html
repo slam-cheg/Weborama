@@ -152,10 +152,10 @@
                 width: 100%;
                 height: 4px;
                 background-color: #c1b244;
-
             }
             @keyframes load-bar-anim {
-                0% {}
+                0% {
+                }
                 100% {
                     left: 0;
                 }
@@ -171,7 +171,6 @@
     </head>
     <body onload="init();" style="margin: 0px">
         <div class="banner">
-            
             <div id="animation_container" style="background-color: rgba(255, 255, 255, 1); width: 960px; height: 250px">
                 <canvas id="canvas" width="960" height="250" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1)"></canvas>
                 <div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 960px; height: 250px; position: absolute; left: 0px; top: 0px; display: block"></div>
@@ -181,12 +180,11 @@
         </div>
         <script>
             const loadBar = document.querySelector(".load-bar");
-            const canvasScreenad = document.querySelector("#canvas")
-            canvasScreenad.addEventListener("click", function(){
+            const canvasScreenad = document.querySelector("#canvas");
+            canvasScreenad.addEventListener("click", function () {
                 screenad.event("BANNER_click");
                 screenad.click();
-            })
-
+            });
 
             var banner = document.querySelector(".banner");
             banner.addEventListener("mouseenter", function () {

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "BMWTypeNextTT";
+  src: url(./BMWTypeNextTT-Thin.woff) format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "BMWTypeNextTT";
+  src: url(./BMWTypeNextTT-Light.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BMWTypeNextTT";
+  src: url(./BMWTypeNextTT-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "BMWTypeNextTT";
+  src: url(./BMWTypeNextTT-Bold.woff) format("woff");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #000;
+}/*# sourceMappingURL=fs.css.map */

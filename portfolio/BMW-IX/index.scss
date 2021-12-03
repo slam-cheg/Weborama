@@ -1,7 +1,7 @@
 @import "./fonts.scss";
 
 @mixin font {
-    font-family: "BMWTypeNextTT", sans-serif;
+    font-family: "BMWTypeNextTT";
     margin: 0;
 }
 
@@ -19,6 +19,7 @@
     justify-content: center;
     max-width: 100%;
     min-width: 720px;
+    background-color: #000;
 }
 
 .banner {
@@ -40,13 +41,40 @@
     font-weight: 100;
     color: $white;
     position: absolute;
-    top: calc(50% - (21px/2));
-    left: 70px;
+    top: calc(50% - (21px / 2));
+    left: 50px;
+    text-transform: uppercase;
 }
 
 .ix-logo {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
+}
+
+.logo-main {
+    max-width: 160px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.title {
+    @include font;
+    color: $white;
+    position: absolute;
+    top: 115px;
+    right: 20px;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    text-align: end;
+    text-transform: uppercase;
+
+    span {
+        font-weight: 300;
+        font-size: 35px;
+    }
 }
