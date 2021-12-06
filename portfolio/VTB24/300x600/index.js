@@ -20,6 +20,9 @@ const vtbCard = document.querySelector(".vtb-card");
 const coctail = document.querySelector(".coctail");
 const aircraft = document.querySelector(".aircraft");
 
+let timer = setInterval(wait, 1000);
+let seconds = 0;
+
 banner.addEventListener("mousemove", moveOnMouse);
 banner.addEventListener("mousemove", handMoveX);
 banner.addEventListener("mousemove", handMoveY);
@@ -31,6 +34,24 @@ thirdScreen.addEventListener("click", moveCart);
 fourthScreen.addEventListener("click", moveCard);
 fifthScreen.addEventListener("click", fiveScreen);
 sixthScreen.addEventListener("click", movePercent);
+
+function wait() {
+    seconds++;
+    console.log(seconds);
+    if (seconds === 15) {
+        loop();
+        firstScreen.style.display = "none";
+        seventhScreen.style.display = "block";
+        hand.style.display = "none";
+        header.style.cursor = "auto";
+        banner.style.cursor = "auto";
+        deleteInterval();
+    }
+}
+
+function deleteInterval() {
+    clearInterval(timer);
+}
 
 function handMoveX(event) {
     hand.style.left = event.pageX - 350 + "px";
@@ -49,6 +70,7 @@ function moveOnMouse() {
 }
 
 function changeAnim() {
+    deleteInterval();
     card.classList.add("card-anim-active");
     setTimeout(() => {
         transition.classList.add("transition-anim");

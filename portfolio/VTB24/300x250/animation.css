@@ -1,0 +1,428 @@
+@-webkit-keyframes card-deactive {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes card-deactive {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+.card-anim-deactive {
+  -webkit-animation: card-deactive ease-in-out;
+          animation: card-deactive ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes card-active {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+    left: 113px;
+  }
+  100% {
+    transform: rotate(0);
+    left: 121px;
+  }
+}
+
+@keyframes card-active {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+    left: 113px;
+  }
+  100% {
+    transform: rotate(0);
+    left: 121px;
+  }
+}
+.card-anim-active {
+  -webkit-animation: card-active ease-in-out;
+          animation: card-active ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 450px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes snow {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 450px;
+    transform: rotate(360deg);
+  }
+}
+.let-it-snow {
+  -webkit-animation: snow linear;
+          animation: snow linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+@-webkit-keyframes hand {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+.hand-anim {
+  -webkit-animation: hand ease-in-out;
+          animation: hand ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes transition {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes transition {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.transition-anim {
+  -webkit-animation: transition ease-in-out;
+          animation: transition ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes chair-anim {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes chair-anim {
+  100% {
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes chair-one {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes chair-one {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.chair-anim-one {
+  -webkit-animation: chair-one ease;
+          animation: chair-one ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes cart-two {
+  0% {
+    left: 138px;
+  }
+  50% {
+    left: 168px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes cart-two {
+  0% {
+    left: 138px;
+  }
+  50% {
+    left: 168px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+.cart-anim-two {
+  -webkit-animation: cart-two ease;
+          animation: cart-two ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes to-transparency {
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes to-transparency {
+  100% {
+    transform: scale(0);
+  }
+}
+.anim-to-transparency {
+  -webkit-animation: to-transparency ease;
+          animation: to-transparency ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes to-visibility {
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes to-visibility {
+  100% {
+    transform: scale(0.8);
+  }
+}
+.anim-to-visibility {
+  -webkit-animation: to-visibility ease;
+          animation: to-visibility ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes clouds {
+  100% {
+    left: -340px;
+  }
+}
+
+@keyframes clouds {
+  100% {
+    left: -340px;
+  }
+}
+.clouds-anim {
+  -webkit-animation: clouds linear;
+          animation: clouds linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes aircraft-two {
+  80% {
+    left: -30px;
+  }
+  100% {
+    left: 450px;
+  }
+}
+
+@keyframes aircraft-two {
+  80% {
+    left: -30px;
+  }
+  100% {
+    left: 450px;
+  }
+}
+.aircraft-anim-two {
+  -webkit-animation: aircraft-two ease-in;
+          animation: aircraft-two ease-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes percent {
+  50% {
+    transform: scale(1.2);
+    top: 60px;
+  }
+  100% {
+    top: 54px;
+    transform: scale(1);
+  }
+}
+
+@keyframes percent {
+  50% {
+    transform: scale(1.2);
+    top: 60px;
+  }
+  100% {
+    top: 54px;
+    transform: scale(1);
+  }
+}
+.percent-anim {
+  -webkit-animation: percent ease;
+          animation: percent ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes click-anim {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes click-anim {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.click-anim {
+  -webkit-animation: click-anim ease;
+          animation: click-anim ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes click-anim-four {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes click-anim-four {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.click-anim-four {
+  -webkit-animation: click-anim-four ease;
+          animation: click-anim-four ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}/*# sourceMappingURL=animation.css.map */
