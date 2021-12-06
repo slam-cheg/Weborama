@@ -26,6 +26,7 @@
     $orange: #ffa400 !global;
     $red: #c52734 !global;
     $white: #fff !global;
+    $navy: #243045 !global;
 }
 
 @mixin font {
@@ -49,59 +50,34 @@
 
 .banner__text-wrapper {
     position: absolute;
-    width: calc(100% - 50px);
     top: 10px;
     left: 10px;
+    z-index: 10;
 }
 
 .banner__title {
     @include font;
-    color: $white;
+    color: $navy;
     line-height: 1.4;
     font-size: 12px;
+    width: calc(100% - 40px);
     text-transform: uppercase;
 }
 
-.banner__title_first-line {
-    animation-delay: 0.2s;
-}
-
-.banner__title_second-line {
-    animation-delay: 0.5s;
-    color: $yellow;
-}
-
 .banner__main-image {
-    top: 28px;
-    max-width: 200px;
-    position: absolute;
-    left: 17px;
-}
-
-.banner__paint-one {
-    position: absolute;
-    max-width: 180px;
-    top: 196px;
-    right: 33px;
-    z-index: 2;
-}
-
-.banner__target {
-    width: 290px;
-    height: 350px;
-    top: 79px;
-    right: calc(50% - 145px);
+    width: 243px;
+    top: 108px;
+    right: -5px;
     position: absolute;
     z-index: 0;
 }
 
-.banner__girl {
-    max-width: 140%;
+.banner__target {
+    width: 390px;
+    top: -18px;
+    right: calc(50% - (390px/2));
     position: absolute;
-    top: 172px;
-    right: 30px;
-    z-index: 5;
-    filter: drop-shadow(17px 15px 2px rgba(0, 0, 0, 0.25));
+    z-index: 0;
 }
 
 .banner__star-text {
@@ -109,32 +85,24 @@
     color: $white;
     position: absolute;
     z-index: 5;
-    bottom: 38px;
+    bottom: 60px;
     line-height: 1;
     left: 10px;
     font-size: 8px;
     max-width: calc(100% - 20px);
-    // transform: translateY(500px);
     animation-delay: 1s;
     text-align: justify;
 }
 
 .banner__disclamer {
-    animation-delay: 1.1s;
-    // transform: translateY(150%);
+    @include font;
+    color: $white;
     position: absolute;
     bottom: 10px;
     left: 10px;
     width: calc(100% - 20px);
-}
-
-.transition {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $white;
-    z-index: 10;
-    opacity: 0;
+    font-size: 10.5px;
+    text-align: justify;
+    line-height: 1;
+    text-transform: uppercase;
 }

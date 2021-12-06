@@ -36,57 +36,32 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 10;
 }
 
 .banner__title {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  color: #fff;
-  line-height: 1.4;
-  font-size: 10px;
-  max-width: 160px;
+  color: #243045;
+  line-height: 1.3;
+  font-size: 12px;
+  max-width: calc(100% - 20px);
   text-transform: uppercase;
 }
 
-.banner__title_second-line {
-  color: #ffed1a;
-}
-
 .banner__main-image {
-  top: 33px;
-  max-width: 170px;
+  top: 23px;
+  width: 170px;
   position: absolute;
-  left: -15px;
-}
-
-.banner__paint-one {
-  position: absolute;
-  max-width: 190px;
-  top: 31px;
-  right: -11px;
-  transform: rotate(343deg);
-  border-radius: 100px;
-  z-index: 2;
+  left: calc(50% - (170px /2));
 }
 
 .banner__target {
-  width: 309px;
-  height: 350px;
-  top: -79px;
-  right: -79px;
+  width: 310px;
+  top: 77px;
+  right: calc(50% - (310px / 2));
   position: absolute;
-  z-index: 1;
-}
-
-.banner__girl {
-  max-width: 125%;
-  position: absolute;
-  top: -7px;
-  right: -11px;
-  z-index: 5;
-  filter: drop-shadow(17px 20px 0px rgba(0, 0, 0, 0.25));
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  z-index: 0;
 }
 
 .banner__star-text {
@@ -101,26 +76,18 @@
   font-size: 7.3px;
   text-align: justify;
   max-width: calc(100% - 20px);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .banner__disclamer {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #fff;
   position: absolute;
   bottom: 10px;
   left: 10px;
   width: calc(100% - 20px);
-}
-
-.transition {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 10;
-  opacity: 0;
+  font-size: 10.5px;
+  text-align: justify;
+  line-height: 1;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

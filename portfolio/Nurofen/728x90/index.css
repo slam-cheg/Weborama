@@ -34,31 +34,25 @@
 
 .banner__text-wrapper {
   position: absolute;
-  top: 10px;
+  top: 3px;
   left: 10px;
 }
 
 .banner__title {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  color: #fff;
+  color: #243045;
   line-height: 1.4;
   font-size: 12px;
-  max-width: 270px;
+  max-width: 290px;
   text-transform: uppercase;
 }
 
-.banner__title_second-line {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  color: #ffed1a;
-}
-
 .banner__main-image {
-  top: -27px;
-  max-width: 150px;
+  top: -42px;
+  max-width: 199px;
   position: absolute;
-  left: 270px;
+  left: 314px;
   z-index: 99;
 }
 
@@ -72,10 +66,9 @@
 }
 
 .banner__target {
-  width: 290px;
-  height: 350px;
-  top: -130px;
-  right: 61px;
+  width: 390px;
+  top: -151px;
+  right: 54px;
   position: absolute;
   z-index: 1;
 }
@@ -95,19 +88,26 @@
   color: #fff;
   position: absolute;
   z-index: 5;
-  bottom: 10px;
-  line-height: 1.15;
+  top: calc(50% - (78.76px / 2));
+  line-height: 1;
   right: 10px;
-  font-size: 6px;
+  font-size: 7px;
   text-align: justify;
-  max-width: 100px;
+  max-width: 128px;
 }
 
 .banner__disclamer {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #fff;
   position: absolute;
-  bottom: 10px;
+  bottom: 3px;
   left: 10px;
-  width: 150px;
+  width: 314px;
+  font-size: 10px;
+  text-align: justify;
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .transition {
