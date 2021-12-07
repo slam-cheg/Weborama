@@ -8,10 +8,23 @@ const fourthButton = document.querySelector(".nav__list-item_fourth");
 const fifthButton = document.querySelector(".nav__list-item_fifth");
 const defaultScreen = document.querySelector(".default-screen");
 const firstScreen = document.querySelector(".first-screen");
+const canvasContainer = document.querySelector(".canvas-container");
+var isDrawing;
+var canvas;
+var context;
+
+window.onload = function () {
+    canvas = document.getElementById("drawingCanvas");
+    context = canvas.getContext("2d");
+
+    canvas.onmousedown = startDrawing;
+    canvas.onmouseup = stopDrawing;
+    canvas.onmouseout = stopDrawing;
+    canvas.onmousemove = draw;
+};
 
 page.addEventListener("mousedown", minimizeCursor);
 page.addEventListener("mouseup", maximizeCursor);
-
 firstButton.addEventListener("click", firstSlide);
 secondButton.addEventListener("click", secondSlide);
 thirdButton.addEventListener("click", thirdSlide);
@@ -65,4 +78,35 @@ function fifthSlide() {
     thirdButton.classList.remove("nav__list-item_active");
     fourthButton.classList.remove("nav__list-item_active");
     fifthButton.classList.add("nav__list-item_active");
+}
+
+function startDrawing(e) {
+    context.strokeStyle = "rgb(255,255,255)";
+    context.lineWidth = "3";
+    context.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
+    isDrawing = true;
+    context.beginPath();
+}
+
+function draw(e) {
+    if (isDrawing === true) {
+        var x = e.pageX - 547 - canvas.offsetLeft;
+        var y = e.pageY - 395 - canvas.offsetTop;
+
+        context.lineTo(x, y);
+        context.stroke();
+    }
+}
+
+function stopDrawing() {
+    isDrawing = false;
+    transition();
+}
+
+function transition() {
+    canvasContainer.classList.add("canvas-hidden");
+    setTimeout(() => {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        canvasContainer.classList.remove("canvas-hidden");
+    }, 300);
 }

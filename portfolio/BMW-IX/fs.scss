@@ -282,15 +282,29 @@
     }
 }
 
-.CanvasContainer {
+.canvas-container {
     clear: both;
     position: absolute;
-    top: calc(46% - (250px / 2));
-    left: calc(37% - (400px / 2));
-    transform: rotate(14deg);
+    top: calc(63% - (500px / 2));
+    left: calc(48% - (750px / 2));
 }
 
 canvas {
-    border: 1px solid #7b899b;
     border-radius: 100px 220px 160px 400px;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.canvas-hidden {
+    animation: opacity;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
 }
