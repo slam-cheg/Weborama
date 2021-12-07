@@ -6,6 +6,8 @@ const secondButton = document.querySelector(".nav__list-item_second");
 const thirdButton = document.querySelector(".nav__list-item_third");
 const fourthButton = document.querySelector(".nav__list-item_fourth");
 const fifthButton = document.querySelector(".nav__list-item_fifth");
+const defaultScreen = document.querySelector(".default-screen");
+const firstScreen = document.querySelector(".first-screen");
 
 page.addEventListener("mousedown", minimizeCursor);
 page.addEventListener("mouseup", maximizeCursor);
@@ -29,6 +31,8 @@ function firstSlide() {
     thirdButton.classList.remove("nav__list-item_active");
     fourthButton.classList.remove("nav__list-item_active");
     fifthButton.classList.remove("nav__list-item_active");
+    defaultScreen.classList.add("deactive-screen");
+    firstScreen.classList.remove("deactive-screen");
 }
 
 function secondSlide() {

@@ -37,14 +37,13 @@ sixthScreen.addEventListener("click", movePercent);
 
 function wait() {
     seconds++;
-    console.log(seconds);
     if (seconds === 15) {
         loop();
         firstScreen.style.display = "none";
         seventhScreen.style.display = "block";
         hand.style.display = "none";
-        header.style.cursor = "auto";
-        banner.style.cursor = "auto";
+        header.style.cursor = "pointer";
+        banner.style.cursor = "pointer";
         deleteInterval();
     }
 }
@@ -78,8 +77,8 @@ function changeAnim() {
             firstScreen.style.display = "none";
             secondScreen.style.display = "block";
             hand.style.display = "none";
-            header.style.cursor = "auto";
-            banner.style.cursor = "auto";
+            header.style.cursor = "pointer";
+            banner.style.cursor = "pointer";
             moveToDefault();
             setTimeout(() => {
                 card.classList.remove("card-anim-active");

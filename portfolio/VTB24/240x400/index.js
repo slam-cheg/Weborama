@@ -43,8 +43,8 @@ function wait() {
         firstScreen.style.display = "none";
         seventhScreen.style.display = "block";
         hand.style.display = "none";
-        header.style.cursor = "auto";
-        banner.style.cursor = "auto";
+        header.style.cursor = "pointer";
+        banner.style.cursor = "pointer";
         deleteInterval();
     }
 }

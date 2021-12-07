@@ -40,19 +40,35 @@
         </header>
         <main class="content">
             <sectinon class="default-screen">
-                <img class="logo-ix" src="./logo-ix.png" alt="ix-logo" />
-                <img src="./logo.svg" alt="logo" class="logo-bmw" />
-                <p class="text first-line">выбирать будущее — это роскошь.</p>
-                <p class="text second-line">роскошь</p>
-                <p class="text third-line">нового разряда.</p>
-                <p class="the">the</p>
-                <button class="button">Узнать больше</button>
+                <div class="text-wrapper">
+                    <p class="text first-line">выбирать будущее — это&nbsp;роскошь.</p>
+                    <div class="bottom-text">
+                        <p class="text second-line">роскошь</p>
+                        <p class="text third-line">нового разряда.</p>
+                    </div>
+                </div>
+
+                <div class="logo-ix">
+                    <img src="./logo.svg" alt="logo" class="logo-bmw" />
+                    <p class="the">the</p>
+                    <button class="button">Узнать больше</button>
+                </div>
             </sectinon>
-            <section class="first-screen"></section>
-            <section class="second-screen"></section>
-            <section class="third-screen"></section>
-            <section class="fourth-screen"></section>
-            <section class="fifth-screen"></section>
+
+            <sectinon class="first-screen deactive-screen">
+                <div class="CanvasContainer">
+                    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+                </div>
+                <div class="logo-ix">
+                    <p class="text first-line">Попробуйте поцарапать грилл курсором</p>
+                    <button class="button">Узнать больше</button>
+                </div>
+            </sectinon>
+
+            <section class="second-screen deactive-screen"></section>
+            <section class="third-screen deactive-screen"></section>
+            <section class="fourth-screen deactive-screen"></section>
+            <section class="fifth-screen deactive-screen"></section>
         </main>
         <script src="./fs.js"></script>
     </body>
