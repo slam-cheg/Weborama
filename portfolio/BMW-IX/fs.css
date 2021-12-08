@@ -46,6 +46,7 @@ html {
   }
   100% {
     transform: translateY(0);
+    background-color: #000;
   }
 }
 
@@ -55,6 +56,7 @@ html {
   }
   100% {
     transform: translateY(0);
+    background-color: #000;
   }
 }
 .page {
@@ -97,8 +99,29 @@ html {
   visibility: hidden !important;
   opacity: 0 !important;
   transition: 0.2s !important;
+  -webkit-animation: display-none;
+          animation: display-none;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
+@-webkit-keyframes display-none {
+  100% {
+    display: none;
+  }
+}
+
+@keyframes display-none {
+  100% {
+    display: none;
+  }
+}
 .header {
   width: 100%;
   height: 100px;
@@ -112,7 +135,7 @@ html {
   width: 30px;
   height: 30px;
   z-index: 999;
-  cursor: pointer;
+  cursor: url("./pointer.svg") 16 16, pointer;
 }
 
 .close:before,
@@ -330,7 +353,7 @@ html {
   transition: 0.2s;
   background-color: transparent;
   border: 1px solid #fff;
-  cursor: url("./pointer.svg") 22 22, pointer;
+  cursor: url(./pointer.svg) 16 16, pointer;
 }
 
 .first-screen {
@@ -386,6 +409,7 @@ html {
   position: absolute;
   top: calc(63% - (500px / 2));
   left: calc(48% - (750px / 2));
+  z-index: 100;
 }
 
 canvas {
@@ -431,7 +455,7 @@ canvas {
 
 .text-wrapper-bottom {
   width: 100%;
-  height: 200px;
+  height: 300px;
   bottom: 0;
   position: absolute;
   background: linear-gradient(0deg, black, transparent);
@@ -481,4 +505,110 @@ canvas {
           animation-iteration-count: 1;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+.second-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./third-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+.second-screen .arrow {
+  transform: rotate(180deg);
+  top: unset;
+  bottom: 202px;
+  left: 240px;
+  width: 110px;
+}
+.second-screen .first-line {
+  max-width: 590px;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+}
+.second-screen .text_bottom-description {
+  max-width: 40%;
+}
+.second-screen .logo-ix {
+  background-image: none;
+}
+
+.sound-btn {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-image: url(./sound-deactive.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 350px;
+  bottom: calc(55% - (100px / 2));
+  transition: 0.2s;
+  cursor: url(./pointer.svg) 16 16, pointer;
+}
+
+.sound-btn_active {
+  background-image: url(./sound-active.svg);
+}
+
+.third-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./fourth-img-one.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+.third-screen .arrow {
+  transform: rotate(180deg);
+  top: unset;
+  bottom: 230px;
+  left: calc(47% - (160px / 2));
+  width: 80px;
+}
+.third-screen .first-line {
+  max-width: 590px;
+  text-align: center;
+  position: absolute;
+  left: calc(42% - (590px / 2));
+  bottom: 120px;
+}
+.third-screen .text_bottom-description {
+  max-width: 70%;
+}
+.third-screen .logo-ix {
+  background-image: none;
+}
+
+.roof-active {
+  background-image: url(./fourth-img-two.jpg);
+}
+
+.change-btn {
+  background-color: transparent;
+  border: 1px solid;
+  transition: 0.2s;
+  bottom: calc(50% - (50px / 2));
+  left: calc(50% - (160px / 2));
+}
+.change-btn:hover {
+  transition: 0.2s;
+  background-color: #0066b2;
 }/*# sourceMappingURL=fs.css.map */
