@@ -78,3 +78,26 @@
         font-size: 35px;
     }
 }
+
+.load-bar {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+@keyframes load-bar-anim {
+    0% {
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.load-bar-anim {
+    animation: load-bar-anim;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}

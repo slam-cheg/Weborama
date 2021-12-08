@@ -12,64 +12,72 @@
         <link rel="stylesheet" href="./fs.css" />
     </head>
     <body class="page cursor">
-        <header class="header">
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__list-item nav__list-item_first">
-                        <p>ТЕХНОЛОГИИ<br />САМОЗАЖИВЛЕНИЯ</p>
-                        <div class="nav__list-filter"></div>
-                    </li>
-                    <li class="nav__list-item nav__list-item_second">
-                        <p>523<br />ЭЛЕКТРИЧЕСКИЕ Л.С.</p>
-                        <div class="nav__list-filter"></div>
-                    </li>
-                    <li class="nav__list-item nav__list-item_third">
-                        <p>ЭЛЕКТРОХРОМНАЯ<br />КРЫША</p>
-                        <div class="nav__list-filter"></div>
-                    </li>
-                    <li class="nav__list-item nav__list-item_fourth">
-                        <p>6 МИНУТ ЗАРЯДА —<br />100 КМ В ПУТИ</p>
-                        <div class="nav__list-filter"></div>
-                    </li>
-                    <li class="nav__list-item nav__list-item_fifth">
-                        <p>ДИЗАЙН<br />БУДУЩЕГО</p>
-                        <div class="nav__list-filter"></div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="content">
-            <sectinon class="default-screen">
-                <div class="text-wrapper">
-                    <p class="text first-line">выбирать будущее — это&nbsp;роскошь.</p>
-                    <div class="bottom-text">
-                        <p class="text second-line">роскошь</p>
-                        <p class="text third-line">нового разряда.</p>
+        <div id="fullscreen" class="fullscreen">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item nav__list-item_first">
+                            <p>ТЕХНОЛОГИИ<br />САМОЗАЖИВЛЕНИЯ</p>
+                            <div class="nav__list-filter"></div>
+                        </li>
+                        <li class="nav__list-item nav__list-item_second">
+                            <p>523<br />ЭЛЕКТРИЧЕСКИЕ Л.С.</p>
+                            <div class="nav__list-filter"></div>
+                        </li>
+                        <li class="nav__list-item nav__list-item_third">
+                            <p>ЭЛЕКТРОХРОМНАЯ<br />КРЫША</p>
+                            <div class="nav__list-filter"></div>
+                        </li>
+                        <li class="nav__list-item nav__list-item_fourth">
+                            <p>6 МИНУТ ЗАРЯДА —<br />100 КМ В ПУТИ</p>
+                            <div class="nav__list-filter"></div>
+                        </li>
+                        <li class="nav__list-item nav__list-item_fifth">
+                            <p>ДИЗАЙН<br />БУДУЩЕГО</p>
+                            <div class="nav__list-filter"></div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="close"></div>
+            </header>
+            <main class="content">
+                <sectinon class="default-screen">
+                    <div class="text-wrapper">
+                        <p class="text first-line">выбирать будущее — это&nbsp;роскошь.</p>
+                        <div class="bottom-text">
+                            <p class="text second-line">роскошь</p>
+                            <p class="text third-line">нового разряда.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="logo-ix">
-                    <img src="./logo.svg" alt="logo" class="logo-bmw" />
-                    <p class="the">the</p>
-                    <button class="button">Узнать больше</button>
-                </div>
-            </sectinon>
+                    <div class="logo-ix">
+                        <img src="./logo.svg" alt="logo" class="logo-bmw" />
+                        <p class="the">the</p>
+                        <button class="button">Узнать больше</button>
+                    </div>
+                </sectinon>
 
-            <sectinon class="first-screen deactive-screen">
-                <div class="canvas-container">
-                    <canvas id="drawingCanvas" width="800" height="500"></canvas>
-                </div>
-                <div class="logo-ix">
-                    <p class="text first-line">Попробуйте поцарапать грилл курсором</p>
-                    <button class="button">Узнать больше</button>
-                </div>
-            </sectinon>
+                <sectinon class="first-screen main-content deactive-screen">
+                    <div class="canvas-container">
+                        <canvas id="drawingCanvas" width="800" height="500"></canvas>
+                    </div>
+                    <div class="logo-ix">
+                        <img src="./arrow.svg" alt="arrow" class="arrow" />
+                        <p class="text first-line try-text">Попробуйте поцарапать грилл курсором</p>
+                        <button class="button">Узнать больше</button>
+                    </div>
+                    <div class="text-wrapper-bottom">
+                        <p class="text text_bottom-title">ГРИЛЛ&nbsp;НОВОГО BMW&nbsp;iX</p>
+                        <p class="text text_bottom-description">ВЫПОЛНЕН ИЗ&nbsp;ИННОВАЦИОННОГО САМОЗАЖИВЛЯЮЩЕГОСЯ МАТЕРИАЛА, НА&nbsp;КОТОРОМ МЕЛКИЕ ЦАРАПИНЫ ЗАТЯГИВАЮТСЯ САМИ СОБОЙ.</p>
+                    </div>
+                </sectinon>
 
-            <section class="second-screen deactive-screen"></section>
-            <section class="third-screen deactive-screen"></section>
-            <section class="fourth-screen deactive-screen"></section>
-            <section class="fifth-screen deactive-screen"></section>
-        </main>
+                <section class="second-screen main-content deactive-screen"></section>
+                <section class="third-screen main-content deactive-screen"></section>
+                <section class="fourth-screen main-content deactive-screen"></section>
+                <section class="fifth-screen main-content deactive-screen"></section>
+            </main>
+        </div>
         <script src="./fs.js"></script>
     </body>
 </html>
