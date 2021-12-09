@@ -271,7 +271,7 @@ html {
 }
 
 .logo-ix {
-  background-image: url(./logo-ix.png);
+  background-image: url(./logos.png);
   background-size: 100% 100%;
   background-position: left;
   width: 500px;
@@ -339,8 +339,8 @@ html {
   margin: 0;
   color: #fff;
   position: absolute;
-  bottom: 10vh;
-  left: calc(58% - (174.39px / 2));
+  bottom: 50px;
+  right: 50px;
   background-color: #0066b2;
   font-size: 16px;
   font-weight: 100;
@@ -361,7 +361,7 @@ html {
   top: 0;
   left: 0;
   background-image: url(./second-img.jpg);
-  background-position: center -15vh;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -377,14 +377,18 @@ html {
 }
 .first-screen .first-line {
   position: absolute;
-  top: 20vh;
-  right: 9vw;
+  top: 152px;
+  right: 100px;
   letter-spacing: 5px;
   font-weight: 100;
   font-size: 1.3em;
   text-align: center;
   width: 500px;
   margin: 0;
+}
+.first-screen .wrapper {
+  left: calc(50% - -295px);
+  top: calc(50% - 476px);
 }
 
 .try-text {
@@ -395,10 +399,10 @@ html {
 
 .arrow {
   position: absolute;
-  width: 80px;
-  top: 242px;
-  left: -60px;
-  transform: rotate(23deg);
+  width: 100px;
+  top: 238px;
+  right: 361px;
+  transform: rotate(355deg);
   visibility: visible;
   opacity: 1;
   transition: 0.2s;
@@ -407,8 +411,8 @@ html {
 .canvas-container {
   clear: both;
   position: absolute;
-  top: calc(63% - (500px / 2));
-  left: calc(48% - (750px / 2));
+  top: calc(52% - 250px);
+  left: calc(48% - 400px);
   z-index: 100;
 }
 
@@ -523,18 +527,20 @@ canvas {
   transition: 0.2s;
 }
 .second-screen .arrow {
-  transform: rotate(180deg);
+  transform: rotate(0);
   top: unset;
-  bottom: 202px;
-  left: 240px;
-  width: 110px;
+  bottom: 186px;
+  left: 113px;
+  width: 187px;
 }
 .second-screen .first-line {
   max-width: 590px;
   text-align: center;
   position: absolute;
-  left: 20px;
-  bottom: 70px;
+  left: -35px;
+  bottom: 91px;
+  margin: 0;
+  font-size: 1.5em;
 }
 .second-screen .text_bottom-description {
   max-width: 40%;
@@ -544,15 +550,15 @@ canvas {
 }
 
 .sound-btn {
-  width: 100px;
-  height: 100px;
+  width: 72px;
+  height: 72px;
   position: absolute;
   background-image: url(./sound-deactive.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
-  left: 350px;
-  bottom: calc(55% - (100px / 2));
+  left: 335px;
+  bottom: 369px;
   transition: 0.2s;
   cursor: url(./pointer.svg) 16 16, pointer;
 }
@@ -579,16 +585,17 @@ canvas {
 .third-screen .arrow {
   transform: rotate(180deg);
   top: unset;
-  bottom: 230px;
-  left: calc(47% - (160px / 2));
-  width: 80px;
+  bottom: 141px;
+  left: 34px;
+  width: 113px;
 }
 .third-screen .first-line {
-  max-width: 590px;
+  font-size: 1.5em;
+  width: 590px;
   text-align: center;
   position: absolute;
-  left: calc(42% - (590px / 2));
-  bottom: 120px;
+  left: -425px;
+  bottom: 48px;
 }
 .third-screen .text_bottom-description {
   max-width: 70%;
@@ -605,10 +612,213 @@ canvas {
   background-color: transparent;
   border: 1px solid;
   transition: 0.2s;
-  bottom: calc(50% - (50px / 2));
+  bottom: 250px;
   left: calc(50% - (160px / 2));
 }
 .change-btn:hover {
   transition: 0.2s;
   background-color: #0066b2;
+}
+
+.wrapper {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: calc(50% - 250px);
+  top: calc(50% - 250px);
+  overflow: visible;
+}
+
+.content__wrapper {
+  position: relative;
+  overflow: visible;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.fourth-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./fifth-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+.fourth-screen .wrapper {
+  left: 50px;
+}
+.fourth-screen .first-line {
+  font-size: 1.5em;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 420px;
+}
+.fourth-screen .fuel-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  top: 165px;
+  left: unset;
+  right: 75px;
+  transition: 0.2s;
+}
+.fourth-screen .fuel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.2s;
+}
+.fourth-screen .arrow {
+  position: absolute;
+  width: 132px;
+  top: 200px;
+  left: 154px;
+  transform: rotate(182deg);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+.fourth-screen .text_bottom-description {
+  max-width: 65%;
+}
+.fourth-screen .logo-ix {
+  background-image: none;
+}
+
+.clock {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  top: 165px;
+  right: 75px;
+  transition: 0.2s;
+  position: absolute;
+  overflow: visible;
+}
+.clock .line-one {
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 49px;
+}
+.clock .line-two {
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 49px;
+  transform-origin: bottom;
+}
+.clock .seconds {
+  font-weight: 100;
+  font-size: 24px;
+  position: absolute;
+  top: -33px;
+  margin: 0;
+  right: 19px;
+}
+.clock .minutes {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 100;
+  bottom: -31px;
+  left: -36px;
+}
+
+.clock-anim {
+  -webkit-animation: clocl-timer;
+          animation: clocl-timer;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes clocl-timer {
+  100% {
+    transform: rotate(38deg);
+  }
+}
+
+@keyframes clocl-timer {
+  100% {
+    transform: rotate(38deg);
+  }
+}
+.length-bar {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 100px;
+  overflow: visible;
+  transition: 0.2s;
+}
+
+.length-bar__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.length-bar__content .line {
+  background-color: #0066b2;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.length-bar__content .text {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 5px 0 0;
+  z-index: 20;
+}
+
+@-webkit-keyframes dist {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes dist {
+  100% {
+    transform: translateX(0);
+  }
+}
+.dist-anim {
+  -webkit-animation: dist;
+          animation: dist;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }/*# sourceMappingURL=fs.css.map */

@@ -4,19 +4,29 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-Light.woff) format("woff");
+  font-family: "NurofenDisplayNormal";
+  src: url(./NurofenDisplayNormal_Lt.woff) format("woff");
   font-weight: 300;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-Regular.woff) format("woff");
+  font-family: "NurofenDisplayPain";
+  src: url(./NurofenDisplayPain_Lt.woff) format("woff");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-SemiBold.woff) format("woff");
-  font-weight: 600;
+  font-family: "NurofenText";
+  src: url(./NurofenText_Lt.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NurofenText";
+  src: url(./NurofenText_Rg.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NurofenText";
+  src: url(./NurofenText_Bd.woff) format("woff");
+  font-weight: 700;
 }
 .page {
   display: flex;
@@ -37,57 +47,42 @@
   top: 10px;
   left: 10px;
   z-index: 10;
+  max-width: calc(100% - 20px);
 }
 
 .banner__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "NurofenText", sans-serif;
   margin: 0;
   color: #243045;
   line-height: 1.2;
   font-size: 13px;
-  max-width: calc(100% - 20px);
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .banner__main-image {
-  top: 17px;
-  width: 185px;
+  top: 1px;
+  width: 200px;
   position: absolute;
-  left: 80px;
+  left: 68px;
 }
 
 .banner__target {
   width: 340px;
-  top: 77px;
+  top: 80px;
   right: calc(50% - (340px / 2));
   position: absolute;
   z-index: 0;
 }
 
-.banner__star-text {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #fff;
-  position: absolute;
-  z-index: 5;
-  bottom: 54px;
-  line-height: 1;
-  left: 10px;
-  font-size: 9px;
-  text-align: justify;
-  max-width: calc(100% - 20px);
-}
-
-.banner__disclamer {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #fff;
+.alert {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: calc(100% - 20px);
-  font-size: 12px;
-  text-align: justify;
-  line-height: 1;
-  text-transform: uppercase;
+}
+
+.disclamer-main {
+  position: absolute;
+  bottom: 51px;
+  left: 6px;
 }/*# sourceMappingURL=index.css.map */

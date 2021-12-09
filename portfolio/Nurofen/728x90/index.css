@@ -4,19 +4,29 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-Light.woff) format("woff");
+  font-family: "NurofenDisplayNormal";
+  src: url(./NurofenDisplayNormal_Lt.woff) format("woff");
   font-weight: 300;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-Regular.woff) format("woff");
+  font-family: "NurofenDisplayPain";
+  src: url(./NurofenDisplayPain_Lt.woff) format("woff");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(./Montserrat-SemiBold.woff) format("woff");
-  font-weight: 600;
+  font-family: "NurofenText";
+  src: url(./NurofenText_Lt.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NurofenText";
+  src: url(./NurofenText_Rg.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NurofenText";
+  src: url(./NurofenText_Bd.woff) format("woff");
+  font-weight: 700;
 }
 .page {
   display: flex;
@@ -34,35 +44,27 @@
 
 .banner__text-wrapper {
   position: absolute;
-  top: 3px;
+  top: 7px;
   left: 10px;
+  max-width: 290px;
 }
 
 .banner__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "NurofenText", sans-serif;
   margin: 0;
   color: #243045;
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 12px;
-  max-width: 290px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .banner__main-image {
-  top: -42px;
-  max-width: 199px;
+  top: -54px;
+  max-width: 200px;
   position: absolute;
   left: 314px;
   z-index: 99;
-}
-
-.banner__paint-one {
-  position: absolute;
-  max-width: 184px;
-  top: -18px;
-  right: 121px;
-  z-index: 2;
-  transform: rotate(359deg);
 }
 
 .banner__target {
@@ -73,50 +75,15 @@
   z-index: 1;
 }
 
-.banner__girl {
-  max-width: 65%;
+.alert {
   position: absolute;
-  top: -25px;
-  right: 113px;
-  z-index: 5;
-  filter: drop-shadow(17px 20px 0px rgba(0, 0, 0, 0.25));
-}
-
-.banner__star-text {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #fff;
-  position: absolute;
-  z-index: 5;
-  top: calc(50% - (78.76px / 2));
-  line-height: 1;
-  right: 10px;
-  font-size: 7px;
-  text-align: justify;
-  max-width: 128px;
-}
-
-.banner__disclamer {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #fff;
-  position: absolute;
-  bottom: 3px;
+  bottom: 5px;
   left: 10px;
-  width: 314px;
-  font-size: 10px;
-  text-align: justify;
-  line-height: 1.15;
-  text-transform: uppercase;
 }
 
-.transition {
-  width: 100%;
-  height: 100%;
+.disclamer-main {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 10;
-  opacity: 0;
+  top: 0px;
+  right: 0px;
+  height: 90px;
 }/*# sourceMappingURL=index.css.map */

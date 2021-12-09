@@ -33,6 +33,11 @@
     font-weight: 700;
 }
 
+@mixin font {
+    font-family: "NurofenText", sans-serif;
+    margin: 0;
+}
+
 #colors {
     $yellow: #ffed1a !global;
     $orange: #ffa400 !global;
@@ -41,10 +46,7 @@
     $navy: #243045 !global;
 }
 
-@mixin font {
-    font-family: "NurofenText", sans-serif;
-    margin: 0;
-}
+
 
 .page {
     display: flex;
@@ -129,5 +131,5 @@
 .disclamer-main {
     position: absolute;
     bottom: 83px;
-    left: 10px;
+    left: 5px;
 }

@@ -41,6 +41,20 @@ const arrowThird = thirdScreen.querySelector(".arrow");
 const tryTextThird = thirdScreen.querySelector(".first-line");
 const tryButton = thirdScreen.querySelector(".change-btn");
 
+// FOURTH SCREEN
+const fourthScreen = document.querySelector(".fourth-screen");
+const arrowFourth = fourthScreen.querySelector(".arrow");
+const lengthBar = fourthScreen.querySelector(".length-bar");
+const distLine = lengthBar.querySelector(".line");
+const distNum = lengthBar.querySelector(".num-kilometers");
+const tryButtonFourth = fourthScreen.querySelector(".fuel-btn");
+const tryTextFourth = fourthScreen.querySelector(".first-line");
+const clock = fourthScreen.querySelector(".clock");
+const clockArrow = clock.querySelector(".line-two");
+const clockSec = clock.querySelector(".seconds");
+const clockMinText = clock.querySelector(".minutes");
+const bottomTextFourth = fourthScreen.querySelector(".text-wrapper-bottom");
+
 screenad.hide();
 screenad.setZIndex(1200000);
 screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=true&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
@@ -69,6 +83,7 @@ fourthButton.addEventListener("click", fourthSlide);
 fifthButton.addEventListener("click", fifthSlide);
 soundBtn.addEventListener("click", soundOn);
 tryButton.addEventListener("click", openRoof);
+tryButtonFourth.addEventListener("click", chargeCar);
 
 function minimizeCursor() {
     cursor.classList.add("cursor_active");
@@ -117,11 +132,16 @@ function thirdSlide() {
 }
 
 function fourthSlide() {
-    firstButton.classList.remove("nav__list-item_active");
-    secondButton.classList.remove("nav__list-item_active");
-    thirdButton.classList.remove("nav__list-item_active");
+    setDefault();
+    navButtons.forEach((btn) => {
+        btn.classList.remove("nav__list-item_active");
+    });
+    allMainScreens.forEach((scr) => {
+        scr.classList.add("deactive-screen");
+    });
+    defaultScreen.classList.add("deactive-screen");
     fourthButton.classList.add("nav__list-item_active");
-    fifthButton.classList.remove("nav__list-item_active");
+    fourthScreen.classList.remove("deactive-screen");
 }
 
 function fifthSlide() {
@@ -134,7 +154,7 @@ function fifthSlide() {
 
 function startDrawing(e) {
     context.strokeStyle = "rgb(255,255,255)";
-    context.lineWidth = "3";
+    context.lineWidth = "2";
     context.moveTo(e.pageX - canvas.offsetLeft, e.pageY - canvas.offsetTop);
     isDrawing = true;
     context.beginPath();
@@ -142,8 +162,8 @@ function startDrawing(e) {
 
 function draw(e) {
     if (isDrawing === true) {
-        var x = e.pageX - 547 - canvas.offsetLeft;
-        var y = e.pageY - 395 - canvas.offsetTop;
+        var x = e.pageX - 521 - canvas.offsetLeft;
+        var y = e.pageY - 305 - canvas.offsetTop;
 
         context.lineTo(x, y);
         context.stroke();
@@ -204,6 +224,14 @@ function setDefault() {
     bottomTextThird.classList.remove("show-hidden-text");
     arrowThird.classList.remove("deactive-screen");
     tryTextThird.classList.remove("deactive-screen");
+    arrowFourth.classList.remove("deactive-screen");
+    tryTextFourth.classList.remove("deactive-screen");
+    tryButtonFourth.classList.remove("deactive-screen");
+    clock.classList.add("deactive-screen");
+    lengthBar.classList.add("deactive-screen");
+    distLine.classList.remove("dist-anim");
+    clockArrow.classList.remove("clock-anim");
+    bottomTextFourth.classList.remove("show-hidden-text");
 }
 
 function closeFS() {
@@ -226,4 +254,39 @@ function openRoof() {
     bottomTextThird.classList.toggle("show-hidden-text");
     arrowThird.classList.toggle("deactive-screen");
     tryTextThird.classList.toggle("deactive-screen");
+}
+
+function chargeCar() {
+    clockSec.textContent = 0;
+    distNum.textContent = 0;
+    arrowFourth.classList.toggle("deactive-screen");
+    tryTextFourth.classList.toggle("deactive-screen");
+    tryButtonFourth.classList.toggle("deactive-screen");
+    clock.classList.toggle("deactive-screen");
+    lengthBar.classList.toggle("deactive-screen");
+    distLine.classList.toggle("dist-anim");
+    clockArrow.classList.toggle("clock-anim");
+    bottomTextFourth.classList.toggle("show-hidden-text");
+
+    let timer = setInterval(secondsCounter, 1000);
+
+    function secondsCounter() {
+        clockSec.textContent++;
+        if (clockSec.textContent > 5) {
+            deleteInterval(timer);
+        }
+    }
+
+    function deleteInterval(interval) {
+        clearInterval(interval);
+    }
+
+    let counter = setInterval(distCount, 60);
+
+    function distCount() {
+        distNum.textContent++;
+        if (distNum.textContent > 99) {
+            deleteInterval(counter);
+        }
+    }
 }

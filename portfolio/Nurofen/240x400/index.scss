@@ -4,21 +4,38 @@
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-Light.woff) format("woff");
+    font-family: "NurofenDisplayNormal";
+    src: url(./NurofenDisplayNormal_Lt.woff) format("woff");
     font-weight: 300;
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-Regular.woff) format("woff");
+    font-family: "NurofenDisplayPain";
+    src: url(./NurofenDisplayPain_Lt.woff) format("woff");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-SemiBold.woff) format("woff");
-    font-weight: 600;
+    font-family: "NurofenText";
+    src: url(./NurofenText_Lt.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "NurofenText";
+    src: url(./NurofenText_Rg.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NurofenText";
+    src: url(./NurofenText_Bd.woff) format("woff");
+    font-weight: 700;
+}
+
+@mixin font {
+    font-family: "NurofenText", sans-serif;
+    margin: 0;
 }
 
 #colors {
@@ -27,11 +44,6 @@
     $red: #c52734 !global;
     $white: #fff !global;
     $navy: #243045 !global;
-}
-
-@mixin font {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
 }
 
 .page {
@@ -53,6 +65,7 @@
     top: 10px;
     left: 10px;
     z-index: 10;
+    width: calc(100% - 40px);
 }
 
 .banner__title {
@@ -60,14 +73,14 @@
     color: $navy;
     line-height: 1.4;
     font-size: 12px;
-    width: calc(100% - 40px);
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .banner__main-image {
-    width: 243px;
-    top: 108px;
-    right: -5px;
+    width: 240px;
+    top: 106px;
+    right: 0px;
     position: absolute;
     z-index: 0;
 }
@@ -75,34 +88,19 @@
 .banner__target {
     width: 390px;
     top: -18px;
-    right: calc(50% - (390px/2));
+    right: calc(50% - (390px / 2));
     position: absolute;
     z-index: 0;
 }
 
-.banner__star-text {
-    @include font;
-    color: $white;
-    position: absolute;
-    z-index: 5;
-    bottom: 60px;
-    line-height: 1;
-    left: 10px;
-    font-size: 8px;
-    max-width: calc(100% - 20px);
-    animation-delay: 1s;
-    text-align: justify;
-}
-
-.banner__disclamer {
-    @include font;
-    color: $white;
+.alert {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: calc(100% - 20px);
-    font-size: 10.5px;
-    text-align: justify;
-    line-height: 1;
-    text-transform: uppercase;
+}
+
+.disclamer-main {
+    position: absolute;
+    bottom: 60px;
+    left: 6px;
 }

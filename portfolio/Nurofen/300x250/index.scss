@@ -4,21 +4,38 @@
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-Light.woff) format("woff");
+    font-family: "NurofenDisplayNormal";
+    src: url(./NurofenDisplayNormal_Lt.woff) format("woff");
     font-weight: 300;
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-Regular.woff) format("woff");
+    font-family: "NurofenDisplayPain";
+    src: url(./NurofenDisplayPain_Lt.woff) format("woff");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url(./Montserrat-SemiBold.woff) format("woff");
-    font-weight: 600;
+    font-family: "NurofenText";
+    src: url(./NurofenText_Lt.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "NurofenText";
+    src: url(./NurofenText_Rg.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NurofenText";
+    src: url(./NurofenText_Bd.woff) format("woff");
+    font-weight: 700;
+}
+
+@mixin font {
+    font-family: "NurofenText", sans-serif;
+    margin: 0;
 }
 
 #colors {
@@ -27,11 +44,6 @@
     $red: #c52734 !global;
     $white: #fff !global;
     $navy: #243045 !global;
-}
-
-@mixin font {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
 }
 
 .page {
@@ -53,6 +65,7 @@
     top: 10px;
     left: 10px;
     z-index: 10;
+    max-width: calc(100% - 20px);
 }
 
 .banner__title {
@@ -60,12 +73,13 @@
     color: $navy;
     line-height: 1.3;
     font-size: 12px;
-    max-width: calc(100% - 20px);
+    font-weight: 700;
+
     text-transform: uppercase;
 }
 
 .banner__main-image {
-    top: 23px;
+    top: 11px;
     width: 170px;
     position: absolute;
     left: calc(50% - (170px /2));
@@ -79,28 +93,14 @@
     z-index: 0;
 }
 
-.banner__star-text {
-    @include font;
-    color: $white;
-    position: absolute;
-    z-index: 5;
-    bottom: 45px;
-    line-height: 1.2;
-    left: 10px;
-    font-size: 7.3px;
-    text-align: justify;
-    max-width: calc(100% - 20px);
-}
-
-.banner__disclamer {
-    @include font;
-    color: $white;
+.alert {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: calc(100% - 20px);
-    font-size: 10.5px;
-    text-align: justify;
-    line-height: 1;
-    text-transform: uppercase;
+}
+
+.disclamer-main {
+    position: absolute;
+    bottom: 45px;
+    left: 5px;
 }
