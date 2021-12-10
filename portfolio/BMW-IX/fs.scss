@@ -1,7 +1,7 @@
 @import "./fonts.scss";
 
 @mixin font {
-    font-family: "BMWTypeNextTT";
+    font-family: "BMWTypeNextTT", sans-serif;
     margin: 0;
 }
 
@@ -14,6 +14,13 @@
 #color {
     $white: #fff !global;
     $blue: #0066b2 !global;
+}
+
+#font-size {
+    $thin: 100 !global;
+    $light: 300 !global;
+    $regular: 400 !global;
+    $bold: 700 !global;
 }
 
 * {
@@ -159,7 +166,8 @@ html {
     position: relative;
     @include font;
     color: $white;
-    font-weight: 100;
+    font-weight: $light;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,11 +185,10 @@ html {
 
     &:nth-of-type(1) {
         background-image: url(./second-img.jpg);
-        background-position: center -44px;
     }
     &:nth-of-type(2) {
         background-position: center;
-        background-image: url(./first-img.jpg);
+        background-image: url(./third-img.jpg);
     }
     &:nth-of-type(3) {
         background-position: center;
@@ -193,7 +200,7 @@ html {
     }
     &:nth-of-type(5) {
         background-position: center -81px;
-        background-image: url(./third-img.jpg);
+        background-image: url(./last.jpg);
     }
 
     &:hover .nav__list-filter {
@@ -248,9 +255,10 @@ html {
 
 .logo-ix {
     background-image: url(./logos.png);
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-position: left;
-    width: 500px;
+    background-repeat: no-repeat;
+    width: 40%;
     height: 100%;
     position: relative;
 }
@@ -267,7 +275,7 @@ html {
 .the {
     @include font;
     color: $white;
-    font-weight: 100;
+    font-weight: $light;
     font-size: 2em;
     letter-spacing: 15px;
     text-transform: uppercase;
@@ -279,44 +287,44 @@ html {
 .text {
     @include font;
     color: $white;
-    text-transform: uppercase;
     margin-left: 50px;
 }
 
 .first-line {
-    letter-spacing: 5px;
-    font-weight: 100;
-    font-size: 2em;
-    margin-top: 112px;
+    letter-spacing: 10px;
+    font-weight: $light;
+    font-size: 3vh;
+    margin-top: 11.8vh;
 }
 
 .bottom-text {
     position: absolute;
-    bottom: 80px;
+    bottom: 3vh;
 }
 
 .second-line {
-    letter-spacing: 5px;
-    font-weight: 100;
-    font-size: 2em;
+    letter-spacing: 10px;
+    font-weight: $light;
+    font-size: 3vh;
 }
 
 .third-line {
-    letter-spacing: 15px;
-    font-weight: 100;
-    font-size: 3em;
-    margin-left: 10vw;
+    letter-spacing: 10px;
+    font-weight: $light;
+    font-size: 7vh;
+    line-height: 1;
+    margin-left: 9vw;
 }
 
 .button {
     @include font;
     color: $white;
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 3vh;
+    right: 17.6%;
     background-color: #0066b2;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: $light;
     padding: 10px 30px;
     transition: 0.2s;
     border: 1px solid transparent;
@@ -337,6 +345,7 @@ html {
     background-image: url(./second-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 115%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -355,11 +364,12 @@ html {
         top: 152px;
         right: 100px;
         letter-spacing: 5px;
-        font-weight: 100;
-        font-size: 1.3em;
+        font-weight: 300;
+        font-size: 20px;
         text-align: center;
-        width: 500px;
+        width: 420px;
         margin: 0;
+        text-transform: uppercase;
     }
 
     .wrapper {
@@ -388,13 +398,108 @@ html {
 .canvas-container {
     clear: both;
     position: absolute;
-    top: calc(52% - 250px);
-    left: calc(48% - 400px);
+    top: calc(50% - 300px);
+    left: calc(50% - 500px);
     z-index: 100;
 }
 
-canvas {
-    border-radius: 100px 220px 160px 400px;
+.border-container {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    top: calc(50% - 300px);
+    left: calc(50% - 500px);
+}
+
+.border-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+    position: absolute;
+}
+
+.border-top {
+    top: -133px;
+    left: 30px;
+    height: 235px;
+    width: 930px;
+    transform: rotate(13deg);
+    z-index: 101;
+}
+
+.border-left {
+    height: 600px;
+    width: 111px;
+    top: 0;
+    left: -49px;
+    transform: rotate(170deg);
+    z-index: 102;
+}
+
+.border-right {
+    height: 600px;
+    width: 121px;
+    right: -27px;
+    top: 0;
+    transform: rotate(10deg);
+    z-index: 103;
+}
+
+.border-bottom {
+    width: 900px;
+    height: 261px;
+    bottom: -103px;
+    left: 0;
+    transform: rotate(16deg);
+    z-index: 104;
+}
+
+.border-left-top {
+    width: 400px;
+    height: 81px;
+    top: 0;
+    left: -200px;
+    transform: rotate(116deg);
+    z-index: 105;
+}
+
+.border-right-top {
+    width: 400px;
+    height: 101px;
+    top: 100px;
+    right: -73px;
+    transform: rotate(62deg);
+    z-index: 106;
+}
+
+.border-center-left {
+    width: 600px;
+    height: 182px;
+    top: -150px;
+    left: 14px;
+    transform: rotate(72deg);
+    z-index: 107;
+}
+
+.border-center {
+    width: 125px;
+    height: 300px;
+    bottom: 140px;
+    left: 328px;
+    transform: rotate(-6deg);
+    z-index: 108;
+}
+
+.border-center-right {
+    height: 480px;
+    width: 120px;
+    right: 414px;
+    top: -156px;
+    transform: rotate(37deg);
+    z-index: 109;
 }
 
 @keyframes opacity {
@@ -423,10 +528,10 @@ canvas {
 
 .text-wrapper-bottom {
     width: 100%;
-    height: 300px;
+    height: 200px;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(0deg, black, transparent);
+    background: linear-gradient(0deg, #000 10%, transparent 100%);
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -438,17 +543,19 @@ canvas {
 
 .text_bottom-title {
     text-align: center;
-    font-weight: 100;
-    font-size: 50px;
+    font-weight: $light;
+    letter-spacing: 10px;
+    font-size: 30px;
     margin: 0 0 20px 0;
 }
 
 .text_bottom-description {
     text-align: center;
-    font-weight: 100;
-    font-size: 25px;
+    font-weight: $thin;
+    font-size: 20px;
+    letter-spacing: 4px;
     margin: 0;
-    max-width: 55%;
+    width: 1000px;
 }
 
 @keyframes show-hidden-text {
@@ -491,13 +598,13 @@ canvas {
     }
 
     .first-line {
-        max-width: 590px;
+        width: 610px;
         text-align: center;
         position: absolute;
         left: -35px;
         bottom: 91px;
         margin: 0;
-        font-size: 1.5em;
+        font-size: 20px;
     }
 
     .text_bottom-description {
@@ -506,6 +613,12 @@ canvas {
 
     .logo-ix {
         background-image: none;
+    }
+
+    .wrapper {
+        left: 4%;
+        bottom: 7%;
+        top: unset;
     }
 }
 
@@ -551,7 +664,7 @@ canvas {
     }
 
     .first-line {
-        font-size: 1.5em;
+        font-size: 20px;
         width: 590px;
         text-align: center;
         position: absolute;
@@ -622,12 +735,12 @@ canvas {
     }
 
     .first-line {
-        font-size: 1.5em;
+        font-size: 20px;
         margin: 0;
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         text-align: center;
-        width: 420px;
+        width: 400px;
     }
 
     .fuel-btn {
@@ -701,7 +814,7 @@ canvas {
     }
 
     .seconds {
-        font-weight: 100;
+        font-weight: $light;
         font-size: 24px;
         position: absolute;
         top: -33px;
@@ -712,7 +825,7 @@ canvas {
     .minutes {
         position: absolute;
         font-size: 20px;
-        font-weight: 100;
+        font-weight: $light;
         bottom: -31px;
         left: -36px;
     }

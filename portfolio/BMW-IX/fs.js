@@ -25,6 +25,7 @@ const canvasContainer = firstScreen.querySelector(".canvas-container");
 const bottomTextFirst = firstScreen.querySelector(".text-wrapper-bottom");
 const arrow = firstScreen.querySelector(".arrow");
 const tryText = firstScreen.querySelector(".try-text");
+const borders = firstScreen.querySelector(".border-wrapper");
 
 // SECOND SCREEN
 const secondScreen = document.querySelector(".second-screen");
@@ -62,8 +63,13 @@ screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=tru
 window.onload = function () {
     canvas = document.getElementById("drawingCanvas");
     context = canvas.getContext("2d");
+    border = borders.querySelectorAll(".border");
+    border.forEach((brd) => {
+        brd.addEventListener("mouseenter", stopDrawing);
+    });
 
     canvas.onmousedown = startDrawing;
+    canvas.onmouseleave = stopDrawing;
     canvas.onmouseup = stopDrawing;
     canvas.onmouseout = stopDrawing;
     canvas.onmousemove = draw;
@@ -162,8 +168,8 @@ function startDrawing(e) {
 
 function draw(e) {
     if (isDrawing === true) {
-        var x = e.pageX - 521 - canvas.offsetLeft;
-        var y = e.pageY - 305 - canvas.offsetTop;
+        let x = e.pageX - 460 - canvas.offsetLeft;
+        let y = e.pageY - 232 - canvas.offsetTop;
 
         context.lineTo(x, y);
         context.stroke();
@@ -232,6 +238,7 @@ function setDefault() {
     distLine.classList.remove("dist-anim");
     clockArrow.classList.remove("clock-anim");
     bottomTextFourth.classList.remove("show-hidden-text");
+    tryButton.classList.remove("deactive-screen");
 }
 
 function closeFS() {
@@ -254,6 +261,7 @@ function openRoof() {
     bottomTextThird.classList.toggle("show-hidden-text");
     arrowThird.classList.toggle("deactive-screen");
     tryTextThird.classList.toggle("deactive-screen");
+    tryButton.classList.toggle("deactive-screen");
 }
 
 function chargeCar() {
