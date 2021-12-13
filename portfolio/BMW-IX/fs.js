@@ -56,6 +56,14 @@ const clockSec = clock.querySelector(".seconds");
 const clockMinText = clock.querySelector(".minutes");
 const bottomTextFourth = fourthScreen.querySelector(".text-wrapper-bottom");
 
+// LAST SCREEN
+const lastScreen = document.querySelector(".last-screen");
+const videoPlayBtn = lastScreen.querySelector(".play-button");
+const contentWrapper = lastScreen.querySelector(".wrapper");
+const cover = lastScreen.querySelector(".cover");
+const player = lastScreen.querySelector(".player");
+const videoDescription = lastScreen.querySelector(".video-description");
+
 screenad.hide();
 screenad.setZIndex(1200000);
 screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=true&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
@@ -86,10 +94,13 @@ firstButton.addEventListener("click", firstSlide);
 secondButton.addEventListener("click", secondSlide);
 thirdButton.addEventListener("click", thirdSlide);
 fourthButton.addEventListener("click", fourthSlide);
-fifthButton.addEventListener("click", fifthSlide);
+fifthButton.addEventListener("click", lastSlide);
 soundBtn.addEventListener("click", soundOn);
 tryButton.addEventListener("click", openRoof);
 tryButtonFourth.addEventListener("click", chargeCar);
+videoPlayBtn.addEventListener("click", playVideo);
+player.addEventListener("click", stopVideo);
+player.addEventListener("ended", stopVideo);
 
 function minimizeCursor() {
     cursor.classList.add("cursor_active");
@@ -150,12 +161,17 @@ function fourthSlide() {
     fourthScreen.classList.remove("deactive-screen");
 }
 
-function fifthSlide() {
-    firstButton.classList.remove("nav__list-item_active");
-    secondButton.classList.remove("nav__list-item_active");
-    thirdButton.classList.remove("nav__list-item_active");
-    fourthButton.classList.remove("nav__list-item_active");
+function lastSlide() {
+    setDefault();
+    navButtons.forEach((btn) => {
+        btn.classList.remove("nav__list-item_active");
+    });
+    allMainScreens.forEach((scr) => {
+        scr.classList.add("deactive-screen");
+    });
+    defaultScreen.classList.add("deactive-screen");
     fifthButton.classList.add("nav__list-item_active");
+    lastScreen.classList.remove("deactive-screen");
 }
 
 function startDrawing(e) {
@@ -166,10 +182,13 @@ function startDrawing(e) {
     context.beginPath();
 }
 
-function draw(e) {
+function draw(event) {
     if (isDrawing === true) {
-        let x = e.pageX - 460 - canvas.offsetLeft;
-        let y = e.pageY - 232 - canvas.offsetTop;
+        // let x = event.pageX - 460 - canvas.offsetLeft;
+        // let y = event.pageY - 232 - canvas.offsetTop;
+
+        let x = event.offsetX - canvas.offsetLeft;
+        let y = event.offsetY - canvas.offsetTop;
 
         context.lineTo(x, y);
         context.stroke();
@@ -239,6 +258,12 @@ function setDefault() {
     clockArrow.classList.remove("clock-anim");
     bottomTextFourth.classList.remove("show-hidden-text");
     tryButton.classList.remove("deactive-screen");
+    videoPlayBtn.classList.remove("deactive-screen");
+    cover.classList.remove("deactive-screen");
+    videoDescription.classList.remove("deactive-screen");
+    player.classList.add("player_paused");
+    player.pause();
+    player.currentTime = 0;
 }
 
 function closeFS() {
@@ -297,4 +322,20 @@ function chargeCar() {
             deleteInterval(counter);
         }
     }
+}
+
+function playVideo() {
+    player.play();
+    player.classList.remove("player_paused");
+    videoPlayBtn.classList.add("deactive-screen");
+    videoDescription.classList.add("deactive-screen");
+    contentWrapper.classList.add("deactive-screen");
+}
+
+function stopVideo() {
+    player.pause();
+    player.classList.add("player_paused");
+    videoPlayBtn.classList.remove("deactive-screen");
+    videoDescription.classList.remove("deactive-screen");
+    contentWrapper.classList.remove("deactive-screen");
 }
