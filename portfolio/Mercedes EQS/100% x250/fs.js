@@ -18,9 +18,11 @@ closeBtn.addEventListener("click", () => {
 player.addEventListener("ended", () => {
     screenad.event("VIDEO_ended");
     closeFS();
+    player.currentTime = 0;
 });
 
 screenad.shared.showFullScreen = () => {
+    player.classList.add("video-start");
     screenad.setBlockPageTouches(true);
     screenad.executeScript("document.body.style.overflow='hidden'");
     screenad.show();
@@ -28,9 +30,7 @@ screenad.shared.showFullScreen = () => {
 
     setTimeout(function () {
         fullscreen.classList.add("anim");
-        setTimeout(function () {
-            player.play();
-        }, 1000);
+        player.play();
     }, 100);
 };
 

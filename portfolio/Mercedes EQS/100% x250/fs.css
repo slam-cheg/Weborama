@@ -13,64 +13,80 @@
   padding: 0px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .page {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #1d5db4;
+  background-color: transparent;
 }
 
-.fullscreen {
+#fullscreen {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   cursor: pointer;
 }
 
-.shader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(rgba(0, 0, 0, 0), black, black);
-  transform: translate(-50%, -50%) scale(5);
-  opacity: 0;
-}
-
-.anim .shader {
-  transform: translate(-50%, -50%) scale(0.5);
-  opacity: 1;
-  transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.anim .shader::after {
-  opacity: 1;
-  transition: opacity 1.5s 1.5s;
-}
-.anim .shader::before {
-  content: "";
+.player {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #000;
   opacity: 0;
+  transform: scale(0.33) translateY(-680px) translateX(-325px);
+  background-color: transparent;
 }
-.anim .video_wrapper {
-  opacity: 1;
-  transition: opacity 1.5s 2s;
+
+@-webkit-keyframes video-start {
+  40% {
+    opacity: 1;
+    transform: scale(0.33) translateY(-680px) translateX(-325px);
+  }
+  80% {
+    background-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    background-color: #000;
+  }
 }
-.anim .player {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+
+@keyframes video-start {
+  40% {
+    opacity: 1;
+    transform: scale(0.33) translateY(-680px) translateX(-325px);
+  }
+  80% {
+    background-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    background-color: #000;
+  }
 }
-.anim .close {
+.video-start {
+  -webkit-animation: video-start;
+          animation: video-start;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.close {
   position: absolute;
   right: 2vw;
   top: 2.5vh;
@@ -79,7 +95,7 @@
   z-index: 999;
   cursor: pointer;
 }
-.anim .close:before {
+.close:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -89,7 +105,7 @@
   background: #fff;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.anim .close:after {
+.close:after {
   content: "";
   position: absolute;
   left: 50%;
