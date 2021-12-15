@@ -145,3 +145,21 @@ function animIll() {
         illRight.classList.remove("ill-anim-right");
     }, 4000);
 }
+
+function getCsv() {
+    return fetch("./cities.json", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    })
+        .then(checkResponse)
+        .then((res) => {
+            console.log(res);
+        });
+}
+
+const checkResponse = (res) => {
+    if (res.ok) {
+        return res.json();
+    }
+    return Promise.reject(`Ошибка: ${res.status}`);
+};
