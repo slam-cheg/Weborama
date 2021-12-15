@@ -80,6 +80,19 @@
     left: 150%;
   }
 }
+.flare-anim {
+  -webkit-animation: flareAnimation 2s;
+          animation: flareAnimation 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 @-webkit-keyframes transition {
   50% {
     opacity: 1;
@@ -88,6 +101,7 @@
     opacity: 0;
   }
 }
+
 @keyframes transition {
   50% {
     opacity: 1;
@@ -107,6 +121,53 @@
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+@-webkit-keyframes left-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+
+@keyframes left-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+@-webkit-keyframes right-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+@keyframes right-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+.ill-anim-left {
+  -webkit-animation: left-ill;
+          animation: left-ill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.ill-anim-right {
+  -webkit-animation: right-ill;
+          animation: right-ill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 * {
@@ -198,12 +259,8 @@
   height: 100%;
   width: 45px;
   transform: skewX(20deg);
-  -webkit-animation: flareAnimation;
-          animation: flareAnimation;
   left: -150%;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
-  -webkit-animation: flareAnimation 2s 1 linear;
-          animation: flareAnimation 2s 1 linear;
 }
 
 .footer {
@@ -228,6 +285,23 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  overflow: hidden;
+}
+
+.spray {
+  mix-blend-mode: screen;
+  width: 200px;
+}
+
+.spray_left {
+  top: 211px;
+  left: -79px;
+  transform: rotate(180deg);
+}
+
+.spray_right {
+  top: 220px;
+  right: -77px;
 }
 
 .img {
@@ -261,13 +335,21 @@
 }
 
 .hours {
-  bottom: 150px;
+  bottom: 158px;
   right: 20px;
 }
 
 .freeze {
   left: 20px;
   bottom: 138px;
+}
+
+.sparkle {
+  width: 540px;
+  left: -240px;
+  bottom: 18px;
+  mix-blend-mode: screen;
+  mix-blend-mode: screen;
 }
 
 .transition {

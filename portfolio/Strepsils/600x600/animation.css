@@ -50,6 +50,19 @@
     left: 150%;
   }
 }
+.flare-anim {
+  -webkit-animation: flareAnimation 2s;
+          animation: flareAnimation 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 @-webkit-keyframes transition {
   50% {
     opacity: 1;
@@ -58,6 +71,7 @@
     opacity: 0;
   }
 }
+
 @keyframes transition {
   50% {
     opacity: 1;
@@ -77,4 +91,51 @@
           animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+@-webkit-keyframes left-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+
+@keyframes left-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+@-webkit-keyframes right-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+@keyframes right-ill {
+  100% {
+    opacity: 0.33;
+  }
+}
+.ill-anim-left {
+  -webkit-animation: left-ill;
+          animation: left-ill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.ill-anim-right {
+  -webkit-animation: right-ill;
+          animation: right-ill;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }/*# sourceMappingURL=animation.css.map */

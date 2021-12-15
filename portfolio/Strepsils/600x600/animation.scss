@@ -27,6 +27,14 @@
     }
 }
 
+.flare-anim {
+    animation: flareAnimation 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
 @keyframes transition {
     0% {
     }
@@ -44,4 +52,38 @@
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
+}
+
+@keyframes left-ill {
+    0% {
+    }
+    100% {
+        opacity: 0.33;
+        // transform: rotate(45deg) translate(-70px, 30px);
+    }
+}
+
+@keyframes right-ill {
+    0% {
+    }
+    100% {
+        opacity: 0.33;
+        //  transform: rotate(325deg) translate(70px, 30px);
+    }
+}
+
+.ill-anim-left {
+    animation: left-ill;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.ill-anim-right {
+    animation: right-ill;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }

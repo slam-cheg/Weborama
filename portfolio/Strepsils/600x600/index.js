@@ -2,6 +2,11 @@ const firstSlide = document.querySelector(".first-slide");
 const secondSlide = document.querySelector(".second-slide");
 const thirdSlide = document.querySelector(".third-slide");
 const transition = document.querySelector(".transition");
+const spray = document.querySelectorAll(".spray");
+const illLeft = secondSlide.querySelector(".img_left");
+const illRight = secondSlide.querySelector(".img_right");
+const firstTitle = firstSlide.querySelector(".alert__descr");
+const flare = firstSlide.querySelector(".flare");
 
 const regionPlace = firstSlide.querySelector(".region");
 const leftPain = secondSlide.querySelector(".img_left");
@@ -10,16 +15,28 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
-let timer = setInterval(changeSlides, 6000);
+let timer = setInterval(changeSlides, 4000);
 
 function changeSlides() {
     let currentSlide = document.querySelector(".active");
     let nextSlide = currentSlide.nextElementSibling;
+
+    if (nextSlide.classList.contains("second-slide")) {
+        toggleSpray();
+        firstTitle.classList.remove("scale-anim");
+        flare.classList.remove("flare-anim");
+    }
     if (nextSlide.classList.contains("third-slide")) {
         thirdAnims();
     }
+
     if (nextSlide.classList.contains("transition")) {
         nextSlide = firstSlide;
+        setTimeout(() => {
+            flare.classList.add("flare-anim");
+            firstTitle.classList.add("scale-anim");
+        }, 500);
+
         transition.classList.add("anim");
         setTimeout(() => {
             currentSlide.classList.remove("active");
@@ -48,5 +65,30 @@ function thirdAnims() {
     setTimeout(() => {
         freeze.classList.remove("scale-anim");
         hours.classList.remove("scale-anim");
+    }, 4000);
+}
+
+function toggleSpray() {
+    setTimeout(() => {
+        spray.forEach((gif) => {
+            gif.src = "./spray.gif";
+        });
+        animIll();
+    }, 1500);
+    setTimeout(() => {
+        spray.forEach((gif) => {
+            gif.src = "";
+        });
+    }, 4000);
+}
+
+function animIll() {
+    setTimeout(() => {
+        illLeft.classList.add("ill-anim-left");
+        illRight.classList.add("ill-anim-right");
+    }, 100);
+    setTimeout(() => {
+        illLeft.classList.remove("ill-anim-left");
+        illRight.classList.remove("ill-anim-right");
     }, 4000);
 }
