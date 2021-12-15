@@ -15,7 +15,60 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
+const cities = [
+    {
+        name: "Люберцы",
+        x: 55.6772,
+        y: 37.8932,
+    },
+    {
+        name: "Москва",
+        x: 55.7522,
+        y: 37.6156,
+    },
+];
+
+const options = {
+    enableHighAccuracy: false,
+    timeout: 0,
+    maximumAge: 0,
+};
+
 let timer = setInterval(changeSlides, 4000);
+let city = "";
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+function success(pos) {
+    const crd = pos.coords;
+    const shirotaUser = Math.round(crd.latitude);
+    const dolgotaUser = Math.round(crd.longitude);
+
+    perebor(shirotaUser, dolgotaUser);
+
+    if (city === "") {
+        return console.log("Нет совпадений!!!");
+    } else {
+        return (regionPlace.textContent = city);
+    }
+}
+
+function perebor(shirotaUser, dolgotaUser) {
+    for (let i = 0; i < cities.length; i++) {
+        let shirotaCity = Math.round(cities[i].x);
+        let dolgotaCity = Math.round(cities[i].y);
+
+        if (shirotaUser === shirotaCity && dolgotaUser === dolgotaCity) {
+            city = cities[i].name;
+            console.log(`Ваши координаты: ${shirotaUser}:${dolgotaUser}. Координаты города ${cities[i].name} : ${shirotaCity}:${dolgotaCity} `);
+            break;
+        }
+    }
+}
+
+function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+}
 
 function changeSlides() {
     let currentSlide = document.querySelector(".active");
