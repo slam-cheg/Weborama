@@ -15,60 +15,40 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
-const cities = [
-    {
-        name: "Люберцы",
-        x: 55.6772,
-        y: 37.8932,
-    },
-    {
-        name: "Москва",
-        x: 55.7522,
-        y: 37.6156,
-    },
-];
+const map = new YMaps.Map();
+let userCity = YMaps.location.city;
+let userRegion = YMaps.location.region;
 
-const options = {
-    enableHighAccuracy: false,
-    timeout: 0,
-    maximumAge: 0,
+console.log(`Ваш регион ${userRegion}`);
+console.log(`Ваш город ${userCity}`);
+
+function getCsv() {
+    return fetch("./cities.json", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    })
+        .then(checkResponse)
+        .then((res) => {
+            res.forEach((stroke) => {
+                if (stroke.name_ru === userCity || `${stroke.name_ru} и ${stroke.region_ru}` === userRegion) {
+                    regionPlace.textContent = userRegion;
+                }
+            });
+        })
+        .catch((err) => {
+            console.warn(err);
+        });
+}
+
+const checkResponse = (res) => {
+    if (res.ok) {
+        return res.json();
+    }
+    return Promise.reject(`Ошибка: ${res.status}`);
 };
 
+getCsv();
 let timer = setInterval(changeSlides, 4000);
-let city = "";
-
-navigator.geolocation.getCurrentPosition(success, error, options);
-
-function success(pos) {
-    const crd = pos.coords;
-    const shirotaUser = Math.round(crd.latitude);
-    const dolgotaUser = Math.round(crd.longitude);
-
-    perebor(shirotaUser, dolgotaUser);
-
-    if (city === "") {
-        return console.log("Нет совпадений!!!");
-    } else {
-        return (regionPlace.textContent = city);
-    }
-}
-
-function perebor(shirotaUser, dolgotaUser) {
-    for (let i = 0; i < cities.length; i++) {
-        let shirotaCity = Math.round(cities[i].x);
-        let dolgotaCity = Math.round(cities[i].y);
-
-        if (shirotaUser === shirotaCity && dolgotaUser === dolgotaCity) {
-            city = cities[i].name;
-            console.log(`Ваши координаты: ${shirotaUser}:${dolgotaUser}. Координаты города ${cities[i].name} : ${shirotaCity}:${dolgotaCity} `);
-            break;
-        }
-    }
-}
-
-function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-}
 
 function changeSlides() {
     let currentSlide = document.querySelector(".active");
@@ -145,21 +125,3 @@ function animIll() {
         illRight.classList.remove("ill-anim-right");
     }, 4000);
 }
-
-function getCsv() {
-    return fetch("./cities.json", {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-    })
-        .then(checkResponse)
-        .then((res) => {
-            console.log(res);
-        });
-}
-
-const checkResponse = (res) => {
-    if (res.ok) {
-        return res.json();
-    }
-    return Promise.reject(`Ошибка: ${res.status}`);
-};
