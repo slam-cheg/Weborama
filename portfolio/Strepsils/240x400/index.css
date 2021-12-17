@@ -67,8 +67,11 @@
   0% {
     left: -150%;
   }
-  90% {
+  80% {
     opacity: 1;
+  }
+  95% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -80,8 +83,11 @@
   0% {
     left: -150%;
   }
-  90% {
+  80% {
     opacity: 1;
+  }
+  95% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -360,10 +366,18 @@
 }
 
 .sparkle {
-  width: 350px;
-  left: -230px;
-  bottom: 48px;
+  width: 240px;
+  height: 196px;
+  left: -9px;
+  bottom: 135px;
   mix-blend-mode: screen;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sparkle img {
+  height: 800px;
 }
 
 .transition {

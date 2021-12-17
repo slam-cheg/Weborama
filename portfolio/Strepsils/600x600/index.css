@@ -345,11 +345,15 @@
 }
 
 .sparkle {
+  display: flex;
   width: 540px;
+  height: 330px;
   left: -240px;
-  bottom: 18px;
+  bottom: 148px;
   mix-blend-mode: screen;
-  mix-blend-mode: screen;
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
 }
 
 .transition {

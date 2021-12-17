@@ -55,7 +55,7 @@ getCsv();
 
 //  SLIDES
 
-//const timer = setInterval(changeSlides, 4000);
+const timer = setInterval(changeSlides, 4000);
 
 function changeSlides() {
     let currentSlide = document.querySelector(".active");
