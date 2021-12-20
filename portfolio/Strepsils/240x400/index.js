@@ -17,25 +17,32 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
-// API Yandex Maps
-const map = new YMaps.Map();
-let userCity = YMaps.location.city;
-let userRegion = YMaps.location.region;
+// API iP-whois
+let ip = ""; // Current IP
+const XMLHttp = new XMLHttpRequest();
 
-// console.log(`Ваш регион ${userRegion}`);
-// console.log(`Ваш город ${userCity}`);
+XMLHttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        const userData = JSON.parse(this.responseText);
+        getCsv(userData);
+    }
+};
+XMLHttp.open("GET", `http://ipwhois.app/json/?lang=ru`, true);
+XMLHttp.send();
 
 // JSON Data Cities
-function getCsv() {
+function getCsv(userData) {
     return fetch("./cities.json", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
     })
         .then(checkResponse)
         .then((res) => {
+            const userCity = userData.city;
+            const userRegion = userData.region;
             res.forEach((stroke) => {
                 if (stroke.name_ru === userCity || `${stroke.name_ru} и ${stroke.region_ru}` === userRegion) {
-                    regionPlace.textContent = userRegion;
+                    regionPlace.textContent = `${stroke.name_ru} и\u00A0${stroke.region_ru}`;
                 }
             });
         })
@@ -112,12 +119,14 @@ function toggleSpray() {
     setTimeout(() => {
         spray.forEach((gif) => {
             gif.src = "./spray.gif";
+            gif.style.visibility = "visible";
         });
         animIll();
     }, 1500);
     setTimeout(() => {
         spray.forEach((gif) => {
             gif.src = "";
+            gif.style.visibility = "hidden";
         });
     }, 4000);
 }

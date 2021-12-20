@@ -1,9 +1,20 @@
-screenad.position("width=100%&height=250&hor=left&ver=banner&hide=false&sticky=false&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
+let bannerWidth = document.querySelector("#adrPos728x90").offsetWidth;
+// PROBLEM
+screenad.position(`width=${bannerWidth}&height=250&hor=left&ver=banner&hide=false&sticky=false&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1`);
 screenad.setZIndex(100);
+
+console.log(screenad);
 
 const banner = document.querySelector(".banner");
 const btnFullscreen = document.querySelector(".button_fullscreen");
 const loadBar = document.querySelector(".load-bar");
+
+// let bannerWidth = 9;
+// let bannerHeight = 250;
+
+// screenad.onSync = () => {
+//     setBillPosition(bannerWidth, bannerHeight);
+// };
 
 btnFullscreen.addEventListener("click", showVideo);
 banner.addEventListener("click", () => {

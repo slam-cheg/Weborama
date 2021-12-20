@@ -301,6 +301,7 @@
 .spray {
   mix-blend-mode: screen;
   width: 200px;
+  visibility: hidden;
 }
 
 .spray_left {

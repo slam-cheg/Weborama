@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "DIN2014";
+  src: url(./DIN2014-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DIN2014";
+  src: url(./DIN2014-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DIN2014";
+  src: url(./DIN2014-ExtraBold.woff) format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "DINPRO";
+  src: url(./DINPro.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DINPRO";
+  src: url(./DINPro-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DINPRO";
+  src: url(./DINPro-Black.woff) format("woff");
+  font-weight: 900;
+}/*# sourceMappingURL=fonts.css.map */
