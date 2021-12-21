@@ -288,10 +288,6 @@
   align-items: center;
 }
 
-.footer__alert {
-  transform: translateY(2px);
-}
-
 .second-slide {
   visibility: hidden;
   opacity: 0;
