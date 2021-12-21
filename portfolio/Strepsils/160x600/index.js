@@ -27,7 +27,7 @@ XMLHttp.onreadystatechange = function () {
         getCsv(userData);
     }
 };
-XMLHttp.open("GET", `http://ipwhois.app/json/?lang=ru`, true);
+XMLHttp.open("GET", `https://ipwhois.app/json/?lang=ru`, true);
 XMLHttp.send();
 
 // JSON Data Cities
@@ -57,8 +57,6 @@ const checkResponse = (res) => {
     }
     return Promise.reject(`Ошибка: ${res.status}`);
 };
-
-// getCsv();
 
 //  SLIDES
 

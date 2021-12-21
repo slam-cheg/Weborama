@@ -1,0 +1,89 @@
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale-anim {
+    animation: scale;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.flare-anim {
+    animation: flareAnimation 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes transition {
+    0% {
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anim {
+    animation: transition;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes left-ill {
+    0% {
+    }
+    100% {
+        opacity: 0.33;
+        // transform: rotate(45deg) translate(-70px, 30px);
+    }
+}
+
+@keyframes right-ill {
+    0% {
+    }
+    100% {
+        opacity: 0.33;
+        //  transform: rotate(325deg) translate(70px, 30px);
+    }
+}
+
+.ill-anim-left {
+    animation: left-ill;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.ill-anim-right {
+    animation: right-ill;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}

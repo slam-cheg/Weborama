@@ -19,16 +19,16 @@ const hours = thirdSlide.querySelector(".hours");
 
 // API iP-whois
 let ip = ""; // Current IP
-const XMLHttp = new XMLHttpRequest();
+let XMLHttp = new XMLHttpRequest();
 
+XMLHttp.open("GET", `https://ipwhois.app/json/?lang=ru`, true);
+XMLHttp.send();
 XMLHttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         const userData = JSON.parse(this.responseText);
         getCsv(userData);
     }
 };
-XMLHttp.open("GET", `http://ipwhois.app/json/?lang=ru`, true);
-XMLHttp.send();
 
 // JSON Data Cities
 function getCsv(userData) {
@@ -57,8 +57,6 @@ const checkResponse = (res) => {
     }
     return Promise.reject(`Ошибка: ${res.status}`);
 };
-
-getCsv();
 
 //  SLIDES
 
