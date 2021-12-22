@@ -246,6 +246,7 @@ html {
   background-image: url(./first-img.jpg);
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
   width: 100%;
   height: 100%;
   display: flex;
@@ -407,9 +408,9 @@ html {
 .arrow {
   position: absolute;
   width: 100px;
-  top: 238px;
-  right: 361px;
-  transform: rotate(355deg);
+  top: 226px;
+  right: 290px;
+  transform: rotate(179deg);
   visibility: visible;
   opacity: 1;
   transition: 0.2s;
@@ -561,7 +562,7 @@ html {
 
 .text-wrapper-bottom {
   width: 100%;
-  height: 200px;
+  height: 160px;
   bottom: 0;
   position: absolute;
   background: linear-gradient(0deg, #000 10%, transparent 100%);
@@ -586,7 +587,7 @@ html {
   text-align: center;
   font-weight: 100;
   font-size: 16px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -619,7 +620,7 @@ html {
   top: 0;
   left: 0;
   background-image: url(./third-img.jpg);
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -630,11 +631,11 @@ html {
   transition: 0.2s;
 }
 .second-screen .arrow {
-  transform: rotate(180deg);
+  transform: rotate(0);
   top: unset;
-  bottom: 91px;
-  left: 206px;
-  width: 107px;
+  bottom: 86px;
+  left: 166px;
+  width: 147px;
 }
 .second-screen .first-line {
   width: 610px;
@@ -659,7 +660,7 @@ html {
 }
 @media screen and (max-width: 1366px) {
   .second-screen .wrapper {
-    bottom: 1vh;
+    bottom: calc(50% - 200px);
   }
 }
 
@@ -697,11 +698,11 @@ html {
   transition: 0.2s;
 }
 .third-screen .arrow {
-  transform: rotate(180deg);
+  transform: rotate(0);
   top: unset;
   bottom: 141px;
-  left: 34px;
-  width: 113px;
+  left: -6px;
+  width: 150px;
 }
 .third-screen .first-line {
   font-size: 20px;
@@ -756,7 +757,7 @@ html {
   top: 0;
   left: 0;
   background-image: url(./fifth-img.jpg);
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -795,10 +796,10 @@ html {
 }
 .fourth-screen .arrow {
   position: absolute;
-  width: 132px;
+  width: 150px;
   top: 200px;
-  left: 154px;
-  transform: rotate(182deg);
+  left: 150px;
+  transform: rotate(0);
   visibility: visible;
   opacity: 1;
   transition: 0.2s;
@@ -814,8 +815,8 @@ html {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 100px;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   padding: 0;
   top: 165px;
   right: 75px;
@@ -825,19 +826,19 @@ html {
 }
 .clock .line-one {
   width: 1px;
-  height: 50px;
+  height: 70px;
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 49px;
+  left: 70px;
 }
 .clock .line-two {
   width: 1px;
-  height: 50px;
+  height: 70px;
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 49px;
+  left: 70px;
   transform-origin: bottom;
 }
 .clock .seconds {
@@ -852,8 +853,9 @@ html {
   position: absolute;
   font-size: 20px;
   font-weight: 300;
-  bottom: -31px;
-  left: -36px;
+  letter-spacing: 3px;
+  bottom: -32px;
+  left: -20px;
 }
 
 .clock-anim {
@@ -1004,4 +1006,10 @@ html {
 }
 .last-screen .button {
   z-index: 500;
+}
+
+.try-descr {
+  letter-spacing: 10px;
+  font-weight: 300;
+  line-height: 1.5;
 }/*# sourceMappingURL=fs.css.map */
