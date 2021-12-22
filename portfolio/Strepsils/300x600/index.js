@@ -38,6 +38,7 @@ function getCsv(userData) {
     })
         .then(checkResponse)
         .then((res) => {
+            console.log(ip);
             const userCity = userData.city;
             const userRegion = userData.region;
             res.forEach((stroke) => {

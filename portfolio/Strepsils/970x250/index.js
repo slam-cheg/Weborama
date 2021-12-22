@@ -16,31 +16,23 @@ const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
 // API iP-whois
-let ip = ""; // Current IP
-let XMLHttp = new XMLHttpRequest();
-
-XMLHttp.open("GET", `https://ipwhois.app/json/?lang=ru`, true);
-XMLHttp.send();
-XMLHttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-        const userData = JSON.parse(this.responseText);
-        getCsv(userData);
-    }
-};
+navigator.geolocation.getCurrentPosition((position) => {
+    const latitude = Math.round(position.coords.latitude);
+    const longitude = Math.round(position.coords.longitude);
+    getCsv(latitude, longitude);
+});
 
 // JSON Data Cities
-function getCsv(userData) {
+function getCsv(latitude, longitude) {
     return fetch("./cities.json", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
     })
         .then(checkResponse)
         .then((res) => {
-            const userCity = userData.city;
-            const userRegion = userData.region;
-            res.forEach((stroke) => {
-                if (stroke.name_ru === userCity || `${stroke.name_ru} и ${stroke.region_ru}` === userRegion) {
-                    regionPlace.textContent = `${stroke.name_ru} и\u00A0${stroke.region_ru}`;
+            res.forEach((city) => {
+                if (city.city_latitude == latitude && city.city_longitude == longitude) {
+                    regionPlace.textContent = `${city.name_ru} и\u00A0${city.region_ru}`;
                 }
             });
         })

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "HyundaiSansHead";
+  src: url(./HyundaiSansHead-Light.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "HyundaiSansHead";
+  src: url(./HyundaiSansHead-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HyundaiSansHead";
+  src: url(./HyundaiSansHead-Medium.woff) format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "HyundaiSansText";
+  src: url(./HyundaiSansText-Regular.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HyundaiSansText";
+  src: url(./HyundaiSansText-Medium.woff) format("woff");
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.click-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  min-width: 970px;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background-image: url(./image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner::before {
+  content: "";
+  background: linear-gradient(274.27deg, #000000 0%, rgba(0, 0, 0, 0) 28.06%), linear-gradient(86.38deg, #000000 -6.2%, rgba(0, 0, 0, 0) 38.44%), linear-gradient(90deg, #013f65 28.12%, rgba(1, 63, 101, 0) 40.1%, rgba(1, 63, 101, 0) 55.73%, #013f65 70.31%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-family: "HyundaiSansHead", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.subtitle {
+  font-family: "HyundaiSansHead", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  color: #fff;
+  font-size: 37px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.button {
+  font-family: "HyundaiSansText", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.2s;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.load-bar {
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+}
+
+@-webkit-keyframes load-bar-anim {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes load-bar-anim {
+  100% {
+    left: 0;
+  }
+}
+.load-bar-anim {
+  -webkit-animation: load-bar-anim;
+          animation: load-bar-anim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}/*# sourceMappingURL=index.css.map */
