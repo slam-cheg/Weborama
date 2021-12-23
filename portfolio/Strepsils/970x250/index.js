@@ -15,7 +15,9 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
-// API iP-whois
+let customEvent = "default";
+
+// GEO
 navigator.geolocation.getCurrentPosition((position) => {
     const latitude = Math.round(position.coords.latitude);
     const longitude = Math.round(position.coords.longitude);
@@ -30,11 +32,14 @@ function getCsv(latitude, longitude) {
     })
         .then(checkResponse)
         .then((res) => {
-            res.forEach((city) => {
-                if (city.city_latitude == latitude && city.city_longitude == longitude) {
-                    regionPlace.textContent = `${city.name_ru} и\u00A0${city.region_ru}`;
+            for (let i = 0; i < res.length; i++) {
+                if (latitude - res[i].latitude < 0.05 && longitude - res[i].longitude < 0.05) {
+                    regionPlace.textContent = `${res[i].name_ru} и\u00A0${res[i].region_ru}`;
+                    customEvent = res[i].event;
+                    screenad.event(customEvent);
+                    break;
                 }
-            });
+            }
         })
         .catch((err) => {
             console.warn(err);

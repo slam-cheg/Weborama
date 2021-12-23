@@ -1,12 +1,5 @@
 [
     {
-        "latitude": "56",
-        "longitude": "38",
-        "event": "MOSCOW",
-        "name_ru": "Москва",
-        "region_ru": "Московская область"
-    },
-    {
         "latitude": "65",
         "longitude": "41",
         "event": "ARKHANGELSK",
@@ -180,6 +173,13 @@
         "event": "MAGADAN",
         "name_ru": "Магадан",
         "region_ru": "Магаданская область"
+    },
+    {
+        "latitude": "56",
+        "longitude": "38",
+        "event": "MOSCOW",
+        "name_ru": "Москва",
+        "region_ru": "Московская область"
     },
     {
         "latitude": "69",
