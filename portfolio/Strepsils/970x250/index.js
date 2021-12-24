@@ -1,3 +1,4 @@
+const banner = document.querySelector(".banner");
 const firstSlide = document.querySelector(".first-slide");
 const secondSlide = document.querySelector(".second-slide");
 const thirdSlide = document.querySelector(".third-slide");
@@ -36,6 +37,10 @@ function getCsv(latitude, longitude) {
                 if (latitude - res[i].latitude < 0.05 && longitude - res[i].longitude < 0.05) {
                     regionPlace.textContent = `${res[i].name_ru} и\u00A0${res[i].region_ru}`;
                     customEvent = res[i].event;
+                    banner.addEventListener("click", () => {
+                        screenad.click();
+                        screenad.event(`${customEvent}_CLICK`);
+                    });
                     screenad.event(customEvent);
                     break;
                 }
