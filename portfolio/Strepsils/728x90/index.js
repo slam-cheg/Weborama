@@ -16,6 +16,15 @@ const rightPain = secondSlide.querySelector(".right_left");
 const freeze = thirdSlide.querySelector(".freeze");
 const hours = thirdSlide.querySelector(".hours");
 
+let customEvent = "DEFAULT";
+let customClick = `DEFAULT_CLICK`;
+
+banner.addEventListener("click", () => {
+    screenad.click();
+    screenad.event(`${customClick}`);
+    console.log(`${customClick}`);
+});
+
 // GEO
 navigator.geolocation.getCurrentPosition((position) => {
     const latitude = Math.round(position.coords.latitude);
@@ -32,13 +41,10 @@ function getCsv(latitude, longitude) {
         .then(checkResponse)
         .then((res) => {
             for (let i = 0; i < res.length; i++) {
-                if (latitude - res[i].latitude < 0.05 && longitude - res[i].longitude < 0.05) {
+                if (Math.abs(latitude - res[i].latitude) < 0.5 && Math.abs(longitude - res[i].longitude) < 0.5) {
                     regionPlace.textContent = `${res[i].name_ru} и\u00A0${res[i].region_ru}`;
                     customEvent = res[i].event;
-                    banner.addEventListener("click", () => {
-                        screenad.click();
-                        screenad.event(`${customEvent}_CLICK`);
-                    });
+                    customClick = `${customEvent}_CLICK`;
                     screenad.event(customEvent);
                     break;
                 }

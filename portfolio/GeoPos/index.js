@@ -8,7 +8,7 @@ const addForm = document.querySelector(".form-add-city");
 const editForm = document.querySelector(".form-edit-city");
 
 const options = {
-    enableHighAccuracy: false,
+    enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
 };
