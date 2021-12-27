@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your GeoPosition</title>
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body class="page">
+        <div class="content">
+            <h1 class="text text_title">
+                Ваше текущее местоположение:<br />
+                <span class="text_geo title_geo">Не определено</span>.
+            </h1>
+            <p class="text text_description latitude">Ваша широта: <span class="text_geo latitude_geo">###</span>.</p>
+            <p class="text text_description longitude">Ваша долгота: <span class="text_geo longitude_geo">###</span>.</p>
+            <div class="support">
+                <div class="link-wrapper">
+                    <a href="#" class="text text_link add-city">Нет вашего города?</a>
+                    <a href="#" class="text text_link edit-city">Внести уточнение</a>
+                </div>
+                <form action="submit" class="form form-add-city form_hidden" novalidate>
+                    <input type="text" name="city" id="city-name" class="form__input" placeholder="Название нового города" />
+                    <input type="number" name="latitude" id="city-latitude" class="form__input" placeholder="Введите широту (2 знака)" maxlength="2" />
+                    <input type="number" name="longitude" id="city-longitude" class="form__input" placeholder="Введите долготу (2 знака)" maxlength="2" />
+                    <button type="submit" aria-label="Отправить" class="form__button disabled">Отправить</button>
+                </form>
+                <form action="submit" class="form form-edit-city form_hidden" novalidate>
+                    <input type="text" name="city" id="city-name" class="form__input" placeholder="Название редактируемого города" />
+                    <input type="number" name="latitude" id="city-latitude" class="form__input form__input" placeholder="Введите широту (2 знака)" maxlength="2" />
+                    <input type="number" name="longitude" id="city-longitude" class="form__input" placeholder="Введите долготу (2 знака)" maxlength="2" />
+                    <button type="submit" aria-label="Отправить" class="form__button disabled">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

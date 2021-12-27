@@ -1,0 +1,576 @@
+[
+    {
+        "latitude": "65",
+        "longitude": "41",
+        "event": "ARKHANGELSK",
+        "name_ru": "Архангельск",
+        "region_ru": "Архангельская область"
+    },
+    {
+        "latitude": "46",
+        "longitude": ", 48",
+        "event": "ASTRAKHAN",
+        "name_ru": "Астрахань",
+        "region_ru": "Астраханская область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "84",
+        "event": "BARNAUL",
+        "name_ru": "Барнаул",
+        "region_ru": "Алтайский край"
+    },
+    {
+        "latitude": "51",
+        "longitude": "37",
+        "event": "BELGOROD",
+        "name_ru": "Белгород",
+        "region_ru": "Белгородская область"
+    },
+    {
+        "latitude": "49",
+        "longitude": "133",
+        "event": "BIROBIJAN",
+        "name_ru": "Биробиджан",
+        "region_ru": "Еврейская автономная область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "34",
+        "event": "BRYANSK",
+        "name_ru": "Брянск",
+        "region_ru": "Брянская область"
+    },
+    {
+        "latitude": "59",
+        "longitude": "31",
+        "event": "VELIKII-NOVGOROD",
+        "name_ru": "Великий Новгород",
+        "region_ru": "Новгородская область"
+    },
+    {
+        "latitude": "43",
+        "longitude": "132",
+        "event": "VLADIVOSTOK",
+        "name_ru": "Владивосток",
+        "region_ru": "Приморский край"
+    },
+    {
+        "latitude": "43",
+        "longitude": "45",
+        "event": "VLADIKAVKAZ",
+        "name_ru": "Владикавказ",
+        "region_ru": "Северная Осетия — Алания"
+    },
+    {
+        "latitude": "56",
+        "longitude": "40",
+        "event": "VLADIMIR",
+        "name_ru": "Владимир",
+        "region_ru": "Владимирская область"
+    },
+    {
+        "latitude": "49",
+        "longitude": "45",
+        "event": "VOLGOGRAD",
+        "name_ru": "Волгоград",
+        "region_ru": "Волгоградская область"
+    },
+    {
+        "latitude": "59",
+        "longitude": "40",
+        "event": "VOLOGDA",
+        "name_ru": "Вологда",
+        "region_ru": "Вологодская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "39",
+        "event": "VORONEJ",
+        "name_ru": "Воронеж",
+        "region_ru": "Воронежская область"
+    },
+    {
+        "latitude": "57",
+        "longitude": "61",
+        "event": "EKATERINBURG",
+        "name_ru": "Екатеринбург",
+        "region_ru": "Свердловская область"
+    },
+    {
+        "latitude": "57",
+        "longitude": "53",
+        "event": "IZHEVSK",
+        "name_ru": "Ижевск",
+        "region_ru": "Удмуртия"
+    },
+    {
+        "latitude": "52",
+        "longitude": "104",
+        "event": "IRKUTSK",
+        "name_ru": "Иркутск",
+        "region_ru": "Иркутская область"
+    },
+    {
+        "latitude": "56",
+        "longitude": "49",
+        "event": "KAZAN",
+        "name_ru": "Казань",
+        "region_ru": "Татарстан"
+    },
+    {
+        "latitude": "55",
+        "longitude": "21",
+        "event": "KALININGRAD",
+        "name_ru": "Калининград",
+        "region_ru": "Калининградская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "86",
+        "event": "KEMEROVO",
+        "name_ru": "Кемерово",
+        "region_ru": "Кемеровская область"
+    },
+    {
+        "latitude": "59",
+        "longitude": "50",
+        "event": "KIROV",
+        "name_ru": "Киров",
+        "region_ru": "Кировская область"
+    },
+    {
+        "latitude": "45",
+        "longitude": "39",
+        "event": "KRASNODAR",
+        "name_ru": "Краснодар",
+        "region_ru": "Краснодарский край"
+    },
+    {
+        "latitude": "56",
+        "longitude": "93",
+        "event": "KRASNOYARSK",
+        "name_ru": "Красноярск",
+        "region_ru": "Красноярский край"
+    },
+    {
+        "latitude": "52",
+        "longitude": "36",
+        "event": "KURSK",
+        "name_ru": "Курск",
+        "region_ru": "Курская область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "40",
+        "event": "LIPETSK",
+        "name_ru": "Липецк",
+        "region_ru": "Липецкая область"
+    },
+    {
+        "latitude": "60",
+        "longitude": "151",
+        "event": "MAGADAN",
+        "name_ru": "Магадан",
+        "region_ru": "Магаданская область"
+    },
+    {
+        "latitude": "56",
+        "longitude": "38",
+        "event": "MOSCOW",
+        "name_ru": "Москва",
+        "region_ru": "Московская область"
+    },
+    {
+        "latitude": "69",
+        "longitude": "33",
+        "event": "MURMANSK",
+        "name_ru": "Мурманск",
+        "region_ru": "Мурманская область"
+    },
+    {
+        "latitude": "56",
+        "longitude": "44",
+        "event": "NIJNII-NOVGOROD",
+        "name_ru": "Нижний Новгород",
+        "region_ru": "Нижегородская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "83",
+        "event": "NOVOSIBIRSK",
+        "name_ru": "Новосибирск",
+        "region_ru": "Новосибирская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "73",
+        "event": "OMSK",
+        "name_ru": "Омск",
+        "region_ru": "Омская область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "36",
+        "event": "OREL",
+        "name_ru": "Орел",
+        "region_ru": "Орловская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "55",
+        "event": "ORENBURG",
+        "name_ru": "Оренбург",
+        "region_ru": "Оренбургская область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "45",
+        "event": "PENZA",
+        "name_ru": "Пенза",
+        "region_ru": "Пензенская область"
+    },
+    {
+        "latitude": "58",
+        "longitude": "56",
+        "event": "PERM",
+        "name_ru": "Пермь",
+        "region_ru": "Пермский край"
+    },
+    {
+        "latitude": "62",
+        "longitude": "34",
+        "event": "PETROZAVODSK",
+        "name_ru": "Петрозаводск",
+        "region_ru": "Карелия"
+    },
+    {
+        "latitude": "53",
+        "longitude": "159",
+        "event": "PETROPAVLOVSK-KAMCHATSKIY",
+        "name_ru": "Петропавловск-Камчатский",
+        "region_ru": "Камчатский край"
+    },
+    {
+        "latitude": "58",
+        "longitude": "28",
+        "event": "PSKOV",
+        "name_ru": "Псков",
+        "region_ru": "Псковская область"
+    },
+    {
+        "latitude": "47",
+        "longitude": "40",
+        "event": "ROSTOV-NA-DONU",
+        "name_ru": "Ростов-на-Дону",
+        "region_ru": "Ростовская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "40",
+        "event": "RYAZAN",
+        "name_ru": "Рязань",
+        "region_ru": "Рязанская область"
+    },
+    {
+        "latitude": "53",
+        "longitude": "50",
+        "event": "SAMARA",
+        "name_ru": "Самара",
+        "region_ru": "Самарская область"
+    },
+    {
+        "latitude": "60",
+        "longitude": "30",
+        "event": "ST-PETERSBURG",
+        "name_ru": "Санкт-Петербург",
+        "region_ru": "Ленинградская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "46",
+        "event": "SARATOV",
+        "name_ru": "Саратов",
+        "region_ru": "Саратовская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "32",
+        "event": "SMOLENSK",
+        "name_ru": "Смоленск",
+        "region_ru": "Смоленская область"
+    },
+    {
+        "latitude": "45",
+        "longitude": "42",
+        "event": "STAVROPOL",
+        "name_ru": "Ставрополь",
+        "region_ru": "Ставропольский край"
+    },
+    {
+        "latitude": "62",
+        "longitude": "51",
+        "event": "SYKTIVKAR",
+        "name_ru": "Сыктывкар",
+        "region_ru": "Республика Коми"
+    },
+    {
+        "latitude": "57",
+        "longitude": "36",
+        "event": "TVER",
+        "name_ru": "Тверь",
+        "region_ru": "Тверская область"
+    },
+    {
+        "latitude": "56",
+        "longitude": "85",
+        "event": "TOMSK",
+        "name_ru": "Томск",
+        "region_ru": "Томская область"
+    },
+    {
+        "latitude": "54",
+        "longitude": "38",
+        "event": "TULA",
+        "name_ru": "Тула",
+        "region_ru": "Тульская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "108",
+        "event": "ULAN-UDE",
+        "name_ru": "Улан-Удэ",
+        "region_ru": "Бурятия"
+    },
+    {
+        "latitude": "54",
+        "longitude": "48",
+        "event": "ULIANOVSK",
+        "name_ru": "Ульяновск",
+        "region_ru": "Ульяновская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "56",
+        "event": "UFA",
+        "name_ru": "Уфа",
+        "region_ru": "Башкортостан"
+    },
+    {
+        "latitude": "48",
+        "longitude": "135",
+        "event": "KHABAROVSK",
+        "name_ru": "Хабаровск",
+        "region_ru": "Хабаровский край"
+    },
+    {
+        "latitude": "56",
+        "longitude": "47",
+        "event": "CHEBOKSARY",
+        "name_ru": "Чебоксары",
+        "region_ru": "Чувашия"
+    },
+    {
+        "latitude": "55",
+        "longitude": "61",
+        "event": "CHELYABINSK",
+        "name_ru": "Челябинск",
+        "region_ru": "Челябинская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "114",
+        "event": "CHITA",
+        "name_ru": "Чита",
+        "region_ru": "Забайкальский край"
+    },
+    {
+        "latitude": "47",
+        "longitude": "143",
+        "event": "YUJNO-SAKHALINSK",
+        "name_ru": "Южно-Сахалинск",
+        "region_ru": "Сахалинская область"
+    },
+    {
+        "latitude": "62",
+        "longitude": "130",
+        "event": "YAKUTSK",
+        "name_ru": "Якутск",
+        "region_ru": "Республика Саха (Якутия)"
+    },
+    {
+        "latitude": "58",
+        "longitude": "40",
+        "event": "YAROSLAVL",
+        "name_ru": "Ярославль",
+        "region_ru": "Ярославская область"
+    },
+    {
+        "latitude": "45",
+        "longitude": "40",
+        "event": "MAYKOP",
+        "name_ru": "Майкоп",
+        "region_ru": "Адыгея"
+    },
+    {
+        "latitude": "50",
+        "longitude": "128",
+        "event": "BLAGOVESCHENSK",
+        "name_ru": "Благовещенск",
+        "region_ru": "Амурская область"
+    },
+    {
+        "latitude": "43",
+        "longitude": "46",
+        "event": "GROZNIY",
+        "name_ru": "Грозный",
+        "region_ru": "Чечня"
+    },
+    {
+        "latitude": "65",
+        "longitude": "178",
+        "event": "ANADYR",
+        "name_ru": "Анадырь",
+        "region_ru": "Чукотский автономный округ"
+    },
+    {
+        "latitude": "43",
+        "longitude": "48",
+        "event": "MAKHACHKALA",
+        "name_ru": "Махачкала",
+        "region_ru": "Дагестан"
+    },
+    {
+        "latitude": "52",
+        "longitude": "86",
+        "event": "GORNO-ALTAYSK",
+        "name_ru": "Горно-Алтайск",
+        "region_ru": "Реуспублика Алтай"
+    },
+    {
+        "latitude": "43",
+        "longitude": "45",
+        "event": "MAGAS",
+        "name_ru": "Магас",
+        "region_ru": "Ингушетия"
+    },
+    {
+        "latitude": "57",
+        "longitude": "41",
+        "event": "IVANOVO",
+        "name_ru": "Иваново",
+        "region_ru": "Ивановская область"
+    },
+    {
+        "latitude": "43",
+        "longitude": "44",
+        "event": "NALCHIK",
+        "name_ru": "Нальчик",
+        "region_ru": "Кабардино-Балкария"
+    },
+    {
+        "latitude": "44",
+        "longitude": "42",
+        "event": "CHERKESSK",
+        "name_ru": "Черкесск",
+        "region_ru": "Карачаево-Черкесия"
+    },
+    {
+        "latitude": "55",
+        "longitude": "36",
+        "event": "KALUGA",
+        "name_ru": "Калуга",
+        "region_ru": "Калужская область"
+    },
+    {
+        "latitude": "54",
+        "longitude": "91",
+        "event": "ABAKAN",
+        "name_ru": "Абакан",
+        "region_ru": "Хакасия"
+    },
+    {
+        "latitude": "46",
+        "longitude": "44",
+        "event": "ELYSTA",
+        "name_ru": "Элиста",
+        "region_ru": "Калмыкия"
+    },
+    {
+        "latitude": "61",
+        "longitude": "69",
+        "event": "KHANTY-MANSIYSK",
+        "name_ru": "Ханты-Мансийск",
+        "region_ru": "Ханты-Мансийский автономный округ"
+    },
+    {
+        "latitude": "58",
+        "longitude": "41",
+        "event": "KOSTROMA",
+        "name_ru": "Кострома",
+        "region_ru": "Костромская область"
+    },
+    {
+        "latitude": "55",
+        "longitude": "65",
+        "event": "KURGAN",
+        "name_ru": "Курган",
+        "region_ru": "Курганская область"
+    },
+    {
+        "latitude": "57",
+        "longitude": "48",
+        "event": "IOSHKAR-OLA",
+        "name_ru": "Йошкар-Ола",
+        "region_ru": "Марий Эл"
+    },
+    {
+        "latitude": "54",
+        "longitude": "45",
+        "event": "SARANSK",
+        "name_ru": "Саранск",
+        "region_ru": "Мордовия"
+    },
+    {
+        "latitude": "68",
+        "longitude": "53",
+        "event": "NARYAN-MAR",
+        "name_ru": "Нарьян-Мар",
+        "region_ru": "Ненецкий автономный округ"
+    },
+    {
+        "latitude": "53",
+        "longitude": "42",
+        "event": "TAMBOV",
+        "name_ru": "Тамбов",
+        "region_ru": "Тамбовская область"
+    },
+    {
+        "latitude": "52",
+        "longitude": "94",
+        "event": "KIZYL",
+        "name_ru": "Кызыл",
+        "region_ru": "Тыва"
+    },
+    {
+        "latitude": "57",
+        "longitude": "66",
+        "event": "TYUMEN",
+        "name_ru": "Тюмень",
+        "region_ru": "Тюменская область"
+    },
+    {
+        "latitude": "67",
+        "longitude": "67",
+        "event": "SALEKHARD",
+        "name_ru": "Салехард",
+        "region_ru": "Ямало-Ненецкий автономный округ"
+    },
+    {
+        "latitude": "45",
+        "longitude": "34",
+        "event": "SEVASTOPOL",
+        "name_ru": "Севастополь",
+        "region_ru": "Крым"
+    }
+]

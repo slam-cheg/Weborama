@@ -1,0 +1,110 @@
+@import "./vendor/normalize.css";
+@import "./vendor/fonts/fonts.css";
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content {
+    margin: auto;
+}
+
+.text {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text_title {
+    font-weight: 500;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.title_geo {
+    font-weight: 900;
+}
+
+.text_description {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.text_geo {
+    color: #c20000;
+}
+
+.support {
+    margin-top: 50px;
+}
+
+.text_link {
+    font-weight: 900;
+    color: #c20000;
+    transition: 0.2s;
+    margin-right: 20px;
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+    transition: 0.3s;
+}
+
+.form_hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.form__input {
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    background-color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    overflow: hidden;
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.form__button {
+    border: none;
+    color: #fff;
+    background-color: #c20000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: "inter", sans-serif;
+}
+
+.disabled {
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    cursor: auto;
+    opacity: 0.5;
+}
