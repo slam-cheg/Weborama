@@ -30,8 +30,8 @@
 
 HTML,
 BODY {
-  width: 300px;
-  height: 250px;
+  width: 160px;
+  height: 600px;
   overflow: hidden;
   font-family: NurofenText, sans-serif;
   color: #fff;
@@ -44,7 +44,7 @@ BODY {
   overflow: hidden;
   background: #56c2c6;
   cursor: pointer;
-  padding: 10px;
+  padding: 5% 5%;
 }
 
 .wrapper {
@@ -117,42 +117,46 @@ BODY {
 .text_wrapper {
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 18px;
-  line-height: 1;
+  top: 10%;
   width: 100%;
+  font-size: 26.4px;
+  line-height: 1;
 }
 
 .text {
   position: absolute;
   left: 0;
   top: 0;
-  width: 60%;
+  width: 100%;
   opacity: 0;
   text-transform: uppercase;
 }
 
 .text1 {
   opacity: 0;
-  top: 43px !important;
-}
-
-.text2 {
-  width: 100%;
-}
-
-.text.text3 {
-  width: 49%;
-  font-size: 20px;
+  top: 35px;
 }
 
 .banner:not(.default) .text1 {
-  top: 13px;
+  top: 55px;
 }
 
 .anim1 .text1 {
   opacity: 1;
   transition: opacity 0.25s 0.1s;
+}
+
+.text2 {
+  font-size: 24px;
+}
+
+.text2,
+.text3 {
+  transform: translateY(-60px);
+}
+
+.text3 {
+  font-size: 22px;
 }
 
 .anim2 .text1 {
@@ -185,12 +189,12 @@ BODY {
 }
 
 .city_wrajpper {
-  display: flex;
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 30px;
+  padding: 13px 25px 5px 25px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.1;
@@ -199,11 +203,6 @@ BODY {
   border-radius: 40px;
   background: #e4052d;
   opacity: 0;
-  justify-content: center;
-  align-items: center;
-}
-.city_wrajpper .city {
-  transform: translateY(2px);
 }
 
 .default .city_wrajpper {
@@ -226,29 +225,20 @@ BODY {
 
 .logo_wrapper {
   position: absolute;
-  right: 10px;
-  width: 53%;
+  left: 0;
+  top: 60%;
+  width: 100%;
+  margin-bottom: 5%;
   opacity: 0;
 }
 
 .anim1 .logo_wrapper {
   opacity: 1;
   transition: opacity 0.5s 0.5s;
-  top: 66px;
-}
-
-.anim2 .logo_wrapper {
-  left: unset;
-  right: 100px;
-  width: 70%;
-  top: 19px;
 }
 
 .anim5 .logo_wrapper {
-  top: 55px;
-  left: unset;
-  right: 0px;
-  width: 50%;
+  top: 39%;
 }
 
 .anim6 .logo_wrapper {
@@ -361,7 +351,7 @@ BODY {
 
 .pack1 {
   position: absolute;
-  left: 53%;
+  left: 3%;
   bottom: 0;
   width: 64%;
   display: block;
@@ -382,7 +372,7 @@ BODY {
 
 .pack2 {
   position: absolute;
-  right: -59%;
+  right: -9%;
   bottom: 0;
   width: 38%;
   display: block;
@@ -402,14 +392,11 @@ BODY {
 }
 
 .list {
-  display: flex;
   position: absolute;
   left: 0;
-  top: 45px;
-  width: 60%;
+  top: 26%;
+  width: 100%;
   opacity: 0;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .anim2 .list {
@@ -418,25 +405,16 @@ BODY {
 }
 
 .item {
-  display: flex;
-  width: 90%;
-  height: 22px;
+  width: 100%;
+  margin: 0 auto 10px auto;
+  height: 44px;
+  line-height: 49px;
   border-radius: 22px;
-  margin-bottom: 7px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 14px;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
   transform: translateX(200%);
-  align-items: center;
-  justify-content: center;
-}
-.item p {
-  transform: translateY(2px);
-  line-height: 1;
-  padding: 0;
-  text-align: center;
-  font-size: 16px;
-}
-.item:last-of-type {
-  margin-bottom: 0;
 }
 
 .anim2 .item {
@@ -518,12 +496,30 @@ BODY {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%) scaleY(0.9);
+  transform: translateX(-50%) scaleY(1.55);
   transform-origin: center bottom;
   text-align: center;
-  font-size: 12px;
-  line-height: 0.9;
+  font-size: 9.5px;
+  line-height: 0.8;
   white-space: nowrap;
+}
+.disc .line_a {
+  line-height: 0.5;
+}
+.disc .line_b {
+  font-size: 22.1px;
+  transform: scaleY(0.4);
+  line-height: 0.4;
+}
+.disc .line_c {
+  font-size: 12px;
+  transform: scaleY(0.8);
+  line-height: 0.7;
+}
+.disc .line_d {
+  font-size: 15px;
+  transform: scaleY(0.6);
+  line-height: 0.4;
 }
 
 .anim5 .disc {
@@ -535,25 +531,16 @@ BODY {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleY(0.8) translateY(30px);
   width: 100%;
   text-align: justify;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 0.8;
+  line-height: 1;
   opacity: 0;
 }
 
 .anim5 .disc2 {
   opacity: 1;
   transition: opacity 0.25s 0.25s;
-}
-
-.default__city {
-  font-size: 25px;
-  padding: 7px 0 0;
-  width: 61%;
-}
-.default__city .city {
-  transform: translateY(0);
 }/*# sourceMappingURL=index.css.map */

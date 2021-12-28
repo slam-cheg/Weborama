@@ -61,6 +61,8 @@ setTimeout(function () {
     animation();
 }, 200);
 
+
+
 function animation() {
     banner.classList.remove("anim6");
     banner.classList.add("anim1");

@@ -29,8 +29,8 @@
 }
 HTML,
 BODY {
-    width: 300px;
-    height: 250px;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
     font-family: NurofenText, sans-serif;
     color: #fff;
@@ -42,7 +42,7 @@ BODY {
     overflow: hidden;
     background: #56c2c6;
     cursor: pointer;
-    padding: 10px;
+    padding: 5% 5%;
 }
 .wrapper {
     position: relative;
@@ -95,41 +95,39 @@ BODY {
 .text_wrapper {
     position: absolute;
     left: 0;
-    top: 0;
-    font-size: 18px;
-    line-height: 1;
+    top: 12%;
     width: 100%;
+    font-size: 30px;
+    line-height: 1;
 }
 .text {
     position: absolute;
     left: 0;
     top: 0;
-    width: 60%;
+    width: 100%;
     opacity: 0;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .text1 {
     opacity: 0;
-    top: 43px !important;
+    top: 35px;
+    left: 60px;
 }
-
-.text2 {
-    width: 100%;
-}
-
-.text.text3 {
-    width: 49%;
-    font-size: 20px;
-}
-
 .banner:not(.default) .text1 {
-    top: 13px;
+    top: 35px;
 }
 .anim1 .text1 {
     opacity: 1;
     transition: opacity 0.25s 0.1s;
 }
-
+.text2,
+.text3 {
+    transform: translateY(-60px);
+}
+.text3 {
+    white-space: normal;
+}
 .anim2 .text1 {
     opacity: 0;
     transition: opacity 0.25s;
@@ -155,13 +153,13 @@ BODY {
 }
 
 .city_wrajpper {
-    display: flex;
+    display: block;
     position: absolute;
     left: 0;
-    top: 0;
     width: 100%;
-    height: 30px;
-    font-size: 14px;
+    top: 0;
+    padding: 13px 25px 5px 25px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.1;
     text-align: center;
@@ -169,14 +167,7 @@ BODY {
     border-radius: 40px;
     background: #e4052d;
     opacity: 0;
-    justify-content: center;
-    align-items: center;
-
-    .city {
-        transform: translateY(2px);
-    }
 }
-
 .default .city_wrajpper {
     display: none;
 }
@@ -193,29 +184,21 @@ BODY {
 
 .logo_wrapper {
     position: absolute;
-    right: 10px;
-    width: 53%;
+    left: 25%;
+    top: 43%;
+    width: 50%;
+    margin-bottom: 5%;
     opacity: 0;
 }
-
 .anim1 .logo_wrapper {
     opacity: 1;
     transition: opacity 0.5s 0.5s;
-    top: 66px;
-}
-
-.anim2 .logo_wrapper {
-    left: unset;
-    right: 100px;
-    width: 70%;
-    top: 19px;
 }
 
 .anim5 .logo_wrapper {
-    top: 55px;
-    left: unset;
-    right: 0px;
-    width: 50%;
+    left: 20%;
+    top: 33%;
+    width: 60%;
 }
 .anim6 .logo_wrapper {
     opacity: 0;
@@ -311,7 +294,7 @@ BODY {
 }
 .pack1 {
     position: absolute;
-    left: 53%;
+    left: 3%;
     bottom: 0;
     width: 64%;
     display: block;
@@ -329,7 +312,7 @@ BODY {
 }
 .pack2 {
     position: absolute;
-    right: -59%;
+    right: -9%;
     bottom: 0;
     width: 38%;
     display: block;
@@ -347,42 +330,27 @@ BODY {
 }
 
 .list {
-    display: flex;
     position: absolute;
     left: 0;
-    top: 45px;
-    width: 60%;
+    top: 17%;
+    width: 100%;
     opacity: 0;
-    flex-direction: column;
-    align-items: flex-start;
 }
-
 .anim2 .list {
     opacity: 1;
     transition: opacity 0.25s 0.25s;
 }
 .item {
-    display: flex;
-    width: 90%;
-    height: 22px;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    height: 44px;
+    line-height: 52px;
     border-radius: 22px;
-    margin-bottom: 7px;
-    box-shadow: 0 0 10px 0 rgb(255 255 255 / 0%), 0 0 15px 0 rgb(255 255 255 / 0%);
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
     transform: translateX(200%);
-    align-items: center;
-    justify-content: center;
-
-    p {
-        transform: translateY(2px);
-        line-height: 1;
-        padding: 0;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
 }
 .anim2 .item {
     transform: translateX(0);
@@ -447,11 +415,11 @@ BODY {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%) scaleY(0.9);
+    transform: translateX(-50%) scaleY(1);
     transform-origin: center bottom;
     text-align: center;
-    font-size: 12px;
-    line-height: 0.9;
+    font-size: 23.5px;
+    line-height: 1;
     white-space: nowrap;
 }
 .anim5 .disc {
@@ -465,7 +433,7 @@ BODY {
     transform: translateX(-50%);
     width: 100%;
     text-align: justify;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 300;
     line-height: 0.8;
     opacity: 0;
@@ -473,14 +441,4 @@ BODY {
 .anim5 .disc2 {
     opacity: 1;
     transition: opacity 0.25s 0.25s;
-}
-
-.default__city {
-    font-size: 25px;
-    padding: 7px 0 0;
-    width: 61%;
-
-    .city {
-        transform: translateY(0);
-    }
 }

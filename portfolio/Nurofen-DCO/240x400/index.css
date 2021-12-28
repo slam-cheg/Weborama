@@ -30,8 +30,8 @@
 
 HTML,
 BODY {
-  width: 300px;
-  height: 250px;
+  width: 240px;
+  height: 400px;
   overflow: hidden;
   font-family: NurofenText, sans-serif;
   color: #fff;
@@ -44,7 +44,7 @@ BODY {
   overflow: hidden;
   background: #56c2c6;
   cursor: pointer;
-  padding: 10px;
+  padding: 5% 5%;
 }
 
 .wrapper {
@@ -117,42 +117,43 @@ BODY {
 .text_wrapper {
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 18px;
-  line-height: 1;
+  top: 12%;
   width: 100%;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .text {
   position: absolute;
   left: 0;
   top: 0;
-  width: 60%;
+  width: 100%;
   opacity: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .text1 {
   opacity: 0;
-  top: 43px !important;
-}
-
-.text2 {
-  width: 100%;
-}
-
-.text.text3 {
-  width: 49%;
-  font-size: 20px;
+  top: 35px;
 }
 
 .banner:not(.default) .text1 {
-  top: 13px;
+  top: 20px;
 }
 
 .anim1 .text1 {
   opacity: 1;
   transition: opacity 0.25s 0.1s;
+}
+
+.text2,
+.text3 {
+  transform: translateY(-40px);
+}
+
+.text3 {
+  font-size: 19px;
 }
 
 .anim2 .text1 {
@@ -185,13 +186,14 @@ BODY {
 }
 
 .city_wrajpper {
-  display: flex;
+  display: block;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
   width: 100%;
-  height: 30px;
-  font-size: 14px;
+  padding: 7px 0px 2px;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.1;
   text-align: center;
@@ -199,15 +201,15 @@ BODY {
   border-radius: 40px;
   background: #e4052d;
   opacity: 0;
-  justify-content: center;
-  align-items: center;
-}
-.city_wrajpper .city {
-  transform: translateY(2px);
 }
 
 .default .city_wrajpper {
   display: none;
+}
+
+.default__city {
+  font-size: 30px;
+  padding: 7px 0 0;
 }
 
 .anim1 .city_wrajpper {
@@ -226,29 +228,29 @@ BODY {
 
 .logo_wrapper {
   position: absolute;
-  right: 10px;
-  width: 53%;
+  left: 0;
+  top: 37%;
+  width: 100%;
+  margin-bottom: 5%;
   opacity: 0;
 }
 
 .anim1 .logo_wrapper {
   opacity: 1;
   transition: opacity 0.5s 0.5s;
-  top: 66px;
 }
 
 .anim2 .logo_wrapper {
-  left: unset;
-  right: 100px;
-  width: 70%;
-  top: 19px;
+  left: 12.5%;
+  top: 52%;
+  width: 75%;
+  margin-bottom: 5%;
 }
 
 .anim5 .logo_wrapper {
-  top: 55px;
-  left: unset;
-  right: 0px;
-  width: 50%;
+  left: 0;
+  top: 30%;
+  width: 100%;
 }
 
 .anim6 .logo_wrapper {
@@ -361,7 +363,7 @@ BODY {
 
 .pack1 {
   position: absolute;
-  left: 53%;
+  left: 3%;
   bottom: 0;
   width: 64%;
   display: block;
@@ -382,7 +384,7 @@ BODY {
 
 .pack2 {
   position: absolute;
-  right: -59%;
+  right: -9%;
   bottom: 0;
   width: 38%;
   display: block;
@@ -402,14 +404,11 @@ BODY {
 }
 
 .list {
-  display: flex;
   position: absolute;
   left: 0;
-  top: 45px;
-  width: 60%;
+  top: 22%;
+  width: 100%;
   opacity: 0;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .anim2 .list {
@@ -418,25 +417,16 @@ BODY {
 }
 
 .item {
-  display: flex;
   width: 90%;
-  height: 22px;
+  margin: 0 auto 10px auto;
+  height: 34px;
+  line-height: 40px;
   border-radius: 22px;
-  margin-bottom: 7px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 14px;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
   transform: translateX(200%);
-  align-items: center;
-  justify-content: center;
-}
-.item p {
-  transform: translateY(2px);
-  line-height: 1;
-  padding: 0;
-  text-align: center;
-  font-size: 16px;
-}
-.item:last-of-type {
-  margin-bottom: 0;
 }
 
 .anim2 .item {
@@ -518,10 +508,10 @@ BODY {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%) scaleY(0.9);
+  transform: translateX(-50%) scaleY(1.45);
   transform-origin: center bottom;
   text-align: center;
-  font-size: 12px;
+  font-size: 9.7px;
   line-height: 0.9;
   white-space: nowrap;
 }
@@ -547,13 +537,4 @@ BODY {
 .anim5 .disc2 {
   opacity: 1;
   transition: opacity 0.25s 0.25s;
-}
-
-.default__city {
-  font-size: 25px;
-  padding: 7px 0 0;
-  width: 61%;
-}
-.default__city .city {
-  transform: translateY(0);
 }/*# sourceMappingURL=index.css.map */
