@@ -175,6 +175,7 @@ html {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
 
     p {
@@ -199,7 +200,6 @@ html {
         background-image: url(./fifth-img.jpg);
     }
     &:nth-of-type(5) {
-        background-position: center -5vh;
         background-image: url(./last.jpg);
     }
 
@@ -676,7 +676,7 @@ html {
 
     .first-line {
         font-size: 20px;
-        width: 590px;
+        width: 500px;
         text-align: center;
         position: absolute;
         left: -425px;
@@ -732,7 +732,6 @@ html {
     left: 0;
     background-image: url(./fifth-img.jpg);
     background-position: left center;
-//    background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -750,9 +749,10 @@ html {
         font-size: 20px;
         margin: 0;
         position: absolute;
-        bottom: 30px;
+        bottom: 50px;
+        left: 50px;
         text-align: center;
-        width: 400px;
+        width: 300px;
     }
 
     .fuel-btn {
@@ -785,7 +785,7 @@ html {
     }
 
     .text_bottom-description {
-        max-width: 65%;
+        max-width: 60%;
     }
 
     .logo-ix {
@@ -992,7 +992,8 @@ html {
 }
 
 .try-descr {
-    letter-spacing: 10px;
-    font-weight: $light;
-    line-height: 1.5;
+    letter-spacing: 5px !important;
+    font-weight: $light !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
 }
