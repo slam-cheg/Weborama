@@ -107,7 +107,6 @@ BODY {
     width: 100%;
     opacity: 0;
     text-transform: uppercase;
-    white-space: nowrap;
 }
 .text1 {
     opacity: 0;
@@ -124,6 +123,11 @@ BODY {
 .text3 {
     transform: translateY(-60px);
 }
+
+.text2 {
+    font-size: 26px;
+}
+
 .text3 {
     font-size: 24px;
 }
@@ -151,7 +155,7 @@ BODY {
     vertical-align: top;
 }
 
-.city_wrajpper {
+.city_wrapper {
     display: block;
     position: absolute;
     left: 50%;
@@ -167,15 +171,15 @@ BODY {
     background: #e4052d;
     opacity: 0;
 }
-.default .city_wrajpper {
+.default .city_wrapper {
     display: none;
 }
-.anim1 .city_wrajpper {
+.anim1 .city_wrapper {
     animation: atten_anim 1.5s 0.5s 2 both;
     transition: opacity 0.5s;
     opacity: 1;
 }
-.anim2 .city_wrajpper {
+.anim2 .city_wrapper {
     animation: none;
     opacity: 0;
     transition: opacity 0.25s;
@@ -188,27 +192,41 @@ BODY {
     width: 100%;
     margin-bottom: 5%;
     opacity: 0;
+    transition: 0.5s;
 }
 .anim1 .logo_wrapper {
     opacity: 1;
-    transition: opacity 0.5s 0.5s;
+    transition: 0.5s;
 }
+.anim2 .logo_wrapper {
+    transition: 0.5s;
+}
+.anim3 .logo_wrapper {
+    transition: 0.5s;
+}
+
 .anim6 .logo_wrapper {
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: 0.5s;
 }
 .anim2 .shadow_wrapper {
-    opacity: 0;
-    transition: opacity 0.5s;
+    opacity: 1;
+    transition: 0.5s;
+    width: 80%;
+    margin: 31px auto 0 auto;
 }
 .anim5 .shadow_wrapper {
     opacity: 1;
-    transition: opacity 0.5s 0.5s;
+    transition: 0.5s;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-70px);
 }
 .shadow_wrapper {
     position: relative;
     width: 90%;
     margin: 0 auto;
+    transition: 0.5s;
 }
 .shadow_wrapper:before {
     content: "";
@@ -253,30 +271,30 @@ BODY {
     opacity: 0;
     transition: opacity 0.25s;
 }
-.map {
+.pair {
     position: absolute;
-    left: -2%;
+    left: 10%;
     bottom: 4%;
-    width: 107%;
+    width: 80%;
     display: block;
     opacity: 0;
 }
-.default .map {
+.default .pair {
     display: none;
 }
-.anim1 .map {
+.anim1 .pair {
     opacity: 1;
     transition: opacity 0.4s 1s;
 }
-.anim2 .map {
+.anim2 .pair {
     opacity: 0;
     transition: opacity 0.25s;
 }
 .fam2 {
     position: absolute;
-    left: -2%;
+    left: 6%;
     bottom: 4%;
-    height: 110%;
+    height: 90%;
     display: block;
     opacity: 0;
     transition: opacity 0.5s;
@@ -284,12 +302,13 @@ BODY {
 .anim5 .fam2 {
     opacity: 1;
     transition: opacity 0.5s 0.5s;
+    transform: translate(-10px, -20px);
 }
 .pack1 {
     position: absolute;
-    left: 3%;
-    bottom: 0;
-    width: 64%;
+    left: 15%;
+    bottom: -18px;
+    width: 80%;
     display: block;
     opacity: 0;
     transform: translateX(-200%) rotate(-30deg);
@@ -328,6 +347,7 @@ BODY {
     top: 18%;
     width: 100%;
     opacity: 0;
+    list-style: none;
 }
 .anim2 .list {
     opacity: 1;
@@ -405,6 +425,7 @@ BODY {
 }
 
 .disc {
+    display: flex;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -414,6 +435,7 @@ BODY {
     font-size: 11.5px;
     line-height: 0.8;
     white-space: nowrap;
+    flex-direction: column;
 }
 .anim5 .disc {
     opacity: 0;
