@@ -1,3 +1,7 @@
+screenad.hide();
+screenad.setZIndex(1200000);
+screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=true&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
+
 // ALL
 const page = document.querySelector(".page");
 const allSlides = document.querySelector(".slide");
@@ -12,6 +16,7 @@ const fourthButton = document.querySelector(".nav__list-item_fourth");
 const fifthButton = document.querySelector(".nav__list-item_fifth");
 const allMainScreens = document.querySelectorAll(".main-content");
 const closeButton = document.querySelector(".close");
+const allButtons = document.querySelectorAll(".click__button");
 var isDrawing;
 var canvas;
 var context;
@@ -64,10 +69,6 @@ const cover = lastScreen.querySelector(".cover");
 const player = lastScreen.querySelector(".player");
 const videoDescription = lastScreen.querySelector(".video-description");
 
-screenad.hide();
-screenad.setZIndex(1200000);
-screenad.position("width=100%&height=100%&hor=left&ver=top&hide=false&sticky=true&offx=0&offy=0&cliprect=auto,auto,auto,auto&antizoom=false&smooth=1");
-
 window.onload = function () {
     canvas = document.getElementById("drawingCanvas");
     context = canvas.getContext("2d");
@@ -82,6 +83,12 @@ window.onload = function () {
     canvas.onmouseout = stopDrawing;
     canvas.onmousemove = draw;
 };
+
+allButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        screenad.click();
+    });
+});
 
 closeButton.addEventListener("click", () => {
     screenad.event("FS_userclose");
