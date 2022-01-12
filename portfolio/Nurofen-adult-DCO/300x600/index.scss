@@ -113,7 +113,7 @@ BODY {
     top: 35px;
 }
 .banner:not(.default) .text1 {
-    top: 55px;
+    top: 35px;
 }
 .anim1 .text1 {
     opacity: 1;
@@ -158,11 +158,11 @@ BODY {
 .city_wrapper {
     display: block;
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 0;
-    transform: translateX(-50%);
-    padding: 13px 25px 5px 25px;
-    font-size: 26px;
+    width: 100%;
+    padding: 13px 25px 1px 25px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 1.1;
     text-align: center;
@@ -171,6 +171,7 @@ BODY {
     background: #e4052d;
     opacity: 0;
 }
+
 .default .city_wrapper {
     display: none;
 }
