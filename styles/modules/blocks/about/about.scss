@@ -5,4 +5,15 @@
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1240px) {
+        margin: 0 20px 0 20px;
+    }
+
+    @media screen and (max-width: 780px) {
+        flex-direction: column-reverse;
+        align-items: normal;
+        margin-top: 80px;
+        height: auto;
+    }
 }

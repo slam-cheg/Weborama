@@ -2,8 +2,22 @@
     display: grid;
     width: 100%;
     gap: 40px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
     margin: 0;
+    transition: .3s;
+
+    
+    @media screen and (max-width: 1240px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width:780px) {
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 }

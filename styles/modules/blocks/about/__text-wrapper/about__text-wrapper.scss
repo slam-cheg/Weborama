@@ -1,0 +1,9 @@
+.about__text-wrapper {
+    @media screen and (max-width: 1240px) {
+        margin-right: 40px;
+    }
+    @media screen and(max-width: 780px) {
+        margin-top: 40px;
+        margin-right: 0;
+    }
+}

@@ -1,5 +1,6 @@
 .about__animation {
     width: fit-content;
+    transform-origin: bottom;
     display: inline-block;
     animation: hand-anim;
     animation-duration: 5s;

@@ -2,4 +2,8 @@
     max-width: 1200px;
     display: flex;
     margin: 0 auto 120px auto;
+
+    @media screen and (max-width: 1240px) {
+        margin: 0 20px;
+    }
 }

@@ -14,4 +14,8 @@
         margin-bottom: 0;
         max-width: 400px;
     }
+
+    @media screen and (max-width:780px) {
+        max-width: unset;
+    }
 }
