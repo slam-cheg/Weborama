@@ -965,8 +965,27 @@ html {
         margin-bottom: 40px;
 
         &:hover {
+            cursor: $pointer;
             transition: 0.2s;
             opacity: 0.8;
+        }
+    }
+
+    .video__pause-button {
+        width: 30px;
+        height: 25px;
+        opacity: 1;
+        display: flex;
+        justify-content: space-evenly;
+
+        &:hover {
+            cursor: $pointer;
+        }
+
+        span {
+            background-color: #fff;
+            width: 2px;
+            height: 100%;
         }
     }
 
@@ -991,6 +1010,42 @@ html {
 
     .button {
         z-index: 500;
+        right: 7.032%;
+    }
+
+    .video__sound-btn {
+        width: 30px;
+        height: 30px;
+        left: unset;
+        bottom: unset;
+        position: relative;
+        background-image: url(./sound-active.svg);
+    }
+
+    .video__sound-btn_muted {
+        background-image: url(./sound-deactive.svg);
+    }
+
+    .video__controls {
+        position: absolute;
+        z-index: 5000;
+        bottom: 5vh;
+        left: 5%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 65px;
+        height: 35px;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .video__controls_active {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
     }
 }
 

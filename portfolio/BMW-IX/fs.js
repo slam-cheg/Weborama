@@ -17,6 +17,10 @@ const fifthButton = document.querySelector(".nav__list-item_fifth");
 const allMainScreens = document.querySelectorAll(".main-content");
 const closeButton = document.querySelector(".close");
 const allButtons = document.querySelectorAll(".click__button");
+const lastButton = document.querySelector(".last-button");
+const videoControls = document.querySelector(".video__controls");
+const videoPauseButton = document.querySelector(".video__pause-button");
+const videoMuteButton = document.querySelector(".video__sound-btn");
 var isDrawing;
 var canvas;
 var context;
@@ -87,6 +91,7 @@ window.onload = function () {
 allButtons.forEach((button) => {
     button.addEventListener("click", () => {
         screenad.click();
+        closeFS();
     });
 });
 
@@ -106,8 +111,11 @@ soundBtn.addEventListener("click", soundOn);
 tryButton.addEventListener("click", openRoof);
 tryButtonFourth.addEventListener("click", chargeCar);
 videoPlayBtn.addEventListener("click", playVideo);
+videoPauseButton.addEventListener("click", stopVideo);
 player.addEventListener("click", stopVideo);
 player.addEventListener("ended", stopVideo);
+videoMuteButton.addEventListener("click", muteVideo);
+lastButton.addEventListener("click", stopVideo);
 
 function minimizeCursor() {
     cursor.classList.add("cursor_active");
@@ -268,6 +276,7 @@ function setDefault() {
     videoPlayBtn.classList.remove("deactive-screen");
     cover.classList.remove("deactive-screen");
     videoDescription.classList.remove("deactive-screen");
+    videoMuteButton.classList.remove("video__sound-btn_muted");
     player.classList.add("player_paused");
     player.pause();
     player.currentTime = 0;
@@ -337,6 +346,7 @@ function playVideo() {
     videoPlayBtn.classList.add("deactive-screen");
     videoDescription.classList.add("deactive-screen");
     contentWrapper.classList.add("deactive-screen");
+    videoControls.classList.add("video__controls_active");
 }
 
 function stopVideo() {
@@ -345,4 +355,15 @@ function stopVideo() {
     videoPlayBtn.classList.remove("deactive-screen");
     videoDescription.classList.remove("deactive-screen");
     contentWrapper.classList.remove("deactive-screen");
+    videoControls.classList.remove("video__controls_active");
+}
+
+function muteVideo() {
+    if (player.volume > 0) {
+        player.volume = 0;
+        videoMuteButton.classList.add("video__sound-btn_muted");
+    } else {
+        player.volume = 1;
+        videoMuteButton.classList.remove("video__sound-btn_muted");
+    }
 }
