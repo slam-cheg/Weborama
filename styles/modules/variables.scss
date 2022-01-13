@@ -2,9 +2,4 @@
     $h1: 40px !global;
     $h2: 16px !global;
     $text: 18px !global;
-
-    @media screen and (max-width: 500px) {
-        $h1: 25px !global;
-        $text: 16px !global;
-    }
 }
