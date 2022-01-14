@@ -1,14 +1,15 @@
 const params = parent.window.document.location.search;
 const segment = params.slice(params.indexOf("?segment=") + 9);
-if (segment == "default") {
-    banner.classList.add("default");
-}
-
+const cityFont = document.querySelector(".city_wrapper");
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
 
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
+
+if (segment == "default") {
+    banner.classList.add("default");
+}
 
 banner.addEventListener("click", () => {
     screenad.click();
@@ -67,18 +68,18 @@ function animation() {
             banner.classList.add("anim3");
             setTimeout(function () {
                 banner.classList.add("anim4");
-                setTimeout(function () {
-                    banner.classList.add("anim5");
-                    setTimeout(function () {
-                        banner.classList.remove("anim1");
-                        banner.classList.remove("anim2");
-                        banner.classList.remove("anim3");
-                        banner.classList.remove("anim4");
-                        banner.classList.remove("anim5");
-                        banner.classList.add("anim6");
-                        animation();
-                    }, 4000);
-                }, 2000);
+                // setTimeout(function () {
+                //     banner.classList.add("anim5");
+                //     setTimeout(function () {
+                //         banner.classList.remove("anim1");
+                //         banner.classList.remove("anim2");
+                //         banner.classList.remove("anim3");
+                //         banner.classList.remove("anim4");
+                //         banner.classList.remove("anim5");
+                //         banner.classList.add("anim6");
+                //         animation();
+                //     }, 4000);
+                // }, 2000);
             }, 2000);
         }, 2000);
     }, 4000);

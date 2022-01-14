@@ -98,7 +98,7 @@ BODY {
     top: 10%;
     width: 100%;
     font-size: 26.4px;
-    line-height: 1;
+    line-height: 1.35;
 }
 .text {
     position: absolute;
@@ -113,7 +113,7 @@ BODY {
     top: 35px;
 }
 .banner:not(.default) .text1 {
-    top: 55px;
+    top: 15px;
 }
 .anim1 .text1 {
     opacity: 1;

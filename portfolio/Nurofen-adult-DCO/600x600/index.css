@@ -30,7 +30,7 @@
 
 HTML,
 BODY {
-  width: 300px;
+  width: 600px;
   height: 600px;
   overflow: hidden;
   font-family: NurofenText, sans-serif;
@@ -135,10 +135,11 @@ BODY {
 .text1 {
   opacity: 0;
   top: 35px;
+  width: 80%;
 }
 
 .banner:not(.default) .text1 {
-  top: 35px;
+  top: 15px;
 }
 
 .anim1 .text1 {
@@ -230,9 +231,9 @@ BODY {
 
 .logo_wrapper {
   position: absolute;
-  left: 0;
-  top: 43%;
-  width: 100%;
+  left: 20%;
+  top: 34%;
+  width: 60%;
   margin-bottom: 5%;
   opacity: 0;
   transition: 0.5s;
@@ -241,14 +242,25 @@ BODY {
 .anim1 .logo_wrapper {
   opacity: 1;
   transition: 0.5s;
+  top: 28%;
 }
 
 .anim2 .logo_wrapper {
+  transition: 0.5s;
+  left: 25%;
+  top: 40%;
+  width: 50%;
   transition: 0.5s;
 }
 
 .anim3 .logo_wrapper {
   transition: 0.5s;
+}
+
+.anim5 .logo_wrapper {
+  left: 15%;
+  top: 27%;
+  width: 70%;
 }
 
 .anim6 .logo_wrapper {
@@ -273,7 +285,7 @@ BODY {
 
 .shadow_wrapper {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -411,7 +423,7 @@ BODY {
 .list {
   position: absolute;
   left: 0;
-  top: 18%;
+  top: 14%;
   width: 100%;
   opacity: 0;
   list-style: none;
@@ -430,7 +442,6 @@ BODY {
   border-radius: 22px;
   text-align: center;
   font-size: 26px;
-  margin-bottom: 14px;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
   transform: translateX(200%);
 }
@@ -499,26 +510,26 @@ BODY {
 }
 
 .anim5 .item1 {
-  transition: transform 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.27, 1);
+  transition: transform 0.2s 0.1s cubic-bezier(0.17, 0.67, 0.27, 1);
 }
 
 .anim5 .item2 {
-  transition: transform 0.5s 0.35s cubic-bezier(0.17, 0.67, 0.27, 1);
+  transition: transform 0.2s 0.2s cubic-bezier(0.17, 0.67, 0.27, 1);
 }
 
 .anim5 .item3 {
-  transition: transform 0.5s 0.45s cubic-bezier(0.17, 0.67, 0.27, 1);
+  transition: transform 0.2s 0.3s cubic-bezier(0.17, 0.67, 0.27, 1);
 }
 
 .disc {
   display: flex;
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  transform: translateX(-50%) scaleY(2.25);
+  transform: translateX(0) scaleY(1.15);
   transform-origin: center bottom;
   text-align: center;
-  font-size: 11.5px;
+  font-size: 23.5px;
   line-height: 0.8;
   white-space: nowrap;
   flex-direction: column;
