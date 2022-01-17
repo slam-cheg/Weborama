@@ -1,14 +1,15 @@
 const params = parent.window.document.location.search;
 const segment = params.slice(params.indexOf("?segment=") + 9);
-if (segment == "default") {
-    banner.classList.add("default");
-}
-
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
+const cityFont = document.querySelector(".city_wrapper");
 
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
+
+if (segment == "default") {
+    banner.classList.add("default");
+}
 
 banner.addEventListener("click", () => {
     screenad.click();
