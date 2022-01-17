@@ -1,0 +1,477 @@
+@font-face {
+    font-family: "NurofenText";
+    src: url("NurofenText-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NurofenText";
+    src: url("NurofenText-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NurofenText";
+    src: url("NurofenText-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+    pointer-events: none;
+}
+HTML,
+BODY {
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    font-family: NurofenText, sans-serif;
+    color: #fff;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #56c2c6;
+    cursor: pointer;
+    padding: 5px;
+}
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+.frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.attention {
+    height: 50px;
+    line-height: 62px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #e4052d;
+    opacity: 0;
+    display: none;
+}
+.default .attention {
+    display: block;
+}
+.anim1 .attention {
+    animation: atten_anim 1.5s 0.5s 2 both;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+.anim2 .attention {
+    animation: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+@keyframes atten_anim {
+    0% {
+        background: #e4052d;
+    }
+    40% {
+        background: #ffa300;
+    }
+    100% {
+        background: #e4052d;
+    }
+}
+.text_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 9px;
+}
+.text {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 100%;
+    opacity: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.text1 {
+    line-height: 1.2;
+}
+.banner:not(.default) .text1 {
+    top: 19px;
+}
+.anim1 .text1 {
+    opacity: 1;
+    transition: opacity 0.25s 0.1s;
+}
+
+.text2 {
+    opacity: 0;
+    line-height: 1;
+    top: 3px;
+}
+
+.text3 {
+    top: 0px;
+    line-height: 1;
+}
+.anim2 .text1 {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.anim2 .text2 {
+    opacity: 1;
+    transition: opacity 0.25s 0.25s;
+}
+.anim5 .text2 {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.anim5 .text3 {
+    opacity: 1;
+    transition: opacity 0.25s 0.25s;
+    font-size: 15px;
+}
+.yel {
+    color: #ffed00;
+}
+.sym {
+    font-size: 50%;
+    vertical-align: top;
+}
+
+.city_wrapper {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4px 10px 1px 10px;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background: #e4052d;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.default__city {
+    font-size: 8px;
+    padding: 4px 10px 1px 10px;
+}
+
+.default .city_wrapper {
+    display: none;
+}
+.anim1 .city_wrapper {
+    animation: atten_anim 1.5s 0.5s 2 both;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+.anim2 .city_wrapper {
+    animation: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.logo_wrapper {
+    position: absolute;
+    right: 5%;
+    top: -45%;
+    height: 190%;
+    opacity: 0;
+}
+.anim1 .logo_wrapper {
+    opacity: 1;
+    transition: opacity 0.5s 0.5s;
+}
+.anim2 .logo_wrapper {
+    transition: 0.5s;
+}
+.anim3 .logo_wrapper {
+    transition: 0.5s;
+}
+
+.anim5 .logo_wrapper {
+    transition: 0.5s;
+}
+
+.anim6 .logo_wrapper {
+    opacity: 0;
+    transition: 0.5s;
+}
+.anim2 .shadow_wrapper {
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
+}
+.anim5 .shadow_wrapper {
+    opacity: 1;
+    transition: 0.5s;
+    width: 100%;
+    margin: 0 auto;
+}
+.shadow_wrapper {
+    position: relative;
+    height: 100%;
+    transform: scale(1.25);
+}
+.shadow_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 0 rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+.anim1 .shadow_wrapper:before,
+.anim5 .shadow_wrapper:before {
+    opacity: 1;
+}
+
+.logo {
+    position: relative;
+    height: 100%;
+    display: block;
+    overflow: visible;
+}
+.fam {
+    position: absolute;
+    left: -1%;
+    bottom: 4%;
+    height: 103%;
+    display: none;
+    opacity: 0;
+}
+.default .fam {
+    display: block;
+}
+.anim1 .fam {
+    opacity: 1;
+    transition: opacity 0.4s 1s;
+}
+.anim2 .fam {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.pair {
+    position: absolute;
+    left: 10%;
+    bottom: 4%;
+    width: 80%;
+    display: none;
+    opacity: 0;
+}
+.default .pair {
+    display: none;
+}
+.anim1 .pair {
+    opacity: 1;
+    transition: opacity 0.4s 1s;
+}
+.anim2 .pair {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.fam2 {
+    position: absolute;
+    left: 19%;
+    bottom: 24%;
+    height: 53%;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.anim5 .fam2 {
+    opacity: 1;
+    transition: opacity 0.5s 0.5s;
+}
+.pack1 {
+    position: absolute;
+    left: 10%;
+    bottom: 18px;
+    width: 125%;
+    display: block;
+    opacity: 0;
+    transform: translateX(200%) rotate(30deg);
+}
+.anim2 .pack1 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s 0.25s, transform 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.27, 1);
+}
+.anim5 .pack1 {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.pack2 {
+    position: absolute;
+    right: -9%;
+    bottom: 0;
+    width: 38%;
+    display: block;
+    opacity: 0;
+    transform: translateX(200%) rotate(30deg);
+}
+.anim2 .pack2 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s 0.25s, transform 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.27, 1);
+}
+.anim5 .pack2 {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 60%;
+    opacity: 0;
+    display: flex;
+}
+.anim2 .list {
+    opacity: 1;
+    transition: opacity 0.25s 0.25s;
+}
+.item {
+    width: 44%;
+    margin-right: 5px;
+    height: 12px;
+    line-height: 14px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 6px;
+    font-weight: 600;
+    box-shadow: 0 0 10px 0 rgb(255 255 255 / 0%), 0 0 15px 0 rgb(255 255 255 / 0%);
+    transform: translateX(200%);
+}
+.anim2 .item {
+    transform: translateX(0);
+}
+.anim2 .item1 {
+    transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.27, 1);
+}
+.anim2 .item2 {
+    transition: transform 0.5s 0.1s cubic-bezier(0.17, 0.67, 0.27, 1);
+}
+.anim2 .item3 {
+    transition: transform 0.5s 0.2s cubic-bezier(0.17, 0.67, 0.27, 1);
+}
+.item1 {
+    background: #e4052d;
+}
+.anim2 .item1 {
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 1), 0 0 15px 0 rgba(255, 255, 255, 1);
+}
+.anim3 .item1 {
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
+    transition: box-shadow 0.1s;
+}
+.item2 {
+    background: #ffa400;
+    color: #243045;
+}
+.anim3 .item2 {
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 1), 0 0 15px 0 rgba(255, 255, 255, 1);
+    transition: box-shadow 0.1s 0.1s;
+}
+.anim4 .item2 {
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
+    transition: box-shadow 0.1s;
+}
+.item3 {
+    background: #ffed00;
+    color: #243045;
+}
+.anim4 .item3 {
+    background: #ffed00;
+    color: #243045;
+}
+.anim4 .item3 {
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 1), 0 0 15px 0 rgba(255, 255, 255, 1);
+    transition: box-shadow 0.1s;
+}
+.anim5 .item {
+    transform: translateX(-200%);
+}
+.anim5 .item1 {
+    transition: 0.2s;
+    opacity: 0;
+}
+.anim5 .item2 {
+    transition: 0.2s;
+    opacity: 0;
+}
+.anim5 .item3 {
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.disc {
+    width: 180px;
+    position: absolute;
+    left: 0;
+    bottom: -2.2px;
+    transform: scaleX(1.3);
+    transform-origin: left bottom;
+    font-size: 5.5px;
+    line-height: 1;
+}
+
+.anim5 .disc {
+    opacity: 0;
+    transition: 0.25s;
+}
+.disc2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: justify;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 0.87;
+    opacity: 0;
+}
+
+.anim7 .disc2 {
+    opacity: 1;
+    transition: opacity 0.25s 0.25s;
+}
+
+.anim7 {
+    .disc2 {
+        opacity: 1;
+    }
+
+    .logo_wrapper {
+        opacity: 0;
+    }
+
+    .text3 {
+        opacity: 0;
+    }
+}
