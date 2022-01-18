@@ -61,7 +61,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
 }
 
 .logo-main {
@@ -119,4 +119,4 @@
           animation-fill-mode: both;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}/*# sourceMappingURL=index.css.map */
+}
