@@ -161,7 +161,7 @@ BODY {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 13px 25px 1px 25px;
+    padding: 0 25px;
     font-size: 34px;
     font-weight: 600;
     line-height: 1.1;
@@ -172,9 +172,14 @@ BODY {
     opacity: 0;
 }
 
+.city__text {
+    transform: translateY(5px);
+}
+
 .default__city {
-    font-size: 28px;
-    padding: 13px 25px 3px 25px;
+    line-height: 1;
+    font-size: 35px;
+    padding: 5px 25px 5px 25px;
 }
 
 .default .city_wrapper {

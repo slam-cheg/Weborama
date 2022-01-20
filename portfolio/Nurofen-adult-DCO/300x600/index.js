@@ -34,7 +34,7 @@ function getCsv(latitude, longitude) {
         .then((res) => {
             for (let i = 0; i < res.length; i++) {
                 if (Math.abs(latitude - res[i].latitude) < 0.5 && Math.abs(longitude - res[i].longitude) < 0.5) {
-                    regionPlace.textContent = `${res[i].name_ru}`;
+                    regionPlace.textContent = `${res[i].name_ru}!`;
                     customEvent = res[i].event;
                     customClick = `${customEvent}_CLICK`;
                     screenad.event(customEvent);
@@ -83,4 +83,19 @@ function animation() {
             }, 2000);
         }, 2000);
     }, 4000);
+}
+
+IsSafari();
+function IsSafari() {
+    safari = navigator.userAgent.toLowerCase();
+    const cityText = cityFont.querySelector("#safari-fix");
+    if (safari.indexOf("safari") != -1) {
+        if (safari.indexOf("chrome") > -1) {
+            console.log("chrome");
+            cityText.classList.add("city__text");
+        } else {
+            console.log("safari");
+            cityText.classList.remove("city__text");
+        }
+    }
 }

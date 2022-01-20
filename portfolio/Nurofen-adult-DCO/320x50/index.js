@@ -34,7 +34,7 @@ function getCsv(latitude, longitude) {
         .then((res) => {
             for (let i = 0; i < res.length; i++) {
                 if (Math.abs(latitude - res[i].latitude) < 0.5 && Math.abs(longitude - res[i].longitude) < 0.5) {
-                    regionPlace.textContent = `${res[i].name_ru}`;
+                    regionPlace.textContent = `${res[i].name_ru}!`;
                     customEvent = res[i].event;
                     customClick = `${customEvent}_CLICK`;
                     screenad.event(customEvent);
@@ -78,7 +78,7 @@ function animation() {
                             banner.classList.remove("anim3");
                             banner.classList.remove("anim4");
                             banner.classList.remove("anim5");
-                            banner.classList.remove("anim7")
+                            banner.classList.remove("anim7");
                             banner.classList.add("anim6");
                             animation();
                         }, 2000);
