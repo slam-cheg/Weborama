@@ -191,10 +191,8 @@ BODY {
 .city_wrapper {
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: 14px;
-  padding: 9px 15px 3px 15px;
+  padding: 5px 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.1;
@@ -205,9 +203,13 @@ BODY {
   opacity: 0;
 }
 
+.fix__text {
+  transform: translateY(4px) !important;
+}
+
 .default__city {
-  font-size: 28px;
-  padding: 13px 25px 3px 25px;
+  font-size: 16px;
+  padding: 8px 25px;
 }
 
 .default .city_wrapper {
@@ -432,6 +434,9 @@ BODY {
 }
 
 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 0 auto 10px auto;
   height: 40px;

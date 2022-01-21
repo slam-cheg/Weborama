@@ -157,7 +157,7 @@ BODY {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 12px 25px 0 25px;
+    padding: 10px 25px;
     font-size: 34px;
     font-weight: 600;
     text-align: center;
@@ -168,9 +168,13 @@ BODY {
     white-space: nowrap;
 }
 
+.fix__text {
+    transform: translateY(6px) !important;
+}
+
 .default__city {
     font-size: 28px;
-    padding: 13px 25px 3px 25px;
+    padding: 10px 25px;
 }
 
 .default .city_wrapper {
@@ -356,6 +360,9 @@ BODY {
     transition: opacity 0.25s 0.25s;
 }
 .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44%;
     margin-bottom: 10px;
     height: 44px;

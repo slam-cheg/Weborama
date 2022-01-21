@@ -158,10 +158,8 @@ BODY {
 .city_wrapper {
     display: block;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     top: 14px;
-    padding: 9px 15px 3px 15px;
+    padding: 5px 0;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.1;
@@ -171,9 +169,14 @@ BODY {
     background: #e4052d;
     opacity: 0;
 }
+
+.fix__text {
+    transform: translateY(4px) !important;
+}
+
 .default__city {
-    font-size: 28px;
-    padding: 13px 25px 3px 25px;
+    font-size: 16px;
+    padding: 8px 25px;
 }
 
 .default .city_wrapper {
@@ -368,6 +371,9 @@ BODY {
     transition: opacity 0.25s 0.25s;
 }
 .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0 auto 10px auto;
     height: 40px;
@@ -428,7 +434,7 @@ BODY {
     transform: translateX(200%);
 }
 .anim5 .item1 {
-    transition: transform 0.5s 0.0s cubic-bezier(0.17, 0.67, 0.27, 1);
+    transition: transform 0.5s 0s cubic-bezier(0.17, 0.67, 0.27, 1);
 }
 .anim5 .item2 {
     transition: transform 0.5s 0.1s cubic-bezier(0.17, 0.67, 0.27, 1);

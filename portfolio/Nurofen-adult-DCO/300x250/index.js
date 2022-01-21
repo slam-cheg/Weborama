@@ -3,6 +3,7 @@ const segment = params.slice(params.indexOf("?segment=") + 9);
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
 const cityFont = document.querySelector(".city_wrapper");
+const fixText = document.querySelectorAll(".fix__text");
 
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
@@ -83,4 +84,20 @@ function animation() {
             }, 2000);
         }, 2000);
     }, 4000);
+}
+
+IsSafari();
+function IsSafari() {
+    safari = navigator.userAgent.toLowerCase();
+    if (safari.indexOf("safari") != -1) {
+        if (safari.indexOf("chrome") > -1) {
+            fixText.forEach((item) => {
+                item.classList.add("fix__text");
+            });
+        } else {
+            fixText.forEach((item) => {
+                item.classList.remove("fix__text");
+            });
+        }
+    }
 }

@@ -162,7 +162,7 @@ BODY {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 13px 25px 1px 25px;
+    padding: 13px 25px;
     font-size: 34px;
     font-weight: 600;
     line-height: 1.1;
@@ -173,9 +173,13 @@ BODY {
     opacity: 0;
 }
 
+.fix__text {
+    transform: translateY(5px) !important;
+}
+
 .default__city {
     font-size: 28px;
-    padding: 13px 25px 3px 25px;
+    padding: 13px 25px;
 }
 
 .default .city_wrapper {
@@ -372,6 +376,9 @@ BODY {
     transition: opacity 0.25s 0.25s;
 }
 .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     margin: 0 auto 10px auto;
     height: 44px;
