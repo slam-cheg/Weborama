@@ -3,6 +3,8 @@ const segment = params.slice(params.indexOf("?segment=") + 9);
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
 const cityFont = document.querySelector(".city_wrapper");
+const fixText = document.querySelectorAll(".fix__text");
+
 
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
@@ -68,18 +70,18 @@ function animation() {
             banner.classList.add("anim3");
             setTimeout(function () {
                 banner.classList.add("anim4");
-                setTimeout(function () {
-                    banner.classList.add("anim5");
-                    setTimeout(function () {
-                        banner.classList.remove("anim1");
-                        banner.classList.remove("anim2");
-                        banner.classList.remove("anim3");
-                        banner.classList.remove("anim4");
-                        banner.classList.remove("anim5");
-                        banner.classList.add("anim6");
-                        animation();
-                    }, 4000);
-                }, 2000);
+                // setTimeout(function () {
+                //     banner.classList.add("anim5");
+                //     setTimeout(function () {
+                //         banner.classList.remove("anim1");
+                //         banner.classList.remove("anim2");
+                //         banner.classList.remove("anim3");
+                //         banner.classList.remove("anim4");
+                //         banner.classList.remove("anim5");
+                //         banner.classList.add("anim6");
+                //         animation();
+                //     }, 4000);
+                // }, 2000);
             }, 2000);
         }, 2000);
     }, 4000);
@@ -88,14 +90,17 @@ function animation() {
 IsSafari();
 function IsSafari() {
     safari = navigator.userAgent.toLowerCase();
-    const cityText = cityFont.querySelector("#safari-fix");
     if (safari.indexOf("safari") != -1) {
         if (safari.indexOf("chrome") > -1) {
-            console.log("chrome");
-            cityText.classList.add("city__text");
+            console.log("Your browser is not safari");
+            fixText.forEach(item => {
+                item.classList.add("fix__text");
+            })
         } else {
-            console.log("safari");
-            cityText.classList.remove("city__text");
+            console.log("Your browser is safari");
+            fixText.forEach(item => {
+                item.classList.remove("fix__text");
+            })
         }
     }
 }

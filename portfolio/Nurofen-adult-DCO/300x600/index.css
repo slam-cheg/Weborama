@@ -205,8 +205,8 @@ BODY {
   opacity: 0;
 }
 
-.city__text {
-  transform: translateY(5px);
+.fix__text {
+  transform: translateY(5px) !important;
 }
 
 .default__city {
@@ -428,6 +428,9 @@ BODY {
 }
 
 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   margin: 0 auto 10px auto;
   height: 44px;
