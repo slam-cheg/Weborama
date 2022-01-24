@@ -71,15 +71,15 @@ function animation() {
                 banner.classList.add("anim4");
                 setTimeout(function () {
                     banner.classList.add("anim5");
-                    setTimeout(function () {
-                        banner.classList.remove("anim1");
-                        banner.classList.remove("anim2");
-                        banner.classList.remove("anim3");
-                        banner.classList.remove("anim4");
-                        banner.classList.remove("anim5");
-                        banner.classList.add("anim6");
-                        animation();
-                    }, 4000);
+                    // setTimeout(function () {
+                    //     banner.classList.remove("anim1");
+                    //     banner.classList.remove("anim2");
+                    //     banner.classList.remove("anim3");
+                    //     banner.classList.remove("anim4");
+                    //     banner.classList.remove("anim5");
+                    //     banner.classList.add("anim6");
+                    //     animation();
+                    // }, 4000);
                 }, 2000);
             }, 2000);
         }, 2000);

@@ -97,7 +97,7 @@ BODY {
     left: 0;
     top: 12%;
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1;
 }
 .text {
@@ -113,7 +113,7 @@ BODY {
     top: 35px;
 }
 .banner:not(.default) .text1 {
-    top: 23px;
+    top: 20px;
 }
 .anim1 .text1 {
     opacity: 1;
@@ -162,8 +162,8 @@ BODY {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 9px 25px;
-    font-size: 20px;
+    padding: 2px 25px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1;
     text-align: center;
@@ -171,15 +171,20 @@ BODY {
     border-radius: 40px;
     background: #e4052d;
     opacity: 0;
+    font-family: "NurofenText", sans-serif;
 }
 
 .fix__text {
-    transform: translateY(4px) !important;
+    transform: translateY(2px) !important;
 }
 
 .default__city {
-    font-size: 28px;
-    padding: 13px 25px;
+    font-size: 30px;
+    padding: 2px 25px;
+
+    .fix__text {
+        transform: translateY(5px) !important;
+    }
 }
 
 .default .city_wrapper {
@@ -207,9 +212,9 @@ BODY {
 }
 .anim1 .logo_wrapper {
     opacity: 1;
-    left: 10%;
-    top: 40%;
-    width: 80%;
+    left: -1%;
+    top: 37%;
+    width: 102%;
     transition: 0.5s;
 }
 .anim2 .logo_wrapper {
@@ -218,11 +223,17 @@ BODY {
     left: 15%;
     width: 70%;
 }
-.anim3 .logo_wrapper {
-    transition: 0.5s;
-    top: 38%;
-    left: 15%;
-    width: 70%;
+.anim3 {
+    .logo_wrapper {
+        transition: 0.5s;
+        top: 38%;
+        left: 15%;
+        width: 70%;
+    }
+
+    .shadow_wrapper {
+        opacity: 0 !important;
+    }
 }
 
 .anim5 .logo_wrapper {
@@ -297,9 +308,9 @@ BODY {
 }
 .pair {
     position: absolute;
-    left: 10%;
-    bottom: 4%;
-    width: 80%;
+    left: 17%;
+    bottom: 3%;
+    width: 70%;
     display: block;
     opacity: 0;
 }
@@ -330,9 +341,9 @@ BODY {
 }
 .pack1 {
     position: absolute;
-    left: 15%;
-    bottom: -18px;
-    width: 80%;
+    left: -5%;
+    bottom: -38px;
+    width: 120%;
     display: block;
     opacity: 0;
     transform: translateX(-200%) rotate(-30deg);
@@ -368,7 +379,7 @@ BODY {
 .list {
     position: absolute;
     left: 0;
-    top: 18%;
+    top: 28%;
     width: 100%;
     opacity: 0;
     list-style: none;
@@ -383,12 +394,13 @@ BODY {
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin: 0 auto 5px auto;
-    padding: 5px 0px 5px 0px;
-    line-height: 1;
+    margin: 0 auto 10px auto;
+    height: 34px;
+    line-height: 40px;
     border-radius: 22px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 14px;
     box-shadow: 0 0 10px 0 rgb(255 255 255 / 0%), 0 0 15px 0 rgb(255 255 255 / 0%);
     transform: translateX(200%);
 }
@@ -454,16 +466,16 @@ BODY {
 
 .disc {
     display: flex;
+    flex-direction: column;
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%) scaleY(2.85);
+    bottom: -3px;
+    transform: translateX(-50%) scaleY(1.45);
     transform-origin: center bottom;
     text-align: center;
-    font-size: 9.3px;
+    font-size: 9.7px;
     line-height: 0.9;
     white-space: nowrap;
-    flex-direction: column;
 }
 
 .anim5 .disc {
