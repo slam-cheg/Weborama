@@ -152,6 +152,7 @@ BODY {
 }
 
 .text3 {
+  top: 17px;
   font-size: 32px;
 }
 
@@ -189,7 +190,7 @@ BODY {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 10px 25px;
+  padding: 6px 25px;
   font-size: 34px;
   font-weight: 600;
   text-align: center;
@@ -260,7 +261,7 @@ BODY {
 }
 
 .anim2 .shadow_wrapper {
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   width: 100%;
 }
@@ -367,9 +368,9 @@ BODY {
 
 .pack1 {
   position: absolute;
-  left: 5%;
-  bottom: 12px;
-  width: 100%;
+  left: 0%;
+  bottom: 14px;
+  width: 120%;
   display: block;
   opacity: 0;
   transform: translateX(-200%) rotate(-30deg);
@@ -534,10 +535,10 @@ BODY {
 .disc2 {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px;
   width: 54%;
   text-align: justify;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 1;
   opacity: 0;

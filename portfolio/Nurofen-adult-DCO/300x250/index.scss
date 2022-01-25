@@ -97,7 +97,7 @@ BODY {
     left: 0;
     top: 15%;
     width: 100%;
-    font-size: 23px;
+    font-size: 16px;
     line-height: 1;
 }
 .text {
@@ -107,6 +107,11 @@ BODY {
     width: 100%;
     opacity: 0;
     text-transform: uppercase;
+
+    .text3 {
+        width: 49%;
+        white-space: nowrap;
+    }
 }
 .text1 {
     opacity: 0;
@@ -148,8 +153,8 @@ BODY {
 .anim5 .text3 {
     opacity: 1;
     transition: opacity 0.25s 0.25s;
-    font-size: 20px;
-    width: 150px;
+    width: 49%;
+    white-space: nowrap;
 }
 .yel {
     color: #ffed00;
@@ -201,10 +206,9 @@ BODY {
 
 .logo_wrapper {
     position: absolute;
-    left: 45%;
-    top: 25%;
-    width: 55%;
-    margin-bottom: 5%;
+    right: -8px;
+    top: 45px;
+    width: 67%;
     opacity: 0;
     transition: 0.5s;
 }
@@ -224,9 +228,9 @@ BODY {
 }
 
 .anim5 .logo_wrapper {
-    left: 45%;
-    top: 40%;
-    width: 55%;
+    left: 42%;
+    top: 8%;
+    width: 58%;
 }
 
 .anim6 .logo_wrapper {
@@ -234,7 +238,7 @@ BODY {
     transition: 0.5s;
 }
 .anim2 .shadow_wrapper {
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s;
     width: 80%;
     margin: 31px auto 0 auto;
@@ -244,11 +248,10 @@ BODY {
     transition: 0.5s;
     width: 100%;
     margin: 0 auto;
-    transform: translateY(-70px);
 }
 .shadow_wrapper {
     position: relative;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     transition: 0.5s;
 }
@@ -297,9 +300,9 @@ BODY {
 }
 .pair {
     position: absolute;
-    left: 10%;
+    left: 19%;
     bottom: 4%;
-    width: 80%;
+    width: 70%;
     display: block;
     opacity: 0;
 }
@@ -317,7 +320,7 @@ BODY {
 .fam2 {
     position: absolute;
     left: 4%;
-    bottom: 48%;
+    bottom: 2%;
     height: 85%;
     display: block;
     opacity: 0;
@@ -329,9 +332,9 @@ BODY {
 }
 .pack1 {
     position: absolute;
-    left: 15%;
-    bottom: 0;
-    width: 80%;
+    left: -17%;
+    bottom: -5px;
+    width: 110%;
     display: block;
     opacity: 0;
     transform: translateX(200%) rotate(30deg);
@@ -365,12 +368,14 @@ BODY {
 }
 
 .list {
+    display: flex;
     position: absolute;
     left: 0;
-    top: 35%;
+    top: 45px;
     width: 60%;
     opacity: 0;
-    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .anim2 .list {
     opacity: 1;
@@ -378,12 +383,8 @@ BODY {
 }
 .item {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    display: flex;
     width: 90%;
-    height: 34px;
+    height: 22px;
     border-radius: 22px;
     margin-bottom: 7px;
     box-shadow: 0 0 10px 0 rgb(255 255 255 / 0%), 0 0 15px 0 rgb(255 255 255 / 0%);
@@ -452,12 +453,16 @@ BODY {
 
 .disc {
     position: absolute;
+    left: 50%;
     bottom: 0;
-    transform: scaleY(0.9);
+    transform: translateX(-50%) scaleY(0.9);
     transform-origin: center bottom;
     text-align: center;
     font-size: 12px;
     line-height: 0.9;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
 }
 .anim5 .disc {
     opacity: 0;

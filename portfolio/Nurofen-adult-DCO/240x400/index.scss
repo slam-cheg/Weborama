@@ -123,15 +123,15 @@ BODY {
 .text3 {
     transform: translateY(-45px);
 }
-/*
-.text2 {
-    font-size: 26px;
-}
+
+// .text2 {
+//     font-size: 26px;
+// }
 
 .text3 {
-    font-size: 24px;
+    font-size: 19px;
 }
-*/
+
 .anim2 .text1 {
     opacity: 0;
     transition: opacity 0.25s;
@@ -223,21 +223,15 @@ BODY {
     left: 15%;
     width: 70%;
 }
-.anim3 {
-    .logo_wrapper {
-        transition: 0.5s;
-        top: 38%;
-        left: 15%;
-        width: 70%;
-    }
-
-    .shadow_wrapper {
-        opacity: 0 !important;
-    }
+.anim3 .logo_wrapper {
+    transition: 0.5s;
+    top: 38%;
+    left: 5%;
+    width: 90%;
 }
 
 .anim5 .logo_wrapper {
-    top: 43%;
+    top: 37%;
 }
 
 .anim6 .logo_wrapper {
@@ -245,7 +239,7 @@ BODY {
     transition: 0.5s;
 }
 .anim2 .shadow_wrapper {
-    opacity: 1;
+    opacity: 0;
     transition: 0.5s;
     width: 80%;
     margin: 31px auto 0 auto;
@@ -328,7 +322,7 @@ BODY {
 .fam2 {
     position: absolute;
     left: 6%;
-    bottom: 4%;
+    bottom: 24%;
     height: 90%;
     display: block;
     opacity: 0;

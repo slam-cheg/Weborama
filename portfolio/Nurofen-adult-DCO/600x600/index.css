@@ -44,7 +44,7 @@ BODY {
   overflow: hidden;
   background: #56c2c6;
   cursor: pointer;
-  padding: 5% 5%;
+  padding: 3%;
 }
 
 .wrapper {
@@ -117,10 +117,9 @@ BODY {
 .text_wrapper {
   position: absolute;
   left: 0;
-  top: 12%;
+  top: 14%;
   width: 100%;
-  font-size: 27px;
-  line-height: 1;
+  font-size: 36px;
 }
 
 .text {
@@ -134,12 +133,7 @@ BODY {
 
 .text1 {
   opacity: 0;
-  top: 35px;
-  width: 80%;
-}
-
-.banner:not(.default) .text1 {
-  top: 15px;
+  top: 45px;
 }
 
 .anim1 .text1 {
@@ -153,11 +147,14 @@ BODY {
 }
 
 .text2 {
-  font-size: 26px;
+  font-size: 38px;
+  top: -10px;
 }
 
 .text3 {
-  font-size: 24px;
+  white-space: normal;
+  line-height: 1.1;
+  top: -23px;
 }
 
 .anim2 .text1 {
@@ -192,11 +189,11 @@ BODY {
 .city_wrapper {
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  padding: 13px 25px;
-  font-size: 34px;
+  left: calc(50% - 270px / 2);
+  top: 10px;
+  width: 50%;
+  padding: 9px 25px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
   text-align: center;
@@ -207,12 +204,19 @@ BODY {
 }
 
 .fix__text {
-  transform: translateY(5px) !important;
+  transform: translateY(5px);
 }
 
 .default__city {
-  font-size: 28px;
-  padding: 13px 25px;
+  top: 12px;
+  font-size: 60px;
+  padding: 9px 45px 9px 45px;
+  width: unset;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.default__city .fix__text {
+  transform: translateY(9px);
 }
 
 .default .city_wrapper {
@@ -235,10 +239,9 @@ BODY {
 
 .logo_wrapper {
   position: absolute;
-  left: 20%;
+  left: 36%;
   top: 34%;
-  width: 60%;
-  margin-bottom: 5%;
+  width: 68%;
   opacity: 0;
   transition: 0.5s;
 }
@@ -262,9 +265,9 @@ BODY {
 }
 
 .anim5 .logo_wrapper {
-  left: 15%;
-  top: 27%;
-  width: 70%;
+  left: 36%;
+  top: 28%;
+  width: 68%;
 }
 
 .anim6 .logo_wrapper {
@@ -273,7 +276,7 @@ BODY {
 }
 
 .anim2 .shadow_wrapper {
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   width: 80%;
   margin: 31px auto 0 auto;
@@ -282,16 +285,14 @@ BODY {
 .anim5 .shadow_wrapper {
   opacity: 1;
   transition: 0.5s;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  transform: translateY(-70px);
 }
 
 .shadow_wrapper {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  transition: 0.5s;
 }
 
 .shadow_wrapper:before {
@@ -345,8 +346,8 @@ BODY {
 
 .pair {
   position: absolute;
-  left: 10%;
-  bottom: 4%;
+  left: 13%;
+  bottom: 0%;
   width: 80%;
   display: block;
   opacity: 0;
@@ -368,9 +369,9 @@ BODY {
 
 .fam2 {
   position: absolute;
-  left: 6%;
+  left: -3%;
   bottom: 4%;
-  height: 90%;
+  height: 100%;
   display: block;
   opacity: 0;
   transition: opacity 0.5s;
@@ -384,9 +385,9 @@ BODY {
 
 .pack1 {
   position: absolute;
-  left: 15%;
+  left: 35%;
   bottom: -18px;
-  width: 80%;
+  width: 120%;
   display: block;
   opacity: 0;
   transform: translateX(-200%) rotate(-30deg);
@@ -426,9 +427,9 @@ BODY {
 
 .list {
   position: absolute;
-  left: 0;
-  top: 14%;
-  width: 100%;
+  left: 5%;
+  top: 23%;
+  width: 50%;
   opacity: 0;
   list-style: none;
 }
@@ -442,13 +443,13 @@ BODY {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: 0 auto 10px auto;
-  height: 44px;
-  line-height: 52px;
-  border-radius: 22px;
+  width: 100%;
+  height: 50px;
+  line-height: 60px;
+  border-radius: 25px;
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
+  margin-bottom: 18px;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0), 0 0 15px 0 rgba(255, 255, 255, 0);
   transform: translateX(200%);
 }
@@ -531,13 +532,12 @@ BODY {
 .disc {
   display: flex;
   position: absolute;
-  left: 0;
   bottom: 0;
-  transform: translateX(0) scaleY(1.15);
+  transform: scaleY(1);
   transform-origin: center bottom;
   text-align: center;
-  font-size: 23.5px;
-  line-height: 0.8;
+  font-size: 24.5px;
+  line-height: 1;
   white-space: nowrap;
   flex-direction: column;
 }
