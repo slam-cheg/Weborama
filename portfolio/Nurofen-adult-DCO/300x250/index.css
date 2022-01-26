@@ -140,6 +140,7 @@ BODY {
   opacity: 0;
   top: 35px;
   width: 80%;
+  font-size: 21px;
 }
 
 .banner:not(.default) .text1 {
@@ -177,6 +178,7 @@ BODY {
   transition: opacity 0.25s 0.25s;
   width: 49%;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 .yel {
@@ -262,9 +264,9 @@ BODY {
 }
 
 .anim5 .logo_wrapper {
-  left: 42%;
-  top: 8%;
-  width: 58%;
+  left: 45%;
+  top: 11%;
+  width: 55%;
 }
 
 .anim6 .logo_wrapper {
