@@ -256,6 +256,12 @@ BODY {
   transition: 0.5s;
 }
 
+.anim5 .logo_wrapper {
+  left: -7%;
+  top: 30%;
+  width: 114%;
+}
+
 .anim6 .logo_wrapper {
   opacity: 0;
   transition: 0.5s;
@@ -367,14 +373,14 @@ BODY {
 .anim5 .fam2 {
   opacity: 1;
   transition: opacity 0.5s 0.5s;
-  transform: translateY(34px);
+  transform: translateY(106px);
 }
 
 .pack1 {
   position: absolute;
-  left: 15%;
-  bottom: 0;
-  width: 80%;
+  left: 5%;
+  bottom: 10%;
+  width: 100%;
   display: block;
   opacity: 0;
   transform: translateX(-200%) rotate(-30deg);
@@ -415,7 +421,7 @@ BODY {
 .list {
   position: absolute;
   left: 0;
-  top: 18%;
+  top: 23%;
   width: 100%;
   opacity: 0;
   list-style: none;

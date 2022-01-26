@@ -205,13 +205,16 @@ BODY {
 }
 
 .fix__text {
-  transform: translateY(2.5px) !important;
+  transform: translateY(2.5px);
 }
 
 .default__city {
-  font-size: 17px;
-  padding: 4.5px 20px;
+  font-size: 25px;
+  padding: 7px 0 0;
   width: 61%;
+}
+.default__city .fix__text {
+  transform: translateY(-3px);
 }
 
 .default .city_wrapper {
@@ -341,9 +344,9 @@ BODY {
 
 .pair {
   position: absolute;
-  left: 19%;
-  bottom: 4%;
-  width: 70%;
+  left: 14%;
+  bottom: 0%;
+  width: 80%;
   display: block;
   opacity: 0;
 }

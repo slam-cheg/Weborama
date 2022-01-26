@@ -121,7 +121,6 @@ BODY {
     opacity: 1;
     transition: opacity 0.25s 0.1s;
 }
-.text2,
 .text3 {
     transform: translateY(-50px);
 }
@@ -129,10 +128,11 @@ BODY {
 .text2 {
     font-size: 22px;
     padding: 0 7px;
+    transform: translateY(-34px);
 }
 
 .text3 {
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 7px;
 }
 .anim2 .text1 {
@@ -179,8 +179,10 @@ BODY {
 }
 
 .default__city {
-    font-size: 16px;
-    padding: 8px 25px;
+    font-size: 22px;
+    padding: 7px 0px;
+    width: 160px;
+    left: -5%;
 }
 
 .default .city_wrapper {
@@ -295,11 +297,11 @@ BODY {
     transition: opacity 0.25s;
 }
 .pair {
+    display: none;
     position: absolute;
     left: 15%;
     bottom: -25%;
     width: 80%;
-    display: block;
     opacity: 0;
 }
 .default .pair {
@@ -327,13 +329,13 @@ BODY {
     transition: opacity 0.5s 0.5s;
     transform: translate(-10px, -20px);
     left: 18%;
-    bottom: 40%;
+    bottom: 44%;
     height: 70%;
 }
 .pack1 {
     position: absolute;
     left: 15%;
-    bottom: -6px;
+    bottom: 16%;
     width: 80%;
     display: block;
     opacity: 0;
@@ -370,7 +372,7 @@ BODY {
 .list {
     position: absolute;
     left: 0;
-    top: 28%;
+    top: 35%;
     width: 100%;
     opacity: 0;
     list-style: none;
