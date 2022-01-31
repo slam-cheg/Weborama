@@ -1,4 +1,4 @@
-nurofen_DCO_300x600 (4108370742/212112)
+nurofen_DCO_970ч250_ (2314078213/213016)
 
 This screenad is created using Weborama technology.
 Please contact Weborama if you want to traffic this campaign.
@@ -37,18 +37,22 @@ There are no screenads defined yet
 
 ASSETS
 --------------------------------------------------------------------------------
+  rain.png
+  info.txt
+  logo.svg
+  nurofen.svg
   NurofenText-Bold.woff
   NurofenText-Light.woff
   NurofenText-Regular.woff
-  logo.svg
-  nurofen.svg
   cities.json
-  fam.png
-  fam2.png
+  lightning.png
+  map.png
   pack.png
   pack1.png
   pack2.png
-  map.png
+  cloud.png
+  fam.png
+  fam2.png
 
 ITD
 --------------------------------------------------------------------------------

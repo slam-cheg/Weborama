@@ -1,0 +1,61 @@
+nurofen_DCO_300x250 (6645866060/212513)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+weborama_display_tag.clicks = new Array();
+weborama_display_tag.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+1.file                  : index.html
+1.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  rain.png
+  cities.json
+  index.css
+  index.js
+  info.txt
+  logo.svg
+  nurofen.svg
+  NurofenText-Bold.woff
+  NurofenText-Light.woff
+  NurofenText-Regular.woff
+  fam.png
+  fam2.png
+  map.png
+  pack.png
+  pack1.png
+  pack2.png
+  lightning.png
+  cloud.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found
