@@ -1,5 +1,3 @@
-const params = parent.window.document.location.search;
-const segment = params.slice(params.indexOf("?segment=") + 9);
 const cityFont = document.querySelector(".city_wrapper");
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
@@ -7,10 +5,6 @@ const fixText = document.querySelectorAll(".fix__text");
 
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
-
-if (segment == "default") {
-    banner.classList.add("default");
-}
 
 banner.addEventListener("click", () => {
     screenad.click();
