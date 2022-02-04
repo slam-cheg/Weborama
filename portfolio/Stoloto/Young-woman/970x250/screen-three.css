@@ -1,0 +1,8 @@
+.screen-three .title-two,
+.screen-three .moneypot,
+.screen-three .button {
+  transform: translateY(350px);
+}
+.screen-three .disclamer {
+  transform: translateX(0);
+}

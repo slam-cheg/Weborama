@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@-webkit-keyframes autoLights {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes autoLights {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes starRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes starRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+@keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+.star-rotate {
+  -webkit-animation: starRotate infinite 5s linear;
+          animation: starRotate infinite 5s linear;
+}
+
+.auto-lights-anim {
+  -webkit-animation: autoLights infinite 2s ease-in-out;
+          animation: autoLights infinite 2s ease-in-out;
+}
+
+.button-glow {
+  -webkit-animation: buttonShadow infinite 2s ease-in-out;
+          animation: buttonShadow infinite 2s ease-in-out;
+}
+
+.screen-two {
+  background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
+}
+.screen-two .title,
+.screen-two .auto,
+.screen-two .jackpot,
+.screen-two .text-wrapper,
+.screen-two .auto-lights {
+  transform: translateX(-150%);
+}
+.screen-two .title-two,
+.screen-two .person,
+.screen-two .star,
+.screen-two .text-wrapper-two {
+  transform: translateX(0);
+}
+.screen-two .banner {
+  background-image: none;
+}
+
+.screen-three {
+  background: linear-gradient(0deg, #f50202, #f50202) !important;
+}
+.screen-three .title-two,
+.screen-three .moneypot,
+.screen-three .button,
+.screen-three .person,
+.screen-three .star,
+.screen-three .text-wrapper-two {
+  transform: translateX(-150%);
+}
+.screen-three .disclamer {
+  transform: translateX(0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  background: linear-gradient(180deg, #f40101 0%, #fb6137 100%);
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.banner {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.logo {
+  position: absolute;
+  width: 58px;
+  height: 61px;
+  left: 14px;
+  top: 13px;
+}
+
+.holiday {
+  position: absolute;
+  width: 122px;
+  height: 58px;
+  right: 0;
+  top: 14px;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 92px;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+  transition: 0.2s;
+}
+
+.title-two {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  transition: 0.3s;
+  transform: translateX(100%) rotate(-0.51deg);
+  top: 81px;
+}
+.title-two span {
+  font-size: 36.75px;
+  line-height: 105%;
+}
+
+.auto {
+  position: absolute;
+  top: 66px;
+  left: -69px;
+  transition: 0.2s;
+}
+
+.auto-lights {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  transition: 0.2s;
+}
+
+.text-wrapper {
+  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  top: 380px;
+  position: absolute;
+  z-index: 50;
+}
+.text-wrapper .text-one {
+  font-size: 23px;
+  transition: 0.2s;
+}
+.text-wrapper .text-two {
+  font-size: 35px;
+  transition: 0.3s;
+}
+.text-wrapper .text-three {
+  font-size: 23px;
+  transition: 0.4s;
+}
+
+.text-wrapper-two {
+  top: 425px;
+  transform: translateX(150%);
+}
+
+.jackpot {
+  position: absolute;
+  width: 489px;
+  height: 23px;
+  left: -88px;
+  top: 477px;
+  transform: rotate(3.35deg);
+  transition: 0.2s;
+}
+
+.person {
+  position: absolute;
+  width: 831.77px;
+  height: 828px;
+  left: -232px;
+  top: 159px;
+  transform: translateX(100%);
+  transition: 0.2s;
+}
+
+.star {
+  position: absolute;
+  width: 450px;
+  height: 432px;
+  left: -75px;
+  top: 76px;
+  mix-blend-mode: overlay;
+  transition: 0.2s;
+  transform: translateX(150%);
+  z-index: 0;
+}
+
+.button {
+  z-index: 99;
+  position: absolute;
+  width: 255px;
+  height: 58px;
+  left: 23px;
+  top: 524px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffdd00;
+  border: none;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ffe95b;
+  transition: 0.2s;
+}
+
+.disclamer {
+  position: absolute;
+  width: 261px;
+  height: 462px;
+  left: 15px;
+  top: 120px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.7px;
+  line-height: 13px;
+  color: #ffffff;
+  transform: translateX(150%);
+  transition: 0.3s;
+}

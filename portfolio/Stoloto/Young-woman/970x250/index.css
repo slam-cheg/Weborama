@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@-webkit-keyframes moneyFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moneyFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+@keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+.money-fly {
+  -webkit-animation: moneyFly infinite 3s ease;
+          animation: moneyFly infinite 3s ease;
+}
+
+.auto-fly {
+  -webkit-animation: autoFly infinite 3s ease;
+          animation: autoFly infinite 3s ease;
+}
+
+.button-glow {
+  -webkit-animation: buttonShadow infinite 2s ease-in-out;
+          animation: buttonShadow infinite 2s ease-in-out;
+}
+
+.screen-two {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+}
+.screen-two .title,
+.screen-two .person,
+.screen-two .money,
+.screen-two .auto,
+.screen-two .jackpot,
+.screen-two .jackpot-line {
+  transform: translateY(350px);
+}
+.screen-two .title-two,
+.screen-two .moneypot {
+  transform: translateY(0);
+}
+
+.screen-three .title-two,
+.screen-three .moneypot,
+.screen-three .button {
+  transform: translateY(350px);
+}
+.screen-three .disclamer {
+  transform: translateX(0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 970px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 970px;
+  height: 250px;
+  overflow: hidden;
+  background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #fd733d 0%, #ff4f01 100%);
+  cursor: pointer;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 103px;
+  height: 108px;
+  left: 32px;
+  top: 58px;
+}
+
+.holiday {
+  position: absolute;
+  left: 84.11%;
+  right: 2.06%;
+  top: 8.4%;
+  bottom: 67.2%;
+}
+
+.title {
+  position: absolute;
+  width: 294px;
+  height: 53px;
+  left: 148px;
+  top: 78px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title span {
+  letter-spacing: -0.01em;
+}
+
+.title-two {
+  position: absolute;
+  width: 300px;
+  height: 85px;
+  right: 549px;
+  top: 72px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: translateY(350px);
+  transition: 0.3s;
+}
+
+.person {
+  position: absolute;
+  width: 840px;
+  left: 142px;
+  top: -86px;
+  transform: rotate(-0.61deg);
+  z-index: 5;
+  transition: 0.2s;
+}
+
+.money {
+  position: absolute;
+  width: 412.62px;
+  left: 282.15px;
+  top: -51px;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.auto {
+  position: absolute;
+  top: 45px;
+  left: 536px;
+  z-index: 11;
+  transition: 0.2s;
+}
+
+.jackpot {
+  position: absolute;
+  width: 437px;
+  height: 86px;
+  left: 62px;
+  top: -14px;
+  transform: rotate(363.3deg);
+  transition: 0.2s;
+}
+
+.jackpot-line {
+  position: absolute;
+  width: 618px;
+  height: 49px;
+  left: -76px;
+  top: 183px;
+  background: linear-gradient(86.63deg, #ffa800 -1.73%, #ffcc00 7.62%, #ffdd00 39.5%, #ffcf00 68.4%, #ffb800 78.61%);
+  transform: rotate(-3.22deg);
+  transition: 0.2s;
+}
+
+.moneypot {
+  position: absolute;
+  height: 227%;
+  left: 167px;
+  top: -185px;
+  z-index: 1;
+  transform: translateY(350px);
+  transition: 0.3s;
+}
+
+.button {
+  position: absolute;
+  width: 246px;
+  height: 58px;
+  right: 20px;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffdd00;
+  border: none;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  transition: 0.2s;
+  z-index: 150;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ffe95b;
+  transition: 0.2s;
+}
+
+.disclamer {
+  position: absolute;
+  width: 621px;
+  height: 198px;
+  right: 172px;
+  top: 31px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.7px;
+  line-height: 13px;
+  color: #ffffff;
+  transform: translateY(350px);
+  transition: 0.3s;
+}

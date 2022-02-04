@@ -1,0 +1,9 @@
+.screen-three .title-two,
+.screen-three .button,
+.screen-three .person,
+.screen-three .line-two {
+  transform: translateX(-150%);
+}
+.screen-three .disclamer {
+  transform: translateX(0);
+}

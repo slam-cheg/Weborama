@@ -1,0 +1,14 @@
+.screen-three {
+    background: linear-gradient(0deg, #f50202, #f50202) !important;
+    .title-two,
+    .moneypot,
+    .button,
+    .person,
+    .star,
+    .text-wrapper-two {
+        transform: translateX(-150%);
+    }
+    .disclamer {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,11 @@
+.screen-three .title-two,
+.screen-three .moneypot {
+  transform: translateX(-150%);
+}
+.screen-three .disclamer {
+  transform: translateX(0);
+}
+
+.wrapper .button {
+  transform: translateX(-150%);
+}

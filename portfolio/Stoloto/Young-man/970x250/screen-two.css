@@ -1,0 +1,15 @@
+.screen-two {
+  background: radial-gradient(106% 106% at 61.75% 106%, #FFD049 0%, #F30101 100%) !important;
+}
+.screen-two .title,
+.screen-two .person,
+.screen-two .money,
+.screen-two .auto,
+.screen-two .jackpot,
+.screen-two .jackpot-line {
+  transform: translateY(350px);
+}
+.screen-two .title-two,
+.screen-two .moneypot {
+  transform: translateY(0);
+}
