@@ -1,5 +1,5 @@
 .screen-three {
-  background: linear-gradient(0deg, #f50202, #f50202) !important;
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #F20303 0%, #F40E03 100%) !important;
 }
 .screen-three .title-two,
 .screen-three .moneypot,
@@ -7,8 +7,13 @@
 .screen-three .person,
 .screen-three .star,
 .screen-three .text-wrapper-two {
-  transform: translateX(-150%);
+  transform: translateY(-350px);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transform: translateY(0);
+}
+.screen-three .person {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

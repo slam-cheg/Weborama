@@ -1,20 +1,17 @@
 .screen-two {
-    background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
+    background: radial-gradient(106% 106% at 61.75% 106%, #ffd049 0%, #f30101 100%) !important;
 
     .title,
     .auto,
     .jackpot,
     .text-wrapper,
     .auto-lights {
-        transform: translateX(-150%);
+        transform: translateY(-350px);
     }
     .title-two,
     .person,
     .star,
     .text-wrapper-two {
-        transform: translateX(0);
-    }
-    .banner {
-        background-image: none;
+        transform: translateY(0);
     }
 }

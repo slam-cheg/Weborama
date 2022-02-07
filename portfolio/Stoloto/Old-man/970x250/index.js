@@ -15,9 +15,9 @@ animation();
 
 function animation() {
     lights.classList.add("auto-lights-anim");
+    star.classList.add("star-rotate");
     setTimeout(function () {
         wrapper.classList.add("screen-two");
-        star.classList.add("star-rotate");
         lights.classList.remove("auto-lights-anim");
         setTimeout(function () {
             star.classList.remove("star-rotate");

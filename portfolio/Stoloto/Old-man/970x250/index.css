@@ -110,27 +110,24 @@
 }
 
 .screen-two {
-  background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
+  background: radial-gradient(106% 106% at 61.75% 106%, #ffd049 0%, #f30101 100%) !important;
 }
 .screen-two .title,
 .screen-two .auto,
 .screen-two .jackpot,
 .screen-two .text-wrapper,
 .screen-two .auto-lights {
-  transform: translateX(-150%);
+  transform: translateY(-350px);
 }
 .screen-two .title-two,
 .screen-two .person,
 .screen-two .star,
 .screen-two .text-wrapper-two {
-  transform: translateX(0);
-}
-.screen-two .banner {
-  background-image: none;
+  transform: translateY(0);
 }
 
 .screen-three {
-  background: linear-gradient(0deg, #f50202, #f50202) !important;
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #F20303 0%, #F40E03 100%) !important;
 }
 .screen-three .title-two,
 .screen-three .moneypot,
@@ -138,10 +135,15 @@
 .screen-three .person,
 .screen-three .star,
 .screen-three .text-wrapper-two {
-  transform: translateX(-150%);
+  transform: translateY(-350px);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transform: translateY(0);
+}
+.screen-three .person {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 * {
@@ -159,6 +161,7 @@ body {
   height: 250px;
   overflow: hidden;
   transition: 0.4s;
+  position: relative;
 }
 
 .banner {
@@ -208,19 +211,22 @@ body {
 
 .title-two {
   position: absolute;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 21px;
-  line-height: 24px;
+  line-height: 63px;
   text-align: center;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 100%;
+  width: 600px;
+  height: 50px;
   transition: 0.3s;
-  transform: translateX(100%) rotate(-0.51deg);
-  top: 81px;
+  transform: translateY(300px) rotate(-0.51deg);
+  bottom: 20px;
+  left: -62px;
+  background-color: #f40101;
 }
 .title-two span {
   font-size: 36.75px;
@@ -229,16 +235,20 @@ body {
 
 .auto {
   position: absolute;
-  top: 66px;
-  left: -69px;
+  width: 401px;
+  left: 378px;
+  top: -39px;
   transition: 0.2s;
+  z-index: 10;
 }
 
 .auto-lights {
   position: absolute;
-  top: 250px;
-  left: 20px;
+  top: 129px;
+  width: 230px;
+  left: 461px;
   transition: 0.2s;
+  z-index: 11;
 }
 
 .text-wrapper {
@@ -272,49 +282,55 @@ body {
 }
 
 .text-wrapper-two {
-  top: 425px;
-  transform: translateX(150%);
+  top: 40px;
+  text-align: left;
+  transform: translateY(300px);
+}
+.text-wrapper-two p {
+  margin-bottom: 8px;
+}
+.text-wrapper-two p:last-of-type {
+  margin-bottom: 0;
 }
 
 .jackpot {
   position: absolute;
-  width: 489px;
-  height: 23px;
+  width: 631px;
+  height: 33px;
   left: -88px;
-  top: 477px;
+  top: 188px;
   transform: rotate(3.35deg);
   transition: 0.2s;
 }
 
 .person {
   position: absolute;
-  width: 831.77px;
-  height: 828px;
-  left: -232px;
-  top: 159px;
-  transform: translateX(100%);
+  width: 753px;
+  left: 247px;
+  top: 9px;
+  transform: translateY(100%);
   transition: 0.2s;
 }
 
 .star {
   position: absolute;
-  width: 450px;
-  height: 432px;
-  left: -75px;
-  top: 76px;
+  width: 420px;
+  height: 403px;
+  right: 119px;
+  top: -31px;
   mix-blend-mode: overlay;
   transition: 0.2s;
-  transform: translateX(150%);
+  transform: translateY(0);
   z-index: 0;
 }
 
 .button {
   z-index: 99;
   position: absolute;
-  width: 255px;
+  width: 246px;
   height: 58px;
-  left: 23px;
-  top: 524px;
+  right: 20px;
+  bottom: 31px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,16 +353,16 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 261px;
-  height: 462px;
-  left: 15px;
-  top: 120px;
+  width: 621px;
+  height: 185px;
+  left: 177px;
+  top: 31px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10.7px;
   line-height: 13px;
   color: #ffffff;
-  transform: translateX(150%);
+  transform: translateY(300px);
   transition: 0.3s;
 }
