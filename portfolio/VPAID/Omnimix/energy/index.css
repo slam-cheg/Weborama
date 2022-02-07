@@ -1,0 +1,164 @@
+BODY,
+HTML {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#timer,
+#close {
+  position: absolute;
+  top: 2vh;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 3px black, 0 0 1em black;
+  font-family: sans-serif;
+}
+
+#timer {
+  left: 2vh;
+  pointer-events: none;
+}
+
+#close {
+  right: 2vh;
+  cursor: pointer;
+}
+
+#click {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#click[data-event=ad-resume] {
+  opacity: 1;
+  z-index: 100;
+}
+
+#click #resume {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#click[data-event=ad-resume] #resume {
+  display: block;
+}
+
+#click #icon-play {
+  display: block;
+  height: 100%;
+}
+
+#click .icon-fill {
+  stroke: none;
+  fill: #eee;
+}
+
+#sound {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  bottom: 2vh;
+  right: 2vh;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#icon-sound,
+#icon-mute {
+  display: none;
+  height: 100%;
+}
+
+#sound[data-event=ad-mute] #icon-sound {
+  display: block;
+}
+
+#sound[data-event=ad-unmute] #icon-mute {
+  display: block;
+}
+
+#icon-sound .icon-stroke {
+  stroke: #eee;
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+#icon-mute .icon-stroke {
+  stroke: #f00;
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+#icon-sound .icon-fill,
+#icon-mute .icon-fill {
+  stroke: none;
+  fill: #eee;
+}
+
+#layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 101;
+}
+
+#iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#more_btn {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  width: 20%;
+  height: 12%;
+  border-radius: 0 2vh 2vh 0;
+  background: #c2202e;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 5vh;
+  text-align: center;
+  line-height: 12vh;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in, text-shadow 0.3s, opacity 0.5s;
+  text-shadow: 0 0 3vh rgba(255, 255, 255, 0), 0 0 1.5vh rgba(255, 255, 255, 0);
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: none;
+}
+
+#more_btn:hover {
+  text-shadow: 0 0 3vh white, 0 0 1.5vh white;
+}
+
+#more_btn.showme {
+  transform: translateX(0%);
+  pointer-events: all;
+}
