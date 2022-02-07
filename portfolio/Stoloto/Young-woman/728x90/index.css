@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes autoFly {
+@-webkit-keyframes moneyFly {
   0% {
     transform: translateY(0);
   }
@@ -21,12 +21,34 @@
     transform: translateY(0);
   }
 }
-@keyframes autoFly {
+@keyframes moneyFly {
   0% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(0);
@@ -54,6 +76,11 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
+.money-fly {
+  -webkit-animation: moneyFly infinite 3s ease;
+          animation: moneyFly infinite 3s ease;
+}
+
 .auto-fly {
   -webkit-animation: autoFly infinite 3s ease;
           animation: autoFly infinite 3s ease;
@@ -65,32 +92,29 @@
 }
 
 .screen-two {
-  background: radial-gradient(28.25% 425.25% at 57.73% 82.8%, #efe94d 0%, #ff8b02 100%);
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #FD733D 0%, #FF4F01 100%);
 }
 .screen-two .title,
+.screen-two .person,
+.screen-two .money,
 .screen-two .auto,
 .screen-two .jackpot,
-.screen-two .top,
-.screen-two .line {
-  transform: translateY(300px);
+.screen-two .jackpot-line {
+  transform: translateY(350px);
 }
 .screen-two .title-two,
-.screen-two .person,
-.screen-two .line-two {
+.screen-two .moneypot {
   transform: translateY(0);
 }
 
-.screen-three {
-  background: #ffb902;
-}
 .screen-three .title-two,
+.screen-three .moneypot,
 .screen-three .button,
-.screen-three .person,
-.screen-three .line-two {
-  transform: translateY(300px);
+.screen-three .holiday {
+  transform: translateY(350px);
 }
 .screen-three .disclamer {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 * {
@@ -103,117 +127,124 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
-  background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #eeed50 0%, #ff8b02 100%);
   position: relative;
-  width: 970px;
-  height: 250px;
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
 }
 
 .banner {
-  width: 970px;
-  height: 250px;
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #fd733d 0%, #ff4f01 100%);
   cursor: pointer;
   position: relative;
 }
 
 .logo {
   position: absolute;
-  width: 103px;
-  height: 108px;
-  left: 22px;
-  top: 68px;
+  height: 80%;
+  left: 10px;
+  top: 10px;
+  z-index: 90;
 }
 
 .holiday {
   position: absolute;
-  width: 140px;
-  height: 68px;
-  right: -7px;
-  top: 25px;
+  right: 10px;
+  top: 20px;
+  height: 50px;
 }
 
 .title {
   position: absolute;
-  width: 285px;
-  left: 145px;
-  top: 77px;
+  width: 480px;
+  left: 91px;
+  top: 18px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 19px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.01em;
+  font-size: 20px;
+  line-height: 1;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
-}
-.title span {
-  font-size: 34px;
-  line-height: 40px;
 }
 
 .title-two {
   position: absolute;
+  width: 318px;
+  left: 100px;
+  top: 16px;
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
   font-weight: 800;
-  width: 288px;
-  height: 51px;
-  left: 159px;
-  top: 29px;
-  font-size: 19px;
-  line-height: 24px;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateY(300px);
+  transform: translateY(350px);
   transition: 0.3s;
 }
 
 .person {
   position: absolute;
-  width: 574px;
-  left: 281px;
-  top: -110px;
-  z-index: 20;
-  transition: 0.2s;
-  transform: translateY(300px);
-}
-
-.line {
-  position: absolute;
-  left: -120px;
-  bottom: 18px;
+  width: 340px;
+  left: 342px;
+  top: -36px;
+  transform: rotate(-0.61deg);
+  z-index: 5;
   transition: 0.2s;
 }
 
-.line-two {
+.money {
   position: absolute;
-  width: 442px;
-  height: 87px;
-  left: 134px;
-  top: 87px;
-  transform: translateY(300px);
-  transition: 0.3s;
+  width: 223px;
+  left: 372px;
+  top: -57px;
+  z-index: 10;
+  transition: 0.2s;
 }
 
 .auto {
   position: absolute;
-  top: 86px;
-  left: 351px;
+  top: 3px;
+  left: 513px;
+  width: 100px;
+  z-index: 11;
   transition: 0.2s;
-  z-index: 0;
-  width: 400px;
 }
 
-.top {
-  z-index: 5;
+.jackpot {
   position: absolute;
-  left: 299px;
-  top: -25px;
+  height: 42px;
+  left: 195px;
+  top: -4px;
+  transform: rotate(363.3deg);
   transition: 0.2s;
+}
+
+.jackpot-line {
+  position: absolute;
+  z-index: 1;
+  width: 569px;
+  height: 30px;
+  left: -76px;
+  bottom: 6px;
+  background: linear-gradient(86.63deg, #ffa800 -1.73%, #ffcc00 7.62%, #ffdd00 39.5%, #ffcf00 68.4%, #ffb800 78.61%);
+  transform: rotate(-3.22deg);
+  transition: 0.2s;
+}
+
+.moneypot {
+  position: absolute;
+  height: 227%;
+  right: 87px;
+  top: -72px;
+  z-index: 1;
+  transform: translateY(350px);
+  transition: 0.3s;
 }
 
 .button {
@@ -221,7 +252,7 @@ body {
   width: 246px;
   height: 58px;
   right: 20px;
-  bottom: 79px;
+  top: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,6 +266,7 @@ body {
   text-align: center;
   color: #000000;
   transition: 0.2s;
+  z-index: 150;
   cursor: pointer;
 }
 .button:hover {
@@ -244,16 +276,15 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 621px;
-  height: 462px;
-  left: 177px;
-  top: 31px;
+  width: 627px;
+  left: 90px;
+  top: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000;
-  transform: translateY(300px);
+  font-size: 8px;
+  line-height: 1;
+  color: #ffffff;
+  transform: translateY(350px);
   transition: 0.3s;
 }

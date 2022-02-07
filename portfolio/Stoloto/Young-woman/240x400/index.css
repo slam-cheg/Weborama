@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes autoFly {
+@-webkit-keyframes moneyFly {
   0% {
     transform: translateY(0);
   }
@@ -21,12 +21,34 @@
     transform: translateY(0);
   }
 }
-@keyframes autoFly {
+@keyframes moneyFly {
   0% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes autoFly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(0);
@@ -54,6 +76,11 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
+.money-fly {
+  -webkit-animation: moneyFly infinite 3s ease;
+          animation: moneyFly infinite 3s ease;
+}
+
 .auto-fly {
   -webkit-animation: autoFly infinite 3s ease;
           animation: autoFly infinite 3s ease;
@@ -64,33 +91,25 @@
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two {
-  background: radial-gradient(28.25% 425.25% at 57.73% 82.8%, #efe94d 0%, #ff8b02 100%);
-}
 .screen-two .title,
+.screen-two .person,
+.screen-two .money,
 .screen-two .auto,
-.screen-two .jackpot,
-.screen-two .top,
-.screen-two .line {
-  transform: translateY(300px);
+.screen-two .jackpot {
+  transform: translateX(-150%);
 }
 .screen-two .title-two,
-.screen-two .person,
-.screen-two .line-two {
-  transform: translateY(0);
+.screen-two .moneypot {
+  transform: translateX(0);
 }
 
-.screen-three {
-  background: #ffb902;
-}
 .screen-three .title-two,
-.screen-three .button,
-.screen-three .person,
-.screen-three .line-two {
-  transform: translateY(300px);
+.screen-three .moneypot,
+.screen-three .button {
+  transform: translateX(-150%);
 }
 .screen-three .disclamer {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 * {
@@ -103,125 +122,120 @@ body {
 }
 
 .wrapper {
+  width: 240px;
+  height: 400px;
   overflow: hidden;
-  background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #eeed50 0%, #ff8b02 100%);
   position: relative;
-  width: 970px;
-  height: 250px;
+  background: radial-gradient(62.6% 40.34% at 53% 47.99%, #ffb74b 0.39%, #ff5c00 73.96%, #ff4d00 100%);
 }
 
 .banner {
-  width: 970px;
-  height: 250px;
+  width: 240px;
+  height: 400px;
+  overflow: hidden;
   cursor: pointer;
   position: relative;
 }
 
 .logo {
   position: absolute;
-  width: 103px;
-  height: 108px;
-  left: 22px;
-  top: 68px;
+  width: 40px;
+  left: 10px;
+  top: 10px;
 }
 
 .holiday {
   position: absolute;
-  width: 140px;
-  height: 68px;
-  right: -7px;
-  top: 25px;
+  height: 43px;
+  right: 10px;
+  top: 10px;
 }
 
 .title {
   position: absolute;
-  width: 285px;
-  left: 145px;
-  top: 77px;
+  left: 0;
+  top: 70px;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 800;
-  font-size: 19px;
-  line-height: 24px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 22px;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
-}
-.title span {
-  font-size: 34px;
-  line-height: 40px;
+  transition: 0.2s;
 }
 
 .title-two {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  width: 288px;
-  height: 51px;
-  left: 159px;
-  top: 29px;
-  font-size: 19px;
-  line-height: 24px;
+  width: 300px;
+  font-size: 28px;
+  line-height: 30px;
+  top: 141px;
+  left: 0;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateY(300px);
+  transform: translateX(100%);
   transition: 0.3s;
 }
 
 .person {
   position: absolute;
-  width: 574px;
-  left: 281px;
-  top: -110px;
-  z-index: 20;
-  transition: 0.2s;
-  transform: translateY(300px);
-}
-
-.line {
-  position: absolute;
-  left: -120px;
-  bottom: 18px;
+  width: 650px;
+  left: -200px;
+  top: 50px;
+  z-index: 0;
   transition: 0.2s;
 }
 
-.line-two {
+.money {
   position: absolute;
-  width: 442px;
-  height: 87px;
-  left: 134px;
-  top: 87px;
-  transform: translateY(300px);
-  transition: 0.3s;
+  width: 360px;
+  left: -110px;
+  top: 53px;
+  z-index: 10;
+  transition: 0.2s;
 }
 
 .auto {
   position: absolute;
-  top: 86px;
-  left: 351px;
+  width: 210px;
+  top: 124px;
+  right: -67px;
   transition: 0.2s;
-  z-index: 0;
-  width: 400px;
 }
 
-.top {
-  z-index: 5;
+.jackpot {
   position: absolute;
-  left: 299px;
-  top: -25px;
+  width: 348.92px;
+  height: 71.29px;
+  left: -21.13px;
+  top: 399.89px;
+  transform: rotate(-4.88deg);
   transition: 0.2s;
+}
+
+.moneypot {
+  position: absolute;
+  width: 1001px;
+  height: 248px;
+  left: -492px;
+  top: 256px;
+  transform: translateX(100%);
+  transition: 0.3s;
 }
 
 .button {
   position: absolute;
-  width: 246px;
+  width: 255px;
   height: 58px;
-  right: 20px;
-  bottom: 79px;
+  left: 23px;
+  top: 524px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,16 +258,16 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 621px;
+  width: 261px;
   height: 462px;
-  left: 177px;
-  top: 31px;
+  left: 15px;
+  top: 120px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 10.7px;
   line-height: 13px;
-  color: #000;
-  transform: translateY(300px);
+  color: #ffffff;
+  transform: translateX(150%);
   transition: 0.3s;
 }
