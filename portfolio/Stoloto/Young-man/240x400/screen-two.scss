@@ -1,0 +1,13 @@
+.screen-two {
+    .title,
+    .person,
+    .money,
+    .auto,
+    .jackpot {
+        transform: translateX(-150%);
+    }
+    .title-two,
+    .moneypot {
+        transform: translateX(0);
+    }
+}

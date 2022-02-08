@@ -1,6 +1,5 @@
 const banner = document.querySelector(".banner");
-const money = document.querySelector(".money");
-const auto = document.querySelector(".auto");
+const topAuto = document.querySelector(".top");
 const button = document.querySelector(".button");
 const wrapper = document.querySelector(".wrapper");
 
@@ -14,12 +13,10 @@ banner.addEventListener("click", function () {
 animation();
 
 function animation() {
-    money.classList.add("money-fly");
-    auto.classList.add("auto-fly");
+    topAuto.classList.add("auto-fly");
     setTimeout(function () {
         wrapper.classList.add("screen-two");
-        money.classList.remove("money-fly");
-        auto.classList.remove("auto-fly");
+        topAuto.classList.remove("auto-fly");
         setTimeout(function () {
             wrapper.classList.add("screen-three");
             setTimeout(function () {
