@@ -10,124 +10,132 @@
 
 html,
 body {
+    width: 728px;
+    height: 90px;
     overflow: hidden;
-    width: 240px;
-    height: 400px;
+    position: relative;
 }
 
 .wrapper {
+    overflow: inherit;
+    background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #eeed50 0%, #ff8b02 100%);
+    position: inherit;
     width: inherit;
     height: inherit;
-    overflow: inherit;
-    position: relative;
-    background: radial-gradient(62.6% 40.34% at 53% 47.99%, #ffb74b 0.39%, #ff5c00 73.96%, #ff4d00 100%);
 }
 
 .banner {
+    position: inherit;
     width: inherit;
     height: inherit;
-    overflow: inherit;
     cursor: pointer;
-    position: inherit;
+    overflow: hidden;
 }
 
 .logo {
     position: absolute;
     width: 40px;
     left: 10px;
-    top: 10px;
+    top: calc(50% - 40px / 2);
+    z-index: 2;
 }
 
 .holiday {
     position: absolute;
-    height: 43px;
-    right: 10px;
-    top: 10px;
+    height: 40px;
+    right: 0;
+    top: calc(50% - 40px / 2);
+    z-index: 5;
 }
 
 .title {
     position: absolute;
-    left: 0;
-    top: 70px;
+    width: 400px;
+    left: 60px;
+    top: 11px;
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-weight: 800;
-    width: 100%;
-    font-size: 20px;
-    line-height: 22px;
-    text-align: center;
+    font-size: 16px;
+    line-height: 1;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
-    transition: 0.2s;
+    text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+
+    span {
+        font-size: 24px;
+        line-height: 1;
+    }
 }
 
 .title-two {
     position: absolute;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    width: 100%;
-    font-size: 20px;
-    line-height: 22px;
-    top: 70px;
-    left: 0;
-    text-align: center;
-    letter-spacing: 0.01em;
+    width: 288px;
+    left: 60px;
+    top: 30px;
+    font-size: 16px;
+    line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateX(100%);
+    transform: translateY(100px);
     transition: 0.3s;
 }
 
 .person {
     position: absolute;
-    width: 600px;
-    left: -180px;
-    top: 50px;
-    z-index: 0;
+    width: 174px;
+    left: 383px;
+    top: -31px;
+    z-index: 20;
+    transition: 0.2s;
+    transform: translateY(100px);
+}
+
+.line {
+    position: absolute;
+    height: 20px;
+    left: -30px;
+    bottom: 11px;
+    z-index: 1;
     transition: 0.2s;
 }
 
-.money {
+.line-two {
     position: absolute;
-    width: 302px;
-    left: -86px;
-    top: 72px;
-    z-index: 10;
-    transition: 0.2s;
+    height: 40px;
+    left: 279px;
+    top: calc(50% - 40px / 2);
+    transform: translateY(100px);
+    transition: 0.3s;
 }
 
 .auto {
     position: absolute;
-    width: 168px;
-    top: 134px;
-    right: -43px;
+    top: 33px;
+    left: 380px;
     transition: 0.2s;
+    z-index: 3;
+    width: 150px;
 }
 
-.jackpot {
+.top {
+    z-index: 2;
     position: absolute;
-    width: 268px;
-    left: -19px;
-    bottom: 71px;
-    transform: rotate(-4.88deg);
+    left: 370px;
+    top: -3px;
+    width: 180px;
     transition: 0.2s;
-}
-
-.moneypot {
-    position: absolute;
-    width: 760px;
-    left: -370px;
-    top: 110px;
-    transform: translateX(100%);
-    transition: 0.3s;
 }
 
 .button {
     position: absolute;
-    width: 220px;
+    width: 120px;
     height: 40px;
-    left: 10px;
-    bottom: 15px;
+    right: 90px;
+    bottom: calc(50% - 40px / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,12 +144,13 @@ body {
     border-radius: 13px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 1;
     text-align: center;
     color: #000000;
     transition: 0.2s;
     cursor: pointer;
+    z-index: 0;
 
     &:hover {
         background: #ffe95b;
@@ -151,15 +160,15 @@ body {
 
 .disclamer {
     position: absolute;
-    width: 220px;
-    left: 10px;
-    top: 70px;
+    width: 575px;
+    left: 60px;
+    top: 5px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 9.7px;
+    font-size: 8px;
     line-height: 1;
-    color: #ffffff;
-    transform: translateX(150%);
+    color: #000;
+    transform: translateY(350px);
     transition: 0.3s;
 }

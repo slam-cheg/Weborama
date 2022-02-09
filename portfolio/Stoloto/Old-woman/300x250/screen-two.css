@@ -1,0 +1,12 @@
+.screen-two .title,
+.screen-two .auto,
+.screen-two .jackpot,
+.screen-two .top,
+.screen-two .line {
+  transform: translateX(-150%);
+}
+.screen-two .title-two,
+.screen-two .person,
+.screen-two .line-two {
+  transform: translateX(0);
+}
