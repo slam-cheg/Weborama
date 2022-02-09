@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./animations.scss";
+@import "./screen-one.scss";
 @import "./screen-two.scss";
 @import "./screen-three.scss";
 
@@ -34,6 +35,7 @@ body {
     height: 108px;
     left: 32px;
     top: 58px;
+    z-index: 100;
 }
 
 .holiday {
@@ -44,11 +46,11 @@ body {
     bottom: 67.2%;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
     width: 294px;
     height: 53px;
-    left: 148px;
+    left: 130px;
     top: 78px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -59,17 +61,27 @@ body {
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
+    z-index: 1;
 
     span {
         letter-spacing: -0.01em;
     }
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.title-wrapper-two {
     position: absolute;
     width: 300px;
     height: 85px;
-    right: 549px;
+    left: 109px;
     top: 72px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -80,10 +92,22 @@ body {
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateY(350px);
-    transition: 0.3s;
+    transition: 1s;
+    z-index: 5;
 }
 
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+.title-two-line-three {
+    transition: 1.2s;
+    transform: translateX(-400px);
+}
 .person {
     position: absolute;
     width: 840px;
@@ -91,7 +115,7 @@ body {
     top: -86px;
     transform: rotate(-0.61deg);
     z-index: 5;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .money {
@@ -100,7 +124,8 @@ body {
     left: 282.15px;
     top: -51px;
     z-index: 10;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .auto {
@@ -108,7 +133,8 @@ body {
     top: 45px;
     left: 536px;
     z-index: 11;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .jackpot {
@@ -117,8 +143,9 @@ body {
     height: 86px;
     left: 62px;
     top: -14px;
-    transform: rotate(363.3deg);
-    transition: 0.2s;
+    transform: rotate(3deg);
+    transition: 1s;
+    opacity: 0;
 }
 
 .jackpot-line {
@@ -134,12 +161,12 @@ body {
 
 .moneypot {
     position: absolute;
-    height: 227%;
-    left: 167px;
-    top: -185px;
+    height: 200%;
+    left: 230px;
+    top: -170px;
     z-index: 1;
     transform: translateY(350px);
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .button {
@@ -160,13 +187,13 @@ body {
     line-height: 17px;
     text-align: center;
     color: #000000;
-    transition: 0.2s;
+    transition: 1s;
     z-index: 150;
     cursor: pointer;
 
     &:hover {
         background: #ffe95b;
-        transition: 0.2s;
+        transition: 1s;
     }
 }
 
@@ -174,7 +201,7 @@ body {
     position: absolute;
     width: 621px;
     height: 198px;
-    right: 172px;
+    left: 170px;
     top: 31px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -182,6 +209,6 @@ body {
     font-size: 11.7px;
     line-height: 13px;
     color: #ffffff;
-    transform: translateY(350px);
-    transition: 0.3s;
+    opacity: 0;
+    transition: .2s;
 }

@@ -10,50 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @-webkit-keyframes buttonShadow {
   0% {
     box-shadow: 0px 0px 40px #fff;
@@ -76,44 +32,73 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.money-fly {
-  -webkit-animation: moneyFly infinite 3s ease;
-          animation: moneyFly infinite 3s ease;
-}
-
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two {
-  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #FD733D 0%, #FF4F01 100%);
+.screen-one .jackpot {
+  opacity: 1;
+  transition: 1.5s;
 }
-.screen-two .title,
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .fly {
+  transform: translateY(-20px);
+  transition: 7s;
+}
+
+.screen-two {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+}
 .screen-two .person,
 .screen-two .money,
-.screen-two .auto,
-.screen-two .jackpot,
-.screen-two .jackpot-line {
+.screen-two .auto {
+  transition: 0.2s;
   transform: translateY(350px);
 }
-.screen-two .title-two,
 .screen-two .moneypot {
   transform: translateY(0);
+}
+.screen-two .moneypot-scale {
+  transition: 4s;
+  transform: scale(1.1);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transition: 0.2s;
+  transform: translateX(-400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three {
+  transform: translateX(0);
+}
+.screen-two .jackpot,
+.screen-two .jackpot-line {
+  transform: translateX(-100%);
+}
+.screen-two .jackpot {
+  opacity: 0;
 }
 
 .screen-three .title-two,
 .screen-three .moneypot,
 .screen-three .button {
+  transition: 0.2s;
   transform: translateY(350px);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three {
+  transition: 0.2s;
+  transform: translateX(-400px);
 }
 
 * {
@@ -147,6 +132,7 @@ body {
   height: 108px;
   left: 32px;
   top: 58px;
+  z-index: 100;
 }
 
 .holiday {
@@ -157,11 +143,11 @@ body {
   bottom: 67.2%;
 }
 
-.title {
+.title-wrapper {
   position: absolute;
   width: 294px;
   height: 53px;
-  left: 148px;
+  left: 130px;
   top: 78px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -172,16 +158,27 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 1;
 }
-.title span {
+.title-wrapper span {
   letter-spacing: -0.01em;
 }
 
-.title-two {
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-wrapper-two {
   position: absolute;
   width: 300px;
   height: 85px;
-  right: 549px;
+  left: 109px;
   top: 72px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -192,8 +189,23 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateY(350px);
-  transition: 0.3s;
+  transition: 1s;
+  z-index: 5;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-three {
+  transition: 1.2s;
+  transform: translateX(-400px);
 }
 
 .person {
@@ -203,7 +215,7 @@ body {
   top: -86px;
   transform: rotate(-0.61deg);
   z-index: 5;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .money {
@@ -212,7 +224,8 @@ body {
   left: 282.15px;
   top: -51px;
   z-index: 10;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .auto {
@@ -220,7 +233,8 @@ body {
   top: 45px;
   left: 536px;
   z-index: 11;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .jackpot {
@@ -229,8 +243,9 @@ body {
   height: 86px;
   left: 62px;
   top: -14px;
-  transform: rotate(363.3deg);
-  transition: 0.2s;
+  transform: rotate(3deg);
+  transition: 1s;
+  opacity: 0;
 }
 
 .jackpot-line {
@@ -246,12 +261,12 @@ body {
 
 .moneypot {
   position: absolute;
-  height: 227%;
-  left: 167px;
-  top: -185px;
+  height: 200%;
+  left: 230px;
+  top: -170px;
   z-index: 1;
   transform: translateY(350px);
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .button {
@@ -272,20 +287,20 @@ body {
   line-height: 17px;
   text-align: center;
   color: #000000;
-  transition: 0.2s;
+  transition: 1s;
   z-index: 150;
   cursor: pointer;
 }
 .button:hover {
   background: #ffe95b;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .disclamer {
   position: absolute;
   width: 621px;
   height: 198px;
-  right: 172px;
+  left: 170px;
   top: 31px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -293,6 +308,6 @@ body {
   font-size: 11.7px;
   line-height: 13px;
   color: #ffffff;
-  transform: translateY(350px);
-  transition: 0.3s;
+  opacity: 0;
+  transition: 0.2s;
 }
