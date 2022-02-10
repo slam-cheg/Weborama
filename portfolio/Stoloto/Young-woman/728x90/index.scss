@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./animations.scss";
+@import "./screen-one.scss";
 @import "./screen-two.scss";
 @import "./screen-three.scss";
 
@@ -43,11 +44,11 @@ body {
     height: 50px;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
-    width: 480px;
-    left: 91px;
-    top: 18px;
+    width: 454px;
+    left: 90px;
+    top: 14px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -55,23 +56,37 @@ body {
     line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
+    z-index: 1;
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-600px);
+}
+
+.title-wrapper-two {
     position: absolute;
-    width: 318px;
-    left: 100px;
-    top: 16px;
+    width: 300px;
+    left: 90px;
+    top: 15px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.2;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateY(350px);
-    transition: 0.3s;
+    transition: 1s;
+    z-index: 5;
+}
+
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
 }
 
 .person {
@@ -86,11 +101,12 @@ body {
 
 .money {
     position: absolute;
-    width: 223px;
-    left: 372px;
-    top: -57px;
+    width: 210px;
+    left: 377px;
+    top: -48px;
     z-index: 10;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .auto {
@@ -99,7 +115,8 @@ body {
     left: 513px;
     width: 100px;
     z-index: 11;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .jackpot {
@@ -107,8 +124,9 @@ body {
     height: 42px;
     left: 195px;
     top: -4px;
-    transform: rotate(363.3deg);
-    transition: 0.2s;
+    transform: rotate(3deg);
+    transition: 1s;
+    opacity: 0;
 }
 
 .jackpot-line {
@@ -163,15 +181,15 @@ body {
 
 .disclamer {
     position: absolute;
-    width: 627px;
+    width: 510px;
     left: 90px;
     top: 10px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 7.2px;
     line-height: 1;
     color: #ffffff;
-    transform: translateY(350px);
     transition: 0.3s;
+    opacity: 0;
 }

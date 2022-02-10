@@ -10,50 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @-webkit-keyframes buttonShadow {
   0% {
     box-shadow: 0px 0px 40px #fff;
@@ -76,45 +32,70 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.money-fly {
-  -webkit-animation: moneyFly infinite 3s ease;
-          animation: moneyFly infinite 3s ease;
-}
-
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two {
-  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #FD733D 0%, #FF4F01 100%);
+.screen-one .jackpot {
+  opacity: 1;
+  transition: 1.5s;
 }
-.screen-two .title,
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .fly {
+  transform: translateY(-20px);
+  transition: 7s;
+}
+
+.screen-two {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+}
 .screen-two .person,
 .screen-two .money,
-.screen-two .auto,
-.screen-two .jackpot,
-.screen-two .jackpot-line {
+.screen-two .auto {
+  transition: 0.2s;
   transform: translateY(350px);
 }
-.screen-two .title-two,
 .screen-two .moneypot {
   transform: translateY(0);
+}
+.screen-two .moneypot-scale {
+  transition: 4s;
+  transform: scale(1.1);
+}
+.screen-two .title-line-one {
+  transition: 0.2s;
+  transform: translateX(-600px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
+  transform: translateX(0);
+}
+.screen-two .jackpot,
+.screen-two .jackpot-line {
+  transform: translateX(-100%);
+}
+.screen-two .jackpot {
+  opacity: 0;
 }
 
 .screen-three .title-two,
 .screen-three .moneypot,
-.screen-three .button,
-.screen-three .holiday {
+.screen-three .button {
+  transition: 0.2s;
   transform: translateY(350px);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two {
+  transition: 0.2s;
+  transform: translateX(-400px);
 }
 
 * {
@@ -157,11 +138,11 @@ body {
   height: 50px;
 }
 
-.title {
+.title-wrapper {
   position: absolute;
-  width: 480px;
-  left: 91px;
-  top: 18px;
+  width: 454px;
+  left: 90px;
+  top: 14px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -169,23 +150,38 @@ body {
   line-height: 1;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 1;
 }
 
-.title-two {
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-600px);
+}
+
+.title-wrapper-two {
   position: absolute;
-  width: 318px;
-  left: 100px;
-  top: 16px;
+  width: 300px;
+  left: 90px;
+  top: 15px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 26px;
+  font-size: 25px;
   line-height: 1.2;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateY(350px);
-  transition: 0.3s;
+  transition: 1s;
+  z-index: 5;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
 }
 
 .person {
@@ -200,11 +196,12 @@ body {
 
 .money {
   position: absolute;
-  width: 223px;
-  left: 372px;
-  top: -57px;
+  width: 210px;
+  left: 377px;
+  top: -48px;
   z-index: 10;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .auto {
@@ -213,7 +210,8 @@ body {
   left: 513px;
   width: 100px;
   z-index: 11;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .jackpot {
@@ -221,8 +219,9 @@ body {
   height: 42px;
   left: 195px;
   top: -4px;
-  transform: rotate(363.3deg);
-  transition: 0.2s;
+  transform: rotate(3deg);
+  transition: 1s;
+  opacity: 0;
 }
 
 .jackpot-line {
@@ -276,15 +275,15 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 627px;
+  width: 510px;
   left: 90px;
   top: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 8px;
+  font-size: 7.2px;
   line-height: 1;
   color: #ffffff;
-  transform: translateY(350px);
   transition: 0.3s;
+  opacity: 0;
 }
