@@ -37,8 +37,8 @@
   }
 }
 .auto-fly {
-  -webkit-animation: autoFly 1 3s ease;
-          animation: autoFly 1 3s ease;
+  -webkit-animation: autoFly 1 6s ease;
+          animation: autoFly 1 6s ease;
 }
 
 .button-glow {

@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./animations.scss";
+@import "./screen-one.scss";
 @import "./screen-two.scss";
 @import "./screen-three.scss";
 
@@ -33,6 +34,7 @@ body {
     height: 108px;
     left: 22px;
     top: 68px;
+    z-index: 100;
 }
 
 .holiday {
@@ -43,10 +45,10 @@ body {
     top: 25px;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
     width: 285px;
-    left: 145px;
+    left: 130px;
     top: 77px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -58,14 +60,24 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
-
-    span {
-        font-size: 34px;
-        line-height: 40px;
-    }
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+.title-line-three {
+    font-size: 30px;
+    margin-top: 4px;
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.title-wrapper-two {
     position: absolute;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
@@ -79,8 +91,16 @@ body {
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateY(300px);
     transition: 0.3s;
+}
+
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-450px);
+}
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-450px);
 }
 
 .person {
@@ -89,7 +109,7 @@ body {
     left: 281px;
     top: -110px;
     z-index: 20;
-    transition: 0.2s;
+    transition: 1s;
     transform: translateY(300px);
 }
 
@@ -97,7 +117,8 @@ body {
     position: absolute;
     left: -120px;
     bottom: 18px;
-    transition: 0.2s;
+    transition: 1s;
+    opacity: 0;
 }
 
 .line-two {
@@ -106,8 +127,8 @@ body {
     height: 87px;
     left: 134px;
     top: 87px;
-    transform: translateY(300px);
-    transition: 0.3s;
+    transition: 1.5s;
+    opacity: 0;
 }
 
 .auto {
@@ -166,6 +187,6 @@ body {
     font-size: 11px;
     line-height: 13px;
     color: #000;
-    transform: translateY(300px);
-    transition: 0.3s;
+    transition: .2s;
+    opacity: 0;
 }

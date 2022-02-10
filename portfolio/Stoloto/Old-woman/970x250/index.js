@@ -1,5 +1,4 @@
 const banner = document.querySelector(".banner");
-const topAuto = document.querySelector(".top");
 const button = document.querySelector(".button");
 const wrapper = document.querySelector(".wrapper");
 
@@ -12,20 +11,26 @@ banner.addEventListener("click", function () {
 
 animation();
 
+
 function animation() {
-    topAuto.classList.add("auto-fly");
     setTimeout(function () {
-        wrapper.classList.add("screen-two");
-        topAuto.classList.remove("auto-fly");
+        wrapper.classList.add("screen-one");
         setTimeout(function () {
-            wrapper.classList.add("screen-three");
+            wrapper.classList.add("screen-two");
             setTimeout(function () {
-                wrapper.classList.remove("screen-two");
-                wrapper.classList.remove("screen-three");
                 setTimeout(function () {
-                    animation();
-                }, 500);
-            }, 4000);
+                    wrapper.classList.add("screen-three");
+                    setTimeout(function () {
+                        wrapper.classList.remove("screen-three");
+                        wrapper.classList.remove("screen-two");
+                        wrapper.classList.remove("screen-one");
+                        setTimeout(function () {
+                            animation();
+                        }, 500);
+                    }, 4000);
+                }, 3000);
+            }, 1000);
         }, 4000);
-    }, 4000);
+    }, 500);
 }
+
