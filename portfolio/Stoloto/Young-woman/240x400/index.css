@@ -10,50 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @-webkit-keyframes buttonShadow {
   0% {
     box-shadow: 0px 0px 40px #fff;
@@ -76,40 +32,80 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.money-fly {
-  -webkit-animation: moneyFly infinite 3s ease;
-          animation: moneyFly infinite 3s ease;
-}
-
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two .title,
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
+}
+.screen-one .jackpot {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .fly {
+  transform: translateY(-20px);
+  transition: 7s;
+}
+
+.screen-two {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+}
 .screen-two .person,
 .screen-two .money,
-.screen-two .auto,
-.screen-two .jackpot {
-  transform: translateX(-150%);
+.screen-two .auto {
+  transition: 0.2s;
+  transform: translateX(400px);
 }
-.screen-two .title-two,
 .screen-two .moneypot {
+  transform: translateY(0);
+}
+.screen-two .moneypot-scale {
+  transition: 4s;
+  transform: scale(1.1);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transition: 0.2s;
+  transform: translateX(400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three {
   transform: translateX(0);
+}
+.screen-two .jackpot {
+  transform: translateX(400px);
+}
+.screen-two .jackpot {
+  transition: 0.2s;
+  opacity: 0;
 }
 
 .screen-three .title-two,
-.screen-three .moneypot,
 .screen-three .button {
-  transform: translateX(-150%);
+  transition: 0.2s;
+  transform: translateX(400px);
+}
+.screen-three .moneypot {
+  transition: 0.2s;
+  transform: translateX(100%);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three {
+  transition: 0.2s;
+  transform: translateX(400px);
 }
 
 * {
@@ -154,7 +150,7 @@ body {
   top: 10px;
 }
 
-.title {
+.title-wrapper {
   position: absolute;
   left: 0;
   top: 70px;
@@ -168,9 +164,20 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   transition: 0.2s;
+  opacity: 0;
 }
 
-.title-two {
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-wrapper-two {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -183,8 +190,23 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateX(100%);
   transition: 0.3s;
+  opacity: 0;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-three {
+  transition: 1.2s;
+  transform: translateX(-400px);
 }
 
 .person {
@@ -193,7 +215,7 @@ body {
   left: -180px;
   top: 50px;
   z-index: 0;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .money {
@@ -202,7 +224,8 @@ body {
   left: -86px;
   top: 72px;
   z-index: 10;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .auto {
@@ -210,7 +233,8 @@ body {
   width: 168px;
   top: 134px;
   right: -43px;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .jackpot {
@@ -219,16 +243,17 @@ body {
   left: -19px;
   bottom: 71px;
   transform: rotate(-4.88deg);
-  transition: 0.2s;
+  transition: 1s;
+  opacity: 0;
 }
 
 .moneypot {
   position: absolute;
-  width: 760px;
-  left: -370px;
-  top: 110px;
+  width: 700px;
+  left: -340px;
+  top: 120px;
   transform: translateX(100%);
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .button {
@@ -268,6 +293,6 @@ body {
   font-size: 9.7px;
   line-height: 1;
   color: #ffffff;
-  transform: translateX(150%);
   transition: 0.3s;
+  opacity: 0;
 }
