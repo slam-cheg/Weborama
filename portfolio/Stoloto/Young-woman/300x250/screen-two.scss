@@ -1,13 +1,39 @@
 .screen-two {
-    .title,
+    background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+
     .person,
     .money,
-    .auto,
-    .jackpot {
-        transform: translateX(-300px);
+    .auto {
+        transition: 0.2s;
+        transform: translateX(400px);
     }
-    .title-two,
+
     .moneypot {
+        transform: translateY(0);
+    }
+    .moneypot-scale {
+        transition: 4s;
+        transform: scale(1.1);
+    }
+
+    .title-line-one,
+    .title-line-two {
+        transition: 0.2s;
+        transform: translateX(400px);
+    }
+
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three {
         transform: translateX(0);
+    }
+
+    .jackpot {
+        transform: translateX(400px);
+    }
+
+    .jackpot {
+        transition: 0.2s;
+        opacity: 0;
     }
 }
