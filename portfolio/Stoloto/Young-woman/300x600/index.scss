@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./animations.scss";
+@import "./screen-one.scss";
 @import "./screen-two.scss";
 @import "./screen-three.scss";
 
@@ -12,13 +13,20 @@ body {
     overflow: hidden;
 }
 
-.banner {
+.wrapper {
+    background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #fd733d 0%, #ff4f01 100%);
+    position: relative;
     width: 300px;
     height: 600px;
     overflow: hidden;
-    background: url(./bg.svg) 42% 62%;
+}
+
+.banner {
+    width: inherit;
+    height: inherit;
+    overflow: inherit;
     cursor: pointer;
-    position: relative;
+    position: inherit;
 }
 
 .logo {
@@ -37,7 +45,7 @@ body {
     top: 7px;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
     left: 0;
     top: 104px;
@@ -51,27 +59,43 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     transition: 0.2s;
-
-    span {
-        letter-spacing: -0.01em;
-    }
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.title-wrapper-two {
     position: absolute;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     width: 300px;
     font-size: 28px;
-    line-height: 30px;
+    line-height: 1.2;
     top: 141px;
     left: 0;
     text-align: center;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateX(100%);
     transition: 0.3s;
+}
+
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+.title-two-line-three {
+    transition: 1.2s;
+    transform: translateX(-400px);
 }
 
 .person {
@@ -81,7 +105,7 @@ body {
     left: -261.92px;
     top: 83px;
     z-index: 0;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .money {
@@ -91,14 +115,16 @@ body {
     left: -139.85px;
     top: 85px;
     z-index: 10;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .auto {
     position: absolute;
     top: 200px;
     left: 140px;
-    transition: 0.2s;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .jackpot {
@@ -108,17 +134,17 @@ body {
     left: -21.13px;
     top: 399.89px;
     transform: rotate(-4.88deg);
-    transition: 0.2s;
+    transition: 1s;
+    opacity: 0;
 }
 
 .moneypot {
     position: absolute;
-    width: 1001px;
     height: 248px;
-    left: -492px;
+    left: -374px;
     top: 256px;
-    transform: translateX(100%);
-    transition: 0.3s;
+    transform: translateX(-100%);
+    transition: 1s;
 }
 
 .button {
@@ -160,6 +186,7 @@ body {
     font-size: 10.7px;
     line-height: 13px;
     color: #ffffff;
-    transform: translateX(150%);
     transition: 0.3s;
+    opacity: 0;
+    transition: 0.2s;
 }

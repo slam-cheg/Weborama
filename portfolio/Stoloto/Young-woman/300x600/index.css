@@ -10,50 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes moneyFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @-webkit-keyframes buttonShadow {
   0% {
     box-shadow: 0px 0px 40px #fff;
@@ -76,40 +32,76 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.money-fly {
-  -webkit-animation: moneyFly infinite 3s ease;
-          animation: moneyFly infinite 3s ease;
-}
-
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two .title,
+.screen-one .jackpot {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .fly {
+  transform: translateY(-20px);
+  transition: 7s;
+}
+
+.screen-two {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #fd733d 0%, #ff4f01 100%);
+}
 .screen-two .person,
 .screen-two .money,
-.screen-two .auto,
-.screen-two .jackpot {
-  transform: translateX(-150%);
+.screen-two .auto {
+  transition: 0.2s;
+  transform: translateX(400px);
 }
-.screen-two .title-two,
 .screen-two .moneypot {
+  transform: translateY(0);
+}
+.screen-two .moneypot-scale {
+  transition: 4s;
+  transform: scale(1.1);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transition: 0.2s;
+  transform: translateX(400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three {
   transform: translateX(0);
+}
+.screen-two .jackpot {
+  transform: translateX(400px);
+}
+.screen-two .jackpot {
+  transition: 0.2s;
+  opacity: 0;
 }
 
 .screen-three .title-two,
-.screen-three .moneypot,
 .screen-three .button {
-  transform: translateX(-150%);
+  transition: 0.2s;
+  transform: translateX(400px);
+}
+.screen-three .moneypot {
+  transition: 0.2s;
+  transform: translateX(100%);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three {
+  transition: 0.2s;
+  transform: translateX(400px);
 }
 
 * {
@@ -121,13 +113,20 @@ body {
   overflow: hidden;
 }
 
-.banner {
+.wrapper {
+  background: radial-gradient(33.61% 505.95% at 59.43% 69.8%, #fd733d 0%, #ff4f01 100%);
+  position: relative;
   width: 300px;
   height: 600px;
   overflow: hidden;
-  background: url(./bg.svg) 42% 62%;
+}
+
+.banner {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
   cursor: pointer;
-  position: relative;
+  position: inherit;
 }
 
 .logo {
@@ -146,7 +145,7 @@ body {
   top: 7px;
 }
 
-.title {
+.title-wrapper {
   position: absolute;
   left: 0;
   top: 104px;
@@ -161,25 +160,45 @@ body {
   color: #ffffff;
   transition: 0.2s;
 }
-.title span {
-  letter-spacing: -0.01em;
+
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
 }
 
-.title-two {
+.title-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-wrapper-two {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   width: 300px;
   font-size: 28px;
-  line-height: 30px;
+  line-height: 1.2;
   top: 141px;
   left: 0;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateX(100%);
   transition: 0.3s;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-three {
+  transition: 1.2s;
+  transform: translateX(-400px);
 }
 
 .person {
@@ -189,7 +208,7 @@ body {
   left: -261.92px;
   top: 83px;
   z-index: 0;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .money {
@@ -199,14 +218,16 @@ body {
   left: -139.85px;
   top: 85px;
   z-index: 10;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .auto {
   position: absolute;
   top: 200px;
   left: 140px;
-  transition: 0.2s;
+  transition: 1s;
+  transform: translate(0);
 }
 
 .jackpot {
@@ -216,17 +237,17 @@ body {
   left: -21.13px;
   top: 399.89px;
   transform: rotate(-4.88deg);
-  transition: 0.2s;
+  transition: 1s;
+  opacity: 0;
 }
 
 .moneypot {
   position: absolute;
-  width: 1001px;
   height: 248px;
-  left: -492px;
+  left: -374px;
   top: 256px;
-  transform: translateX(100%);
-  transition: 0.3s;
+  transform: translateX(-100%);
+  transition: 1s;
 }
 
 .button {
@@ -267,6 +288,7 @@ body {
   font-size: 10.7px;
   line-height: 13px;
   color: #ffffff;
-  transform: translateX(150%);
   transition: 0.3s;
+  opacity: 0;
+  transition: 0.2s;
 }

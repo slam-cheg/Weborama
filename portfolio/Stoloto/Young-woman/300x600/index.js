@@ -1,5 +1,6 @@
 const banner = document.querySelector(".banner");
 const money = document.querySelector(".money");
+const moneypot = document.querySelector(".moneypot");
 const auto = document.querySelector(".auto");
 const button = document.querySelector(".button");
 const wrapper = document.querySelector(".wrapper");
@@ -14,21 +15,25 @@ banner.addEventListener("click", function () {
 animation();
 
 function animation() {
-    money.classList.add("money-fly");
-    auto.classList.add("auto-fly");
     setTimeout(function () {
-        wrapper.classList.add("screen-two");
-        money.classList.remove("money-fly");
-        auto.classList.remove("auto-fly");
+        wrapper.classList.add("screen-one");
         setTimeout(function () {
-            wrapper.classList.add("screen-three");
+            wrapper.classList.add("screen-two");
             setTimeout(function () {
-                wrapper.classList.remove("screen-two");
-                wrapper.classList.remove("screen-three");
+                moneypot.classList.add("moneypot-scale");
                 setTimeout(function () {
-                    animation();
-                }, 500);
-            }, 4000);
+                    wrapper.classList.add("screen-three");
+                    setTimeout(function () {
+                        moneypot.classList.remove("moneypot-scale");
+                        wrapper.classList.remove("screen-three");
+                        wrapper.classList.remove("screen-two");
+                        wrapper.classList.remove("screen-one");
+                        setTimeout(function () {
+                            animation();
+                        }, 500);
+                    }, 4000);
+                }, 3000);
+            }, 1000);
         }, 4000);
-    }, 4000);
+    }, 500);
 }
