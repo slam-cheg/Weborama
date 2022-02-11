@@ -13,12 +13,13 @@
     }
 
     .line-two {
+        transform: translateY(0);
+        transition: 1s;
         opacity: 1;
     }
 
     .title-line-one,
-    .title-line-two,
-    .title-line-three {
+    .title-line-two {
         transition: 0.2s;
         transform: translateX(-400px);
     }

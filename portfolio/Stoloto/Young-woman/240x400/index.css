@@ -88,7 +88,6 @@
   opacity: 0;
 }
 
-.screen-three .title-two,
 .screen-three .button {
   transition: 0.2s;
   transform: translateX(400px);

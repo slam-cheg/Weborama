@@ -35,10 +35,10 @@ body {
 
 .logo {
     position: absolute;
-    width: 40px;
+    height: 80%;
     left: 10px;
-    top: calc(50% - 40px / 2);
-    z-index: 2;
+    top: 10px;
+    z-index: 90;
 }
 
 .holiday {
@@ -49,40 +49,54 @@ body {
     z-index: 5;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
     width: 400px;
-    left: 60px;
-    top: 11px;
+    left: 90px;
+    top: 15px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
-
-    span {
-        font-size: 24px;
-        line-height: 1;
-    }
+    opacity: 0;
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-630px);
+}
+.title-line-two {
+    font-size: 22px;
+    margin-top: 2px;
+    transition: 1s;
+    transform: translateX(-630px);
+}
+
+.title-wrapper-two {
     position: absolute;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     width: 288px;
-    left: 60px;
+    left: 90px;
     top: 30px;
     font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
-    transform: translateY(100px);
-    transition: 0.3s;
+    opacity: 0;
+}
+
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
 }
 
 .person {
@@ -91,17 +105,18 @@ body {
     left: 383px;
     top: -31px;
     z-index: 20;
-    transition: 0.2s;
+    transition: 1s;
     transform: translateY(100px);
 }
 
 .line {
     position: absolute;
     height: 20px;
-    left: -30px;
+    left: 0px;
     bottom: 11px;
     z-index: 1;
-    transition: 0.2s;
+    transition: 1s;
+    opacity: 0;
 }
 
 .line-two {
@@ -110,14 +125,14 @@ body {
     left: 279px;
     top: calc(50% - 40px / 2);
     transform: translateY(100px);
-    transition: 0.3s;
+    opacity: 0;
 }
 
 .auto {
     position: absolute;
     top: 33px;
     left: 380px;
-    transition: 0.2s;
+    transition: 1s;
     z-index: 3;
     width: 150px;
 }
@@ -126,9 +141,9 @@ body {
     z-index: 2;
     position: absolute;
     left: 370px;
-    top: -3px;
+    top: -7px;
     width: 180px;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .button {
@@ -154,15 +169,15 @@ body {
     z-index: 0;
 
     &:hover {
-        background: #ffe95b;
+        background: #ffee7e;
         transition: 0.2s;
     }
 }
 
 .disclamer {
     position: absolute;
-    width: 575px;
-    left: 60px;
+    width: 550px;
+    left: 90px;
     top: 5px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -170,6 +185,6 @@ body {
     font-size: 8px;
     line-height: 1;
     color: #000;
-    transform: translateY(350px);
-    transition: 0.3s;
+    transition: 0.2s;
+    opacity: 0;
 }

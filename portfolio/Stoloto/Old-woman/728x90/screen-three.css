@@ -1,12 +1,22 @@
 .screen-three {
   background: #ffb902;
 }
-.screen-three .title-two,
 .screen-three .button,
 .screen-three .person,
 .screen-three .line-two {
-  transform: translateY(300px);
+  transition: 0.2s;
+  transform: translateY(100px);
 }
 .screen-three .disclamer {
-  transform: translateY(0);
+  opacity: 1;
+  transition: 1s;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two {
+  transition: 0.2s;
+  transform: translateX(-450px);
+}
+.screen-three .line,
+.screen-three .line-two {
+  opacity: 0;
 }
