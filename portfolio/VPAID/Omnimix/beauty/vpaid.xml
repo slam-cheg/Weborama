@@ -15,7 +15,7 @@
                         </TrackingEvents>
                         <AdParameters><![CDATA[
                             {
-                                "mediapath": "https://previewer-weborama.com/files/campaigns2/9704838940/213244/",
+                                "mediapath": "https://previewer-weborama.com/files/campaigns2/7171134363/213361/",
                                 "mediafiles": [
                                     {"src":"video.mp4","type":"video/mp4"}
                                 ],
@@ -34,7 +34,7 @@
                         ]]></AdParameters>
                         <MediaFiles>
                             <MediaFile maintainAspectRatio="true" scalable="true" delivery="progressive" width="640" height="360" bitrate="256" apiFramework="VPAID" type="application/javascript">
-                                <![CDATA[https://previewer-weborama.com/files/campaigns2/9704838940/213244/vpaid.linear.min.js]]>
+                                <![CDATA[https://previewer-weborama.com/files/campaigns2/7171134363/213361/vpaid.linear.min.js]]>
                             </MediaFile>
                         </MediaFiles>
                     </Linear>

@@ -43,9 +43,6 @@ app.stateChange(function (state, data) {
 app.cuePoint([showButtonFromSecond], function (sec, data) {
     document.querySelector("#more_btn").classList.add("showme");
 });
-app.cuePoint(3, function (sec, data) {
-    app.pause();
-});
 app.timeChange(function (data) {
     document.querySelector("#timer").innerText = "Реклама | " + Math.round(data.totalTime - data.currentTime) + " сек.";
 });
