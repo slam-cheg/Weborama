@@ -20,11 +20,6 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;

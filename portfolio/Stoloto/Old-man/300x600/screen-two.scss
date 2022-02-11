@@ -1,20 +1,51 @@
 .screen-two {
     background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
 
-    .title,
     .auto,
-    .jackpot,
     .text-wrapper,
     .auto-lights {
         transform: translateX(-150%);
     }
     .title-two,
     .person,
-    .star,
-    .text-wrapper-two {
+    .star {
         transform: translateX(0);
+    }
+
+    .text-wrapper {
+        .text-one,
+        .text-two,
+        .text-three {
+            transition: .2s;
+            opacity: 1;
+            transform: translateX(-400px);
+        }
+    }
+
+    .text-wrapper-two {
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .banner {
         background-image: none;
+    }
+
+    .title-line-one,
+    .title-line-two {
+        opacity: 0;
+        transform: translateX(-400px);
+        transition: .2s;
+    }
+
+    .title-two-line-one,
+    .title-two-line-two {
+        transform: translateX(0);
+    }
+    .jackpot {
+        opacity: 0;
     }
 }

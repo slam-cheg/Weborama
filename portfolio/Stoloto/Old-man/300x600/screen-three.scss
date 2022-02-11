@@ -6,9 +6,26 @@
     .person,
     .star,
     .text-wrapper-two {
+        transition: .2s;
         transform: translateX(-150%);
     }
+    .title-two-line-one,
+    .title-two-line-two {
+        transition: .2s;
+        transform: translateX(-400px);
+    }
     .disclamer {
-        transform: translateX(0);
+        transition: 1.5s;
+        opacity: 1;
+    }
+
+    .text-wrapper-two {
+        .text-one,
+        .text-two,
+        .text-three {
+            transition: .2s;
+            opacity: 1;
+            transform: translateX(-400px);
+        }
     }
 }

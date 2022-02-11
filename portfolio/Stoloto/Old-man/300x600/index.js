@@ -14,21 +14,27 @@ banner.addEventListener("click", function () {
 animation();
 
 function animation() {
-    lights.classList.add("auto-lights-anim");
     setTimeout(function () {
-        wrapper.classList.add("screen-two");
-        star.classList.add("star-rotate");
-        lights.classList.remove("auto-lights-anim");
+        wrapper.classList.add("screen-one");
+        lights.classList.add("auto-lights-anim");
         setTimeout(function () {
-            star.classList.remove("star-rotate");
-            wrapper.classList.add("screen-three");
+            wrapper.classList.add("screen-two");
+            star.classList.add("star-rotate");
+            lights.classList.remove("auto-lights-anim");
             setTimeout(function () {
-                wrapper.classList.remove("screen-two");
-                wrapper.classList.remove("screen-three");
                 setTimeout(function () {
-                    animation();
-                }, 500);
-            }, 4000);
+                    star.classList.remove("star-rotate");
+                    wrapper.classList.add("screen-three");
+                    setTimeout(function () {
+                        wrapper.classList.remove("screen-three");
+                        wrapper.classList.remove("screen-two");
+                        wrapper.classList.remove("screen-one");
+                        setTimeout(function () {
+                            animation();
+                        }, 500);
+                    }, 4000);
+                }, 3000);
+            }, 1000);
         }, 4000);
-    }, 4000);
+    }, 500);
 }

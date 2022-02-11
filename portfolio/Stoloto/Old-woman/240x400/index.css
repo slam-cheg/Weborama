@@ -10,28 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@-webkit-keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes autoFly {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @-webkit-keyframes buttonShadow {
   0% {
     box-shadow: 0px 0px 40px #fff;
@@ -54,37 +32,85 @@
     box-shadow: 0px 0px 40px #fff;
   }
 }
-.auto-fly {
-  -webkit-animation: autoFly infinite 3s ease;
-          animation: autoFly infinite 3s ease;
-}
-
 .button-glow {
   -webkit-animation: buttonShadow infinite 2s ease-in-out;
           animation: buttonShadow infinite 2s ease-in-out;
 }
 
-.screen-two .title,
-.screen-two .auto,
-.screen-two .jackpot,
-.screen-two .top,
-.screen-two .line {
-  transform: translateX(-150%);
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
 }
-.screen-two .title-two,
-.screen-two .person,
+.screen-one .title-line-one,
+.screen-one .title-line-two,
+.screen-one .title-line-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .jackpot {
+  opacity: 1;
+}
+.screen-one .fly {
+  transform: translateY(-15px);
+  transition: 7s;
+}
+
+.screen-two {
+  background: radial-gradient(28.25% 425.25% at 57.73% 82.8%, #efe94d 0%, #ff8b02 100%);
+}
+.screen-two .auto,
+.screen-two .top {
+  transition: 0.2s;
+  transform: translateX(350px);
+}
+.screen-two .person {
+  opacity: 1;
+}
 .screen-two .line-two {
+  opacity: 1;
+}
+.screen-two .jackpot {
+  transition: 0.2s;
+  opacity: 0;
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two,
+.screen-two .title-line-three {
+  transition: 0.2s;
+  transform: translateX(-400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
   transform: translateX(0);
 }
 
-.screen-three .title-two,
-.screen-three .button,
-.screen-three .person,
-.screen-three .line-two {
-  transform: translateX(-150%);
+.screen-three {
+  background: #ffb902;
+}
+.screen-three .button {
+  transition: 0.2s;
+  transform: translateX(300px);
 }
 .screen-three .disclamer {
-  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
+}
+.screen-three .person {
+  transition: 0.2s;
+  opacity: 0;
+}
+.screen-three .line-two {
+  transition: 0.2s;
+  opacity: 0;
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two {
+  transition: 0.2s;
+  transform: translateX(-300px);
+}
+.screen-three .line-two {
+  transition: 0.2s;
+  opacity: 0;
 }
 
 * {
@@ -93,127 +119,151 @@
 }
 
 body {
+  width: 240px;
+  height: 400px;
   overflow: hidden;
 }
 
-.banner {
-  width: 300px;
-  height: 600px;
-  overflow: hidden;
+.wrapper {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
   background: radial-gradient(80.5% 51.85% at 52.85% 62.2%, #eaff6a 0%, #efc018 41.27%, #f7a70c 65.32%, #ff8b02 100%);
-  cursor: pointer;
   position: relative;
+}
+
+.banner {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  cursor: pointer;
+  position: inherit;
 }
 
 .logo {
   position: absolute;
-  width: 58px;
-  height: 61px;
-  left: 14px;
-  top: 13px;
+  width: 50px;
+  left: 10px;
+  top: 10px;
 }
 
 .holiday {
   position: absolute;
-  width: 122px;
-  height: 58px;
-  left: 181px;
-  top: 15px;
+  height: 52px;
+  right: 0;
+  top: 10px;
 }
 
-.title {
+.title-wrapper {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 104px;
-  font-family: Montserrat;
+  top: 75px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
 }
 
-.title-two {
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-line-three {
+  font-size: 21px;
+  transition: 1.2s;
+  transform: translateX(-400px);
+}
+
+.title-wrapper-two {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   width: 100%;
-  top: 100px;
-  font-size: 19px;
-  line-height: 24px;
+  top: 75px;
+  font-size: 15px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
-  transform: translateX(100%);
   transition: 0.3s;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
 }
 
 .person {
   position: absolute;
-  width: 574px;
-  height: 860px;
-  left: -142px;
-  top: 114px;
+  width: 360px;
+  left: -63px;
+  top: 97px;
   z-index: 0;
-  transition: 0.2s;
-  transform: translateX(150%);
-}
-
-.line {
-  position: absolute;
-  left: 0;
-  top: 106px;
-  transition: 0.2s;
+  transition: 1s;
+  opacity: 0;
 }
 
 .line-two {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 151px;
-  transform: translateX(150%);
-  transition: 0.3s;
+  top: 120px;
+  opacity: 0;
+  transition: 1s;
 }
 
 .auto {
   position: absolute;
-  top: 296px;
-  left: -67px;
+  width: 100%;
+  top: 193px;
+  left: 4px;
   transition: 0.2s;
-  z-index: 0;
+  z-index: 6;
 }
 
 .top {
+  width: 120%;
   z-index: 5;
   position: absolute;
-  left: -100px;
-  top: 188px;
+  left: -23px;
+  top: 125px;
   transition: 0.2s;
 }
 
 .jackpot {
   position: absolute;
-  width: 489.5px;
-  height: 23.5px;
-  left: -84.72px;
-  top: 481.51px;
+  height: 21px;
+  left: -88px;
+  bottom: 80px;
   transform: rotate(3.11deg);
-  transition: 0.2s;
+  transition: 1s;
   z-index: 100;
+  opacity: 0;
 }
 
 .button {
   position: absolute;
-  width: 255px;
-  height: 58px;
-  left: 23px;
-  top: 524px;
+  width: 220px;
+  height: 50px;
+  left: 10px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,8 +272,8 @@ body {
   border-radius: 13px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 1;
   text-align: center;
   color: #000000;
   transition: 0.2s;
@@ -236,16 +286,15 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 261px;
-  height: 462px;
-  left: 15px;
-  top: 120px;
+  width: 220px;
+  left: 10px;
+  top: 70px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10.7px;
-  line-height: 13px;
+  font-size: 9.7px;
+  line-height: 1;
   color: #000;
-  transform: translateX(150%);
-  transition: 0.3s;
+  transition: 0.2s;
+  opacity: 0;
 }

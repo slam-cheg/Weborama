@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./animations.scss";
+@import "./screen-one.scss";
 @import "./screen-two.scss";
 @import "./screen-three.scss";
 
@@ -8,16 +9,20 @@
     padding: 0;
 }
 
+html,
 body {
+    width: 300px;
+    height: 600px;
     overflow: hidden;
 }
 
 .wrapper {
     background: linear-gradient(180deg, #f40101 0%, #fb6137 100%);
-    width: 300px;
-    height: 600px;
-    overflow: hidden;
-    transition: 0.4s;
+    width: inherit;
+    height: inherit;
+    overflow: inherit;
+    position: relative;
+    transition: .5s;
 }
 
 .banner {
@@ -29,7 +34,7 @@ body {
     background-position: 100% 25%;
     cursor: pointer;
     position: relative;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .logo {
@@ -48,7 +53,7 @@ body {
     top: 14px;
 }
 
-.title {
+.title-wrapper {
     position: absolute;
     left: 0;
     top: 92px;
@@ -66,7 +71,16 @@ body {
     transition: 0.2s;
 }
 
-.title-two {
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+.title-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.title-wrapper-two {
     position: absolute;
     font-family: Montserrat;
     font-style: normal;
@@ -79,27 +93,31 @@ body {
     color: #ffffff;
     width: 100%;
     transition: 0.3s;
-    transform: translateX(100%) rotate(-0.51deg);
     top: 81px;
+}
 
-    span {
-        font-size: 36.75px;
-        line-height: 105%;
-    }
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+
+.title-two-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
 }
 
 .auto {
     position: absolute;
     top: 66px;
     left: -69px;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .auto-lights {
     position: absolute;
     top: 250px;
     left: 20px;
-    transition: 0.2s;
+    display: none;
 }
 
 .text-wrapper {
@@ -119,23 +137,56 @@ body {
 
     .text-one {
         font-size: 23px;
-        transition: 0.2s;
+        transition: 0.8s;
+        transform: translateX(-400px);
     }
 
     .text-two {
         font-size: 35px;
-        transition: 0.3s;
+        transition: 1s;
+        transform: translateX(-400px);
     }
 
     .text-three {
         font-size: 23px;
-        transition: 0.4s;
+        transition: 1.2s;
+        transform: translateX(-400px);
     }
 }
 
 .text-wrapper-two {
+    text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    top: 380px;
+    position: absolute;
+    z-index: 51;
     top: 425px;
-    transform: translateX(150%);
+
+    .text-one {
+        font-size: 23px;
+        transition: 1.4s;
+        transform: translateX(-400px);
+    }
+
+    .text-two {
+        font-size: 35px;
+        transition: 1.6s;
+        transform: translateX(-450px);
+    }
+
+    .text-three {
+        font-size: 23px;
+        transition: 1.8s;
+        transform: translateX(-400px);
+    }
 }
 
 .jackpot {
@@ -144,8 +195,9 @@ body {
     height: 23px;
     left: -88px;
     top: 477px;
+    opacity: 0;
     transform: rotate(3.35deg);
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .person {
@@ -154,8 +206,8 @@ body {
     height: 828px;
     left: -232px;
     top: 159px;
-    transform: translateX(100%);
-    transition: 0.2s;
+    transform: translateX(-400px);
+    transition: 1s;
 }
 
 .star {
@@ -210,6 +262,6 @@ body {
     font-size: 10.7px;
     line-height: 13px;
     color: #ffffff;
-    transform: translateX(150%);
-    transition: 0.3s;
+    opacity: 0;
+    transition: .2s;
 }
