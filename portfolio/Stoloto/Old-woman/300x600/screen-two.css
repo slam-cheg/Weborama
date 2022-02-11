@@ -1,12 +1,27 @@
-.screen-two .title,
-.screen-two .auto,
-.screen-two .jackpot,
-.screen-two .top,
-.screen-two .line {
-  transform: translateX(-150%);
+.screen-two {
+  background: radial-gradient(28.25% 425.25% at 57.73% 82.8%, #efe94d 0%, #ff8b02 100%);
 }
-.screen-two .title-two,
-.screen-two .person,
+.screen-two .auto,
+.screen-two .top {
+  transition: 0.2s;
+  transform: translateX(350px);
+}
+.screen-two .person {
+  opacity: 1;
+}
 .screen-two .line-two {
+  opacity: 1;
+}
+.screen-two .jackpot {
+  opacity: 0;
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two,
+.screen-two .title-line-three {
+  transition: 0.2s;
+  transform: translateX(-400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
   transform: translateX(0);
 }

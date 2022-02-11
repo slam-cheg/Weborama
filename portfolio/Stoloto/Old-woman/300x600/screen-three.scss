@@ -1,11 +1,33 @@
 .screen-three {
-    .title-two,
-    .button,
-    .person,
-    .line-two {
-        transform: translateX(-150%);
+    background: #ffb902;
+
+    .button {
+        transition: 0.2s;
+        transform: translateX(300px);
     }
     .disclamer {
-        transform: translateX(0);
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .person {
+        transition: .2s;
+        opacity: 0;
+    }
+
+    .line-two {
+        transition: .2s;
+        opacity: 0;
+    }
+
+    .title-two-line-one,
+    .title-two-line-two {
+        transition: 0.2s;
+        transform: translateX(-300px);
+    }
+
+    .line-two {
+        transition: .2s;
+        opacity: 0;
     }
 }
