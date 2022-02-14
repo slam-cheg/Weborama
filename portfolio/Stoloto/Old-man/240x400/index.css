@@ -230,7 +230,7 @@ body {
   overflow: inherit;
   background-image: url(./bg.png);
   background-repeat: no-repeat;
-  background-position: 100% 25%;
+  background-position: 16% 118%;
   cursor: pointer;
   position: relative;
   transition: 0.5s;
@@ -238,32 +238,29 @@ body {
 
 .logo {
   position: absolute;
-  width: 58px;
-  height: 61px;
-  left: 14px;
-  top: 13px;
+  width: 40px;
+  left: 10px;
+  top: 10px;
 }
 
 .holiday {
   position: absolute;
-  width: 122px;
-  height: 58px;
+  height: 42px;
   right: 0;
-  top: 14px;
+  top: 10px;
 }
 
 .title-wrapper {
   position: absolute;
   left: 0;
-  top: 92px;
+  top: 60px;
   width: 100%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
@@ -285,15 +282,14 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
   width: 100%;
   transition: 0.3s;
-  top: 81px;
+  top: 60px;
 }
 
 .title-two-line-one {
@@ -308,15 +304,17 @@ body {
 
 .auto {
   position: absolute;
-  top: 66px;
-  left: -69px;
+  top: 45px;
+  left: -23px;
+  width: 120%;
   transition: 1s;
 }
 
 .auto-lights {
   position: absolute;
-  top: 250px;
-  left: 20px;
+  top: 170px;
+  left: 36px;
+  width: 70%;
   display: none;
 }
 
@@ -325,28 +323,26 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #fff;
   width: 100%;
-  top: 380px;
+  top: 250px;
   position: absolute;
   z-index: 50;
 }
 .text-wrapper .text-one {
-  font-size: 23px;
   transition: 0.8s;
   transform: translateX(-400px);
 }
 .text-wrapper .text-two {
-  font-size: 35px;
+  font-size: 24px;
   transition: 1s;
   transform: translateX(-400px);
 }
 .text-wrapper .text-three {
-  font-size: 23px;
   transition: 1.2s;
   transform: translateX(-400px);
 }
@@ -356,39 +352,34 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  line-height: 28px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #fff;
   width: 100%;
-  top: 380px;
+  top: 275px;
   position: absolute;
   z-index: 51;
-  top: 425px;
 }
 .text-wrapper-two .text-one {
-  font-size: 23px;
-  transition: 1.4s;
+  transition: 0.8s;
   transform: translateX(-400px);
 }
 .text-wrapper-two .text-two {
-  font-size: 35px;
-  transition: 1.6s;
-  transform: translateX(-450px);
+  font-size: 24px;
+  transition: 1s;
+  transform: translateX(-400px);
 }
 .text-wrapper-two .text-three {
-  font-size: 23px;
-  transition: 1.8s;
+  transition: 1.2s;
   transform: translateX(-400px);
 }
 
 .jackpot {
   position: absolute;
-  width: 489px;
-  height: 23px;
-  left: -88px;
-  top: 477px;
+  height: 20px;
+  left: -87px;
+  bottom: 64px;
   opacity: 0;
   transform: rotate(3.35deg);
   transition: 1s;
@@ -396,20 +387,18 @@ body {
 
 .person {
   position: absolute;
-  width: 831.77px;
-  height: 828px;
-  left: -232px;
-  top: 159px;
+  width: 570px;
+  left: -142px;
+  top: 105px;
   transform: translateX(-400px);
   transition: 1s;
 }
 
 .star {
   position: absolute;
-  width: 450px;
-  height: 432px;
-  left: -75px;
-  top: 76px;
+  width: 240px;
+  left: 0;
+  top: 86px;
   mix-blend-mode: overlay;
   transition: 0.2s;
   transform: translateX(150%);
@@ -419,10 +408,10 @@ body {
 .button {
   z-index: 99;
   position: absolute;
-  width: 255px;
-  height: 58px;
-  left: 23px;
-  top: 524px;
+  width: 220px;
+  height: 40px;
+  left: 10px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,8 +420,8 @@ body {
   border-radius: 13px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 1;
   text-align: center;
   color: #000000;
   transition: 0.2s;
@@ -445,15 +434,14 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 261px;
-  height: 462px;
-  left: 15px;
-  top: 120px;
+  width: 220px;
+  left: 10px;
+  top: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10.7px;
-  line-height: 13px;
+  font-size: 9.6px;
+  line-height: 1;
   color: #ffffff;
   opacity: 0;
   transition: 0.2s;

@@ -32,7 +32,8 @@
 .screen-two .banner {
   background-image: none;
 }
-.screen-two .title-line-one {
+.screen-two .title-line-one,
+.screen-two .title-line-two {
   opacity: 0;
   transform: translateX(-400px);
   transition: 0.2s;

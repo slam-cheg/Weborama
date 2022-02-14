@@ -113,24 +113,16 @@
 .screen-one .title-wrapper-two {
   opacity: 1;
 }
-.screen-one .title-line-one {
+.screen-one .title-line-one,
+.screen-one .title-line-two {
   opacity: 1;
   transform: translateX(0);
-}
-.screen-one .text-wrapper {
-  opacity: 1;
 }
 .screen-one .text-wrapper .text-one,
 .screen-one .text-wrapper .text-two,
 .screen-one .text-wrapper .text-three {
   opacity: 1;
   transform: translateX(0);
-}
-.screen-one .text-wrapper-two .text-one,
-.screen-one .text-wrapper-two .text-two,
-.screen-one .text-wrapper-two .text-three {
-  opacity: 1;
-  transform: translateX(-550px);
 }
 .screen-one .auto-lights {
   display: block;
@@ -140,18 +132,16 @@
 }
 
 .screen-two {
-  background: radial-gradient(106% 106% at 61.75% 106%, #ffd049 0%, #f30101 100%) !important;
+  background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
 }
 .screen-two .auto,
 .screen-two .text-wrapper,
 .screen-two .auto-lights {
-  transition: 0.2s;
-  transform: translateX(-750px);
+  transform: translateX(-400px);
 }
 .screen-two .title-two,
 .screen-two .person,
 .screen-two .star {
-  transition: 0.2s;
   transform: translateX(0);
 }
 .screen-two .text-wrapper .text-one,
@@ -160,9 +150,6 @@
   transition: 0.2s;
   opacity: 1;
   transform: translateX(-400px);
-}
-.screen-two .text-wrapper-two {
-  opacity: 1;
 }
 .screen-two .text-wrapper-two .text-one,
 .screen-two .text-wrapper-two .text-two,
@@ -173,12 +160,14 @@
 .screen-two .banner {
   background-image: none;
 }
-.screen-two .title-line-one {
+.screen-two .title-line-one,
+.screen-two .title-line-two {
   opacity: 0;
   transform: translateX(-400px);
   transition: 0.2s;
 }
-.screen-two .title-wrapper-two {
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
   transform: translateX(0);
 }
 .screen-two .jackpot {
@@ -186,28 +175,32 @@
 }
 
 .screen-three {
-  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #F20303 0%, #F40E03 100%) !important;
+  background: linear-gradient(0deg, #f50202, #f50202) !important;
 }
-.screen-three .title-wrapper-two,
+.screen-three .title-two,
 .screen-three .moneypot,
+.screen-three .button,
 .screen-three .person,
 .screen-three .star,
 .screen-three .text-wrapper-two {
-  transform: translateX(-550px);
   transition: 0.2s;
+  transform: translateX(-150%);
 }
-.screen-three .button {
-  transform: translateX(300px);
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two {
   transition: 0.2s;
+  transform: translateX(-400px);
 }
 .screen-three .disclamer {
-  opacity: 1;
   transition: 1.5s;
+  opacity: 1;
 }
-.screen-three .person {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.screen-three .text-wrapper-two .text-one,
+.screen-three .text-wrapper-two .text-two,
+.screen-three .text-wrapper-two .text-three {
+  transition: 0.2s;
+  opacity: 1;
+  transform: translateX(-400px);
 }
 
 * {
@@ -217,13 +210,13 @@
 
 html,
 body {
-  width: 970px;
+  width: 300px;
   height: 250px;
   overflow: hidden;
 }
 
 .wrapper {
-  background: radial-gradient(46.8% 704.61% at 58.87% 76.8%, #ffd049 10.54%, #f30000 79.6%);
+  background: linear-gradient(180deg, #f40101 0%, #fb6137 100%);
   width: inherit;
   height: inherit;
   overflow: inherit;
@@ -232,102 +225,84 @@ body {
 }
 
 .banner {
-  width: 970px;
-  height: 250px;
-  overflow: hidden;
-  background-position: 100% 25%;
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
   cursor: pointer;
   position: relative;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .logo {
   position: absolute;
-  width: 103px;
-  height: 108px;
-  left: 32px;
-  top: 36px;
-  z-index: 100;
+  width: 40px;
+  left: 10px;
+  top: 10px;
 }
 
 .holiday {
   position: absolute;
-  width: 149.34px;
-  height: 71px;
-  left: 822.93px;
-  top: 37px;
+  height: 42px;
+  right: 0;
+  top: 10px;
 }
 
 .title-wrapper {
   position: absolute;
-  width: 396px;
-  height: 26px;
-  left: 125px;
-  top: 43px;
-  font-family: "Montserrat", sans-serif;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
   transition: 0.2s;
-  opacity: 0;
 }
 
 .title-line-one {
-  transition: 1s;
-  transform: translateX(-500px);
+  transition: 0.8s;
+  transform: translateX(-400px);
 }
 
 .title-wrapper-two {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 52px;
+  font-size: 18px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 600px;
-  height: 50px;
+  width: 100%;
   transition: 0.3s;
-  bottom: 20px;
-  left: -62px;
-  background-color: #f40101;
-  transform: translateX(-550px);
-  transition: 1s;
-  opacity: 0;
+  top: 60px;
 }
 
 .title-two-line-one {
-  transition: 1s;
-}
-.title-two-line-one span {
-  font-size: 28px;
+  transition: 0.8s;
+  transform: translateX(-400px);
 }
 
 .auto {
   position: absolute;
-  width: 401px;
-  left: 378px;
-  top: -39px;
+  top: 45px;
+  right: -35px;
+  width: 70%;
   transition: 1s;
-  z-index: 10;
 }
 
 .auto-lights {
   position: absolute;
-  top: 129px;
-  width: 230px;
-  left: 461px;
-  transition: 1s;
-  z-index: 11;
+  top: 134px;
+  right: 12px;
+  width: 40%;
+  display: none;
 }
 
 .text-wrapper {
@@ -335,113 +310,106 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #fff;
-  width: 273px;
-  height: 27px;
-  left: 184px;
-  top: 86px;
+  left: 10px;
+  top: 100px;
   position: absolute;
   z-index: 50;
-  opacity: 0;
 }
 .text-wrapper .text-one {
-  font-size: 23px;
-  transition: 1.4s;
-  transform: translateX(-500px);
+  transition: 0.8s;
+  transform: translateX(-400px);
 }
 .text-wrapper .text-two {
-  font-size: 35px;
-  transition: 1.6s;
-  transform: translateX(-500px);
+  font-size: 20px;
+  transition: 1s;
+  transform: translateX(-400px);
 }
 .text-wrapper .text-three {
-  font-size: 23px;
-  transition: 1.8s;
-  transform: translateX(-500px);
+  transition: 1.2s;
+  transform: translateX(-400px);
 }
 
 .text-wrapper-two {
-  position: absolute;
-  top: 40px;
-  left: 150px;
-  text-align: left;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
+  font-size: 14px;
   line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
   color: #fff;
+  left: 10px;
+  top: 100px;
+  position: absolute;
   z-index: 51;
-  opacity: 0;
 }
 .text-wrapper-two .text-one {
-  font-size: 23px;
-  transition: 1.4s;
-  transform: translateX(-450px);
+  transition: 0.8s;
+  transform: translateX(-400px);
 }
 .text-wrapper-two .text-two {
-  font-size: 35px;
-  transition: 1.6s;
-  transform: translateX(-450px);
+  font-size: 20px;
+  transition: 1s;
+  transform: translateX(-400px);
 }
 .text-wrapper-two .text-three {
-  font-size: 23px;
-  transition: 1.8s;
-  transform: translateX(-450px);
+  transition: 1.2s;
+  transform: translateX(-400px);
 }
 
 .jackpot {
   position: absolute;
-  width: 631px;
-  height: 33px;
-  left: -88px;
-  top: 188px;
+  height: 17px;
+  left: -27px;
+  bottom: 47px;
+  opacity: 0;
   transform: rotate(3.35deg);
-  transition: 0.2s;
+  transition: 1s;
 }
 
 .person {
   position: absolute;
-  width: 753px;
-  left: 247px;
-  top: 9px;
-  transform: translateY(100%);
-  transition: 0.2s;
+  width: 370px;
+  left: 50px;
+  top: 81px;
+  transform: translateX(-400px);
+  transition: 1s;
 }
 
 .star {
   position: absolute;
-  width: 420px;
-  height: 403px;
-  right: 119px;
-  top: -31px;
+  width: 190px;
+  left: 40px;
+  top: 86px;
   mix-blend-mode: overlay;
   transition: 0.2s;
-  transform: translateY(0);
+  transform: translateX(-400px);
   z-index: 0;
 }
 
 .button {
   z-index: 99;
   position: absolute;
-  width: 246px;
-  height: 58px;
-  right: 20px;
-  bottom: 31px;
+  width: 160px;
+  height: 30px;
+  left: 10px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #ffdd00;
   border: none;
-  border-radius: 13px;
+  border-radius: 8px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 1;
   text-align: center;
   color: #000000;
   transition: 0.2s;
@@ -454,16 +422,15 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 621px;
-  height: 185px;
-  left: 177px;
-  top: 31px;
+  width: 280px;
+  left: 10px;
+  top: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10.7px;
-  line-height: 13px;
+  font-size: 7.9px;
+  line-height: 1;
   color: #ffffff;
-  transition: 0.2s;
   opacity: 0;
+  transition: 0.2s;
 }

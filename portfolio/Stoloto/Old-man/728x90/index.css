@@ -113,7 +113,8 @@
 .screen-one .title-wrapper-two {
   opacity: 1;
 }
-.screen-one .title-line-one {
+.screen-one .title-line-one,
+.screen-one .title-line-two {
   opacity: 1;
   transform: translateX(0);
 }
@@ -173,7 +174,8 @@
 .screen-two .banner {
   background-image: none;
 }
-.screen-two .title-line-one {
+.screen-two .title-line-one,
+.screen-two .title-line-two {
   opacity: 0;
   transform: translateX(-400px);
   transition: 0.2s;
@@ -217,9 +219,10 @@
 
 html,
 body {
-  width: 970px;
-  height: 250px;
+  width: 728px;
+  height: 90px;
   overflow: hidden;
+  position: relative;
 }
 
 .wrapper {
@@ -232,10 +235,9 @@ body {
 }
 
 .banner {
-  width: 970px;
-  height: 250px;
+  width: inherit;
+  height: inherit;
   overflow: hidden;
-  background-position: 100% 25%;
   cursor: pointer;
   position: relative;
   transition: 0.2s;
@@ -243,34 +245,30 @@ body {
 
 .logo {
   position: absolute;
-  width: 103px;
-  height: 108px;
-  left: 32px;
-  top: 36px;
-  z-index: 100;
+  height: 40px;
+  left: 10px;
+  top: 25px;
+  z-index: 102;
 }
 
 .holiday {
   position: absolute;
-  width: 149.34px;
-  height: 71px;
-  left: 822.93px;
-  top: 37px;
+  height: 40px;
+  right: 0;
+  top: 25px;
+  z-index: 103;
 }
 
 .title-wrapper {
   position: absolute;
-  width: 396px;
-  height: 26px;
-  left: 125px;
-  top: 43px;
+  left: 65px;
+  top: 32px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
-  line-height: 27px;
-  text-align: center;
-  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
@@ -280,7 +278,12 @@ body {
 
 .title-line-one {
   transition: 1s;
-  transform: translateX(-500px);
+  transform: translateX(-300px);
+}
+
+.title-line-two {
+  transition: 1.2s;
+  transform: translateX(-300px);
 }
 
 .title-wrapper-two {
@@ -288,17 +291,15 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 52px;
+  font-size: 14px;
+  line-height: 32px;
   text-align: center;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #ffffff;
   width: 600px;
-  height: 50px;
-  transition: 0.3s;
-  bottom: 20px;
-  left: -62px;
+  height: 30px;
+  bottom: 0px;
+  left: -121px;
   background-color: #f40101;
   transform: translateX(-550px);
   transition: 1s;
@@ -309,23 +310,23 @@ body {
   transition: 1s;
 }
 .title-two-line-one span {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .auto {
   position: absolute;
-  width: 401px;
-  left: 378px;
-  top: -39px;
+  width: 160px;
+  left: 348px;
+  top: -27px;
   transition: 1s;
   z-index: 10;
 }
 
 .auto-lights {
   position: absolute;
-  top: 129px;
-  width: 230px;
-  left: 461px;
+  top: 40px;
+  width: 98px;
+  left: 378px;
   transition: 1s;
   z-index: 11;
 }
@@ -335,103 +336,94 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 1;
   text-align: center;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #fff;
-  width: 273px;
-  height: 27px;
-  left: 184px;
-  top: 86px;
+  left: 190px;
+  top: 17px;
   position: absolute;
   z-index: 50;
   opacity: 0;
 }
 .text-wrapper .text-one {
-  font-size: 23px;
   transition: 1.4s;
   transform: translateX(-500px);
 }
 .text-wrapper .text-two {
-  font-size: 35px;
+  font-size: 20px;
   transition: 1.6s;
   transform: translateX(-500px);
 }
 .text-wrapper .text-three {
-  font-size: 23px;
   transition: 1.8s;
   transform: translateX(-500px);
 }
 
 .text-wrapper-two {
   position: absolute;
-  top: 40px;
-  left: 150px;
+  top: 25px;
+  left: 60px;
   text-align: left;
   text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
+  font-size: 14px;
   line-height: 1;
   color: #fff;
   z-index: 51;
   opacity: 0;
 }
 .text-wrapper-two .text-one {
-  font-size: 23px;
   transition: 1.4s;
   transform: translateX(-450px);
 }
 .text-wrapper-two .text-two {
-  font-size: 35px;
+  font-size: 20px;
   transition: 1.6s;
   transform: translateX(-450px);
 }
 .text-wrapper-two .text-three {
-  font-size: 23px;
   transition: 1.8s;
   transform: translateX(-450px);
 }
 
 .jackpot {
   position: absolute;
-  width: 631px;
-  height: 33px;
-  left: -88px;
-  top: 188px;
-  transform: rotate(3.35deg);
+  height: 20px;
+  left: -29px;
+  bottom: 0;
   transition: 0.2s;
 }
 
 .person {
   position: absolute;
-  width: 753px;
-  left: 247px;
-  top: 9px;
-  transform: translateY(100%);
-  transition: 0.2s;
+  width: 273px;
+  left: 319px;
+  top: 5px;
+  z-index: 100;
+  transform: translateX(-700px);
+  transition: 1s;
 }
 
 .star {
   position: absolute;
-  width: 420px;
-  height: 403px;
-  right: 119px;
+  width: 200px;
+  right: 219px;
   top: -31px;
   mix-blend-mode: overlay;
   transition: 0.2s;
-  transform: translateY(0);
-  z-index: 0;
+  z-index: 1;
 }
 
 .button {
-  z-index: 99;
+  z-index: 101;
   position: absolute;
-  width: 246px;
-  height: 58px;
-  right: 20px;
-  bottom: 31px;
+  width: 160px;
+  height: 30px;
+  right: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,12 +432,12 @@ body {
   border-radius: 13px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 17px;
+  font-size: 14px;
   text-align: center;
   color: #000000;
   transition: 0.2s;
   cursor: pointer;
+  top: 35px;
 }
 .button:hover {
   background: #ffe95b;
@@ -454,14 +446,13 @@ body {
 
 .disclamer {
   position: absolute;
-  width: 621px;
-  height: 185px;
-  left: 177px;
-  top: 31px;
+  width: 570px;
+  left: 60px;
+  top: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10.7px;
+  font-size: 7px;
   line-height: 13px;
   color: #ffffff;
   transition: 0.2s;
