@@ -1,0 +1,38 @@
+.screen-one {
+    .title-wrapper,
+    .title-wrapper-two {
+        opacity: 1;
+    }
+
+    .title-line-one {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .text-wrapper {
+        opacity: 1;
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .text-wrapper-two {
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(-550px);
+        }
+    }
+
+    .auto-lights {
+        display: block;
+    }
+
+    .jackpot {
+        opacity: 1;
+    }
+}

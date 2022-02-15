@@ -1,0 +1,19 @@
+.screen-three {
+    .title-two,
+    .moneypot,
+    .button {
+        transition: .2s;
+        transform: translateY(350px);
+    }
+    .disclamer {
+        transition: 1s;
+        opacity: 1;
+    }
+
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three {
+        transition: .2s;
+        transform: translateX(-400px);
+    }
+}

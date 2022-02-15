@@ -1,0 +1,28 @@
+@keyframes autoFly {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes buttonShadow {
+    0% {
+        box-shadow: 0px 0px 40px #fff;
+    }
+    50% {
+        box-shadow: 0px 0px 40px 10px #fff;
+    }
+    100% {
+        box-shadow: 0px 0px 40px #fff;
+    }
+}
+
+.auto-fly {
+    animation: autoFly 1 6s ease;
+}
+
+.button-glow {
+    animation: buttonShadow infinite 2s ease-in-out;
+}

@@ -1,0 +1,165 @@
+@import "./fonts.scss";
+@import "./animations.scss";
+@import "./screen-two.scss";
+@import "./screen-three.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.banner {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    background: url(./bg.svg) 42% 62%;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 58px;
+    height: 61px;
+    left: 14px;
+    top: 17px;
+}
+
+.holiday {
+    position: absolute;
+    width: 153.29px;
+    height: 69.72px;
+    left: 135px;
+    top: 7px;
+}
+
+.title {
+    position: absolute;
+    left: 0;
+    top: 104px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    width: 300px;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 0.2s;
+
+    span {
+        letter-spacing: -0.01em;
+    }
+}
+
+.title-two {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    width: 300px;
+    font-size: 28px;
+    line-height: 30px;
+    top: 141px;
+    left: 0;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.person {
+    position: absolute;
+    width: 831.77px;
+    height: 806.42px;
+    left: -261.92px;
+    top: 83px;
+    z-index: 0;
+    transition: 0.2s;
+}
+
+.money {
+    position: absolute;
+    width: 451.62px;
+    height: 423.15px;
+    left: -139.85px;
+    top: 85px;
+    z-index: 10;
+    transition: 0.2s;
+}
+
+.auto {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    transition: 0.2s;
+}
+
+.jackpot {
+    position: absolute;
+    width: 348.92px;
+    height: 71.29px;
+    left: -21.13px;
+    top: 399.89px;
+    transform: rotate(-4.88deg);
+    transition: 0.2s;
+}
+
+.moneypot {
+    position: absolute;
+    width: 1001px;
+    height: 248px;
+    left: -492px;
+    top: 256px;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.button {
+    position: absolute;
+    width: 255px;
+    height: 58px;
+    left: 23px;
+    top: 524px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffdd00;
+    border: none;
+    border-radius: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: #ffe95b;
+        transition: 0.2s;
+    }
+}
+
+.disclamer {
+    position: absolute;
+    width: 261px;
+    height: 462px;
+    left: 15px;
+    top: 120px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.7px;
+    line-height: 13px;
+    color: #ffffff;
+    transform: translateX(150%);
+    transition: 0.3s;
+}

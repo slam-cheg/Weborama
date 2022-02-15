@@ -1,0 +1,448 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@-webkit-keyframes autoLights {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes autoLights {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes starRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes starRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+@keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+.star-rotate {
+  -webkit-animation: starRotate infinite 5s linear;
+          animation: starRotate infinite 5s linear;
+}
+
+.auto-lights-anim {
+  -webkit-animation: autoLights infinite 2s ease-in-out;
+          animation: autoLights infinite 2s ease-in-out;
+}
+
+.button-glow {
+  -webkit-animation: buttonShadow infinite 2s ease-in-out;
+          animation: buttonShadow infinite 2s ease-in-out;
+}
+
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .text-wrapper .text-one,
+.screen-one .text-wrapper .text-two,
+.screen-one .text-wrapper .text-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .auto-lights {
+  display: block;
+}
+.screen-one .jackpot {
+  opacity: 1;
+}
+
+.screen-two {
+  background: radial-gradient(60.01% 27.12% at 49.96% 45.36%, #ffbf35 0%, #f40101 100%) !important;
+}
+.screen-two .auto,
+.screen-two .text-wrapper,
+.screen-two .auto-lights {
+  transform: translateX(-150%);
+}
+.screen-two .title-two,
+.screen-two .person,
+.screen-two .star {
+  transform: translateX(0);
+}
+.screen-two .text-wrapper .text-one,
+.screen-two .text-wrapper .text-two,
+.screen-two .text-wrapper .text-three {
+  transition: 0.2s;
+  opacity: 1;
+  transform: translateX(-400px);
+}
+.screen-two .text-wrapper-two .text-one,
+.screen-two .text-wrapper-two .text-two,
+.screen-two .text-wrapper-two .text-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-two .banner {
+  background-image: none;
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: 0.2s;
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
+  transform: translateX(0);
+}
+.screen-two .jackpot {
+  opacity: 0;
+}
+
+.screen-three {
+  background: linear-gradient(0deg, #f50202, #f50202) !important;
+}
+.screen-three .title-two,
+.screen-three .moneypot,
+.screen-three .button,
+.screen-three .person,
+.screen-three .star,
+.screen-three .text-wrapper-two {
+  transition: 0.2s;
+  transform: translateX(-150%);
+}
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two {
+  transition: 0.2s;
+  transform: translateX(-400px);
+}
+.screen-three .disclamer {
+  transition: 1.5s;
+  opacity: 1;
+}
+.screen-three .text-wrapper-two .text-one,
+.screen-three .text-wrapper-two .text-two,
+.screen-three .text-wrapper-two .text-three {
+  transition: 0.2s;
+  opacity: 1;
+  transform: translateX(-400px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 240px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.wrapper {
+  background: linear-gradient(180deg, #f40101 0%, #fb6137 100%);
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  position: relative;
+  transition: 0.5s;
+}
+
+.banner {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-position: 16% 118%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.logo {
+  position: absolute;
+  width: 40px;
+  left: 10px;
+  top: 10px;
+}
+
+.holiday {
+  position: absolute;
+  height: 42px;
+  right: 0;
+  top: 10px;
+}
+
+.title-wrapper {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+  transition: 0.2s;
+}
+
+.title-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.title-wrapper-two {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  transition: 0.3s;
+  top: 60px;
+}
+
+.title-two-line-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+
+.title-two-line-two {
+  transition: 1s;
+  transform: translateX(-400px);
+}
+
+.auto {
+  position: absolute;
+  top: 45px;
+  left: -23px;
+  width: 120%;
+  transition: 1s;
+}
+
+.auto-lights {
+  position: absolute;
+  top: 170px;
+  left: 36px;
+  width: 70%;
+  display: none;
+}
+
+.text-wrapper {
+  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  top: 250px;
+  position: absolute;
+  z-index: 50;
+}
+.text-wrapper .text-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+.text-wrapper .text-two {
+  font-size: 24px;
+  transition: 1s;
+  transform: translateX(-400px);
+}
+.text-wrapper .text-three {
+  transition: 1.2s;
+  transform: translateX(-400px);
+}
+
+.text-wrapper-two {
+  text-shadow: 2.28px 0.55px 67px rgba(166, 4, 36, 0.9);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  top: 275px;
+  position: absolute;
+  z-index: 51;
+}
+.text-wrapper-two .text-one {
+  transition: 0.8s;
+  transform: translateX(-400px);
+}
+.text-wrapper-two .text-two {
+  font-size: 24px;
+  transition: 1s;
+  transform: translateX(-400px);
+}
+.text-wrapper-two .text-three {
+  transition: 1.2s;
+  transform: translateX(-400px);
+}
+
+.jackpot {
+  position: absolute;
+  height: 20px;
+  left: -87px;
+  bottom: 64px;
+  opacity: 0;
+  transform: rotate(3.35deg);
+  transition: 1s;
+}
+
+.person {
+  position: absolute;
+  width: 570px;
+  left: -142px;
+  top: 105px;
+  transform: translateX(-400px);
+  transition: 1s;
+}
+
+.star {
+  position: absolute;
+  width: 240px;
+  left: 0;
+  top: 86px;
+  mix-blend-mode: overlay;
+  transition: 0.2s;
+  transform: translateX(150%);
+  z-index: 0;
+}
+
+.button {
+  z-index: 99;
+  position: absolute;
+  width: 220px;
+  height: 40px;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffdd00;
+  border: none;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ffe95b;
+  transition: 0.2s;
+}
+
+.disclamer {
+  position: absolute;
+  width: 220px;
+  left: 10px;
+  top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9.6px;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.2s;
+}

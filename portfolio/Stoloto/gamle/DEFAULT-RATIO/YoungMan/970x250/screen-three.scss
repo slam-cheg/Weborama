@@ -1,0 +1,11 @@
+.screen-three {
+    background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #f20303 0%, #f40e03 100%) !important;
+    .title-two,
+    .moneypot,
+    .button {
+        transform: translateY(350px);
+    }
+    .disclamer {
+        transform: translateX(0);
+    }
+}
