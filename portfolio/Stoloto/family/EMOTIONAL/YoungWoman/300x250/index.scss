@@ -1,0 +1,254 @@
+@import "./fonts.scss";
+@import "./animations.scss";
+@import "./screen-one.scss";
+@import "./screen-two.scss";
+@import "./screen-three.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, #f40101 0%, #fb6137 100%);
+    width: inherit;
+    height: inherit;
+    overflow: inherit;
+    position: relative;
+    transition: 0.5s;
+}
+
+.banner {
+    width: inherit;
+    height: inherit;
+    overflow: inherit;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.logo {
+    position: absolute;
+    width: 40px;
+    left: 10px;
+    top: 10px;
+}
+
+.holiday {
+    position: absolute;
+    height: 42px;
+    right: 0;
+    top: 10px;
+}
+
+.title-wrapper {
+    position: absolute;
+    left: 10px;
+    top: 90px;
+    width: 54%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2.28px 0.55px 67px rgb(166 4 36 / 90%);
+    transition: 0.2s;
+}
+
+.title-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+
+.title-line-two {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.title-line-three {
+    transition: 1.2s;
+    transform: translateX(-400px);
+}
+
+.title-wrapper-two {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    transition: 0.3s;
+    top: 60px;
+}
+
+.title-two-line-one {
+    transition: 0.8s;
+    transform: translateX(-400px);
+}
+
+.auto {
+    position: absolute;
+    top: 45px;
+    right: -35px;
+    width: 70%;
+    transition: 1s;
+}
+
+.auto-lights {
+    position: absolute;
+    top: 134px;
+    right: 12px;
+    width: 40%;
+    display: none;
+}
+
+.text-wrapper {
+    text-shadow: 2.28px 0.55px 67px rgb(166 4 36 / 90%);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    left: 10px;
+    top: 120px;
+    position: absolute;
+    z-index: 50;
+
+    .text-one {
+        transition: 0.8s;
+        transform: translateX(-400px);
+    }
+
+    .text-two {
+        font-size: 20px;
+        transition: 1s;
+        transform: translateX(-400px);
+    }
+
+    .text-three {
+        transition: 1.2s;
+        transform: translateX(-400px);
+    }
+}
+
+.text-wrapper-two {
+    text-shadow: 2.28px 0.55px 67px rgb(166 4 36 / 90%);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    left: 10px;
+    top: 100px;
+    position: absolute;
+    z-index: 51;
+
+    .text-one {
+        transition: 0.8s;
+        transform: translateX(-400px);
+    }
+
+    .text-two {
+        font-size: 20px;
+        transition: 1s;
+        transform: translateX(-400px);
+    }
+
+    .text-three {
+        transition: 1.2s;
+        transform: translateX(-400px);
+    }
+}
+
+.jackpot {
+    position: absolute;
+    height: 17px;
+    left: -27px;
+    bottom: 47px;
+    opacity: 0;
+    transform: rotate(3.35deg);
+    transition: 1s;
+}
+
+.person {
+    position: absolute;
+    width: 370px;
+    left: 50px;
+    top: 81px;
+    transform: translateX(-400px);
+    transition: 1s;
+}
+
+.star {
+    position: absolute;
+    width: 190px;
+    left: 40px;
+    top: 86px;
+    mix-blend-mode: overlay;
+    transition: 0.2s;
+    transform: translateX(-400px);
+    z-index: 0;
+}
+
+.button {
+    z-index: 99;
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffdd00;
+    border: none;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: #ffe95b;
+        transition: 0.2s;
+    }
+}
+
+.disclamer {
+    position: absolute;
+    width: 280px;
+    left: 10px;
+    top: 60px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.9px;
+    line-height: 1;
+    color: #ffffff;
+    opacity: 0;
+    transition: 0.2s;
+}

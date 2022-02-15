@@ -1,0 +1,24 @@
+.screen-three {
+  background: radial-gradient(63.4% 63.4% at 59.43% 28.4%, #F20303 0%, #F40E03 100%) !important;
+}
+.screen-three .title-wrapper-two,
+.screen-three .moneypot,
+.screen-three .person,
+.screen-three .star,
+.screen-three .text-wrapper-two {
+  transform: translateX(-550px);
+  transition: 0.2s;
+}
+.screen-three .button {
+  transform: translateX(300px);
+  transition: 0.2s;
+}
+.screen-three .disclamer {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-three .person {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

@@ -1,0 +1,46 @@
+.screen-two {
+  background: radial-gradient(106% 106% at 61.75% 106%, #ffd049 0%, #f30101 100%) !important;
+}
+.screen-two .auto,
+.screen-two .text-wrapper,
+.screen-two .auto-lights {
+  transition: 0.2s;
+  transform: translateX(-750px);
+}
+.screen-two .title-two,
+.screen-two .person,
+.screen-two .star {
+  transition: 0.2s;
+  transform: translateX(0);
+}
+.screen-two .text-wrapper .text-one,
+.screen-two .text-wrapper .text-two,
+.screen-two .text-wrapper .text-three {
+  transition: 0.2s;
+  opacity: 1;
+  transform: translateX(-400px);
+}
+.screen-two .text-wrapper-two {
+  opacity: 1;
+}
+.screen-two .text-wrapper-two .text-one,
+.screen-two .text-wrapper-two .text-two,
+.screen-two .text-wrapper-two .text-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-two .banner {
+  background-image: none;
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: 0.2s;
+}
+.screen-two .title-wrapper-two {
+  transform: translateX(0);
+}
+.screen-two .jackpot {
+  opacity: 0;
+}
