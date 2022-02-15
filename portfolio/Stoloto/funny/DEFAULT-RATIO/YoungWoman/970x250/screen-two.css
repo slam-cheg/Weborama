@@ -1,0 +1,25 @@
+.screen-two {
+  background: radial-gradient(28.25% 425.25% at 57.73% 82.8%, #efe94d 0%, #ff8b02 100%);
+}
+.screen-two .auto,
+.screen-two .top,
+.screen-two .line {
+  transition: 0.2s;
+  transform: translateY(300px);
+}
+.screen-two .person {
+  transform: translateY(0);
+}
+.screen-two .line-two {
+  opacity: 1;
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two,
+.screen-two .title-line-three {
+  transition: 0.2s;
+  transform: translateX(-400px);
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two {
+  transform: translateX(0);
+}

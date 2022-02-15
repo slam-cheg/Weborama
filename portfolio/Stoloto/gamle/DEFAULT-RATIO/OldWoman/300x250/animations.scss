@@ -1,0 +1,16 @@
+
+@keyframes buttonShadow {
+    0% {
+        box-shadow: 0px 0px 40px #fff;
+    }
+    50% {
+        box-shadow: 0px 0px 40px 10px #fff;
+    }
+    100% {
+        box-shadow: 0px 0px 40px #fff;
+    }
+}
+
+.button-glow {
+    animation: buttonShadow infinite 2s ease-in-out;
+}
