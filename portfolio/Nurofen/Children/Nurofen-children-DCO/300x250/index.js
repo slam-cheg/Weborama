@@ -1,10 +1,6 @@
 const params = parent.window.document.location.search;
 const cityFont = document.querySelector(".city_wrajpper");
 const segment = params.slice(params.indexOf("?segment=") + 9);
-if (segment == "default") {
-    banner.classList.add("default");
-}
-
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
 

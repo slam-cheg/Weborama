@@ -2,7 +2,6 @@ const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
 const cityFont = document.querySelector(".city_wrapper");
 const fixText = document.querySelectorAll(".fix__text");
-
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
 

@@ -1,8 +1,6 @@
 const cityFont = document.querySelector(".city_wrajpper");
-
 const banner = document.querySelector(".banner");
 const regionPlace = document.querySelector("#city");
-
 let customEvent = "DEFAULT";
 let customClick = `DEFAULT_CLICK`;
 

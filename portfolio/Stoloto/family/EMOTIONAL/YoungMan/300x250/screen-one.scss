@@ -1,0 +1,30 @@
+.screen-one {
+    .title-wrapper,
+    .title-wrapper-two {
+        opacity: 1;
+    }
+
+    .title-line-one,
+    .title-line-two,
+    .title-line-three {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .text-wrapper {
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .auto-lights {
+        display: block;
+    }
+
+    .jackpot {
+        opacity: 1;
+    }
+}
