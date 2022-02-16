@@ -60,6 +60,7 @@ function rotation() {
         titleWrapper.style.fontSize = "14px";
         titleWrapper.style.width = "310px";
         customEvent = "FAMILY_ONE";
+        screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[1]) {
@@ -67,12 +68,14 @@ function rotation() {
         titleWrapper.style.width = "320px";
         titleWrapper.style.top = "31px";
         customEvent = "FAMILY_TWO";
+        screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
         titleWrapper.style.fontSize = "19px";
         titleWrapper.style.top = "26px";
         customEvent = "FAMILY_THREE";
+        screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     titleLineOne.textContent = randomArr[0];
