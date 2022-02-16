@@ -52,19 +52,20 @@ const text = textWrapper.querySelector(".text-one");
 const textTwo = textWrapper.querySelector(".text-two");
 
 const words = [
-    ['Билет "Русское лото" дешевле,', " чем поход в\u00A0кино!"],
-    ["Наши традиции -", 'играть в\u00A0"Русское\u00A0лото"!'],
-    ["Ваш праздник -", "ваш шанс!"],
+    ["А не сыграть ли нам", 'в\u00A0"Русское лото"?'],
+    ["Игра, которая", "всех объединяет!"],
+    ["Время играть", "вместе с\u00A0любимыми"],
 ];
 rotation();
 function rotation() {
     let randomArr = words[Math.floor(Math.random() * words.length)];
     titleWrapper.style.lineHeight = "1.1";
     if (randomArr === words[0]) {
-        titleWrapper.style.fontSize = "25px";
         titleWrapper.style.left = "150px";
         titleWrapper.style.width = "310px";
-        titleWrapper.style.top = "50px";
+        titleWrapper.style.top = "65px";
+        titleLineOne.style.fontSize = "21px";
+        titleLineTwo.style.fontSize = "25px";
         customEvent = "FAMILY_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
@@ -72,13 +73,14 @@ function rotation() {
     if (randomArr === words[1]) {
         titleWrapper.style.fontSize = "27px";
         titleWrapper.style.left = "110px";
+        titleWrapper.style.top = "60px";
         customEvent = "FAMILY_TWO";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
-        titleWrapper.style.fontSize = "30px";
-        titleWrapper.style.top = "62px";
+        titleWrapper.style.fontSize = "24px";
+        titleWrapper.style.top = "65px";
         titleWrapper.style.left = "110px";
         customEvent = "FAMILY_THREE";
         screenad.event(`${customEvent}`);

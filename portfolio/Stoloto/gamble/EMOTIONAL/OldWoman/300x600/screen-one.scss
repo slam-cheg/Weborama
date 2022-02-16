@@ -1,0 +1,20 @@
+.screen-one {
+    .jackpot {
+        opacity: 1;
+        transition: 1.5s;
+    }
+
+    .title-wrapper {
+        opacity: 1;
+    }
+
+    .title-line-one,
+    .title-line-two {
+        transform: translateX(0);
+    }
+
+    .fly {
+        transform: translateY(-20px);
+        transition: 7s;
+    }
+}

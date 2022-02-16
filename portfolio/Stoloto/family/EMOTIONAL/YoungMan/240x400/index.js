@@ -53,9 +53,9 @@ const auto = document.querySelector(".auto");
 const autoLights = document.querySelector(".auto-lights");
 
 const words = [
-    ['Билет\u00A0"Русское лото" дешевле,', " чем поход в\u00A0кино!"],
-    ["Наши традиции -", 'играть в\u00A0"Русское\u00A0лото"!'],
-    ["Ваш праздник -", "ваш шанс!"],
+    ["А не сыграть ли\u00A0нам", 'в\u00A0"Русское\u00A0лото"?'],
+    ["Игра, которая", "всех объединяет!"],
+    ["Время играть", "вместе с\u00A0любимыми"],
 ];
 rotation();
 function rotation() {
@@ -87,9 +87,9 @@ function rotation() {
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
-        banner.style.backgroundPosition = "16% 105%";
-        auto.style.top = "58px";
-        autoLights.style.top = "179px";
+        banner.style.backgroundPosition = "16% 60%";
+        auto.style.top = "90px";
+        autoLights.style.top = "211px";
         titleWrapper.style.top = "65px";
         titleWrapper.style.fontSize = "19px";
         titleWrapper.style.width = "220px";

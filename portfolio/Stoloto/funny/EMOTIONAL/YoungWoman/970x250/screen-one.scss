@@ -1,0 +1,22 @@
+.screen-one {
+    .title-wrapper,
+    .title-wrapper-two {
+        opacity: 1;
+    }
+
+    .line {
+        opacity: 1;
+        transition: 1.5s;
+    }
+
+    .title-line-one,
+    .title-line-two,
+    .title-line-three {
+        transform: translateY(0);
+    }
+
+    .fly {
+        transform: translateY(-20px);
+        transition: 7s;
+    }
+}

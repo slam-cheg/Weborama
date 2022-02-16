@@ -51,19 +51,17 @@ const text = textWrapper.querySelector(".text-one");
 const textTwo = textWrapper.querySelector(".text-two");
 
 const words = [
-    ['Билет "Русское лото" дешевле,', " чем поход в\u00A0кино!"],
-    ["Наши традиции -", 'играть в\u00A0"Русское\u00A0лото"!'],
-    ["Ваш праздник -", "ваш шанс!"],
+    ["А не сыграть ли нам", 'в\u00A0"Русское лото"?'],
+    ["Игра, которая", "всех объединяет!"],
+    ["Время играть", "вместе с\u00A0любимыми"],
 ];
 rotation();
 function rotation() {
     let randomArr = words[Math.floor(Math.random() * words.length)];
     titleWrapper.style.lineHeight = "1.1";
     if (randomArr === words[0]) {
-        titleWrapper.style.fontSize = "14px";
-        titleWrapper.style.width = "310px";
-        textWrapper.style.left = "204px";
-        textWrapper.style.top = "45px";
+        titleWrapper.style.fontSize = "19px";
+        titleWrapper.style.top = "26px";
         customEvent = "FAMILY_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;

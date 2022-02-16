@@ -52,9 +52,9 @@ const auto = document.querySelector(".auto");
 const autoLights = document.querySelector(".auto-lights");
 
 const words = [
-    ['Билет "Русское лото" дешевле,', " чем поход в\u00A0кино!"],
-    ["Наши традиции -", 'играть в\u00A0"Русское\u00A0лото"!'],
-    ["Ваш праздник -", "ваш шанс!"],
+    ["А не сыграть ли нам", 'в\u00A0"Русское лото"?'],
+    ["Игра, которая", "всех объединяет!"],
+    ["Время играть", "вместе с\u00A0любимыми"],
 ];
 rotation();
 function rotation() {
@@ -64,10 +64,10 @@ function rotation() {
         banner.style.backgroundPosition = "100% 60%";
         auto.style.top = "106px";
         autoLights.style.top = "290px";
-        titleWrapper.style.fontSize = "19px";
+        titleWrapper.style.fontSize = "21px";
         titleWrapper.style.width = "280px";
         titleWrapper.style.left = "10px";
-        titleWrapper.style.top = "100px";
+        titleWrapper.style.top = "110px";
         text.style.fontSize = "28px";
         customEvent = "FAMILY_ONE";
         screenad.event(`${customEvent}`);
@@ -86,6 +86,9 @@ function rotation() {
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
+        banner.style.backgroundPosition = "100% 60%";
+        auto.style.top = "106px";
+        autoLights.style.top = "290px";
         titleWrapper.style.fontSize = "24px";
         titleWrapper.style.width = "280px";
         titleWrapper.style.left = "10px";
