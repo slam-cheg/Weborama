@@ -121,7 +121,7 @@ HTML {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 40%;
+    width: 30%;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in, text-shadow 0.3s, opacity 0.5s;
     text-shadow: 0 0 3vh rgba(255, 255, 255, 0), 0 0 1.5vh rgba(255, 255, 255, 0);
@@ -143,10 +143,10 @@ HTML {
     }
 }
 .btn-descr {
-    width: 100%;
+    width: 80%;
     z-index: 2;
     position: absolute;
-    bottom: 7vw;
+    bottom: 5vw;
     left: 22%;
     opacity: 0;
     transition: 1.5s;
