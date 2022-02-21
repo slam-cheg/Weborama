@@ -1,0 +1,38 @@
+.screen-one {
+    .title-wrapper,
+    .title-wrapper-two {
+        opacity: 1;
+    }
+
+    .title-line-one,
+    .title-line-two {
+        transform: translateX(0);
+    }
+
+    .text-wrapper {
+        opacity: 1;
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .text-wrapper-two {
+        .text-one,
+        .text-two,
+        .text-three {
+            opacity: 1;
+            transform: translateX(-550px);
+        }
+    }
+
+    .person {
+        transform: translateY(0);
+    }
+
+    .button {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,443 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .text-wrapper {
+  opacity: 1;
+}
+.screen-one .text-wrapper .text-one,
+.screen-one .text-wrapper .text-two,
+.screen-one .text-wrapper .text-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .gift {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .text-wrapper-two .text-one,
+.screen-one .text-wrapper-two .text-two,
+.screen-one .text-wrapper-two .text-three {
+  opacity: 1;
+  transform: translateX(-550px);
+}
+.screen-one .person {
+  transform: translateX(0);
+}
+.screen-one .button {
+  transform: translateX(0);
+}
+
+.screen-two .text-wrapper {
+  opacity: 0;
+}
+.screen-two .text-wrapper .text-one,
+.screen-two .text-wrapper .text-two,
+.screen-two .text-wrapper .text-three {
+  transition: 0.3s;
+  transform: translateX(-500px);
+}
+.screen-two .text-wrapper-two {
+  opacity: 1;
+}
+.screen-two .text-wrapper-two .text-one,
+.screen-two .text-wrapper-two .text-two,
+.screen-two .text-wrapper-two .text-three {
+  transform: translateX(0);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transform: translateX(-600px);
+  transition: 0.3s;
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three,
+.screen-two .title-two-line-four {
+  transform: translateX(0);
+}
+.screen-two .gift {
+  opacity: 0;
+}
+.screen-two .flowers,
+.screen-two .money-box {
+  transform: translateX(0);
+  opacity: 1;
+}
+.screen-two .flowers-scale {
+  transition: 3s;
+  transform: scale(1.1);
+}
+.screen-two .person {
+  transform: translateX(-500px);
+  transition: 0.3s;
+}
+
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three,
+.screen-three .title-two-line-four {
+  transform: translateX(-550px);
+  transition: 0.3s;
+}
+.screen-three .button {
+  transform: translateX(-500px);
+  transition: 0.3s;
+}
+.screen-three .disclamer {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-three .text-wrapper-two {
+  opacity: 0;
+}
+.screen-three .text-wrapper-two .text-one,
+.screen-three .text-wrapper-two .text-two,
+.screen-three .text-wrapper-two .text-three {
+  transform: translateX(-550px);
+  transition: 0.3s;
+}
+.screen-three .flowers,
+.screen-three .money-box {
+  transition: 0.3s;
+  transform: translateX(-500px);
+  opacity: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  background: #ffc600;
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  position: inherit;
+}
+
+.banner {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  cursor: pointer;
+  position: inherit;
+  transition: 0.2s;
+}
+
+.logo {
+  position: absolute;
+  width: 180px;
+  left: -28px;
+  top: -10px;
+  z-index: 100;
+}
+
+.holiday {
+  position: absolute;
+  width: 160px;
+  right: 10px;
+  top: 15px;
+  z-index: 101;
+}
+
+.title-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 75px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #e00000;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.title-line-one {
+  transition: 1s;
+  transform: translateX(-500px);
+}
+
+.title-line-two {
+  font-size: 36px;
+  transition: 1.2s;
+  transform: translateX(-500px);
+}
+
+.title-wrapper-two {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e00000;
+  width: 100%;
+  top: 75px;
+  left: 0;
+  transition: 1s;
+  opacity: 0;
+}
+
+.title-two-line-one {
+  transition: 1s;
+  transform: translateX(-550px);
+}
+
+.title-two-line-two {
+  transition: 1.2s;
+  transform: translateX(-550px);
+}
+.title-two-line-two span {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.title-two-line-three {
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1.4s;
+  transform: translateX(-550px);
+}
+
+.title-two-line-four {
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1.6s;
+  transform: translateX(-550px);
+}
+
+.bg-flw {
+  position: absolute;
+  width: 370px;
+  right: -160px;
+  top: 40px;
+  transition: 1s;
+  z-index: 1;
+  opacity: 0.5;
+  transform: rotate(52deg);
+}
+
+.bg-flw-two {
+  position: absolute;
+  width: 180px;
+  right: -60px;
+  top: -51px;
+  transition: 1s;
+  z-index: 2;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+.text-wrapper {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: 90px;
+  position: absolute;
+  z-index: 51;
+  opacity: 0;
+}
+.text-wrapper .text-one {
+  transition: 1.4s;
+  transform: translateX(-500px);
+}
+.text-wrapper .text-two {
+  transition: 1.6s;
+  transform: translateX(-500px);
+}
+.text-wrapper .text-three {
+  transition: 1.8s;
+  transform: translateX(-500px);
+}
+
+.text-wrapper-two {
+  position: absolute;
+  width: 165px;
+  bottom: 120px;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  color: #e00000;
+  z-index: 51;
+  opacity: 0;
+  font-size: 18px;
+}
+.text-wrapper-two .text-one {
+  transition: 1.4s;
+  transform: translateX(-450px);
+}
+.text-wrapper-two .text-two {
+  transition: 1.6s;
+  transform: translateX(-450px);
+}
+.text-wrapper-two .text-three {
+  transition: 1.8s;
+  transform: translateX(-450px);
+}
+
+.money-box {
+  position: absolute;
+  width: 90px;
+  left: 40px;
+  bottom: 110px;
+  transition: 1s;
+  opacity: 0;
+  z-index: 102;
+  transform: translateX(-500px);
+}
+
+.person {
+  position: absolute;
+  width: 450px;
+  right: -70px;
+  bottom: -10px;
+  transform: translateX(-500px);
+  transition: 1s;
+  z-index: 50;
+}
+
+.flowers {
+  position: absolute;
+  width: 260px;
+  right: 20px;
+  top: 152px;
+  transition: 0.2s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.gift {
+  position: absolute;
+  width: 85px;
+  left: 10px;
+  top: 180px;
+  transition: 1.2s;
+  z-index: 3;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.button {
+  z-index: 99;
+  position: absolute;
+  width: 260px;
+  height: 58px;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e00000;
+  border: none;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  transition: 1s;
+  transform: translateX(-500px);
+  cursor: pointer;
+}
+.button:hover {
+  background: #ff3d3d;
+  transition: 0.2s;
+}
+
+.disclamer {
+  position: absolute;
+  width: 280px;
+  left: 10px;
+  top: 80px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  color: #e00000;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+
+@keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+.button-glow {
+  -webkit-animation: buttonShadow infinite 2s ease-in-out;
+          animation: buttonShadow infinite 2s ease-in-out;
+}

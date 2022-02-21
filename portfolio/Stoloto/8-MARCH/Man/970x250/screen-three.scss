@@ -1,0 +1,41 @@
+.screen-three {
+    background: #ff263f !important;
+
+    .title-two-line-one {
+        transform: translateX(-550px);
+        transition: 0.3s;
+    }
+    .button {
+        transform: translateX(-500px);
+        transition: 0.3s;
+    }
+    .disclamer {
+        opacity: 1;
+        transition: 1.5s;
+    }
+
+    .holiday {
+        opacity: 0;
+    }
+
+    .jackpot {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    .text-wrapper-two {
+        opacity: 0;
+        .text-one,
+        .text-two,
+        .text-three {
+            transform: translateX(-550px);
+            transition: 0.3s;
+        }
+    }
+
+    .flowers,
+    .box {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,454 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .text-wrapper {
+  opacity: 1;
+}
+.screen-one .text-wrapper .text-one,
+.screen-one .text-wrapper .text-two,
+.screen-one .text-wrapper .text-three {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .text-wrapper-two .text-one,
+.screen-one .text-wrapper-two .text-two,
+.screen-one .text-wrapper-two .text-three {
+  opacity: 1;
+  transform: translateX(-550px);
+}
+.screen-one .person {
+  transform: translateY(0);
+}
+.screen-one .holiday {
+  opacity: 1;
+}
+.screen-one .button {
+  transform: translateX(0);
+}
+
+.screen-two {
+  background: radial-gradient(50.86% 32.71% at 60.09% 40.36%, #f9ea9b 0%, #ff2626 91.89%) !important;
+}
+.screen-two .text-wrapper {
+  opacity: 0;
+}
+.screen-two .text-wrapper .text-one,
+.screen-two .text-wrapper .text-two,
+.screen-two .text-wrapper .text-three {
+  transition: 0.3s;
+  transform: translateX(-500px);
+}
+.screen-two .text-wrapper-two {
+  opacity: 1;
+}
+.screen-two .text-wrapper-two .text-one,
+.screen-two .text-wrapper-two .text-two,
+.screen-two .text-wrapper-two .text-three {
+  transform: translateX(0);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transform: translateX(-600px);
+  transition: 0.3s;
+}
+.screen-two .title-two-line-one {
+  transform: translateX(0);
+}
+.screen-two .flowers,
+.screen-two .box {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-two .jackpot {
+  transform: translateX(0);
+  opacity: 1;
+}
+.screen-two .person {
+  transform: translateY(500px);
+  transition: 0.3s;
+}
+.screen-two .logo {
+  top: 27px;
+}
+@-webkit-keyframes anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.screen-two .holiday {
+  width: 90px;
+  right: 630px;
+  -webkit-animation: anim 1s 1 forwards;
+          animation: anim 1s 1 forwards;
+}
+.screen-two .bg-flw,
+.screen-two .bg-flw-two {
+  opacity: 0;
+}
+
+.screen-three {
+  background: #ff263f !important;
+}
+.screen-three .title-two-line-one {
+  transform: translateX(-550px);
+  transition: 0.3s;
+}
+.screen-three .button {
+  transform: translateX(300px);
+  transition: 0.3s;
+}
+.screen-three .logo {
+  top: 10px;
+}
+.screen-three .holiday {
+  opacity: 0;
+}
+.screen-three .disclamer {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-three .holiday {
+  opacity: 0 !important;
+}
+.screen-three .jackpot {
+  transform: translateX(200px);
+  opacity: 0;
+}
+.screen-three .text-wrapper-two {
+  opacity: 0;
+}
+.screen-three .text-wrapper-two .text-one,
+.screen-three .text-wrapper-two .text-two,
+.screen-three .text-wrapper-two .text-three {
+  transform: translateX(-550px);
+  transition: 0.3s;
+}
+.screen-three .flowers,
+.screen-three .box {
+  transform: translateX(500px);
+  opacity: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  background: radial-gradient(62.6% 40.34% at 53% 47.99%, #ff8c4b 25.75%, #ff2741 100%);
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  position: inherit;
+}
+
+.banner {
+  width: inherit;
+  height: inherit;
+  overflow: inherit;
+  cursor: pointer;
+  position: inherit;
+  transition: 0.2s;
+}
+
+.logo {
+  transition: 0.3s;
+  position: absolute;
+  width: 120px;
+  left: -15px;
+  top: 10px;
+  z-index: 100;
+}
+
+.holiday {
+  position: absolute;
+  width: 110px;
+  right: 10px;
+  top: 10px;
+  z-index: 101;
+  transition: 1s;
+  opacity: 0;
+}
+
+.title-wrapper {
+  position: absolute;
+  width: 360px;
+  left: 90px;
+  top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 30px rgba(255, 32, 0, 0.8);
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.title-line-one {
+  transition: 1s;
+  transform: translateX(-500px);
+}
+.title-line-one span {
+  font-size: 24px;
+}
+
+.title-line-two {
+  transition: 1.2s;
+  transform: translateX(-500px);
+}
+
+.title-wrapper-two {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffe501;
+  width: 270px;
+  top: 23px;
+  left: 100px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.title-two-line-one {
+  transition: 1s;
+  transform: translateX(-550px);
+}
+
+.bg-flw {
+  position: absolute;
+  width: 230px;
+  left: -10px;
+  bottom: -112px;
+  transition: 1s;
+  z-index: 1;
+  mix-blend-mode: screen;
+  opacity: 1;
+}
+
+.bg-flw-two {
+  position: absolute;
+  width: 160px;
+  right: 60px;
+  bottom: -22px;
+  transition: 1s;
+  z-index: 2;
+  mix-blend-mode: screen;
+  opacity: 1;
+}
+
+.text-wrapper {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffec42;
+  width: 340px;
+  left: 90px;
+  top: 46px;
+  position: absolute;
+  z-index: 50;
+  opacity: 0;
+}
+.text-wrapper .text-one {
+  transition: 1.4s;
+  transform: translateX(-500px);
+}
+.text-wrapper .text-two {
+  transition: 1.6s;
+  transform: translateX(-500px);
+}
+.text-wrapper .text-three {
+  transition: 1.8s;
+  transform: translateX(-500px);
+}
+
+.text-wrapper-two {
+  position: absolute;
+  top: 45px;
+  left: 100px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  z-index: 51;
+  opacity: 0;
+  font-size: 25px;
+}
+.text-wrapper-two .text-one {
+  transition: 1.4s;
+  transform: translateX(-450px);
+}
+.text-wrapper-two .text-two {
+  transition: 1.6s;
+  transform: translateX(-450px);
+}
+.text-wrapper-two .text-three {
+  transition: 1.8s;
+  transform: translateX(-450px);
+}
+
+.jackpot {
+  position: absolute;
+  width: 170px;
+  right: 3px;
+  top: 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: 102;
+  transform: translateX(200px);
+}
+
+.person {
+  position: absolute;
+  width: 140px;
+  right: 177px;
+  top: 0;
+  transform: translateY(500px);
+  transition: 1s;
+}
+
+.flowers {
+  position: absolute;
+  width: 250px;
+  right: 200px;
+  top: -50px;
+  transition: 1s;
+  transform: translateX(500px);
+  z-index: 2;
+  opacity: 0;
+}
+
+.box {
+  position: absolute;
+  width: 160px;
+  right: 180px;
+  bottom: 0;
+  transition: 1.2s;
+  transform: translateX(500px);
+  z-index: 3;
+  opacity: 0;
+}
+
+.button {
+  z-index: 99;
+  position: absolute;
+  width: 160px;
+  height: 30px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffdd00;
+  border: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  transition: 1s;
+  transform: translateX(300px);
+  cursor: pointer;
+}
+.button:hover {
+  background: #ffe95b;
+  transition: 0.2s;
+}
+
+.disclamer {
+  position: absolute;
+  width: 610px;
+  left: 110px;
+  top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7.3px;
+  line-height: 1;
+  color: #ffffff;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+
+@keyframes buttonShadow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+.button-glow {
+  -webkit-animation: buttonShadow infinite 2s ease-in-out;
+          animation: buttonShadow infinite 2s ease-in-out;
+}

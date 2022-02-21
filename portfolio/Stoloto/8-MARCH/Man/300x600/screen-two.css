@@ -1,0 +1,44 @@
+.screen-two .text-wrapper {
+  opacity: 0;
+}
+.screen-two .text-wrapper .text-one,
+.screen-two .text-wrapper .text-two,
+.screen-two .text-wrapper .text-three {
+  transition: 0.3s;
+  transform: translateX(-500px);
+}
+.screen-two .text-wrapper-two {
+  opacity: 1;
+}
+.screen-two .text-wrapper-two .text-one,
+.screen-two .text-wrapper-two .text-two,
+.screen-two .text-wrapper-two .text-three {
+  transform: translateX(0);
+}
+.screen-two .title-line-one,
+.screen-two .title-line-two {
+  transform: translateX(-600px);
+  transition: 0.3s;
+}
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three,
+.screen-two .title-two-line-four {
+  transform: translateX(0);
+}
+.screen-two .gift {
+  opacity: 0;
+}
+.screen-two .flowers,
+.screen-two .money-box {
+  transform: translateX(0);
+  opacity: 1;
+}
+.screen-two .flowers-scale {
+  transition: 4s;
+  transform: scale(1.1);
+}
+.screen-two .person {
+  transform: translateX(-500px);
+  transition: 0.3s;
+}
