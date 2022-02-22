@@ -11,7 +11,14 @@
 }
 .screen-one .text-wrapper .text-one,
 .screen-one .text-wrapper .text-two,
-.screen-one .text-wrapper .text-three {
+.screen-one .text-wrapper .text-three,
+.screen-one .text-wrapper .text-four,
+.screen-one .text-wrapper .text-five,
+.screen-one .text-wrapper .text-six {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .gift {
   opacity: 1;
   transform: translateX(0);
 }
@@ -19,13 +26,10 @@
 .screen-one .text-wrapper-two .text-two,
 .screen-one .text-wrapper-two .text-three {
   opacity: 1;
-  transform: translateX(-550px);
+  transform: translateX(650px);
 }
 .screen-one .person {
   transform: translateY(0);
-}
-.screen-one .holiday {
-  opacity: 1;
 }
 .screen-one .button {
   transform: translateX(0);

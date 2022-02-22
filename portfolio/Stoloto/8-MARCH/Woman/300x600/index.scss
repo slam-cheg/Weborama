@@ -10,14 +10,14 @@
 
 html,
 body {
-    width: 728px;
-    height: 90px;
+    width: 300px;
+    height: 600px;
     overflow: hidden;
     position: relative;
 }
 
 .wrapper {
-    background: #ffc600;
+    background: linear-gradient(180deg, #ff7c20 0%, #fe2a73 100%);
     width: inherit;
     height: inherit;
     overflow: inherit;
@@ -35,32 +35,33 @@ body {
 
 .logo {
     position: absolute;
-    width: 140px;
-    left: -17px;
+    width: 180px;
+    left: -28px;
     top: -10px;
     z-index: 100;
 }
 
 .holiday {
     position: absolute;
-    width: 90px;
-    left: 10px;
-    top: 53px;
+    width: 160px;
+    right: 10px;
+    top: 15px;
     z-index: 101;
 }
 
 .title-wrapper {
     position: absolute;
-    width: 350px;
-    left: 128px;
-    top: 15px;
+    width: 100%;
+    left: 0;
+    top: 75px;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 26px;
     line-height: 1.1;
     text-transform: uppercase;
-    color: #e00000;
+    color: #fff;
     transition: 0.2s;
     opacity: 0;
 }
@@ -71,7 +72,7 @@ body {
 }
 
 .title-line-two {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 800;
     transition: 1.2s;
     transform: translateX(-500px);
@@ -82,28 +83,28 @@ body {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 1.1;
     text-transform: uppercase;
-    color: #e00000;
-    width: 300px;
-    top: 10px;
-    left: 120px;
+    color: #fff;
+    width: 280px;
+    top: 110px;
+    left: 20px;
     transition: 1s;
     opacity: 0;
 }
 
 .title-two-line-one {
     transition: 1s;
-    transform: translateX(-650px);
+    transform: translateX(-550px);
 }
 
 .title-two-line-two {
     transition: 1.2s;
-    transform: translateX(-650px);
+    transform: translateX(-550px);
 
     span {
-        font-size: 18px;
+        font-size: 30px;
         font-weight: 800;
     }
 }
@@ -112,119 +113,114 @@ body {
     font-size: 16px;
     font-weight: 500;
     transition: 1.4s;
-    transform: translateX(-650px);
+    transform: translateX(-550px);
 }
 
 .title-two-line-four {
     font-size: 16px;
     font-weight: 500;
     transition: 1.6s;
-    transform: translateX(-650px);
+    transform: translateX(-550px);
 }
 
 .bg-flw {
     position: absolute;
     width: 370px;
-    left: -50px;
-    top: -180px;
+    right: -160px;
+    top: 40px;
     transition: 1s;
     z-index: 1;
     opacity: 0.5;
-    transform: rotate(130deg);
+    transform: rotate(52deg);
 }
 
 .bg-flw-two {
     position: absolute;
-    width: 140px;
-    right: 180px;
-    top: -59px;
+    width: 180px;
+    right: -60px;
+    top: -51px;
     transition: 1s;
-    transform: rotate(137deg);
     z-index: 2;
+    mix-blend-mode: screen;
     opacity: 0.5;
 }
 
 .text-wrapper {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 14px;
+    height: 60px;
+    display: flex;
     line-height: 1.2;
     text-transform: uppercase;
-    color: #e00000;
-    width: 215px;
-    right: 0px;
-    top: 20px;
+    text-align: center;
+    color: #ff2c4b;
+    width: 150px;
+    left: 0;
+    top: 150px;
+    background: linear-gradient(90deg, #ff7981 0%, #ffffff 100%);
     position: absolute;
     z-index: 51;
     opacity: 0;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 0 50px 50px 0;
+    opacity: 0;
+    transition: 1s;
 
     .text-one {
-        transition: 0.8s;
-        transform: translateX(500px);
+        transition: 1.4s;
+        transform: translateX(-500px);
     }
 
     .text-two {
-        transition: 1s;
-        transform: translateX(500px);
+        transition: 1.6s;
+        transform: translateX(-500px);
     }
 
     .text-three {
-        transition: 1.2s;
-        transform: translateX(500px);
-    }
-
-    .text-four {
-        transition: 1.4s;
-        transform: translateX(500px);
-    }
-
-    .text-five {
-        transition: 1.6s;
-        transform: translateX(500px);
-    }
-
-    .text-six {
         transition: 1.8s;
-        transform: translateX(500px);
+        transform: translateX(-500px);
     }
 }
 
 .text-wrapper-two {
     position: absolute;
     width: 165px;
-    bottom: 23px;
-    right: -20px;
+    bottom: 120px;
+    right: 0;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1;
     color: #e00000;
     z-index: 51;
     opacity: 0;
-    font-size: 14px;
+    font-size: 18px;
 
     .text-one {
-        transition: 0.8s;
-        transform: translateX(450px);
+        transition: 1.4s;
+        transform: translateX(-450px);
     }
 
     .text-two {
-        transition: 1s;
-        transform: translateX(450px);
+        transition: 1.6s;
+        transform: translateX(-450px);
     }
 
     .text-three {
-        transition: 1.2s;
-        transform: translateX(450px);
+        transition: 1.8s;
+        transform: translateX(-450px);
     }
 }
 
 .money-box {
     position: absolute;
-    width: 70px;
-    right: 160px;
-    bottom: 10px;
+    width: 400px;
+    left: 10px;
+    top: 240px;
     transition: 1s;
     opacity: 0;
     z-index: 102;
@@ -233,19 +229,19 @@ body {
 
 .person {
     position: absolute;
-    width: 130px;
-    right: 230px;
-    bottom: -50px;
-    transform: translateY(500px);
+    width: 350px;
+    right: -40px;
+    bottom: -20px;
+    transform: translateX(500px);
     transition: 1s;
     z-index: 50;
 }
 
 .flowers {
     position: absolute;
-    width: 130px;
-    right: 280px;
-    top: -21px;
+    width: 300px;
+    right: 0;
+    bottom: 100px;
     transition: 0.2s;
     z-index: 2;
     opacity: 0;
@@ -253,9 +249,9 @@ body {
 
 .gift {
     position: absolute;
-    width: 100px;
-    left: 25px;
-    top: 120px;
+    width: 85px;
+    left: 10px;
+    top: 220px;
     transition: 1.2s;
     z-index: 3;
     opacity: 0;
@@ -269,10 +265,10 @@ body {
     height: 58px;
     left: 20px;
     bottom: 20px;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: #e00000;
+    background: #ffde00;
     border: none;
     border-radius: 13px;
     font-family: "Montserrat", sans-serif;
@@ -280,7 +276,7 @@ body {
     font-size: 20px;
     line-height: 1;
     text-align: center;
-    color: #fff;
+    color: #ff2c4c;
     transition: 1s;
     transform: translateX(-500px);
     cursor: pointer;
@@ -293,15 +289,15 @@ body {
 
 .disclamer {
     position: absolute;
-    width: 610px;
-    left: 110px;
-    top: 10px;
+    width: 280px;
+    left: 10px;
+    top: 80px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7.3px;
-    line-height: 1;
-    color: #e00000;
+    font-size: 14px;
+    line-height: 13px;
+    color: #fff;
     transition: 0.2s;
     opacity: 0;
 }

@@ -1,7 +1,7 @@
-.screen-three {
-  background: #ff263f !important;
-}
-.screen-three .title-two-line-one {
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three,
+.screen-three .title-two-line-four {
   transform: translateX(-550px);
   transition: 0.3s;
 }
@@ -13,24 +13,21 @@
   opacity: 1;
   transition: 1.5s;
 }
-.screen-three .holiday {
-  opacity: 0;
-}
-.screen-three .jackpot {
-  transform: translateX(200px);
-  opacity: 0;
-}
 .screen-three .text-wrapper-two {
   opacity: 0;
 }
 .screen-three .text-wrapper-two .text-one,
 .screen-three .text-wrapper-two .text-two,
 .screen-three .text-wrapper-two .text-three {
-  transform: translateX(-550px);
+  transform: translateX(550px);
   transition: 0.3s;
 }
+.screen-three .holiday {
+  opacity: 0;
+}
 .screen-three .flowers,
-.screen-three .box {
-  transform: translateX(500px);
+.screen-three .money-box {
+  transition: 0.3s;
+  transform: translateX(-500px);
   opacity: 0;
 }

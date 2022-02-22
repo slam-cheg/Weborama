@@ -19,11 +19,8 @@
 .screen-three .text-wrapper-two .text-one,
 .screen-three .text-wrapper-two .text-two,
 .screen-three .text-wrapper-two .text-three {
-  transform: translateX(550px);
+  transform: translateX(-550px);
   transition: 0.3s;
-}
-.screen-three .holiday {
-  opacity: 0;
 }
 .screen-three .flowers,
 .screen-three .money-box {

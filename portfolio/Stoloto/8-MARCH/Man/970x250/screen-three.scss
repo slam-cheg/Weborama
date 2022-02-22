@@ -1,7 +1,8 @@
 .screen-three {
-    background: #ff263f !important;
-
-    .title-two-line-one {
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three,
+    .title-two-line-four {
         transform: translateX(-550px);
         transition: 0.3s;
     }
@@ -14,28 +15,24 @@
         transition: 1.5s;
     }
 
-    .holiday {
-        opacity: 0;
-    }
-
-    .jackpot {
-        transform: translateX(200px);
-        opacity: 0;
-    }
-
     .text-wrapper-two {
         opacity: 0;
         .text-one,
         .text-two,
         .text-three {
-            transform: translateX(-550px);
+            transform: translateX(550px);
             transition: 0.3s;
         }
     }
 
+    .holiday {
+        opacity: 0;
+    }
+
     .flowers,
-    .box {
-        transform: translateX(500px);
+    .money-box {
+        transition: .3s;
+        transform: translateX(-500px);
         opacity: 0;
     }
 }

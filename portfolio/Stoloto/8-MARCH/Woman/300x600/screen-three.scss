@@ -20,13 +20,9 @@
         .text-one,
         .text-two,
         .text-three {
-            transform: translateX(550px);
+            transform: translateX(-550px);
             transition: 0.3s;
         }
-    }
-
-    .holiday {
-        opacity: 0;
     }
 
     .flowers,

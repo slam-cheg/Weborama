@@ -1,14 +1,14 @@
-.screen-two {
-  background: radial-gradient(50.86% 32.71% at 60.09% 40.36%, #f9ea9b 0%, #ff2626 91.89%) !important;
-}
 .screen-two .text-wrapper {
   opacity: 0;
 }
 .screen-two .text-wrapper .text-one,
 .screen-two .text-wrapper .text-two,
-.screen-two .text-wrapper .text-three {
+.screen-two .text-wrapper .text-three,
+.screen-two .text-wrapper .text-four,
+.screen-two .text-wrapper .text-five,
+.screen-two .text-wrapper .text-six {
   transition: 0.3s;
-  transform: translateX(-500px);
+  transform: translateX(500px);
 }
 .screen-two .text-wrapper-two {
   opacity: 1;
@@ -23,54 +23,25 @@
   transform: translateX(-600px);
   transition: 0.3s;
 }
-.screen-two .title-two-line-one {
+.screen-two .title-two-line-one,
+.screen-two .title-two-line-two,
+.screen-two .title-two-line-three,
+.screen-two .title-two-line-four {
   transform: translateX(0);
+}
+.screen-two .gift {
+  opacity: 0;
 }
 .screen-two .flowers,
-.screen-two .box {
-  opacity: 1;
+.screen-two .money-box {
   transform: translateX(0);
+  opacity: 1;
 }
-.screen-two .jackpot {
-  transform: translateX(0);
-  opacity: 1;
+.screen-two .flowers-scale {
+  transition: 3s;
+  transform: scale(1.1);
 }
 .screen-two .person {
   transform: translateY(500px);
   transition: 0.3s;
-}
-.screen-two .logo {
-  top: 27px;
-}
-@-webkit-keyframes anim {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes anim {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.screen-two .holiday {
-  width: 90px;
-  right: 630px;
-  -webkit-animation: anim 1s 1 forwards;
-          animation: anim 1s 1 forwards;
-}
-.screen-two .bg-flw,
-.screen-two .bg-flw-two {
-  opacity: 0;
 }

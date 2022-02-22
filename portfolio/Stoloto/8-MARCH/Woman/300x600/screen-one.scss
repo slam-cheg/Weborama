@@ -13,10 +13,7 @@
         opacity: 1;
         .text-one,
         .text-two,
-        .text-three,
-        .text-four,
-        .text-five,
-        .text-six {
+        .text-three {
             opacity: 1;
             transform: translateX(0);
         }
@@ -31,12 +28,12 @@
         .text-two,
         .text-three {
             opacity: 1;
-            transform: translateX(-650px);
+            transform: translateX(-550px);
         }
     }
 
     .person {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .button {

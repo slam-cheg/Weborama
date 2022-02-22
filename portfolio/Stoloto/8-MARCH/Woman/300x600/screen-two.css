@@ -39,6 +39,6 @@
   transform: scale(1.1);
 }
 .screen-two .person {
-  transform: translateX(-500px);
+  transform: translateX(500px);
   transition: 0.3s;
 }

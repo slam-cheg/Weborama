@@ -3,12 +3,9 @@
         opacity: 0;
         .text-one,
         .text-two,
-        .text-three,
-        .text-four,
-        .text-five,
-        .text-six  {
+        .text-three {
             transition: 0.3s;
-            transform: translateX(500px);
+            transform: translateX(-500px);
         }
     }
 
@@ -50,7 +47,7 @@
     }
 
     .person {
-        transform: translateY(500px);
+        transform: translateX(500px);
         transition: 0.3s;
     }
 }

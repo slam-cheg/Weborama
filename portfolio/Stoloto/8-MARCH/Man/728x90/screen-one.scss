@@ -13,10 +13,17 @@
         opacity: 1;
         .text-one,
         .text-two,
-        .text-three {
+        .text-three,
+        .text-four,
+        .text-five,
+        .text-six {
             opacity: 1;
             transform: translateX(0);
         }
+    }
+    .gift{
+        opacity: 1;
+        transform: translateX(0);
     }
 
     .text-wrapper-two {
@@ -24,16 +31,14 @@
         .text-two,
         .text-three {
             opacity: 1;
-            transform: translateX(-550px);
+            transform: translateX(650px);
         }
     }
 
     .person {
         transform: translateY(0);
     }
-    .holiday{
-        opacity: 1;
-    }
+
     .button {
         transform: translateX(0);
     }

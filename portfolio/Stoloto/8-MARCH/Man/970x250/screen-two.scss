@@ -1,12 +1,14 @@
 .screen-two {
-    background: radial-gradient(50.86% 32.71% at 60.09% 40.36%, #f9ea9b 0%, #ff2626 91.89%) !important;
     .text-wrapper {
         opacity: 0;
         .text-one,
         .text-two,
-        .text-three {
+        .text-three,
+        .text-four,
+        .text-five,
+        .text-six  {
             transition: 0.3s;
-            transform: translateX(-500px);
+            transform: translateX(500px);
         }
     }
 
@@ -25,34 +27,30 @@
         transition: 0.3s;
     }
 
-    .title-two-line-one {
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three,
+    .title-two-line-four {
         transform: translateX(0);
+    }
+
+    .gift {
+        opacity: 0;
     }
 
     .flowers,
-    .box {
-        opacity: 1;
+    .money-box {
         transform: translateX(0);
+        opacity: 1;
     }
 
-    .jackpot {
-        transform: translateX(0);
-        opacity: 1;
+    .flowers-scale {
+        transition: 3s;
+        transform: scale(1.1);
     }
 
     .person {
         transform: translateY(500px);
         transition: 0.3s;
-    }
-
-    .holiday {
-        width: 160px;
-        top: 10px;
-        right: 570px;
-    }
-
-    .bg-flw,
-    .bg-flw-two {
-        opacity: 0;
     }
 }
