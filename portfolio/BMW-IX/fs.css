@@ -268,7 +268,7 @@ html {
   position: absolute;
   width: 9vw;
   top: 94px;
-  left: calc(60% - (9vw / 2));
+  left: calc(60% - 4.5vw);
 }
 
 .logo-ix {
@@ -392,7 +392,7 @@ html {
   text-transform: uppercase;
 }
 .first-screen .wrapper {
-  left: calc(50% - -295px);
+  left: calc(50% + 295px);
   top: calc(50% - 420px);
 }
 .first-screen .text_bottom-description {
@@ -728,7 +728,7 @@ html {
   border: 1px solid;
   transition: 0.2s;
   bottom: 250px;
-  left: calc(50% - (160px / 2));
+  left: calc(50% - 80px);
 }
 .change-btn:hover {
   transition: 0.2s;

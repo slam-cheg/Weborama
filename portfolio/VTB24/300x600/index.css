@@ -636,7 +636,7 @@
 .vtb-card {
   width: 220px;
   top: 124px;
-  left: calc(50% - (220px / 2));
+  left: calc(50% - 110px);
   position: absolute;
   border-radius: 8px;
 }
@@ -644,13 +644,13 @@
 .vtb-card_seventh {
   width: 250px;
   top: 220px;
-  left: calc(50% - (250px / 2));
+  left: calc(50% - 125px);
 }
 
 .coctail {
   top: 98px;
   width: 160px;
-  left: calc(50% - (160px / 2));
+  left: calc(50% - 80px);
   position: absolute;
   border-radius: 5px;
   transform: scale(0);
@@ -754,7 +754,7 @@
   font-weight: 400;
   position: absolute;
   bottom: 70px;
-  left: calc(50% - (240px / 2));
+  left: calc(50% - 120px);
   border: none;
   padding: 15px 20px;
   width: 240px;

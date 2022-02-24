@@ -71,7 +71,7 @@
 .banner__target {
   width: 390px;
   top: -18px;
-  right: calc(50% - (390px / 2));
+  right: calc(50% - 195px);
   position: absolute;
   z-index: 0;
 }

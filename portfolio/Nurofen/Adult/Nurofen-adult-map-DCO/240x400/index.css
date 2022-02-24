@@ -538,6 +538,8 @@ BODY {
   opacity: 1;
   transition: opacity 0.25s 0.25s;
 }
+
+/*# sourceMappingURL=index.css.map */
 .map_pict {
   width: 100%;
   display: block;
@@ -806,4 +808,3 @@ BODY {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=index.css.map */

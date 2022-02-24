@@ -580,6 +580,8 @@ BODY {
 .default__city .city {
   transform: translateY(0);
 }
+
+/*# sourceMappingURL=index.css.map */
 .map_pict {
   width: 100%;
   display: block;
@@ -848,4 +850,3 @@ BODY {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=index.css.map */

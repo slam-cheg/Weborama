@@ -189,7 +189,7 @@ BODY {
 .city_wrapper {
   display: block;
   position: absolute;
-  left: calc(50% - 270px / 2);
+  left: calc(50% - 135px);
   top: 10px;
   width: 50%;
   padding: 9px 25px;

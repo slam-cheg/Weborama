@@ -489,7 +489,7 @@
 
 .header {
   position: absolute;
-  left: calc(50% - (200px / 2));
+  left: calc(50% - 100px);
   z-index: 10;
   width: 200px;
 }
@@ -585,7 +585,7 @@
   width: 100px;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (100px / 2));
+  left: calc(50% - 50px);
 }
 
 .chair {
@@ -614,7 +614,7 @@
   width: 100px;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (100px / 2));
+  left: calc(50% - 50px);
 }
 
 .cart {
@@ -643,12 +643,12 @@
   width: 100px;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (104px / 2));
+  left: calc(50% - 52px);
 }
 
 .vtb-card {
   top: 62px;
-  left: calc(50% - (164px / 2));
+  left: calc(50% - 82px);
   position: absolute;
   border-radius: 5px;
   width: 164px;
@@ -657,12 +657,12 @@
 .vtb-card_seventh {
   top: 67px;
   width: 200px;
-  left: calc(50% - (200px / 2));
+  left: calc(50% - 100px);
 }
 
 .coctail {
   top: 47px;
-  left: calc(50% - (87px / 2));
+  left: calc(50% - 43.5px);
   position: absolute;
   border-radius: 5px;
   transform: scale(0);
@@ -689,7 +689,7 @@
   width: 100px;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (100px / 2));
+  left: calc(50% - 50px);
 }
 
 .aircraft {
@@ -726,7 +726,7 @@
   width: 100px;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (100px / 2));
+  left: calc(50% - 50px);
 }
 
 .seventh-screen {
@@ -788,7 +788,7 @@
   font-weight: 400;
   position: absolute;
   bottom: 20px;
-  left: calc(50% - (170px / 2));
+  left: calc(50% - 85px);
   border: none;
   background-color: #be006e;
   padding: 10px 20px;

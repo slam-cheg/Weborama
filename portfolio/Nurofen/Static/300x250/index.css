@@ -64,13 +64,13 @@
   top: 11px;
   width: 170px;
   position: absolute;
-  left: calc(50% - (170px /2));
+  left: calc(50% - 85px);
 }
 
 .banner__target {
   width: 310px;
   top: 77px;
-  right: calc(50% - (310px / 2));
+  right: calc(50% - 155px);
   position: absolute;
   z-index: 0;
 }

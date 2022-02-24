@@ -226,7 +226,7 @@
 
 .alert {
   width: 560px;
-  top: calc(50% - (144px / 2));
+  top: calc(50% - 72px);
   left: 3px;
   position: absolute;
   display: flex;
