@@ -1,0 +1,44 @@
+.screen-two {
+    .bg1 {
+        opacity: 0;
+    }
+    .bg2 {
+        opacity: 1;
+    }
+    .text-wrapper {
+        opacity: 0;
+        .text-one,
+        .text-two,
+        .text-three {
+            transition: 0.3s;
+            transform: translateX(-500px);
+        }
+    }
+
+    .text-wrapper-two {
+        opacity: 1;
+        .text-one,
+        .text-two,
+        .text-three {
+            transform: translateX(0);
+        }
+    }
+
+    .title-line-one,
+    .title-line-two,
+    .title-line-three {
+        transform: translateX(-500px);
+        transition: 0.3s;
+    }
+
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three {
+        transform: translateX(0);
+    }
+
+    .person {
+        transform: translateX(-500px);
+        transition: 0.3s;
+    }   
+}

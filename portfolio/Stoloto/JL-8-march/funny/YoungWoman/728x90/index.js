@@ -40,45 +40,43 @@ function animation() {
 const titleWrapper = document.querySelector(".title-wrapper");
 const titleLineOne = document.querySelector(".title-line-one");
 const titleLineTwo = document.querySelector(".title-line-two");
-const titleLineThree = document.querySelector(".title-line-three");
 
 const words = [
-    ["От всех раздумий панацея\u00A0-", 'билет "Жилищная лотерея"'],
-    ["Дешевле кино и\u00A0даже музея,", "Билетик «Жилищная лотерея»"],
-    ["Исполни", "её мечту!"],
+    ["Мы знаем, как побаловать", "тебя к\u00A0празднику!"],
+    ["Будь ближе к\u00A0своей цели\u00A0-", "играй в\u00A0Жилищную лотерею!"],
+    ["Попробуй", "выиграть мечту!"],
 ];
-
 rotation();
-
 function rotation() {
     let randomArr = words[Math.floor(Math.random() * words.length)];
+    titleWrapper.style.lineHeight = "1.1";
     if (randomArr === words[0]) {
-        titleWrapper.style.fontSize = "16px";
-        titleWrapper.style.width = "180px";
+        titleWrapper.style.fontSize = "20px";
+        titleWrapper.style.width = "300px";
+        titleWrapper.style.left = "70px";
+        titleWrapper.style.top = "25px";
         titleWrapper.style.lineHeight = "1";
-        titleWrapper.style.top = "70px";
         customEvent = "GAMBLE_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[1]) {
-        titleWrapper.style.fontSize = "17px";
-        titleWrapper.style.width = "170px";
-        titleWrapper.style.top = "60px";
+        titleWrapper.style.fontSize = "18px";
+        titleWrapper.style.width = "310px";
+        titleWrapper.style.top = "25px";
         customEvent = "GAMBLE_TWO";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
-        titleWrapper.style.fontSize = "25px";
-        titleWrapper.style.width = "200px";
-        titleWrapper.style.lineHeight = "1";
-        titleWrapper.style.top = "80px";
+        titleWrapper.style.fontSize = "22px";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "25px";
+        titleWrapper.style.left = "90px";
         customEvent = "GAMBLE_THREE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     titleLineOne.textContent = randomArr[0];
     titleLineTwo.textContent = randomArr[1];
-    titleLineThree.textContent = randomArr[2];
 }

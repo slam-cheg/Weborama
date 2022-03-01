@@ -43,37 +43,36 @@ const titleLineTwo = document.querySelector(".title-line-two");
 const titleLineThree = document.querySelector(".title-line-three");
 
 const words = [
-    ["От всех раздумий панацея\u00A0-", 'билет "Жилищная лотерея"'],
-    ["Дешевле кино и\u00A0даже музея,", "Билетик «Жилищная лотерея»"],
-    ["Исполни", "её мечту!"],
+    ["Мы знаем, как побаловать", "тебя к\u00A0празднику!"],
+    ["Будь ближе к\u00A0своей цели\u00A0-", "играй в\u00A0Жилищную лотерею!"],
+    ["Попробуй", "выиграть мечту!"],
 ];
 
 rotation();
-
 function rotation() {
     let randomArr = words[Math.floor(Math.random() * words.length)];
+    titleWrapper.style.lineHeight = "1.1";
     if (randomArr === words[0]) {
-        titleWrapper.style.fontSize = "16px";
-        titleWrapper.style.width = "180px";
-        titleWrapper.style.lineHeight = "1";
-        titleWrapper.style.top = "70px";
+        titleWrapper.style.fontSize = "22px";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "110px";
         customEvent = "GAMBLE_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[1]) {
-        titleWrapper.style.fontSize = "17px";
-        titleWrapper.style.width = "170px";
-        titleWrapper.style.top = "60px";
+        titleWrapper.style.fontSize = "22px";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "110px";
+        titleLineOne.style.width = "240px";
         customEvent = "GAMBLE_TWO";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
-        titleWrapper.style.fontSize = "25px";
-        titleWrapper.style.width = "200px";
-        titleWrapper.style.lineHeight = "1";
-        titleWrapper.style.top = "80px";
+        titleWrapper.style.fontSize = "27px";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "120px";
         customEvent = "GAMBLE_THREE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
