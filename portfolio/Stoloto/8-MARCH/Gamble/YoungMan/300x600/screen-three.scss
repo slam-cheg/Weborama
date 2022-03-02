@@ -1,0 +1,34 @@
+.screen-three {
+    .title-two-line-one,
+    .title-two-line-two,
+    .title-two-line-three,
+    .title-two-line-four {
+        transform: translateX(-550px);
+        transition: 0.3s;
+    }
+    .button {
+        transform: translateX(-500px);
+        transition: 0.3s;
+    }
+    .disclamer {
+        opacity: 1;
+        transition: 1.5s;
+    }
+
+    .text-wrapper-two {
+        opacity: 0;
+        .text-one,
+        .text-two,
+        .text-three {
+            transform: translateX(-550px);
+            transition: 0.3s;
+        }
+    }
+
+    .flowers,
+    .money-box {
+        transition: .3s;
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+}

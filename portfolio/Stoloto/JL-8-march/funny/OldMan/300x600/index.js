@@ -56,7 +56,7 @@ function rotation() {
         titleWrapper.style.fontSize = "20px";
         titleWrapper.style.width = "280px";
         titleWrapper.style.top = "110px";
-        customEvent = "GAMBLE_ONE";
+        customEvent = "FUNNY_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
@@ -64,7 +64,7 @@ function rotation() {
         titleWrapper.style.fontSize = "19px";
         titleWrapper.style.width = "250px";
         titleWrapper.style.top = "115px";
-        customEvent = "GAMBLE_TWO";
+        customEvent = "FUNNY_TWO";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
@@ -73,7 +73,7 @@ function rotation() {
         titleWrapper.style.width = "280px";
         titleWrapper.style.top = "120px";
         titleWrapper.style.lineHeight = "1";
-        customEvent = "GAMBLE_THREE";
+        customEvent = "FUNNY_THREE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
