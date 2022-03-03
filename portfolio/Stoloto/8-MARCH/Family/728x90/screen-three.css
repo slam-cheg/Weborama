@@ -1,0 +1,33 @@
+.screen-three .title-two-line-one,
+.screen-three .title-two-line-two,
+.screen-three .title-two-line-three,
+.screen-three .title-two-line-four {
+  transform: translateX(-550px);
+  transition: 0.3s;
+}
+.screen-three .button {
+  transform: translateX(-500px);
+  transition: 0.3s;
+}
+.screen-three .disclamer {
+  opacity: 1;
+  transition: 1.5s;
+}
+.screen-three .text-wrapper-two {
+  opacity: 0;
+}
+.screen-three .text-wrapper-two .text-one,
+.screen-three .text-wrapper-two .text-two,
+.screen-three .text-wrapper-two .text-three {
+  transform: translateX(550px);
+  transition: 0.3s;
+}
+.screen-three .holiday {
+  opacity: 0;
+}
+.screen-three .flowers,
+.screen-three .money-box {
+  transition: 0.3s;
+  transform: translateX(-500px);
+  opacity: 0;
+}

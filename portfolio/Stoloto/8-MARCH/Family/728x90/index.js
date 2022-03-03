@@ -43,31 +43,37 @@ const titleLineTwo = document.querySelector(".title-line-two");
 const titleLineThree = document.querySelector(".title-line-three");
 
 const words = [
-    ['Кто в\u00A0"Русское лото" не\u00A0играет,', "Тот шанс победить упускает!"],
-    ["Нет времени объяснять,", "Пора в\u00A0«Русское лото» играть!"],
-    ["Сейчас самое время", "испытать удачу!"],
+    ["На женский праздник самое\u00A0то", "дарить билеты в\u00A0«Русское лото»"],
+    ["Начни утро воскресенья", "с\u00A0«Русского лото»! "],
+    [" Выигрывайте", "всей семьёй!"],
 ];
+
 rotation();
 function rotation() {
     let randomArr = words[Math.floor(Math.random() * words.length)];
     titleWrapper.style.lineHeight = "1.1";
     if (randomArr === words[0]) {
         titleWrapper.style.fontSize = "14px";
-        titleWrapper.style.top = "90px";
-        customEvent = "GAMBLE_ONE";
+        titleWrapper.style.width = "290px";
+        titleWrapper.style.top = "30px";
+        titleWrapper.style.left = "110px";
+        customEvent = "FAMILY_ONE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[1]) {
         titleWrapper.style.fontSize = "18px";
-        customEvent = "GAMBLE_TWO";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "25px";
+        customEvent = "FAMILY_TWO";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
     if (randomArr === words[2]) {
         titleWrapper.style.fontSize = "22px";
-        titleWrapper.style.top = "80px";
-        customEvent = "GAMBLE_THREE";
+        titleWrapper.style.width = "280px";
+        titleWrapper.style.top = "25px";
+        customEvent = "FAMILY_THREE";
         screenad.event(`${customEvent}`);
         customClick = `${customEvent}_CLICK`;
     }
