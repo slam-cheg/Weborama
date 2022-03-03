@@ -1,0 +1,36 @@
+.screen-one .title-wrapper,
+.screen-one .title-wrapper-two {
+  opacity: 1;
+}
+.screen-one .title-line-one,
+.screen-one .title-line-two {
+  transform: translateX(0);
+}
+.screen-one .text-wrapper {
+  opacity: 1;
+}
+.screen-one .text-wrapper .text-one,
+.screen-one .text-wrapper .text-two,
+.screen-one .text-wrapper .text-three,
+.screen-one .text-wrapper .text-four,
+.screen-one .text-wrapper .text-five,
+.screen-one .text-wrapper .text-six {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .gift {
+  opacity: 1;
+  transform: translateX(0);
+}
+.screen-one .text-wrapper-two .text-one,
+.screen-one .text-wrapper-two .text-two,
+.screen-one .text-wrapper-two .text-three {
+  opacity: 1;
+  transform: translateX(-650px);
+}
+.screen-one .person {
+  transform: translateY(0);
+}
+.screen-one .button {
+  transform: translateX(0);
+}
