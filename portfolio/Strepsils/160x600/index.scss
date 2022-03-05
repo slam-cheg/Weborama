@@ -8,10 +8,17 @@
     height: 600px;
 }
 
+html,
+body {
+    width: 160px;
+    height: 600px;
+}
+
 .page {
     width: 160px;
     height: 600px;
     overflow: hidden;
+    border: 1px solid #000;
 }
 
 .banner {

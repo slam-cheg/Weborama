@@ -175,10 +175,17 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 728px;
+  height: 90px;
+}
+
 .page {
   width: 728px;
   height: 90px;
   overflow: hidden;
+  border: 1px solid #000;
 }
 
 .banner {

@@ -189,10 +189,17 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 240px;
+  height: 400px;
+}
+
 .page {
   width: 240px;
   height: 400px;
   overflow: hidden;
+  border: 1px solid #000;
 }
 
 .banner {

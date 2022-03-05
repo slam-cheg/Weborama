@@ -4,6 +4,10 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
     width: 728px;
     height: 90px;
 }
@@ -12,6 +16,7 @@
     width: 728px;
     height: 90px;
     overflow: hidden;
+    border: 1px solid #000;
 }
 
 .banner {
