@@ -40,7 +40,14 @@ app.stateChange(function (state, data) {
             break;
     }
 });
+
 app.cuePoint([showButtonFromSecond], function (sec, data) {
+    document.querySelector("#more_btn").classList.add("showme");
+});
+app.cuePoint([54], function (sec, data) {
+    document.querySelector("#more_btn").classList.remove("showme");
+});
+app.cuePoint([59], function (sec, data) {
     document.querySelector("#more_btn").classList.add("showme");
 });
 app.timeChange(function (data) {
