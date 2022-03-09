@@ -41,13 +41,13 @@ app.stateChange(function (state, data) {
     }
 });
 
-app.cuePoint([showButtonFromSecond], function (sec, data) {
+app.cuePoint([showButtonFromSecond], function () {
     document.querySelector("#more_btn").classList.add("showme");
 });
-app.cuePoint([54], function (sec, data) {
+app.cuePoint([47], function () {
     document.querySelector("#more_btn").classList.remove("showme");
 });
-app.cuePoint([59], function (sec, data) {
+app.cuePoint([52], function () {
     document.querySelector("#more_btn").classList.add("showme");
 });
 app.timeChange(function (data) {
