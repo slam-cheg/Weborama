@@ -196,10 +196,10 @@ body {
 }
 
 .page {
-  width: 238px;
-  height: 398px;
+  width: 236px;
+  height: 396px;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 .banner {
