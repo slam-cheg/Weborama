@@ -1,0 +1,57 @@
+VPAID-vitime-beauty_2 (5272110834/213574)
+
+This screenad is created using Weborama technology.
+Please contact Weborama if you want to traffic this campaign.
+
+mail                    : info@weborama.nl
+phone                   : +31 (0)20 5246690
+fax                     : +31 (0)20 5246699
+ 
+CLICKS
+--------------------------------------------------------------------------------
+default                 : http://media.adrcdn.com/ads/exit.html
+
+##SCREENADCLICKS## 
+screenad_clicks = new Array();
+screenad_clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+weborama_display_tag.clicks = new Array();
+weborama_display_tag.clicks[0] = 'http://media.adrcdn.com/ads/exit.html';
+
+##SCREENADCLICKS##
+
+VIEWS
+--------------------------------------------------------------------------------
+There are no views defined yet.
+ 
+BANNERS
+--------------------------------------------------------------------------------
+There are no banners defined yet, a 1x1 pixel gif is used instead
+1.file                  : 1x1.gif
+1.click                 : default
+
+
+SCREENADS
+--------------------------------------------------------------------------------
+There are no screenads defined yet
+
+ASSETS
+--------------------------------------------------------------------------------
+  poster.png
+  index.js
+  interface.js
+  settings.xml
+  style.min.css
+  video.mp4
+  vpaid.linear.min.js
+  vpaid.xml
+  index.css
+  index.html
+  patch.png
+  descr.png
+  girl.png
+
+ITD
+--------------------------------------------------------------------------------
+There is no ITD found

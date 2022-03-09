@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <TrackingEvents>
+        <!--event name="AdVideoProgress9"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoProgress9]]></event>
+        <event name="AdLoaded"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdLoaded]]></event>
+        <event name="AdStarted"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdStarted]]></event>
+        <event name="AdImpression"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=Impression]]></event>
+        <event name="AdVideoStart"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoStart]]></event>
+        <event name="AdVideoFirstQuartile"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoFirstQuartile]]></event>
+        <event name="AdVideoMidpoint"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoMidpoint]]></event>
+        <event name="AdVideoThirdQuartile"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoThirdQuartile]]></event>
+        <event name="AdVideoComplete"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoComplete]]></event>
+        <event name="AdUserClose"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdUserClose]]></event>
+        <event name="AdPaused"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdPaused]]></event>
+        <event name="AdPlaying"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdPlaying]]></event>
+        <event name="AdVolumeChange"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVolumeChange]]></event>
+        <event name="PlayerSmall"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=PlayerSmall]]></event>
+        <event name="PlayerNormal"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=PlayerNormal]]></event>
+        <event name="PlayerBig"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=PlayerBig]]></event>
+        <event name="PlayerHuge"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=PlayerHuge]]></event>
+        <event name="PlayerFullscreen"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=PlayerFullscreen]]></event>
+
+        <event name="SameDomainFrame"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=SameDomainFrame]]></event>
+        <event name="CrossDomainFrame"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=CrossDomainFrame]]></event>
+        <event name="isFullscreen"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=isFullscreen]]></event>
+        <event name="initiallyMuted"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=initiallyMuted]]></event>
+        <event name="MRCViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=MRCViewable]]></event>
+        <event name="MRCUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=MRCUnviewable]]></event>
+        <event name="AdVideoStartViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoStartViewable]]></event>
+        <event name="AdVideoFirstQuartileViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoFirstQuartileViewable]]></event>
+        <event name="AdVideoMidpointViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoMidpointViewable]]></event>
+        <event name="AdVideoThirdQuartileViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoThirdQuartileViewable]]></event>
+        <event name="AdVideoCompleteViewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoCompleteViewable]]></event>
+        <event name="AdVideoStartUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoStartUnviewable]]></event>
+        <event name="AdVideoFirstQuartileUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoFirstQuartileUnviewable]]></event>
+        <event name="AdVideoMidpointUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoMidpointUnviewable]]></event>
+        <event name="AdVideoThirdQuartileUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoThirdQuartileUnviewable]]></event>
+        <event name="AdVideoCompleteUnviewable"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=AdVideoCompleteUnviewable]]></event>
+
+        <event name="AdClickThru"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=videoplayerClick]]></event>
+        <event name="mute"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=mute]]></event>
+        <event name="unmute"><![CDATA[https://track.weborama.io/?campaign=110&flight=1370&location=%location%&cachebuster=~RANDOM~&event=unmute]]></event>
+
+        <event name="videoplayer_click"><![CDATA[https://some.domain2.com/path_to_event?some_param=some_value&rnd=~RANDOM~&event=videoplayer_click]]></event>
+        <event name="more_click"><![CDATA[https://some.domain2.com/path_to_event?some_param=some_value&rnd=~RANDOM~&event=more_click]]></event>-->
+    </TrackingEvents>
+</settings>
