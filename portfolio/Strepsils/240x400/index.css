@@ -196,10 +196,9 @@ body {
 }
 
 .page {
-  width: 236px;
-  height: 396px;
+  width: 240px;
+  height: 400px;
   overflow: hidden;
-  border: 2px solid #000;
 }
 
 .banner {
@@ -208,6 +207,8 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #000;
 }
 
 .active {
