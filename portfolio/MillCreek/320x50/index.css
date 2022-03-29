@@ -5,8 +5,8 @@
 
 html,
 .banner {
-  width: 1080px;
-  height: 607px;
+  width: 320px;
+  height: 50px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -17,28 +17,31 @@ html,
 
 .content-wrapper {
   background: linear-gradient(0deg, #263238, #263238), radial-gradient(148.16% 123.15% at 48.94% -21.25%, #3b779f 0%, #141a2c 100%);
-  width: 427px;
+  width: 155px;
   position: relative;
 }
 
 .logo {
   position: absolute;
-  width: 162px;
-  top: 30px;
-  right: 132px;
+  width: 36px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #263238;
+  padding: 16px 7px;
 }
 
 .image-wrapper {
   position: relative;
-  width: calc(100% - 427px);
   height: 100%;
+  width: calc(100% - 155px);
 }
 
 .image {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50px;
+  width: calc(100% - 50px);
   transition: 1s;
 }
 
@@ -54,18 +57,22 @@ html,
   opacity: 0;
 }
 
+.image-four {
+  opacity: 0;
+}
+
 .title {
   position: absolute;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
-  line-height: 66px;
+  font-size: 14px;
+  line-height: 19px;
   text-align: center;
   color: #ffffff;
   width: 100%;
-  top: 208px;
-  right: 0;
+  top: 6px;
+  left: 0;
   transition: 1s;
 }
 
@@ -74,13 +81,14 @@ html,
 }
 
 .title-two {
-  font-size: 90px;
-  line-height: 56px;
-  top: 226px;
+  top: -3px;
+  font-size: 24px;
+  line-height: 32px;
   opacity: 0;
 }
 
 .title-three {
+  top: 6px;
   opacity: 0;
 }
 
@@ -89,13 +97,13 @@ html,
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 56px;
+  font-size: 14px;
+  line-height: 19px;
   text-align: center;
   color: #ebca7f;
   width: 100%;
-  bottom: 198px;
-  right: 0;
+  bottom: 8px;
+  left: 0;
   transition: 1s;
 }
 .description span {
@@ -108,15 +116,16 @@ html,
 }
 
 .description-two {
-  bottom: 215px;
-  line-height: 40px;
-  font-size: 34px;
+  bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
   opacity: 0;
 }
 
 .description-three {
-  line-height: 40px;
-  font-size: 34px;
+  bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
   opacity: 0;
 }
 
@@ -125,13 +134,13 @@ html,
   font-weight: 500;
   font-style: normal;
   position: absolute;
-  bottom: 43px;
-  right: 55px;
-  width: 316px;
-  height: 62px;
+  right: 15px;
+  top: calc(50% - 12.5px);
+  width: 125px;
+  height: 25px;
   background: #c5a357;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 9px;
+  line-height: 12px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;

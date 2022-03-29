@@ -5,33 +5,37 @@
 
 html,
 .banner {
-  width: 1080px;
-  height: 607px;
+  width: 600px;
+  height: 600px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .banner {
   display: flex;
+  flex-direction: column;
 }
 
 .content-wrapper {
   background: linear-gradient(0deg, #263238, #263238), radial-gradient(148.16% 123.15% at 48.94% -21.25%, #3b779f 0%, #141a2c 100%);
-  width: 427px;
+  height: 277px;
   position: relative;
 }
 
 .logo {
   position: absolute;
-  width: 162px;
-  top: 30px;
-  right: 132px;
+  width: 100px;
+  top: 0;
+  right: calc(50% - 75px);
+  z-index: 5;
+  background: #263238;
+  padding: 10px 25px;
 }
 
 .image-wrapper {
   position: relative;
-  width: calc(100% - 427px);
-  height: 100%;
+  height: calc(100% - 277px);
+  width: 100%;
 }
 
 .image {
@@ -59,12 +63,12 @@ html,
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 54px;
   line-height: 66px;
   text-align: center;
   color: #ffffff;
   width: 100%;
-  top: 208px;
+  top: 25px;
   right: 0;
   transition: 1s;
 }
@@ -74,9 +78,8 @@ html,
 }
 
 .title-two {
-  font-size: 90px;
-  line-height: 56px;
-  top: 226px;
+  top: 17px;
+  font-size: 92px;
   opacity: 0;
 }
 
@@ -89,12 +92,12 @@ html,
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 46px;
   line-height: 56px;
   text-align: center;
   color: #ebca7f;
   width: 100%;
-  bottom: 198px;
+  bottom: 122px;
   right: 0;
   transition: 1s;
 }
@@ -108,13 +111,14 @@ html,
 }
 
 .description-two {
-  bottom: 215px;
+  bottom: 133px;
   line-height: 40px;
   font-size: 34px;
   opacity: 0;
 }
 
 .description-three {
+  bottom: 136px;
   line-height: 40px;
   font-size: 34px;
   opacity: 0;
@@ -125,8 +129,8 @@ html,
   font-weight: 500;
   font-style: normal;
   position: absolute;
-  bottom: 43px;
-  right: 55px;
+  bottom: 36px;
+  right: calc(50% - 158px);
   width: 316px;
   height: 62px;
   background: #c5a357;
