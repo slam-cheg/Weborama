@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+    <Ad id="1">
+        <InLine>
+            <AdSystem>WCM</AdSystem>
+            <AdTitle>Test</AdTitle>
+            <Error><![CDATA[~PROTOCOL~//~HOST~/fcgi-bin/dispatch.fcgi?a.A=ev&a.si=~ACCOUNT_ID~&a.te=~TRACKING_ELEMENT_ID~&a.aap=~ASSIGNED_AD_POSITION_ID~&a.agi=~ACTION_GROUP_ID~&a.ycp=[ERRORCODE]&a.evn=AdError&g.ra=[CACHEBUSTING]]]></Error>
+            ~IMPRESSIONTRACKERS~
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:12</Duration>
+                        <TrackingEvents>
+
+                        </TrackingEvents>
+                        <AdParameters><![CDATA[
+                            {
+                                "mediapath": "https://previewer-weborama.com/files/campaigns2/6859534057/214631/",
+                                "mediafiles": [
+                                    {"src":"video.mp4","type":"video/mp4"}
+                                ],
+                                "wcm": {
+                                    "domain": "wcm-ru.frontend.weborama.fr",
+                                    "account": "1",
+                                    "aap": "2",
+                                    "tte": "3"
+                                },
+                                "mrcTracker": [
+                                    {"name": "MRC","percent": 50,"useFocus": "true","duration": 2000},
+                                    {"name": "MRC75Prc","percent": 75,"useFocus": "true","duration": 5000}
+                                ],
+                                "cp":"~CUSTOM_PARAMETER~"
+                            }
+                        ]]></AdParameters>
+                        <MediaFiles>
+                            <MediaFile maintainAspectRatio="true" scalable="true" delivery="progressive" width="640" height="360" bitrate="256" apiFramework="VPAID" type="application/javascript">
+                                <![CDATA[https://previewer-weborama.com/files/campaigns2/6859534057/214631/vpaid.linear.min.js]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
