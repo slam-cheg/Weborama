@@ -24,9 +24,9 @@ html,
 
 .logo {
   position: absolute;
-  width: 38px;
+  width: 50px;
   top: 0;
-  right: calc(50% - 29px);
+  right: calc(50% - 35px);
   z-index: 5;
   background: #263238;
   padding: 4px 10px;
