@@ -5,7 +5,7 @@
             <AdSystem>WCM</AdSystem>
             <AdTitle>Test</AdTitle>
             <Error>
-                <![CDATA[ https://wcm.weborama-tech.ru/fcgi-bin/dispatch.fcgi?a.A=ev&a.si=7&a.te=12867&a.aap=4165&a.agi=975&a.evn=vpaid_js&g.ra=%RANDOM% ]]>
+                <![CDATA[ https://wcm.weborama-tech.ru/fcgi-bin/dispatch.fcgi?a.A=ev&a.si=7&a.te=12867&a.aap=4165&a.agi=235&a.ycp=[ERRORCODE]&a.evn=AdError&g.ra=[CACHEBUSTING] ]]>
             </Error>
             <Creatives>
                 <Creative>
@@ -13,7 +13,11 @@
                         <Duration>00:00:30</Duration>
                         <TrackingEvents></TrackingEvents>
                         <AdParameters>
-                            <![CDATA[ { "mediapath": "https://static.wi-fi.ru/banners/_weborama/vpaid/", "submediapath": "https://static.wi-fi.ru/banners/_weborama/vpaid/video/", "mediafiles": [ {"src":"video.mp4","type":"video/mp4"} ], "mrcTracker": [ {"name":"MRC","percent":50,"useFocus":"true","duration":2000} ], "wcm": { "domain": "wcm.weborama-tech.ru", "account": "7", "aap": "4165", "tte": "12867" }, "scripts":["https://j.adlooxtracking.ru/ads/js/tfav_adl_55.js#platform=30&scriptname=adl_55&tagid=238&typejs=tvaf&fwtype=1&creatype=6&targetelt=&custom1area=50&custom1sec=2&custom2area=0&custom2sec=0&id11=&id12=russia&id13=video&id14=$ADLOOX_WEBSITE&id1=1493&id2=783&id3=2550&id4=1x1&id5=12861&id6=9&id7=7"], "cp":"plc:1|dmmt:1|up:1|plc:1|co:1000" } ]]>
+                            <![CDATA[ { "mediapath": "https://static.wi-fi.ru/banners/_weborama/vpaid/", "submediapath": "https://static.wi-fi.ru/banners/_weborama/vpaid/video/", 
+                            "mediafiles": [ {"src":"video.mp4","type":"video/mp4"} ], "mrcTracker": [ {"name":"MRC","percent":50,"useFocus":"true","duration":2000} ], 
+                            "wcm": { "domain": "wcm.weborama-tech.ru", "account": "7", "aap": "4165", "tte": "12867" }, 
+                            "scripts":["https://j.adlooxtracking.ru/ads/js/tfav_adl_55.js#platform=30&scriptname=adl_55&tagid=238&typejs=tvaf&fwtype=1&creatype=6&targetelt=&custom1area=50&custom1sec=2&custom2area=0&custom2sec=0&id11=&id12=russia&id13=video&id14=$ADLOOX_WEBSITE&id1=1493&id2=783&id3=2550&id4=1x1&id5=12861&id6=9&id7=7"], 
+                            "cp":"plc:1|dmmt:1|up:1|plc:1|co:1000" } ]]>
                         </AdParameters>
                         <MediaFiles>
                             <MediaFile maintainAspectRatio="true" scalable="true" delivery="progressive" width="640" height="360" bitrate="256" apiFramework="VPAID" type="application/javascript">

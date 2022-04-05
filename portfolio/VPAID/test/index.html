@@ -4,6 +4,24 @@
         <meta charset="UTF-8" />
         <title></title>
         <link rel="stylesheet" href="./index.css" />
+        <script>
+            const checkResponse = (res) => {
+                if (res.ok) {
+                    return console.log("vpaid.linear.min.js loaded");
+                }
+                return Promise.reject(`Ошибка: ${res.status}`);
+            };
+            function getVpaid() {
+                return fetch("https://cstatic.weborama-tech.ru/js/external/vpaid/1.0/vpaid.linear.min.js", {
+                    method: "GET",
+                })
+                    .then(checkResponse)
+                    .catch((err) => {
+                        console.warn(err);
+                    });
+            }
+            getVpaid();
+        </script>
     </head>
     <body>
         <div id="click" data-event="ad-click">
@@ -28,9 +46,7 @@
         </div>
         <div id="close" data-event="ad-close">Закрыть</div>
 
-        <div id="more_btn">
-        
-        </div>
+        <div id="more_btn"></div>
 
         <script type="text/javascript" src="./interface.js"></script>
         <script type="text/javascript" src="./index.js"></script>
