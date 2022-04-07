@@ -1,145 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- WEBORAMA SCREENAD META DATA (don't edit/remove) -->
+        <!-- SCRWIDTH: 600 -->
+        <!-- SCRHEIGHT: 600 -->
+
         <meta charset="UTF-8" />
-        <meta name="authoring-tool" content="Adobe_Animate_CC" />
-        <meta name="description" content="adfox_template" />
-        <meta name="ad.size" content="width=100%,height=100%" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>banner</title>
-        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-        <script src="//banners.adfox.ru/220330/adfox/1698539/5132260/background.min.js"></script>
-        <script>
-            var canvas, stage, exportRoot, fnStartAnimation;
-            function init() {
-                canvas = document.getElementById("canvas");
-                var comp = AdobeAn.getComposition("11FCCD6B3BD1468F94104610EC24DB01");
-                var lib = comp.getLibrary();
-                createjs.MotionGuidePlugin.install();
-                var loader = new createjs.LoadQueue(false, null, true);
-                loader.addEventListener("fileload", function (evt) {
-                    handleFileLoad(evt, comp);
-                });
-                loader.addEventListener("complete", function (evt) {
-                    handleComplete(evt, comp);
-                });
-                var lib = comp.getLibrary();
-                loader.loadManifest(lib.properties.manifest);
-            }
-            var flashVars = {
-                reference: "%request.reference%",
-                link: "%banner.user1%",
-                target: "%banner.target%",
-                rnd: parseInt("%request.place_random%") || parseInt("%system.random%"),
-                events: [
-                    "",
-                    "%banner.event1%",
-                    "%banner.event2%",
-                    "%banner.event3%",
-                    "%banner.event4%",
-                    "%banner.event5%",
-                    "%banner.event6%",
-                    "%banner.event7%",
-                    "%banner.event8%",
-                    "%banner.event9%",
-                    "%banner.event10%",
-                    "%banner.event11%",
-                    "%banner.event12%",
-                    "%banner.event13%",
-                    "%banner.event14%",
-                    "%banner.event15%",
-                    "%banner.event16%",
-                    "%banner.event17%",
-                    "%banner.event18%",
-                    "%banner.event19%",
-                    "%banner.event20%",
-                    "%banner.event21%",
-                    "%banner.event22%",
-                    "%banner.event23%",
-                    "%banner.event24%",
-                    "%banner.event25%",
-                    "%banner.event26%",
-                    "%banner.event27%",
-                    "%banner.event28%",
-                    "%banner.event29%",
-                    "%banner.event30%",
-                ],
-            };
-            function callClick(n) {
-                var link = n ? flashVars.events[n] : flashVars.link;
-                window.open(flashVars.reference + "@" + link, flashVars.target);
-            }
-            function callEvent(n) {
-                new Image().src = flashVars.events[n];
-            }
-            function handleFileLoad(evt, comp) {
-                var images = comp.getImages();
-                if (evt && evt.item.type == "image") {
-                    images[evt.item.id] = evt.result;
-                }
-            }
-            function handleComplete(evt, comp) {
-                var lib = comp.getLibrary();
-                var ss = comp.getSpriteSheet();
-                var queue = evt.target;
-                var ssMetadata = lib.ssMetadata;
-                for (i = 0; i < ssMetadata.length; i++) {
-                    ss[ssMetadata[i].name] = new createjs.SpriteSheet({
-                        images: [queue.getResult(ssMetadata[i].name)],
-                        frames: ssMetadata[i].frames,
-                    });
-                }
-                exportRoot = new lib.background();
-                stage = new lib.Stage(canvas);
-                stage.enableMouseOver();
-                fnStartAnimation = function () {
-                    stage.addChild(exportRoot);
-                    createjs.Ticker.setFPS(lib.properties.fps);
-                    createjs.Ticker.addEventListener("tick", stage);
-                };
-                AdobeAn.compositionLoaded(lib.properties.id);
-                fnStartAnimation();
-            }
-        </script>
-        <style type="text/css">
-            * {
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-            }
-            .banner,
-            .fon {
-                position: absolute;
-                overflow: hidden;
-                cursor: pointer;
-                width: 100%;
-                height: 100%;
-                z-index: 20;
-            }
-            .fon {
-                left: 0px;
-                z-index: 10;
-                background: #0d316a;
-            }
-        </style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test</title>
+        <link rel="stylesheet" href="index.css" />
+        <script type="text/javascript" src="https://media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     </head>
     <body>
-        <div class="banner" id="banner">
-            <canvas id="canvas" width="1920" height="1080"></canvas>
-        </div>
-        <div class="fon"></div>
-        <script type="text/javascript">
-            document.onload = init();
+        <!-- Outter wrapper will define background color -->
+        <div class="wrapper">
+            <div class="corner-box">
+                <div class="top-bg">
+                    <img src="http://s7d9.scene7.com/is/image/TheBay/rich_banner_luggage_test_front?qlt=97&scl=1" class="bg-cover" />
+                </div>
+            </div>
 
-            var elem = document.getElementsByTagName("canvas")[0];
-            elem.style.cursor = "pointer";
-            elem.addEventListener(
-                "click",
-                function () {
-                    callClick();
-                },
-                false
-            );
-        </script>
+            <!--
+
+  <img src="http://s7d9.scene7.com/is/image/TheBay/rich_banner_luggage_test_front?qlt=97&scl=1" class="bg-cover" />
+
+  <img src="http://case.wikirex.com/images/corner.png" class="corner" />
+  -->
+
+            <!-- Size of bg_wrapper should be the same as corner image to show partial bg only -->
+            <div class="bg_wrapper">
+                <div class="bg">
+                    <img src="http://s7d9.scene7.com/is/image/TheBay/rich_banner_luggage_test_back?qlt=97&scl=1" class="bg-img" />
+                </div>
+            </div>
+
+            <img src="http://s7d9.scene7.com/is/image/TheBay/rich_banner_page_peel_corner?scl=1&fmt=png-alpha" class="corner" />
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>

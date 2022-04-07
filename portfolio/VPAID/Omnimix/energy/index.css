@@ -147,7 +147,7 @@ HTML {
 }
 
 #more_btn:hover {
-  text-shadow: 0 0 3vh white, 0 0 1.5vh white;
+  text-shadow: 0 0 3vh rgb(255, 255, 255), 0 0 1.5vh rgb(255, 255, 255);
 }
 
 #more_btn.showme {

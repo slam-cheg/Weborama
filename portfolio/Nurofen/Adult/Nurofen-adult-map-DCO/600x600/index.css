@@ -444,7 +444,7 @@ BODY {
 }
 
 .anim2 .item1 {
-  box-shadow: 0 0 10px 0 white, 0 0 15px 0 white;
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255), 0 0 15px 0 rgb(255, 255, 255);
 }
 
 .anim3 .item1 {
@@ -458,7 +458,7 @@ BODY {
 }
 
 .anim3 .item2 {
-  box-shadow: 0 0 10px 0 white, 0 0 15px 0 white;
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255), 0 0 15px 0 rgb(255, 255, 255);
   transition: box-shadow 0.1s 0.1s;
 }
 
@@ -478,7 +478,7 @@ BODY {
 }
 
 .anim4 .item3 {
-  box-shadow: 0 0 10px 0 white, 0 0 15px 0 white;
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255), 0 0 15px 0 rgb(255, 255, 255);
   transition: box-shadow 0.1s;
 }
 
@@ -684,7 +684,7 @@ BODY {
   width: 60%;
   height: 70%;
   border-radius: 50%;
-  background: radial-gradient(closest-side, #fffd31, rgba(255, 253, 49, 0));
+  background: radial-gradient(closest-side, rgb(255, 253, 49), rgba(255, 253, 49, 0));
   opacity: 0;
 }
 

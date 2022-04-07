@@ -1,7 +1,7 @@
 @import "./vendor/normalize.css";
 @import "./vendor/fonts/fonts.css";
 .page {
-  background-color: #f7f7f7;
+  background-color: rgb(247, 247, 247);
 }
 
 .header__content {

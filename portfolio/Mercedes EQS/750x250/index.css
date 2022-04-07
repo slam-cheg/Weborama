@@ -85,7 +85,7 @@
   background-color: #134060;
 }
 .button_fullscreen:hover {
-  background-color: #13406010;
+  background-color: rgba(19, 64, 96, 0.062745098);
 }
 
 .load-bar {

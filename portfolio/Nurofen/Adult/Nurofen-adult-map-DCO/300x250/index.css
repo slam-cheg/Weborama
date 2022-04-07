@@ -732,7 +732,7 @@ BODY {
   width: 60%;
   height: 70%;
   border-radius: 50%;
-  background: radial-gradient(closest-side, #fffd31, rgba(255, 253, 49, 0));
+  background: radial-gradient(closest-side, rgb(255, 253, 49), rgba(255, 253, 49, 0));
   opacity: 0;
 }
 
