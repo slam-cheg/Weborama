@@ -5,22 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <h1 id="elem">test console</h1>
-
-        <script>
-            // ловим на document...
-            document.addEventListener("hello", function (event) {
-                // (1)
-                alert("Привет от " + event.target.tagName); // Привет от H1
-            });
-
-            // ...запуск события на элементе!
-            let event = new Event("hello", { bubbles: true }); // (2)
-            elem.dispatchEvent(event);
-
-            // обработчик на document сработает и выведет сообщение.
-        </script>
+        <h1 class="elem">test console</h1>
+        <div class="div"></div>
+        <script src="index.js"></script>
     </body>
 </html>
