@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="ad.size" content="width=320,height=50">
+   <style>
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .click {
+         border: 1px solid #5f5f65;
+         box-sizing: border-box;
+         display: block;
+         height: 100%;
+         left: 0px;
+         position: absolute;
+         top: 0px;
+         width: 100%;
+         z-index: 999;
+      }
+      #f1-image, #f1-text, #f2-image, #f2-text, #f3-image, #f3-text, #f4-image, #f4-text, #f5-image, #f5-text, #f6-image, #f6-text, #logo {
+         background-size: contain;
+         background-repeat: no-repeat;
+         height: 50px;
+         position: absolute;
+         width: 320px;
+      }
+      #wrapper {
+         background: #586027;
+         height: 50px;
+         overflow: hidden;
+         position: relative;
+         width: 320px;
+      }
+      #logo {
+         background-image: url('Logo.png');
+      }
+      #f1-image {
+         background-image: url('f1-Image.jpg');
+      }
+      #f1-text {
+         background-image: url('f1-Text.png');
+      }
+      #f2-image {
+         background-image: url('f2-Image.jpg');
+         transform: translateY(100%);
+      }
+      #f2-text {
+         background-image: url('f2-Text.png');
+         transform: translateY(100%);
+      }
+      #f3-image {
+         background-image: url('f3-Image.jpg');
+         transform: translateY(100%);
+      }
+      #f3-text {
+         background-image: url('f3-Text.png');
+         transform: translateY(100%);
+      }
+      #f4-image {
+         background-image: url('f4-Image.jpg');
+         transform: translateY(100%);
+      }
+      #f4-text {
+         background-image: url('f4-Text.png');
+         transform: translateY(100%);
+      }
+      #f5-image {
+         background-image: url('f5-Image.jpg');
+         transform: translateY(100%);
+      }
+      #f5-text {
+         background-image: url('f5-Text.png');
+         transform: translateY(100%);
+      }
+      #f6-image {
+         background-image: url('f6-Image.jpg');
+         opacity: 0;
+      }
+      #f6-text {
+         background-image: url('f6-Text.png');
+         opacity: 0;
+      }
+      @keyframes fadeIn {
+         100% { opacity: 1; }
+      }
+      @keyframes fadeOut {
+         100% { opacity: 0; }
+      }
+      @keyframes slideIn {
+         100% { transform: translateY(0); }
+      }
+      @keyframes slideOut {
+         100% { transform: translateY(-100%); }
+      }
+      .f1-anm {
+         animation:  slideOut 0.5s linear 2.5s,
+                     slideIn 0s linear 3s;
+         animation-fill-mode: forwards;
+      }
+      .logo-anm {
+         animation:  fadeOut 0.5s linear 12.5s
+                     fadeIn 0.5s linear 16s;
+         animation-fill-mode: forwards;
+      }
+      .f2-anm {
+         animation:  slideIn 0.5s linear 2.5s,
+                     slideOut 0.5s linear 5s;
+         animation-fill-mode: forwards;
+      }
+      .f3-anm {
+         animation:  slideIn 0.5s linear 5s,
+                     slideOut 0.5s linear 7.5s;
+         animation-fill-mode: forwards;
+      }
+      .f4-anm {
+         animation:  slideIn 0.5s linear 7.5s,
+                     slideOut 0.5s linear 10s;
+         animation-fill-mode: forwards;
+      }
+      .f5-anm {
+         animation:  slideIn 0.5s linear 10s,
+                     fadeOut 0.5s linear 12.5s;
+         animation-fill-mode: forwards;
+      }
+      .f6-anm {
+         animation:  fadeIn 0.5s linear 12.5s,
+                     fadeOut 0.5s linear 16s;
+         animation-fill-mode: forwards;
+      }
+   </style>
+   <script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+   <!-- ADRIME SCREENAD META DATA (don't edit/remove) -->
+   <!-- SCRVERSION: screenad_interface_1.0.3 -->
+   <!-- SCRFORMAT: banner -->
+   <!-- SCRWIDTH: 320 -->
+   <!-- SCRHEIGHT: 50 -->
+</head>
+<body>
+   <div id="wrapper" onclick="screenad.click()">
+      <div id="f1-image" class="f1-anm"></div>
+      <div id="f1-text" class="f1-anm"></div>
+      <div id="f2-image" class="f2-anm"></div>
+      <div id="f2-text" class="f2-anm"></div>
+      <div id="f3-image" class="f3-anm"></div>
+      <div id="f3-text" class="f3-anm"></div>
+      <div id="f4-image" class="f4-anm"></div>
+      <div id="f4-text" class="f4-anm"></div>
+      <div id="f5-image" class="f5-anm"></div>
+      <div id="f5-text" class="f5-anm"></div>
+      <div id="logo" class="logo-anm"></div>
+      <div id="f6-image" class="f6-anm"></div>
+      <div id="f6-text" class="f6-anm"></div>
+   </div>
+</body>
+</html>
