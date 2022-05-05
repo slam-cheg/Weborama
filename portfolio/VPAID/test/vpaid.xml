@@ -13,7 +13,16 @@
                         <Duration>00:00:13</Duration>
                         <TrackingEvents></TrackingEvents>
                         <AdParameters>
-                            <![CDATA[ { "mediapath": "https://cstatic.weborama.fr/js/external/vpaid/1.0/", "submediapath": "https://cstatic.weborama.fr/advertiser/7/488/2586/3891/", "mediafiles": [ {"src":"video.mp4","type":"video/mp4"} ], "mrcTracker": [ {"name":"MRC","percent":50,"useFocus":"true","duration":2000} ], "wcm": { "domain": "wcm-ru.frontend.weborama.fr", "account": "7", "aap": "4192", "tte": "12937" }, "cp":"sre:1|utm:" } ]]>
+                            <![CDATA[ 
+                                    {
+                                        "mediapath": "https://cstatic.weborama.fr/js/external/vpaid/1.0/",
+                                        "submediapath": "https://cstatic.weborama.fr/advertiser/7/488/2586/3891/",
+                                        "mediafiles": [{"src":"video.mp4","type":"video/mp4"}],
+                                        "mrcTracker": [{"name":"MRC","percent":50,"useFocus":"true","duration":2000}],
+                                        "wcm": {"domain": "wcm-ru.frontend.weborama.fr", "account": "7", "aap": "4192", "tte": "12937"},
+                                        "cp":"md:1|utm:[GAID/IDFA]![Impression]![Country]![City]|did:[GAID/IDFA]![Impression]![Country]![City]"
+                                    }
+                                    ]]>
                         </AdParameters>
                         <MediaFiles>
                             <MediaFile maintainAspectRatio="true" scalable="true" delivery="progressive" width="640" height="360" bitrate="256" apiFramework="VPAID" type="application/javascript">
