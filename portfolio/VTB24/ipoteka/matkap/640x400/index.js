@@ -1,84 +1,102 @@
 const banner = document.querySelector(".banner");
+const background = banner.querySelector(".background");
 const minPayment = banner.querySelector(".description__minpay");
 const plate = banner.querySelector(".plate");
 const percent = banner.querySelector(".percent");
-const title = banner.querySelector(".title");
-const description = banner.querySelectorAll(".description");
+const titleOne = banner.querySelector(".title__first-stroke");
+const titleTwo = banner.querySelector(".title__second-stroke");
+const descriptionOne = banner.querySelector(".description-one");
+const descriptionTwo = banner.querySelector(".description-two");
+const descriptionThree = banner.querySelector(".description-three");
 const slash = banner.querySelector(".slash");
 const button = banner.querySelector(".button");
+const disclamer = banner.querySelector(".disclamer");
 const disclamerText = banner.querySelector(".disclamer__text");
 const disclamerChange = banner.querySelector(".disclamer__change");
-const tel = banner.querySelector(".tel");
-
-let customEvent = "DEFAULT";
-let customClick = `DEFAULT_CLICK`;
+const icoOne = banner.querySelector("#documents");
+const icoTwo = banner.querySelector("#family");
 
 banner.addEventListener("click", function () {
-    screenad.click(`${customClick}`);
+    screenad.click();
 });
 
-// GEO
-navigator.geolocation.getCurrentPosition((position) => {
-    const latitude = Math.round(position.coords.latitude);
-    const longitude = Math.round(position.coords.longitude);
-    getCsv(latitude, longitude);
-});
-
-// JSON Data Cities
-function getCsv(latitude, longitude) {
-    return fetch("./cities.json", {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-    })
-        .then(checkResponse)
-        .then((res) => {
-            for (let i = 0; i < res.length; i++) {
-                // region check
-                if (Math.abs(latitude - res[i].latitude) < 2 && Math.abs(longitude - res[i].longitude) < 2) {
-                    // city check
-                    if (Math.abs(latitude - res[i].latitude) < 0.5 && Math.abs(longitude - res[i].longitude) < 0.5) {
-                        minPayment.textContent = `${res[i].min_payment}`;
-                        disclamerChange.textContent = `${res[i].legal}`;
-                        customEvent = res[i].event;
-                        customClick = `${customEvent}_CLICK`;
-                        screenad.event(customEvent);
-                        break;
-                    }
-                    minPayment.textContent = `${res[i].min_payment}`;
-                    disclamerChange.textContent = `${res[i].legal}`;
-                    customEvent = res[i].event;
-                    customClick = `${customEvent}_CLICK`;
-                    screenad.event(customEvent);
-                    break;
-                }
-            }
-        })
-        .catch((err) => {
-            console.warn(err);
-        });
-}
-
-const checkResponse = (res) => {
-    if (res.ok) {
-        return res.json();
-    }
-    return Promise.reject(`Ошибка: ${res.status}`);
-};
-
-setTimeout(function () {
-    plate.style.transform = "translateX(0)";
-    percent.style.transform = "scale(1)";
-    setTimeout(function () {
-        title.style.opacity = "1";
-        description.forEach((p) => {
-            p.style.opacity = "1";
-        });
-        slash.style.opacity = "1";
-        button.style.transform = "translateX(0)";
-        tel.style.transform = "translateX(0)";
-        setTimeout(function () {
-            percent.classList.add("scale-anim");
-            disclamerText.style.transform = "translateY(0)";
+const firstSlide = () => {
+    percent.style.opacity = "1";
+    setTimeout(() => {
+        plate.style.transform = "translateX(0)";
+        setTimeout(() => {
+            titleOne.style.opacity = "1";
+            setTimeout(() => {
+                titleOne.style.opacity = null;
+                secondSlide();
+            }, 4000);
         }, 500);
     }, 500);
-}, 1000);
+};
+
+firstSlide();
+
+const secondSlide = () => {
+    setTimeout(() => {
+        titleTwo.style.opacity = "1";
+        background.classList.add("background_second-slide");
+        percent.style.opacity = "1";
+        percent.style.transform = "scale(1)";
+        setTimeout(() => {
+            titleTwo.style.opacity = null;
+            percent.style.opacity = "0";
+            percent.style.transform = null;
+            thirdSlide();
+        }, 4000);
+    }, 500);
+};
+
+const thirdSlide = () => {
+    setTimeout(() => {
+        descriptionTwo.style.opacity = "1";
+        icoTwo.style.opacity = "1";
+        background.classList.add("background_third-slide");
+        setTimeout(() => {
+            descriptionTwo.style.opacity = null;
+            icoTwo.style.opacity = null;
+            fourthSlide();
+        }, 4000);
+    }, 500);
+};
+
+const fourthSlide = () => {
+    percent.classList.add("percent_modif");
+    setTimeout(() => {
+        percent.style.opacity = "1";
+        descriptionThree.style.opacity = "1";
+        button.style.transform = "translateX(0)";
+        background.classList.add("background_fourth-slide");
+        percent.style.transform = "scale(1)";
+        setTimeout(() => {
+            descriptionThree.style.opacity = null;
+            button.style.transform = null;
+            percent.style.opacity = "0";
+            percent.style.transform = null;
+            plate.style.transform = null;
+            disclamerSlide();
+        }, 4000);
+    }, 500);
+};
+
+const disclamerSlide = () => {
+    setTimeout(() => {
+        disclamer.style.opacity = "1";
+        disclamerText.style.opacity = "1";
+        setTimeout(() => {
+            disclamerText.style.opacity = null;
+            disclamer.style.opacity = null;
+            percent.classList.remove("percent_modif");
+            background.classList.remove("background_fourth-slide");
+            background.classList.remove("background_third-slide");
+            background.classList.remove("background_second-slide");
+            setTimeout(() => {
+                firstSlide();
+            }, 1000);
+        }, 4000);
+    }, 500);
+};
