@@ -44,11 +44,11 @@ body {
   height: 100%;
   top: 0;
   z-index: 1;
+  transition: 1.5s;
 }
 
 .background_second-slide {
   transform: scale(1.15) translateX(-41px);
-  transition: 10s linear;
 }
 
 .background_third-slide {
@@ -236,10 +236,9 @@ body {
   bottom: 20px;
   left: 20px;
   color: #002882;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.05;
   text-align: justify;
   transition: 1s;
   opacity: 0;

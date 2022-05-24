@@ -44,11 +44,11 @@ body {
   height: 100%;
   top: 0;
   z-index: 1;
-  transition: 1.5s;
 }
 
 .background_second-slide {
   transform: scale(1.15) translateX(-41px);
+  transition: 10s linear;
 }
 
 .background_third-slide {
@@ -90,7 +90,7 @@ body {
 .percent_modif {
   width: 200px;
   top: 57px;
-  left: 275px;
+  left: 290px;
 }
 
 @-webkit-keyframes scale {
@@ -159,10 +159,10 @@ body {
   font-family: "VTB", sans-serif;
   font-weight: 400;
   font-size: 25px;
-  line-height: 1;
+  line-height: 1.2;
   position: absolute;
   font-weight: 300;
-  top: 55px;
+  top: 50px;
   left: 20px;
   z-index: 4;
   color: #fff;
@@ -172,7 +172,7 @@ body {
 }
 
 .description-three {
-  width: 240px;
+  width: 280px;
 }
 .description-three span {
   font-weight: 400;
