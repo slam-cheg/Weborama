@@ -38,13 +38,13 @@ const firstSlide = () => {
 firstSlide();
 
 const secondSlide = () => {
+    titleTwo.classList.add("title_second-slide");
     setTimeout(() => {
         titleTwo.style.opacity = "1";
         background.classList.add("background_second-slide");
         percent.style.opacity = "1";
         percent.style.transform = "scale(1)";
-        plate.style.transform = "translateX(0px) translateY(-10px)";
-        titleTwo.classList.add("title_second-slide");
+        plate.style.transform = "translateX(0px)";
         setTimeout(() => {
             titleTwo.style.opacity = null;
             percent.style.opacity = "0";
@@ -56,12 +56,12 @@ const secondSlide = () => {
 
 const thirdSlide = () => {
     setTimeout(() => {
-        descriptionOne.style.opacity = "1";
-        icoOne.style.opacity = "1";
+        descriptionTwo.style.opacity = "1";
+        icoTwo.style.opacity = "1";
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionOne.style.opacity = null;
-            icoOne.style.opacity = null;
+            descriptionTwo.style.opacity = null;
+            icoTwo.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);

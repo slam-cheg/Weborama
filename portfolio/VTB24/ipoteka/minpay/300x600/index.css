@@ -74,7 +74,7 @@ body {
 .plate {
   width: 300px;
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   z-index: 1;
   left: -20px;
   transform: translateX(-100%);
@@ -92,9 +92,8 @@ body {
 }
 
 .percent_modif {
-  width: 180px;
-  bottom: 72px;
-  right: 68px;
+  bottom: 80px;
+  right: 70px;
 }
 
 @-webkit-keyframes scale {
@@ -138,7 +137,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  bottom: 55px;
+  bottom: 65px;
   left: 20px;
   z-index: 3;
   margin: 0;
@@ -160,8 +159,7 @@ body {
 }
 
 .title_second-slide {
-  bottom: 70px;
-  left: 20px;
+  transform: translateY(-5px);
   font-size: 26px;
 }
 
@@ -183,8 +181,9 @@ body {
 }
 
 .description-three {
-  width: 210px;
-  bottom: 142px;
+  width: 240px;
+  bottom: 150px;
+  font-size: 17px;
 }
 .description-three span {
   font-weight: 400;
@@ -254,5 +253,5 @@ body {
   text-align: justify;
   transition: 1s;
   opacity: 0;
-  z-index: 6;
+  z-index: 11;
 }

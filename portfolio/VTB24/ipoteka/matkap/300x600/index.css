@@ -74,7 +74,7 @@ body {
 .plate {
   width: 300px;
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   z-index: 1;
   left: -20px;
   transform: translateX(-100%);
@@ -92,9 +92,8 @@ body {
 }
 
 .percent_modif {
-  width: 180px;
-  bottom: 72px;
-  right: 68px;
+  bottom: 80px;
+  right: 70px;
 }
 
 @-webkit-keyframes scale {
@@ -138,7 +137,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  bottom: 55px;
+  bottom: 65px;
   left: 20px;
   z-index: 3;
   margin: 0;
@@ -160,8 +159,7 @@ body {
 }
 
 .title_second-slide {
-  bottom: 70px;
-  left: 20px;
+  transform: translateY(-5px);
   font-size: 26px;
 }
 
@@ -169,7 +167,7 @@ body {
   font-family: "VTB", sans-serif;
   font-weight: 400;
   width: 170px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.2;
   position: absolute;
   font-weight: 300;
@@ -183,8 +181,9 @@ body {
 }
 
 .description-three {
-  width: 210px;
-  bottom: 142px;
+  width: 240px;
+  bottom: 150px;
+  font-size: 17px;
 }
 .description-three span {
   font-weight: 400;
@@ -193,10 +192,10 @@ body {
 .ico {
   position: absolute;
   z-index: 1;
-  width: 50px;
+  width: 60px;
   max-height: 100px;
   bottom: 60px;
-  left: 210px;
+  left: 180px;
   transition: 0.5s ease-out;
   opacity: 0;
 }
@@ -248,9 +247,9 @@ body {
   left: 20px;
   color: #002882;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 1.03;
+  line-height: 1.05;
   text-align: justify;
   transition: 1s;
   opacity: 0;
