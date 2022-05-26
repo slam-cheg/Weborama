@@ -134,18 +134,10 @@ HTML {
 }
 
 #more_btn {
-  background-color: rgb(204, 0, 0);
   position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 20%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5%;
-  font-family: system-ui;
-  color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 30%;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in, text-shadow 0.3s, opacity 0.5s;
   text-shadow: 0 0 3vh rgba(255, 255, 255, 0), 0 0 1.5vh rgba(255, 255, 255, 0);
