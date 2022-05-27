@@ -14,21 +14,24 @@ body {
 .banner {
     position: relative;
     cursor: pointer;
+    border: 1px solid;
+    box-sizing: border-box;
+    background: #fff;
 }
 
 .background {
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 55%;
+    top: 93px;
     z-index: 1;
     object-fit: cover;
-    object-position: right;
+    object-position: -270px 0;
 }
 
 .background_second-slide {
     transform: scale(1.15) translateX(-20px);
-    transition: 10s linear;
+    transition: 7s linear;
 }
 .background_third-slide {
     transform: scale(1.25) translateX(-30px);
@@ -177,7 +180,7 @@ body {
     color: #fff;
     background: #00aaff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
     transform: translateX(200px);
 
@@ -197,6 +200,10 @@ body {
     z-index: 10;
     opacity: 0;
     transition: 1s;
+}
+
+.disclamer_bolder {
+    font-weight: 400;
 }
 
 .disclamer__text {

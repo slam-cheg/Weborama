@@ -36,6 +36,8 @@ body {
 .banner {
   position: relative;
   cursor: pointer;
+  box-sizing: border-box;
+  background: #fff;
 }
 
 .background {
@@ -44,6 +46,10 @@ body {
   height: 100%;
   top: 0;
   z-index: 1;
+  -o-object-position: -70px 0;
+     object-position: -70px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .background_second-slide {
@@ -72,7 +78,7 @@ body {
   position: absolute;
   top: 30px;
   z-index: 1;
-  left: 0;
+  left: -30px;
   transform: translateX(-100%);
   transition: 0.5s ease-out;
 }
@@ -91,42 +97,6 @@ body {
   width: 200px;
   top: 57px;
   left: 290px;
-}
-
-@-webkit-keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.scale-anim {
-  -webkit-animation: scale;
-          animation: scale;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 
 .title {
@@ -184,19 +154,9 @@ body {
   width: 100px;
   max-height: 100px;
   top: 45px;
-  left: 210px;
+  left: 205px;
   transition: 0.5s ease-out;
   opacity: 0;
-}
-
-.tel {
-  position: absolute;
-  bottom: 90px;
-  left: 10px;
-  width: 200px;
-  z-index: 6;
-  transition: 0.3s;
-  transform: translateX(-220px);
 }
 
 .button {
@@ -213,7 +173,7 @@ body {
   color: #fff;
   background: #00aaff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: 0.3s;
   transform: translateX(200px);
 }
@@ -232,6 +192,10 @@ body {
   z-index: 5;
   opacity: 0;
   transition: 1s;
+}
+
+.disclamer_bolder {
+  font-weight: 400;
 }
 
 .disclamer__text {

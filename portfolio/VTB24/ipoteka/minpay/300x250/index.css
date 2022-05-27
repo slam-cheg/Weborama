@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "VTB";
+  src: url(./cond-light.woff);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "VTB";
+  src: url(./cond-book.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "VTB";
+  src: url(./cond-semi-bold.woff);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "VTB";
+  src: url(./cond-bold.woff);
+  font-style: normal;
+  font-weight: 700;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -140px 21px;
+     object-position: -140px 21px;
+}
+
+.background_second-slide {
+  transform: scale(1.2) translateX(-24px);
+  transition: 7s linear;
+}
+
+.background_third-slide {
+  transform: scale(1.4) translateX(-42px);
+}
+
+.background_fourth-slide {
+  transform: scale(1.6) translateX(-55px);
+}
+
+.logo {
+  position: absolute;
+  width: 90px;
+  top: -5px;
+  right: -5px;
+  z-index: 100;
+}
+
+.plate {
+  width: 220px;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  left: -20px;
+  transform: translateX(-100%);
+  transition: 0.5s ease-out;
+}
+
+.percent {
+  width: 120px;
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  right: 55px;
+  transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38);
+  transform: scale(0);
+}
+
+.percent_modif {
+  top: 75px;
+  left: 30px;
+  width: 150px;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  top: 35px;
+  left: 10px;
+  z-index: 3;
+  margin: 0;
+  font-size: 20px;
+  width: 170px;
+  text-transform: uppercase;
+  font-family: "VTB", sans-serif;
+  line-height: 1.1;
+  transition: 0.4s ease-out;
+  opacity: 0;
+}
+
+.title__first-stroke {
+  font-weight: 400;
+}
+
+.title__second-stroke {
+  font-weight: 700;
+}
+
+.title_second-slide {
+  font-size: 20px;
+  width: 150px;
+}
+
+.description {
+  font-family: "VTB", sans-serif;
+  font-weight: 400;
+  width: 130px;
+  font-size: 13px;
+  line-height: 1;
+  position: absolute;
+  font-weight: 300;
+  top: 30px;
+  left: 10px;
+  z-index: 4;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+.description-three {
+  width: 150px;
+  top: 27px;
+  font-size: 15px;
+}
+.description-three span {
+  font-weight: 400;
+}
+
+.ico {
+  position: absolute;
+  z-index: 1;
+  width: 35px;
+  max-height: 100px;
+  top: 30px;
+  left: 137px;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+.button {
+  font-family: "VTB", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 6;
+  padding: 10px 30px;
+  color: #fff;
+  background: #00aaff;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  transform: translateX(200px);
+}
+.button:hover {
+  background: #002882;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.disclamer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  transition: 1s;
+}
+
+.disclamer_bolder {
+  font-weight: 400;
+}
+
+.disclamer__text {
+  font-family: "VTB", sans-serif;
+  position: absolute;
+  width: calc(100% - 20px);
+  bottom: 10px;
+  left: 10px;
+  color: #002882;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 300;
+  line-height: 1.15;
+  text-align: justify;
+  transition: 1s;
+  opacity: 0;
+  z-index: 11;
+}

@@ -85,13 +85,13 @@ const fourthSlide = () => {
 };
 
 const disclamerSlide = () => {
+    descriptionThree.style.opacity = null;
+    percent.style.opacity = "0";
+    percent.style.transform = null;
+    plate.style.transform = null;
     setTimeout(() => {
         disclamer.style.opacity = "1";
         disclamerText.style.opacity = "1";
-        descriptionThree.style.opacity = null;
-        percent.style.opacity = "0";
-        percent.style.transform = null;
-        plate.style.transform = null;
         setTimeout(() => {
             disclamerText.style.opacity = null;
             disclamer.style.opacity = null;

@@ -56,6 +56,7 @@ const thirdSlide = () => {
     setTimeout(() => {
         descriptionOne.style.opacity = "1";
         icoOne.style.opacity = "1";
+        plate.style.transform = "translateX(10px)"
         background.classList.add("background_third-slide");
         setTimeout(() => {
             descriptionOne.style.opacity = null;
@@ -68,6 +69,7 @@ const thirdSlide = () => {
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
     setTimeout(() => {
+        plate.style.transform = "translateX(-40px)"
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
         button.style.transform = "translateX(0)";
