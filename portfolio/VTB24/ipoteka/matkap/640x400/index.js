@@ -6,6 +6,7 @@ const percent = banner.querySelector(".percent");
 const titleOne = banner.querySelector(".title__first-stroke");
 const titleTwo = banner.querySelector(".title__second-stroke");
 const descriptionOne = banner.querySelector(".description-one");
+const minpay = banner.querySelector(".minpay");
 const descriptionTwo = banner.querySelector(".description-two");
 const descriptionThree = banner.querySelector(".description-three");
 const slash = banner.querySelector(".slash");
@@ -23,6 +24,7 @@ banner.addEventListener("click", function () {
 const firstSlide = () => {
     percent.style.opacity = "1";
     setTimeout(() => {
+        background.classList.add("background_first-slide");
         plate.style.transform = "translateX(0)";
         setTimeout(() => {
             titleOne.style.opacity = "1";
@@ -53,12 +55,13 @@ const secondSlide = () => {
 
 const thirdSlide = () => {
     setTimeout(() => {
-        descriptionTwo.style.opacity = "1";
-        icoTwo.style.opacity = "1";
+        descriptionOne.style.opacity = "1";
+        icoOne.style.opacity = "1";
+        plate.style.transform = "translateX(10px)"
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionTwo.style.opacity = null;
-            icoTwo.style.opacity = null;
+            descriptionOne.style.opacity = null;
+            icoOne.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);
@@ -67,6 +70,7 @@ const thirdSlide = () => {
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
     setTimeout(() => {
+        plate.style.transform = "translateX(-40px)"
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
         button.style.transform = "translateX(0)";
@@ -94,6 +98,7 @@ const disclamerSlide = () => {
             background.classList.remove("background_fourth-slide");
             background.classList.remove("background_third-slide");
             background.classList.remove("background_second-slide");
+            background.classList.remove("background_first-slide");
             setTimeout(() => {
                 firstSlide();
             }, 1000);

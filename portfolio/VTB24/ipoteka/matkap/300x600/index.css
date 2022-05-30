@@ -53,17 +53,21 @@ body {
      object-position: -270px 0;
 }
 
+.background_first-slide {
+  transform: scale(1.1) translateX(-13px);
+  transition: 5s linear;
+}
+
 .background_second-slide {
-  transform: scale(1.15) translateX(-20px);
-  transition: 7s linear;
+  transform: scale(1.2) translateX(-25px);
 }
 
 .background_third-slide {
-  transform: scale(1.25) translateX(-30px);
+  transform: scale(1.3) translateX(-34px);
 }
 
 .background_fourth-slide {
-  transform: scale(1.35) translateX(-39px);
+  transform: scale(1.4) translateX(-42px);
 }
 
 .logo {
@@ -170,7 +174,7 @@ body {
   font-family: "VTB", sans-serif;
   font-weight: 400;
   width: 170px;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1.2;
   position: absolute;
   font-weight: 300;
@@ -195,10 +199,10 @@ body {
 .ico {
   position: absolute;
   z-index: 1;
-  width: 60px;
+  width: 50px;
   max-height: 100px;
   bottom: 60px;
-  left: 180px;
+  left: 210px;
   transition: 0.5s ease-out;
   opacity: 0;
 }
@@ -215,7 +219,7 @@ body {
   text-transform: uppercase;
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: calc(50% - 89px);
   z-index: 6;
   padding: 10px 30px;
   color: #fff;
@@ -223,7 +227,7 @@ body {
   border: none;
   border-radius: 10px;
   transition: 0.3s;
-  transform: translateX(200px);
+  transform: translateX(250px);
 }
 .button:hover {
   background: #002882;
@@ -240,6 +244,11 @@ body {
   z-index: 10;
   opacity: 0;
   transition: 1s;
+  pointer-events: none;
+}
+
+.disclamer_bolder {
+  font-weight: 400;
 }
 
 .disclamer__text {
@@ -250,11 +259,11 @@ body {
   left: 20px;
   color: #002882;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.03;
   text-align: justify;
   transition: 1s;
   opacity: 0;
-  z-index: 6;
+  z-index: 11;
 }

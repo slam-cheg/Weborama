@@ -29,15 +29,18 @@ body {
     object-position: -150px 0;
 }
 
+.background_first-slide {
+    transform: scale(1.5) translateX(-26px);
+    transition: 5s linear;
+}
 .background_second-slide {
-    transform: scale(1.2) translateX(-13px);
-    transition: 7s linear;
+    transform: scale(2) translateX(-39px);
 }
 .background_third-slide {
-    transform: scale(1.5) translateX(-26px);
+    transform: scale(2.5) translateX(-47px);
 }
 .background_fourth-slide {
-    transform: scale(1.8) translateX(-35px);
+    transform: scale(3) translateX(-52px);
 }
 
 .logo {
@@ -129,11 +132,11 @@ body {
     font-family: "VTB", sans-serif;
     font-weight: 400;
     width: 140px;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.2;
     position: absolute;
     font-weight: 300;
-    bottom: 75px;
+    bottom: 60px;
     left: 10px;
     z-index: 4;
     color: #fff;
@@ -182,7 +185,7 @@ body {
     color: #fff;
     background: #00aaff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
     transform: translateX(200px);
 
@@ -208,6 +211,7 @@ body {
     font-weight: 400;
 }
 
+
 .disclamer__text {
     font-family: "VTB", sans-serif;
     position: absolute;
@@ -216,9 +220,9 @@ body {
     left: 10px;
     color: #002882;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 9.6px;
     font-weight: 300;
-    line-height: 1.12;
+    line-height: 1.02;
     text-align: justify;
     transition: 1s;
     opacity: 0;

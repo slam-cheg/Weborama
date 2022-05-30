@@ -100,6 +100,7 @@ const disclamerSlide = () => {
             background.classList.remove("background_fourth-slide");
             background.classList.remove("background_third-slide");
             background.classList.remove("background_second-slide");
+            background.classList.remove("background_first-slide");
             setTimeout(() => {
                 firstSlide();
             }, 1000);

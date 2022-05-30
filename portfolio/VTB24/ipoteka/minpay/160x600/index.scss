@@ -29,15 +29,18 @@ body {
     object-position: -150px 0;
 }
 
+.background_first-slide {
+    transform: scale(1.5) translateX(-26px);
+    transition: 5s linear;
+}
 .background_second-slide {
-    transform: scale(1.2) translateX(-13px);
-    transition: 7s linear;
+    transform: scale(2) translateX(-39px);
 }
 .background_third-slide {
-    transform: scale(1.5) translateX(-26px);
+    transform: scale(2.5) translateX(-47px);
 }
 .background_fourth-slide {
-    transform: scale(1.8) translateX(-35px);
+    transform: scale(3) translateX(-52px);
 }
 
 .logo {

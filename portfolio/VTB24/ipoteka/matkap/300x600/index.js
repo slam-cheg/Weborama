@@ -24,6 +24,7 @@ banner.addEventListener("click", function () {
 const firstSlide = () => {
     percent.style.opacity = "1";
     setTimeout(() => {
+        background.classList.add("background_first-slide");
         plate.style.transform = "translateX(0)";
         setTimeout(() => {
             titleOne.style.opacity = "1";
@@ -56,12 +57,12 @@ const secondSlide = () => {
 
 const thirdSlide = () => {
     setTimeout(() => {
-        descriptionTwo.style.opacity = "1";
-        icoTwo.style.opacity = "1";
+        descriptionOne.style.opacity = "1";
+        icoOne.style.opacity = "1";
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionTwo.style.opacity = null;
-            icoTwo.style.opacity = null;
+            descriptionOne.style.opacity = null;
+            icoOne.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);
@@ -84,10 +85,10 @@ const fourthSlide = () => {
 };
 
 const disclamerSlide = () => {
+    plate.style.transform = null;
     descriptionThree.style.opacity = null;
     percent.style.opacity = "0";
     percent.style.transform = null;
-    plate.style.transform = null;
     setTimeout(() => {
         disclamer.style.opacity = "1";
         disclamerText.style.opacity = "1";
@@ -98,6 +99,7 @@ const disclamerSlide = () => {
             background.classList.remove("background_fourth-slide");
             background.classList.remove("background_third-slide");
             background.classList.remove("background_second-slide");
+            background.classList.remove("background_first-slide");
             setTimeout(() => {
                 firstSlide();
             }, 1000);

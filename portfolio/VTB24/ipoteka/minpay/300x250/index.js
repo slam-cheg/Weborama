@@ -24,6 +24,7 @@ banner.addEventListener("click", function () {
 const firstSlide = () => {
     percent.style.opacity = "1";
     setTimeout(() => {
+        background.classList.add("background_first-slide");
         plate.style.transform = "translateX(0)";
         setTimeout(() => {
             titleOne.style.opacity = "1";
@@ -99,6 +100,7 @@ const disclamerSlide = () => {
             background.classList.remove("background_fourth-slide");
             background.classList.remove("background_third-slide");
             background.classList.remove("background_second-slide");
+            background.classList.remove("background_first-slide");
             setTimeout(() => {
                 firstSlide();
             }, 1000);
