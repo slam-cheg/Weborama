@@ -53,9 +53,13 @@ body {
      object-position: -210px 0;
 }
 
-.background_second-slide {
+.background_first-slide {
   transform: scale(1.15) translateX(-15px);
-  transition: 7s linear;
+  transition: 5s linear;
+}
+
+.background_second-slide {
+  transform: scale(1.25) translateX(-23px);
 }
 
 .background_third-slide {

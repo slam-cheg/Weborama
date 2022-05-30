@@ -50,7 +50,7 @@ body {
 .plate {
     width: 220px;
     position: absolute;
-    top: 20px;
+    top: 17px;
     z-index: 1;
     left: -20px;
     transform: translateX(-100%);
@@ -61,15 +61,15 @@ body {
     width: 120px;
     position: absolute;
     z-index: 2;
-    top: 35px;
-    right: 55px;
+    top: 55px;
+    left: 45px;
     transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38);
     transform: scale(0);
 }
 
 .percent_modif {
-    top: 75px;
-    left: 30px;
+    top: 79px;
+    left: 35px;
     width: 150px;
 }
 
@@ -78,7 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
-    top: 35px;
+    top: 30px;
     left: 10px;
     z-index: 3;
     margin: 0;
@@ -99,20 +99,20 @@ body {
     font-weight: 700;
 }
 
-.title_second-slide {
-    font-size: 20px;
-    width: 150px;
-}
+// .title_second-slide {
+//     transform: translateY(-5px);
+//     font-size: 26px;
+// }
 
 .description {
     font-family: "VTB", sans-serif;
     font-weight: 400;
     width: 130px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1;
     position: absolute;
     font-weight: 300;
-    top: 30px;
+    top: 27px;
     left: 10px;
     z-index: 4;
     color: #fff;
@@ -122,9 +122,9 @@ body {
 }
 
 .description-three {
-    width: 150px;
-    top: 27px;
-    font-size: 15px;
+    width: 170px;
+    top: 24px;
+    font-size: 18px;
 
     span {
         font-weight: 400;
@@ -134,17 +134,17 @@ body {
 .ico {
     position: absolute;
     z-index: 1;
-    width: 35px;
+    width: 40px;
     max-height: 100px;
     top: 30px;
-    left: 137px;
+    left: 130px;
     transition: 0.5s ease-out;
     opacity: 0;
 }
 
 .button {
     font-family: "VTB", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ body {
     color: #fff;
     background: #00aaff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.3s;
     transform: translateX(200px);
 
@@ -179,7 +179,7 @@ body {
 }
 
 .disclamer_bolder {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .disclamer__text {
@@ -190,11 +190,11 @@ body {
     left: 10px;
     color: #002882;
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 300;
-    line-height: 1.15;
+    line-height: 1.1;
     text-align: justify;
     transition: 1s;
     opacity: 0;
-    z-index: 11;
+    z-index: 6;
 }

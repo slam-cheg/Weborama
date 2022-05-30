@@ -36,31 +36,33 @@ body {
 .banner {
   position: relative;
   cursor: pointer;
+  border: 1px solid;
+  box-sizing: border-box;
+  background: #fff;
 }
 
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+  -o-object-position: -140px 21px;
+     object-position: -140px 21px;
 }
 
 .background_second-slide {
-  transform: scale(1.15) translateX(-20px);
-  transition: 10s linear;
+  transform: scale(1.2) translateX(-24px);
+  transition: 7s linear;
 }
 
 .background_third-slide {
-  transform: scale(1.25) translateX(-30px);
+  transform: scale(1.4) translateX(-42px);
 }
 
 .background_fourth-slide {
-  transform: scale(1.35) translateX(-39px);
+  transform: scale(1.6) translateX(-55px);
 }
 
 .logo {
@@ -72,12 +74,11 @@ body {
 }
 
 .plate {
-  width: 210px;
-  height: 65px;
+  width: 220px;
   position: absolute;
-  top: 20px;
+  top: 17px;
   z-index: 1;
-  left: 0px;
+  left: -20px;
   transform: translateX(-100%);
   transition: 0.5s ease-out;
 }
@@ -87,50 +88,15 @@ body {
   position: absolute;
   z-index: 2;
   top: 55px;
-  left: 65px;
-  /* transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38); */
+  left: 45px;
+  transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38);
   transform: scale(0);
 }
 
 .percent_modif {
-  bottom: 80px;
-  right: 70px;
-}
-
-@-webkit-keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.scale-anim {
-  -webkit-animation: scale;
-          animation: scale;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  top: 78px;
+  left: 40px;
+  width: 150px;
 }
 
 .title {
@@ -177,9 +143,9 @@ body {
 }
 
 .description-three {
-  width: 240px;
-  bottom: 150px;
-  font-size: 17px;
+  width: 170px;
+  top: 24px;
+  font-size: 18px;
 }
 .description-three span {
   font-weight: 400;
@@ -191,7 +157,7 @@ body {
   width: 40px;
   max-height: 100px;
   top: 30px;
-  left: 135px;
+  left: 127px;
   transition: 0.5s ease-out;
   opacity: 0;
 }
@@ -202,13 +168,13 @@ body {
 
 .button {
   font-family: "VTB", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 6;
   padding: 10px 30px;
   color: #fff;
@@ -235,17 +201,21 @@ body {
   transition: 1s;
 }
 
+.disclamer_bolder {
+  font-weight: 700;
+}
+
 .disclamer__text {
   font-family: "VTB", sans-serif;
   position: absolute;
-  width: calc(100% - 40px);
-  bottom: 20px;
-  left: 20px;
+  width: calc(100% - 20px);
+  bottom: 10px;
+  left: 10px;
   color: #002882;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.1;
   text-align: justify;
   transition: 1s;
   opacity: 0;

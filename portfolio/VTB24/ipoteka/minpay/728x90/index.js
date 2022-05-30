@@ -24,8 +24,7 @@ banner.addEventListener("click", function () {
 const firstSlide = () => {
     percent.style.opacity = "1";
     setTimeout(() => {
-        background.classList.add("background_first-slide");
-        plate.style.transform = "translateX(0)";
+        plate.style.transform = "translateX(0px) skewX(20deg)";
         setTimeout(() => {
             titleOne.style.opacity = "1";
             setTimeout(() => {
@@ -45,18 +44,18 @@ const secondSlide = () => {
         background.classList.add("background_second-slide");
         percent.style.opacity = "1";
         percent.style.transform = "scale(1)";
-        plate.style.transform = "translateX(0px)";
-        setTimeout(() => {
-            titleTwo.style.opacity = null;
-            percent.style.opacity = "0";
-            percent.style.transform = null;
-            thirdSlide();
-        }, 4000);
+        plate.style.transform = "translateX(0px) skewX(20deg)";
+        // setTimeout(() => {
+        //     titleTwo.style.opacity = null;
+        //     percent.style.opacity = "0";
+        //     percent.style.transform = null;
+        //     thirdSlide();
+        // }, 4000);
     }, 500);
 };
 
 const thirdSlide = () => {
-    plate.style.transform = "translateX(0px) translateY(-13px) scaleY(1.3)";
+    plate.style.transform = "translateX(-20px) scale(1.2) translateY(7px)";
     setTimeout(() => {
         descriptionOne.style.opacity = "1";
         icoOne.style.opacity = "1";
@@ -71,7 +70,7 @@ const thirdSlide = () => {
 
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
-    plate.style.transform = "translateX(0px) translateY(-69px) scaleY(1.3)";
+    plate.style.transform = "translateX(-20px) scale(1.2) translateY(7px)";
     setTimeout(() => {
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
@@ -86,10 +85,10 @@ const fourthSlide = () => {
 };
 
 const disclamerSlide = () => {
+    plate.style.transform = null;
     descriptionThree.style.opacity = null;
     percent.style.opacity = "0";
     percent.style.transform = null;
-    plate.style.transform = null;
     setTimeout(() => {
         disclamer.style.opacity = "1";
         disclamerText.style.opacity = "1";

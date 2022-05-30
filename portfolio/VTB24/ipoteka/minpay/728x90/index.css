@@ -28,55 +28,58 @@
 
 html,
 body {
-  width: 640px;
-  height: 400px;
+  width: 728px;
+  height: 90px;
   overflow: hidden;
 }
 
 .banner {
   position: relative;
   cursor: pointer;
+  border: 1px solid;
   box-sizing: border-box;
-  background: #fff;
+  background: #f4f2f3;
 }
 
 .background {
   position: absolute;
-  width: 100%;
+  width: 40%;
   height: 100%;
-  top: 0;
   z-index: 1;
-  -o-object-position: -70px 0;
-     object-position: -70px 0;
+  top: 0;
+  right: 80px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0px -40px;
+     object-position: 0px -40px;
 }
 
 .background_second-slide {
-  transform: scale(1.15) translateX(-41px);
-  transition: 10s linear;
+  transform: scale(1.2) translateX(-24px);
+  transition: 7s linear;
 }
 
 .background_third-slide {
-  transform: scale(1.25) translateX(-60px);
+  transform: scale(1.4) translateX(-42px);
 }
 
 .background_fourth-slide {
-  transform: scale(1.35) translateX(-82px);
+  transform: scale(1.6) translateX(-55px);
 }
 
 .logo {
   position: absolute;
-  width: 150px;
-  top: 0px;
-  right: 0px;
+  width: 90px;
+  top: -5px;
+  right: -5px;
   z-index: 100;
 }
 
 .plate {
-  width: 60%;
+  width: 480px;
+  height: calc(100% - 20px);
   position: absolute;
-  top: 30px;
+  top: 10px;
   z-index: 1;
   left: -30px;
   transform: translateX(-100%);
@@ -84,19 +87,19 @@ body {
 }
 
 .percent {
-  width: 180px;
+  width: 120px;
   position: absolute;
   z-index: 2;
-  top: 98px;
-  left: 75px;
+  top: 55px;
+  left: 45px;
   transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38);
   transform: scale(0);
 }
 
 .percent_modif {
-  width: 200px;
-  top: 57px;
-  left: 290px;
+  top: 79px;
+  left: 35px;
+  width: 150px;
 }
 
 .title {
@@ -104,12 +107,12 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  top: 55px;
-  left: 20px;
+  top: 27px;
+  left: 10px;
   z-index: 3;
   margin: 0;
-  font-size: 35px;
-  width: 300px;
+  font-size: 28px;
+  width: 390px;
   text-transform: uppercase;
   font-family: "VTB", sans-serif;
   line-height: 1.1;
@@ -128,12 +131,13 @@ body {
 .description {
   font-family: "VTB", sans-serif;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 1.2;
+  width: 130px;
+  font-size: 14px;
+  line-height: 1;
   position: absolute;
   font-weight: 300;
-  top: 50px;
-  left: 20px;
+  top: 27px;
+  left: 10px;
   z-index: 4;
   color: #fff;
   text-transform: uppercase;
@@ -142,7 +146,9 @@ body {
 }
 
 .description-three {
-  width: 280px;
+  width: 170px;
+  top: 24px;
+  font-size: 18px;
 }
 .description-three span {
   font-weight: 400;
@@ -151,29 +157,29 @@ body {
 .ico {
   position: absolute;
   z-index: 1;
-  width: 100px;
+  width: 40px;
   max-height: 100px;
-  top: 45px;
-  left: 205px;
+  top: 30px;
+  left: 130px;
   transition: 0.5s ease-out;
   opacity: 0;
 }
 
 .button {
   font-family: "VTB", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 6;
   padding: 10px 30px;
   color: #fff;
   background: #00aaff;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.3s;
   transform: translateX(200px);
 }
@@ -189,26 +195,26 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  z-index: 10;
   opacity: 0;
   transition: 1s;
 }
 
 .disclamer_bolder {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .disclamer__text {
   font-family: "VTB", sans-serif;
   position: absolute;
-  width: calc(100% - 40px);
-  bottom: 20px;
-  left: 20px;
+  width: calc(100% - 20px);
+  bottom: 10px;
+  left: 10px;
   color: #002882;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 1.05;
   text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1.1;
   text-align: justify;
   transition: 1s;
   opacity: 0;

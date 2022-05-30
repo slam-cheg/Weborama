@@ -69,7 +69,7 @@ const thirdSlide = () => {
 
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
-    plate.style.transform = "translateX(0px) translateY(-83px)";
+    plate.style.transform = "translateX(-20px) scale(1.2) translateY(7px)";
     setTimeout(() => {
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
