@@ -70,7 +70,7 @@ const thirdSlide = () => {
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
     setTimeout(() => {
-        plate.style.transform = "translateX(-40px)"
+        plate.style.transform = "translateX(-70px)"
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
         button.style.transform = "translateX(0)";
