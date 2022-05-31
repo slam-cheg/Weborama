@@ -104,48 +104,12 @@ body {
   right: 10px;
 }
 
-@-webkit-keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.07);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.scale-anim {
-  -webkit-animation: scale;
-          animation: scale;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
 .title {
   position: absolute;
   display: flex;
   flex-direction: column;
   color: #fff;
-  bottom: 65px;
+  bottom: 70px;
   left: 10px;
   z-index: 3;
   margin: 0;
@@ -175,11 +139,11 @@ body {
   font-family: "VTB", sans-serif;
   font-weight: 400;
   width: 140px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
   position: absolute;
   font-weight: 300;
-  bottom: 60px;
+  bottom: 94px;
   left: 10px;
   z-index: 4;
   color: #fff;

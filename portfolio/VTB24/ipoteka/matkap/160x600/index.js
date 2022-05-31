@@ -40,6 +40,7 @@ firstSlide();
 
 const secondSlide = () => {
     titleTwo.classList.add("title_second-slide");
+    plate.style.transform = "translateX(0px) skewX(11deg) scaleY(0.77) translateY(-19px)"
     setTimeout(() => {
         titleTwo.style.opacity = "1";
         background.classList.add("background_second-slide");
@@ -49,6 +50,7 @@ const secondSlide = () => {
             titleTwo.style.opacity = null;
             percent.style.opacity = "0";
             percent.style.transform = null;
+          //  plate.style.transform = "translateX(0) skewX(10deg)";
             thirdSlide();
         }, 4000);
     }, 500);
@@ -56,12 +58,12 @@ const secondSlide = () => {
 
 const thirdSlide = () => {
     setTimeout(() => {
-        descriptionOne.style.opacity = "1";
-        icoOne.style.opacity = "1";
+        descriptionTwo.style.opacity = "1";
+        icoTwo.style.opacity = "1";
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionOne.style.opacity = null;
-            icoOne.style.opacity = null;
+            descriptionTwo.style.opacity = null;
+            icoTwo.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);

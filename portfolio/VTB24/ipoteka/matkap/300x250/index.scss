@@ -29,17 +29,17 @@ body {
 }
 
 .background_first-slide {
-    transform: scale(1.1) translateX(-13px);
+    transform: scale(1.2) translateX(-25px);
     transition: 5s linear;
 }
 .background_second-slide {
-    transform: scale(1.2) translateX(-24px);
+    transform: scale(1.4) translateX(-42px);
 }
 .background_third-slide {
-    transform: scale(1.3) translateX(-34px);
+    transform: scale(1.6) translateX(-55px);
 }
 .background_fourth-slide {
-    transform: scale(1.4) translateX(-42px);
+    transform: scale(1.8) translateX(-66px);
 }
 
 .logo {
@@ -115,7 +115,7 @@ body {
     line-height: 1;
     position: absolute;
     font-weight: 300;
-    top: 27px;
+    top: 32px;
     left: 10px;
     z-index: 4;
     color: #fff;
@@ -140,7 +140,7 @@ body {
     width: 40px;
     max-height: 100px;
     top: 30px;
-    left: 130px;
+    left: 115px;
     transition: 0.5s ease-out;
     opacity: 0;
 }

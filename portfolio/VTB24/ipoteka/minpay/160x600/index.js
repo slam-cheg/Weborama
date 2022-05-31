@@ -17,8 +17,13 @@ const disclamerChange = banner.querySelector(".disclamer__change");
 const icoOne = banner.querySelector("#documents");
 const icoTwo = banner.querySelector("#family");
 
-banner.addEventListener("click", function () {
+let customEvent = "DEFAULT";
+let customClick = `DEFAULT_CLICK`;
+
+banner.addEventListener("click", () => {
     screenad.click();
+    // screenad.event(`${customClick}`);
+    // console.log(`${customClick}`);
 });
 
 const firstSlide = () => {
@@ -105,3 +110,33 @@ const disclamerSlide = () => {
         }, 4000);
     }, 500);
 };
+
+
+// function getCsv(latitude, longitude) {
+//     return fetch("./cities.json", {
+//         method: "GET",
+//         headers: { "Content-Type": "application/json" },
+//     })
+//         .then(checkResponse)
+//         .then((res) => {
+//             for (let i = 0; i < res.length; i++) {
+//                 if (Math.abs(latitude - res[i].latitude) < 0.5 && Math.abs(longitude - res[i].longitude) < 0.5) {
+//                     regionPlace.textContent = `${res[i].name_ru} и\u00A0${res[i].region_ru}`;
+//                     customEvent = res[i].event;
+//                     customClick = `${customEvent}_CLICK`;
+//                     screenad.event(customEvent);
+//                     break;
+//                 }
+//             }
+//         })
+//         .catch((err) => {
+//             console.warn(err);
+//         });
+// }
+
+// const checkResponse = (res) => {
+//     if (res.ok) {
+//         return res.json();
+//     }
+//     return Promise.reject(`Ошибка: ${res.status}`);
+// };

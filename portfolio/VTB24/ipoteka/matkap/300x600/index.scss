@@ -30,18 +30,18 @@ body {
 }
 
 .background_first-slide {
-    transform: scale(1.1) translateX(-13px);
-    transition: 5s linear;
+    transform: scale(1.3) translateX(-34px);
+    transition: 6s linear;
 }
 
 .background_second-slide {
-    transform: scale(1.2) translateX(-25px);
+    transform: scale(1.6) translateX(-55px);
 }
 .background_third-slide {
-    transform: scale(1.3) translateX(-34px);
+    transform: scale(1.9) translateX(-70px);
 }
 .background_fourth-slide {
-    transform: scale(1.4) translateX(-42px);
+    transform: scale(2.2) translateX(-81px);
 }
 
 .logo {
@@ -75,26 +75,6 @@ body {
 .percent_modif {
     bottom: 80px;
     right: 70px;
-}
-
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.07);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.scale-anim {
-    animation: scale;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
 }
 
 .title {
@@ -132,7 +112,7 @@ body {
     font-family: "VTB", sans-serif;
     font-weight: 400;
     width: 170px;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.2;
     position: absolute;
     font-weight: 300;
@@ -158,16 +138,12 @@ body {
 .ico {
     position: absolute;
     z-index: 1;
-    width: 50px;
+    width: 60px;
     max-height: 100px;
     bottom: 60px;
-    left: 210px;
+    left: 184px;
     transition: 0.5s ease-out;
     opacity: 0;
-}
-
-#documents {
-    left: 192px;
 }
 
 .button {

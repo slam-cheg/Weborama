@@ -55,13 +55,13 @@ const secondSlide = () => {
 
 const thirdSlide = () => {
     setTimeout(() => {
-        descriptionOne.style.opacity = "1";
-        icoOne.style.opacity = "1";
+        descriptionTwo.style.opacity = "1";
+        icoTwo.style.opacity = "1";
         plate.style.transform = "translateX(10px)"
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionOne.style.opacity = null;
-            icoOne.style.opacity = null;
+            descriptionTwo.style.opacity = null;
+            icoTwo.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);
@@ -70,7 +70,7 @@ const thirdSlide = () => {
 const fourthSlide = () => {
     percent.classList.add("percent_modif");
     setTimeout(() => {
-        plate.style.transform = "translateX(-40px)"
+        plate.style.transform = "translateX(-70px)"
         percent.style.opacity = "1";
         descriptionThree.style.opacity = "1";
         button.style.transform = "translateX(0)";

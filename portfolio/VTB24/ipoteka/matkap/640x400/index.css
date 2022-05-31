@@ -75,7 +75,8 @@ body {
 }
 
 .plate {
-  width: 60%;
+  width: 66%;
+  height: 130px;
   position: absolute;
   top: 30px;
   z-index: 1;
@@ -85,17 +86,16 @@ body {
 }
 
 .percent {
-  width: 180px;
+  width: 210px;
   position: absolute;
   z-index: 2;
-  top: 98px;
-  left: 75px;
+  top: 55px;
+  left: 325px;
   transition: 1s cubic-bezier(0.31, -0.26, 0.52, 1.38);
   transform: scale(0);
 }
 
 .percent_modif {
-  width: 200px;
   top: 57px;
   left: 245px;
 }
@@ -130,11 +130,11 @@ body {
   font-family: "VTB", sans-serif;
   font-weight: 400;
   width: 220px;
-  font-size: 19px;
-  line-height: 1.2;
+  font-size: 30px;
+  line-height: 1.1;
   position: absolute;
   font-weight: 300;
-  top: 60px;
+  top: 45px;
   left: 20px;
   z-index: 4;
   color: #fff;
@@ -145,6 +145,8 @@ body {
 
 .description-three {
   width: 230px;
+  font-size: 19px;
+  top: 60px;
 }
 .description-three span {
   font-weight: 400;
@@ -156,13 +158,9 @@ body {
   width: 100px;
   max-height: 100px;
   top: 45px;
-  left: 210px;
+  left: 247px;
   transition: 0.5s ease-out;
   opacity: 0;
-}
-
-#documents {
-  left: 230px;
 }
 
 .button {

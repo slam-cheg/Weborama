@@ -56,14 +56,14 @@ const secondSlide = () => {
 };
 
 const thirdSlide = () => {
-    plate.style.transform = "translateX(0px) translateY(-13px) scaleY(1.3)";
+    plate.style.transform = "translateX(0px)";
     setTimeout(() => {
-        descriptionOne.style.opacity = "1";
-        icoOne.style.opacity = "1";
+        descriptionTwo.style.opacity = "1";
+        icoTwo.style.opacity = "1";
         background.classList.add("background_third-slide");
         setTimeout(() => {
-            descriptionOne.style.opacity = null;
-            icoOne.style.opacity = null;
+            descriptionTwo.style.opacity = null;
+            icoTwo.style.opacity = null;
             fourthSlide();
         }, 4000);
     }, 500);

@@ -77,26 +77,6 @@ body {
     right: 10px;
 }
 
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.07);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.scale-anim {
-    animation: scale;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-
 .title {
     position: absolute;
     display: flex;

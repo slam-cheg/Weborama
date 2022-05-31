@@ -111,7 +111,7 @@ body {
     font-family: "VTB", sans-serif;
     font-weight: 400;
     width: 130px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     position: absolute;
     font-weight: 300;
@@ -139,14 +139,10 @@ body {
     z-index: 1;
     width: 50px;
     max-height: 100px;
-    bottom: 44px;
+    bottom: 40px;
     left: 135px;
     transition: 0.5s ease-out;
     opacity: 0;
-}
-
-#documents {
-    left: 138px;
 }
 
 .button {
@@ -183,6 +179,7 @@ body {
     z-index: 10;
     opacity: 0;
     transition: 1s;
+    pointer-events: none;
 }
 
 .disclamer_bolder {
